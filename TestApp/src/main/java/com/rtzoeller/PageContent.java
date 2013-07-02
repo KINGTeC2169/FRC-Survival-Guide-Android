@@ -10,29 +10,29 @@ public class PageContent {
     public final static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
 
     static {
-        PAGE_MAP.put(new Key(1, 0), new Page("Kickoff", "Kickoff!!!", R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(1, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(1, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(1, 0), new Page(R.string.brainstorming_title, R.string.brainstorming, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(1, 1), new Page(R.string.approaching_the_game_title, R.string.approaching_the_game, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(1, 2), new Page(R.string.game_rules_title, R.string.game_rules, R.drawable.ic_kt));
 
-        PAGE_MAP.put(new Key(2, 0), new Page("Kickoff", "This is a test message about Kickoff", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(2, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(2, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_launcher));
+        PAGE_MAP.put(new Key(2, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(2, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(2, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
 
-        PAGE_MAP.put(new Key(3, 0), new Page("Kickoff", "This is a test message about Kickoff", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(3, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(3, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_launcher));
+        PAGE_MAP.put(new Key(3, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(3, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(3, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
 
-        PAGE_MAP.put(new Key(4, 0), new Page("Kickoff", "This is a test message about Kickoff", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(4, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(4, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_launcher));
+        PAGE_MAP.put(new Key(4, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(4, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(4, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
 
-        PAGE_MAP.put(new Key(5, 0), new Page("Kickoff", "This is a test message about Kickoff", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(5, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(5, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_launcher));
+        PAGE_MAP.put(new Key(5, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(5, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(5, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
 
-        PAGE_MAP.put(new Key(6, 0), new Page("Kickoff", "This is a test message about Kickoff", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(6, 1), new Page("Approaching The Game", "This is a test message about Approaching The Game", R.drawable.ic_launcher));
-        PAGE_MAP.put(new Key(6, 2), new Page("Robot Design", "This is a test message about Robot Design", R.drawable.ic_launcher));
+        PAGE_MAP.put(new Key(6, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(6, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
+        PAGE_MAP.put(new Key(6, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
     }
 
     static class Key {

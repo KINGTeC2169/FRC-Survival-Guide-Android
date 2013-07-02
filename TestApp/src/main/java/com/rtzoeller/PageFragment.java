@@ -3,6 +3,7 @@ package com.rtzoeller;
 /**
  * Created by rtzoeller on 6/24/13.
  */
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -36,8 +37,8 @@ public class PageFragment extends Fragment {
         return(frag);
     }
 
-    static String getTitle(int id, int position) {
-        return(PageContent.PAGE_MAP.get(new PageContent.Key(id, position)).title);
+    static String getTitle(Context context, int id, int position) {
+        return(context.getString(PageContent.PAGE_MAP.get(new PageContent.Key(id, position)).titleResourceId));
     }
 
     @Override
@@ -47,7 +48,7 @@ public class PageFragment extends Fragment {
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
         ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(pageContent.imageResourceId);
-        ((TextView)result.findViewById(R.id.pageDescription)).setText(pageContent.text);
+        ((TextView)result.findViewById(R.id.pageDescription)).setText(pageContent.textResourceId);
 
         return(result);
     }

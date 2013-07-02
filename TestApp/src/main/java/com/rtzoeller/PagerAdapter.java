@@ -32,6 +32,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public String getPageTitle(int position) {
-        return(PageFragment.getTitle(id, position));
+        return(PageFragment.getTitle(context, id, position));
     }
 }
