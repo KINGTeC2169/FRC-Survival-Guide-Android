@@ -3,8 +3,12 @@ package com.rtzoeller;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -57,8 +61,16 @@ public class WeekListActivity extends FragmentActivity
 
         if (savedInstanceState != null) {
             id = savedInstanceState.getString(ARG_ID);
-            onItemSelected(id);
         }
+        onItemSelected(id);
+//        if (mTwoPane && id == null) {
+//            // We have no week to display but we can still show the user a screen
+//            // prompting them to pick a week
+//            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
+//            getSupportFragmentManager().beginTransaction()
+//                    .replace(R.id.week_detail_container, fragment)
+//                    .commit();
+//        }
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
@@ -71,6 +83,8 @@ public class WeekListActivity extends FragmentActivity
     public void onItemSelected(String id) {
         this.id = id;
         if (id != null) {
+            // Make sure we have a week selected and we aren't just
+            // feeding through a null value from our saved state
             if (mTwoPane) {
                 // In two-pane mode, show the detail view in this activity by
                 // adding or replacing the detail fragment using a
@@ -84,14 +98,19 @@ public class WeekListActivity extends FragmentActivity
                         .commit();
 
             } else  {
-                // Make sure we have a week selected and we aren't just
-                // feeding through a null value from our saved state
                 // In single-pane mode, simply start the detail activity
                 // for the selected item ID.
                 Intent detailIntent = new Intent(this, WeekDetailActivity.class);
                 detailIntent.putExtra(WeekDetailFragment.ARG_ITEM_ID, id);
                 startActivity(detailIntent);
             }
+        } else if (mTwoPane) {
+            // We have no week to display but we can still show the user a screen
+            // prompting them to pick a week
+            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.week_detail_container, fragment)
+                    .commit();
         }
     }
 

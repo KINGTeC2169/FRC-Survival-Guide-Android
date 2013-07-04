@@ -27,24 +27,12 @@
     <list id="69894f01-a225-4613-b017-d77392e7412a" name="Default" comment="Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" />
     <list id="576a1463-9d5a-4213-b60c-2874e84fdac0" name="Revert: 0:bb6145d832f8: Initial Commit&#10;App Navigation in place&#10;TODO: Content" comment="" />
     <list default="true" id="8767e702-7a75-47a8-963c-28b915f212ca" name="Revert: 1:4e8922840e85: Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/refs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp-land/refs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp-port/refs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values-sw720dp/refs.xml" />
-      <change type="DELETED" beforePath="C:\Users\rtzoeller\AndroidStudioProjects\TestAppProject\TestApp\src\main\res\values-large\refs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/Page.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/Page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageContent.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageFragment.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PagerAdapter.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/build/source/r/debug/com/rtzoeller/R.java" afterPath="$PROJECT_DIR$/TestApp/build/source/r/debug/com/rtzoeller/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailActivity.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PromptSelectWeekFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/ZoomOutPageTransformer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_prompt_select_week.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/build/res/all/debug/layout/fragment_pager_item.xml" afterPath="$PROJECT_DIR$/TestApp/build/res/all/debug/layout/fragment_pager_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp/refs.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp/refs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/TestApp/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TestApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,11 +100,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WeekDetailActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailActivity.java">
+      <file leaf-file-name="WeekListActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="47" selection-start="678" selection-end="678" vertical-scroll-proportion="0.118673645" vertical-offset="204" max-vertical-offset="1241">
-              <folding />
+            <state line="64" column="27" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-1.3318584" vertical-offset="1690" max-vertical-offset="2176">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,22 +215,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/TestApp/build/source/r/debug/com/rtzoeller/ZoomOutPageTransformer.java" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/ZoomOutPageTransformer.java" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/DepthPageTransformer.java" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp-port/layout.xml" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-large/refs.xml" />
-        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp-land/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp-port/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailActivity.java" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-large-port/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-large-land/refs.xml" />
         <option value="$PROJECT_DIR$/TestApp/src/main/res/values-sw720dp/refs.xml" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/ZoomOutTransformer.java" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/ZoomOutPageTransformer.java" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_prompt_select_week.xml" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/Prompt.java" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java" />
+        <option value="$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PromptSelectWeekFragment.java" />
       </list>
     </option>
   </component>
@@ -528,6 +518,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -566,7 +586,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d2bbcc52c1616" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="Groovy.Shell.LastModule" value="TestApp" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -786,7 +806,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10565635" sideWeight="0.6589659" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10565635" sideWeight="0.52585256" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -795,15 +815,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4741474" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4741474" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14247599" sideWeight="0.6589659" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14247599" sideWeight="0.52585256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.52585256" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3410341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3410341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -874,71 +894,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="304" selection-end="304" vertical-scroll-proportion="0.20767888" vertical-offset="0" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="181" selection-end="181" vertical-scroll-proportion="0.20767888" vertical-offset="0" max-vertical-offset="573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="754" selection-end="830" vertical-scroll-proportion="0.33333334" vertical-offset="132" max-vertical-offset="2482">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="64" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.66317624" vertical-offset="215" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.0" vertical-offset="1225" max-vertical-offset="1853">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/refs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values-sw600dp/refs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="269" selection-end="269" vertical-scroll-proportion="0.26327434" vertical-offset="0" max-vertical-offset="452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="5" selection-start="800" selection-end="800" vertical-scroll-proportion="0.68237346" vertical-offset="0" max-vertical-offset="731">
@@ -969,8 +924,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="678" selection-end="678" vertical-scroll-proportion="0.118673645" vertical-offset="204" max-vertical-offset="1241">
+        <state line="69" column="5" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.96681416" vertical-offset="668" max-vertical-offset="1241">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/ZoomOutPageTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="33" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.9402655" vertical-offset="255" max-vertical-offset="867">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5971897" vertical-offset="255" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_week_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/week_listview_row.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_prompt_select_week.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="8" column="48" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="338" selection-end="338" vertical-scroll-proportion="0.26327434" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.13938053" vertical-offset="73" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PageContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="201" selection-end="201" vertical-scroll-proportion="0.26327434" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="50" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="602" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/PromptSelectWeekFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="87" selection-start="725" selection-end="725" vertical-scroll-proportion="0.7367257" vertical-offset="24" max-vertical-offset="510">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/rtzoeller/WeekListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="27" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-1.3318584" vertical-offset="1690" max-vertical-offset="2176">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

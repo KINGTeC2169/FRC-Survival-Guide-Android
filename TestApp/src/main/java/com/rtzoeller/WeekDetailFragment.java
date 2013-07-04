@@ -3,6 +3,7 @@ package com.rtzoeller;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,11 +52,11 @@ public class WeekDetailFragment extends Fragment {
         View result = inflater.inflate(R.layout.pager, container, false);
         ViewPager pager = (ViewPager)result.findViewById(R.id.pager);
         pager.setAdapter(buildAdapter());
+        pager.setPageTransformer(true, new ZoomOutPageTransformer());
         return(result);
     }
 
     private android.support.v4.view.PagerAdapter buildAdapter() {
         return(new PagerAdapter(getActivity(), getChildFragmentManager(), Integer.parseInt(mItem.id)));
     }
-
 }
