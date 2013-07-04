@@ -38,7 +38,8 @@ public class PageFragment extends Fragment {
     }
 
     static String getTitle(Context context, int id, int position) {
-        return(context.getString(PageContent.PAGE_MAP.get(new PageContent.Key(id, position)).titleResourceId));
+        PageContent content = new PageContent(context);
+        return(content.PAGE_MAP.get(new PageContent.Key(id, position)).title);
     }
 
     @Override
@@ -48,7 +49,7 @@ public class PageFragment extends Fragment {
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
         ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(pageContent.imageResourceId);
-        ((TextView)result.findViewById(R.id.pageDescription)).setText(pageContent.textResourceId);
+        ((TextView)result.findViewById(R.id.pageDescription)).setText(pageContent.text);
 
         return(result);
     }

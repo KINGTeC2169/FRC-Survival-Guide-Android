@@ -34,10 +34,14 @@ public class WeekDetailActivity extends FragmentActivity {
         //
         // http://developer.android.com/guide/components/fragments.html
         //
+        if (getResources().getBoolean(R.bool.has_two_panes)) {
+            finish();
+        }
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
             Bundle arguments = new Bundle();
+
             arguments.putString(WeekDetailFragment.ARG_ITEM_ID,
                     getIntent().getStringExtra(WeekDetailFragment.ARG_ITEM_ID));
             WeekDetailFragment fragment = new WeekDetailFragment();

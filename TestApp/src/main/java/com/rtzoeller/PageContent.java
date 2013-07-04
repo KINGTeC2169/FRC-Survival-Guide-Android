@@ -1,5 +1,8 @@
 package com.rtzoeller;
 
+import android.content.Context;
+import android.content.res.Resources;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,32 +10,14 @@ import java.util.Map;
  * Created by rtzoeller on 6/27/13.
  */
 public class PageContent {
-    public final static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
+    public static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
+    public static final int numPages[] = {3,0,0,0,0,0};
 
-    static {
-        PAGE_MAP.put(new Key(1, 0), new Page(R.string.brainstorming_title, R.string.brainstorming, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(1, 1), new Page(R.string.approaching_the_game_title, R.string.approaching_the_game, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(1, 2), new Page(R.string.game_rules_title, R.string.game_rules, R.drawable.ic_kt));
+    PageContent(Context context) {
+        PAGE_MAP.put(new Key(1, 0), new Page(context, R.array.brainstorming));
+        PAGE_MAP.put(new Key(1, 1), new Page(context, R.array.approaching_the_game));
+        PAGE_MAP.put(new Key(1, 2), new Page(context, R.array.game_rules));
 
-        PAGE_MAP.put(new Key(2, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(2, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(2, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-
-        PAGE_MAP.put(new Key(3, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(3, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(3, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-
-        PAGE_MAP.put(new Key(4, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(4, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(4, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-
-        PAGE_MAP.put(new Key(5, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(5, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(5, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-
-        PAGE_MAP.put(new Key(6, 0), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(6, 1), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
-        PAGE_MAP.put(new Key(6, 2), new Page(R.string.needs_title, R.string.needs_content, R.drawable.ic_kt));
     }
 
     static class Key {

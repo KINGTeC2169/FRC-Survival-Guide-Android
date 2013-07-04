@@ -1,8 +1,10 @@
 package com.rtzoeller;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 
 
 /**
@@ -29,11 +31,15 @@ public class WeekListActivity extends FragmentActivity
      * device.
      */
     private boolean mTwoPane;
+    private String id = null;
+    private static final String ARG_ID = "id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_list);
+
+
 
         if (findViewById(R.id.week_detail_container) != null) {
             // The detail container view will be present only in the
@@ -49,6 +55,11 @@ public class WeekListActivity extends FragmentActivity
                     .setActivateOnItemClick(true);
         }
 
+        if (savedInstanceState != null) {
+            id = savedInstanceState.getString(ARG_ID);
+            onItemSelected(id);
+        }
+
         // TODO: If exposing deep links into your app, handle intents here.
     }
 
@@ -58,24 +69,35 @@ public class WeekListActivity extends FragmentActivity
      */
     @Override
     public void onItemSelected(String id) {
-        if (mTwoPane) {
-            // In two-pane mode, show the detail view in this activity by
-            // adding or replacing the detail fragment using a
-            // fragment transaction.
-            Bundle arguments = new Bundle();
-            arguments.putString(WeekDetailFragment.ARG_ITEM_ID, id);
-            WeekDetailFragment fragment = new WeekDetailFragment();
-            fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.week_detail_container, fragment)
-                    .commit();
+        this.id = id;
+        if (id != null) {
+            if (mTwoPane) {
+                // In two-pane mode, show the detail view in this activity by
+                // adding or replacing the detail fragment using a
+                // fragment transaction.
+                Bundle arguments = new Bundle();
+                arguments.putString(WeekDetailFragment.ARG_ITEM_ID, id);
+                WeekDetailFragment fragment = new WeekDetailFragment();
+                fragment.setArguments(arguments);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.week_detail_container, fragment)
+                        .commit();
 
-        } else {
-            // In single-pane mode, simply start the detail activity
-            // for the selected item ID.
-            Intent detailIntent = new Intent(this, WeekDetailActivity.class);
-            detailIntent.putExtra(WeekDetailFragment.ARG_ITEM_ID, id);
-            startActivity(detailIntent);
+            } else  {
+                // Make sure we have a week selected and we aren't just
+                // feeding through a null value from our saved state
+                // In single-pane mode, simply start the detail activity
+                // for the selected item ID.
+                Intent detailIntent = new Intent(this, WeekDetailActivity.class);
+                detailIntent.putExtra(WeekDetailFragment.ARG_ITEM_ID, id);
+                startActivity(detailIntent);
+            }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle state) {
+        super.onSaveInstanceState(state);
+        state.putString(ARG_ID, id);
     }
 }

@@ -21,8 +21,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        final int numPages[] = {3,3,2,2,2,1};
-        return numPages[id - 1];
+        return PageContent.numPages[id - 1];
     }
 
     @Override
