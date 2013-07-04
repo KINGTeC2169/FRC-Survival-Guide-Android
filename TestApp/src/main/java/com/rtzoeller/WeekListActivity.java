@@ -61,17 +61,9 @@ public class WeekListActivity extends FragmentActivity
 
         if (savedInstanceState != null) {
             id = savedInstanceState.getString(ARG_ID);
+
         }
         onItemSelected(id);
-//        if (mTwoPane && id == null) {
-//            // We have no week to display but we can still show the user a screen
-//            // prompting them to pick a week
-//            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
-//            getSupportFragmentManager().beginTransaction()
-//                    .replace(R.id.week_detail_container, fragment)
-//                    .commit();
-//        }
-
         // TODO: If exposing deep links into your app, handle intents here.
     }
 
