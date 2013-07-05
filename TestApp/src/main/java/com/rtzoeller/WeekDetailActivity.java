@@ -42,13 +42,17 @@ public class WeekDetailActivity extends FragmentActivity {
             // using a fragment transaction.
             Bundle arguments = new Bundle();
 
+            String id = getIntent().getStringExtra(WeekDetailFragment.ARG_ITEM_ID);
+
             arguments.putString(WeekDetailFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(WeekDetailFragment.ARG_ITEM_ID));
+                    id);
             WeekDetailFragment fragment = new WeekDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.week_detail_container, fragment)
                     .commit();
+
+            setTitle(WeekContent.ITEM_MAP.get(id).name);
         }
     }
 
