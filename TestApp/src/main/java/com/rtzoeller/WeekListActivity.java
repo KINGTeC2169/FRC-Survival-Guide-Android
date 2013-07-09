@@ -1,5 +1,7 @@
 package com.rtzoeller;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
@@ -16,6 +18,7 @@ public class WeekListActivity extends FragmentActivity
     private String id = null;
     private int page;
     private static final String ARG_DETAIL_TAG = "detail_fragment";
+    private static final String ARG_LIST_TAG = "list_fragment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,10 +125,38 @@ public class WeekListActivity extends FragmentActivity
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null;
+        boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null;
+        if(listVisible && detailVisible) {
+            page = 0;
+            onItemSelected(null);
+        } else if(!listVisible){
+            id = null;
+            page = 0;
+            getActionBar().setDisplayHomeAsUpEnabled(false);
+            setTitle(R.string.app_name);
+
+            listInflate(R.id.week_list_container);
+        } else if(!detailVisible){
+            new AlertDialog.Builder(this)
+                    .setTitle("Really Exit?")
+                    .setMessage("Are you sure you want to exit?")
+                    .setNegativeButton(android.R.string.no, null)
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface arg0, int arg1) {
+                            WeekListActivity.super.onBackPressed();
+                        }
+                    }).create().show();
+        }
+    }
+
     private void listInflate(int resourceId) {
         WeekListFragment fragment = new WeekListFragment();
         getSupportFragmentManager().beginTransaction()
-                .replace(resourceId, fragment)
+                .replace(resourceId, fragment, ARG_LIST_TAG)
                 .commit();
     }
 
