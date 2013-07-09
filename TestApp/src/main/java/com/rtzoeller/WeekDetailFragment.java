@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 
 /**
  * A fragment representing a single Week detail screen.
- * This fragment is either contained in a {@link WeekListActivity}
- * in two-pane mode (on tablets) or a {@link WeekDetailActivity}
- * on handsets.
+ * This fragment is contained in a {@link WeekListActivity}
  */
 public class WeekDetailFragment extends Fragment {
     /**

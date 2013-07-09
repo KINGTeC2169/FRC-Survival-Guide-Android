@@ -22,14 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.rtzoeller.WeekDetailActivity"
-            android:label="@string/title_week_detail"
-            android:parentActivityName=".WeekListActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WeekListActivity" />
-        </activity>
     </application>
 
 </manifest>
