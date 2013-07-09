@@ -9,6 +9,7 @@ import java.util.Map;
  * Created by rtzoeller on 6/24/13.
  */
 public class WeekContent {
+    // Stores the items for the Week list
     public static List<Week> ITEMS = new ArrayList<Week>();
     public static Map<String, Week> ITEM_MAP = new HashMap<String, Week>();
 

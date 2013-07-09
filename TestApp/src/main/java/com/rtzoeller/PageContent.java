@@ -1,7 +1,6 @@
 package com.rtzoeller;
 
 import android.content.Context;
-import android.content.res.Resources;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,9 +9,12 @@ import java.util.Map;
  * Created by rtzoeller on 6/27/13.
  */
 public class PageContent {
+    // Stores the items for the Pages
     public static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
+    // Number of pages in each week
     public static final int numPages[] = {3,0,0,0,0,0};
 
+    // Load the pages from the application resources
     PageContent(Context context) {
         PAGE_MAP.put(new Key(1, 0), new Page(context, R.array.brainstorming));
         PAGE_MAP.put(new Key(1, 1), new Page(context, R.array.approaching_the_game));
@@ -20,6 +22,7 @@ public class PageContent {
 
     }
 
+    // A Key implementation allowing us to do a 2d lookup using a HashMap
     static class Key {
 
         private final int x;

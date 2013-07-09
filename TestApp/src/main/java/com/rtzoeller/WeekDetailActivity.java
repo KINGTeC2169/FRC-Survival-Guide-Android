@@ -35,6 +35,8 @@ public class WeekDetailActivity extends FragmentActivity {
         // http://developer.android.com/guide/components/fragments.html
         //
         if (getResources().getBoolean(R.bool.has_two_panes)) {
+            // If we are in a single pane view but should be showing two panes close the activity
+            // Closing this activity will return control to the two pane activity
             finish();
         }
         if (savedInstanceState == null) {
@@ -42,16 +44,18 @@ public class WeekDetailActivity extends FragmentActivity {
             // using a fragment transaction.
             Bundle arguments = new Bundle();
 
+            // Pass the fragment the id of the content it should display
             String id = getIntent().getStringExtra(WeekDetailFragment.ARG_ITEM_ID);
+            arguments.putString(WeekDetailFragment.ARG_ITEM_ID, id);
 
-            arguments.putString(WeekDetailFragment.ARG_ITEM_ID,
-                    id);
+            // Add the fragment to the View
             WeekDetailFragment fragment = new WeekDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.week_detail_container, fragment)
                     .commit();
 
+            // Set the activity title to the name of the week
             setTitle(WeekContent.ITEM_MAP.get(id).name);
         }
     }

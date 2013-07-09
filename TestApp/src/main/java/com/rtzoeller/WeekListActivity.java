@@ -1,14 +1,8 @@
 package com.rtzoeller;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 /**
@@ -60,10 +54,10 @@ public class WeekListActivity extends FragmentActivity
         }
 
         if (savedInstanceState != null) {
+            // Load the week id that we should display
             id = savedInstanceState.getString(ARG_ID);
-
         }
-        onItemSelected(id);
+        onItemSelected(id); // Set the detail fragment to display the correct id
         // TODO: If exposing deep links into your app, handle intents here.
     }
 
@@ -109,6 +103,6 @@ public class WeekListActivity extends FragmentActivity
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        state.putString(ARG_ID, id);
+        state.putString(ARG_ID, id); // Save the id of the week we are displaying
     }
 }

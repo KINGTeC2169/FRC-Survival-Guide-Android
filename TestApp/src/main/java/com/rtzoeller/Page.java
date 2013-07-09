@@ -1,12 +1,12 @@
 package com.rtzoeller;
 
 import android.content.Context;
-import android.content.res.Resources;
 
 /**
  * Created by rtzoeller on 6/27/13.
  */
 public class Page {
+    // Holder class for the Pages in the ViewPager
     public String text;
     public String title;
     public int imageResourceId;

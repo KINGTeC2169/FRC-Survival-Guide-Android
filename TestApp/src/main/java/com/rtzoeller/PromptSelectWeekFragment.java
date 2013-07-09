@@ -29,9 +29,11 @@ public class PromptSelectWeekFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Randomly pick a prompt to display
         Random random = new Random();
         String content = PROMPT_LIST.get(random.nextInt(PROMPT_LIST.size()));
 
+        // Inflate the view and display the prompt
         View view = inflater.inflate(R.layout.fragment_prompt_select_week, container, false);
         ((TextView)view.findViewById(R.id.prompt)).setText(content);
         return view;
