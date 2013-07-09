@@ -17,11 +17,14 @@ public class WeekDetailFragment extends Fragment {
      * represents.
      */
     public static final String ARG_ITEM_ID = "item_id";
+    public static final String ARG_PAGE_ID = "page_id";
 
     /**
      * The dummy content this fragment is presenting.
      */
     private Week mItem;
+    private ViewPager mViewPager = null;
+    private int mSetPage;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -35,10 +38,10 @@ public class WeekDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
-            // Load the dummy content specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load content from a content provider.
             mItem = WeekContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+        }
+        if (getArguments().containsKey(ARG_PAGE_ID)) {
+            mSetPage = getArguments().getInt(ARG_PAGE_ID);
         }
     }
 
@@ -49,11 +52,21 @@ public class WeekDetailFragment extends Fragment {
         View result = inflater.inflate(R.layout.pager, container, false);
         ViewPager pager = (ViewPager)result.findViewById(R.id.pager);
         pager.setAdapter(buildAdapter());
+        pager.setCurrentItem(mSetPage);
         pager.setPageTransformer(true, new ZoomOutPageTransformer());
+        mViewPager = pager;
         return(result);
     }
 
     private android.support.v4.view.PagerAdapter buildAdapter() {
         return(new PagerAdapter(getActivity(), getChildFragmentManager(), Integer.parseInt(mItem.id)));
+    }
+
+    public int getPage() {
+        if (mViewPager != null) {
+            return mViewPager.getCurrentItem();
+        } else {
+            return mSetPage;
+        }
     }
 }
