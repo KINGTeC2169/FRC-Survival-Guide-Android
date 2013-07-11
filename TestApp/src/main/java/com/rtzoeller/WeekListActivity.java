@@ -4,6 +4,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.ContextThemeWrapper;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -121,6 +124,10 @@ public class WeekListActivity extends FragmentActivity
                 listInflate(R.id.week_list_container);
 
                 return true;
+            case R.id.about:
+                new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
+                        .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
+                        .create().show();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -140,7 +147,7 @@ public class WeekListActivity extends FragmentActivity
 
             listInflate(R.id.week_list_container);
         } else if(!detailVisible){
-            new AlertDialog.Builder(this)
+            new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                     .setTitle("Really Exit?")
                     .setMessage("Are you sure you want to exit?")
                     .setNegativeButton(android.R.string.no, null)
@@ -151,6 +158,13 @@ public class WeekListActivity extends FragmentActivity
                         }
                     }).create().show();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     private void listInflate(int resourceId) {
