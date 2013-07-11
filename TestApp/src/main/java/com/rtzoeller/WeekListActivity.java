@@ -2,7 +2,10 @@ package com.rtzoeller;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
@@ -28,6 +31,7 @@ public class WeekListActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_twopane);
 
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
 
@@ -128,6 +132,10 @@ public class WeekListActivity extends FragmentActivity
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
                         .create().show();
+                return true;
+            case R.id.settings:
+                startActivity(new Intent(this, SettingsActivity.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -147,16 +155,23 @@ public class WeekListActivity extends FragmentActivity
 
             listInflate(R.id.week_list_container);
         } else if(!detailVisible){
-            new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
-                    .setTitle("Really Exit?")
-                    .setMessage("Are you sure you want to exit?")
-                    .setNegativeButton(android.R.string.no, null)
-                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            boolean confirmExit = sharedPref.getBoolean(SettingsFragment.KEY_CONFIRM_EXIT, true);
 
-                        public void onClick(DialogInterface arg0, int arg1) {
-                            WeekListActivity.super.onBackPressed();
-                        }
-                    }).create().show();
+            if(confirmExit) {
+                new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
+                        .setTitle("Really Exit?")
+                        .setMessage("Are you sure you want to exit?")
+                        .setNegativeButton(android.R.string.no, null)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                WeekListActivity.super.onBackPressed();
+                            }
+                        }).create().show();
+            } else {
+                super.onBackPressed();
+            }
         }
     }
 
