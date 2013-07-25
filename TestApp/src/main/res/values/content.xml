@@ -26,4 +26,17 @@
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
         <item>ic_kt</item>
     </string-array>
+
+    <string-array name="prototyping">
+        <item>Prototyping</item>
+        <item>The teams on Einstein Field at the FRC World Championship consistently do one thing right.
+            They test and test repeatedly, designing and breaking components of their robot before even
+            thinking about assembling them into a finalized design. Prototyping allows teams to find
+            flaws in their designs and fix them before it cuts into the crucial later weeks, where time
+            and resources need to be spent on programming and drive practice.
+            \n\nKING TeC assembles smaller two/three man teams that work on individual components of the
+            robot. How you prototype is up to your team, but it is important to keep the process moving.
+            Don\'t let a failure in one part constitute a failure as a whole!</item>
+        <item>ic_kt</item>
+    </string-array>
 </resources>
