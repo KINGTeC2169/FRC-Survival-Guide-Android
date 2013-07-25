@@ -22,7 +22,7 @@ public class PageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        id = getArguments() != null ? getArguments().getInt(KEY_ID) : 1;
+        id = getArguments() != null ? getArguments().getInt(KEY_ID) : 0;
         position = getArguments() != null ? getArguments().getInt(KEY_POSITION) : 1;
     }
 
@@ -39,13 +39,12 @@ public class PageFragment extends Fragment {
 
     static String getTitle(Context context, int id, int position) {
         PageContent content = new PageContent(context);
-        return(content.PAGE_MAP.get(new PageContent.Key(id, position)).title);
+        return(content.get(id, position).title);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        Page pageContent = PageContent.PAGE_MAP.get(new PageContent.Key(id, position));
+        Page pageContent = PageContent.get(id, position);
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
         ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(pageContent.imageResourceId);

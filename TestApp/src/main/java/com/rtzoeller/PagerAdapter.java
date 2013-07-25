@@ -24,9 +24,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
         // Return the number of pages bound to a specific id
         // The number of pages are stored in an array and we can
         // retrieve them by their id
-        // The id's are 1 based while the array is 0 based so we
-        // need to subtract 1.
-        return PageContent.numPages[id - 1];
+        return PageContent.numPages[id];
     }
 
     @Override
