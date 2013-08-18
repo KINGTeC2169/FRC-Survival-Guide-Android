@@ -18,16 +18,15 @@ public class WeekContent {
 
     static {
         // Add the 6 weeks
-        Week parent = new Week("0", "Build Season", "");
-        addItem(parent, new Week("0","Week 1","Designing and Planning"));
-        addItem(parent, new Week("1","Week 2","Prototyping and Early Building"));
-        addItem(parent, new Week("2","Week 3","Building Modules"));
-        addItem(parent, new Week("3","Week 4","Assembling the Robot"));
-        addItem(parent, new Week("4","Week 5","Wiring and Testing"));
-        addItem(parent, new Week("5","Week 6","Programming and Driving"));
+        Week[] parents = {new Week("0", "Build Season", ""), new Week("1","At Competition", "")};
+        addItem(parents[0], new Week("0", "Week 1", "Designing and Planning"));
+        addItem(parents[0], new Week("1","Week 2","Prototyping and Early Building"));
+        addItem(parents[0], new Week("2","Week 3","Building Modules"));
+        addItem(parents[0], new Week("3","Week 4","Assembling the Robot"));
+        addItem(parents[0], new Week("4","Week 5","Wiring and Testing"));
+        addItem(parents[0], new Week("5","Week 6","Programming and Driving"));
 
-        parent = new Week("1","At Competition", "");
-        addItem(parent, new Week("0","Setting up the Pit", "A Home for your Robot"));
+        addItem(parents[1], new Week("0","Setting up the Pit", "A Home for your Robot"));
     }
 
     private static void addItem(Week parent, Week child) {

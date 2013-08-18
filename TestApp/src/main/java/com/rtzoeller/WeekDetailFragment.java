@@ -16,7 +16,8 @@ public class WeekDetailFragment extends Fragment {
      * The fragment argument representing the item ID that this fragment
      * represents.
      */
-    public static final String ARG_ITEM_ID = "item_id";
+    public static final String ARG_GROUP_ID = "group_id";
+    public static final String ARG_CHILD_ID = "child_id";
     public static final String ARG_PAGE_ID = "page_id";
 
     /**
@@ -37,8 +38,8 @@ public class WeekDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments().containsKey(ARG_ITEM_ID)) {
-            mItem = WeekContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+        if (getArguments().containsKey(ARG_CHILD_ID)) {
+            mItem = WeekContent.CHILDREN.get(getArguments().getInt(ARG_GROUP_ID)).get(getArguments().getInt(ARG_CHILD_ID));
         }
         if (getArguments().containsKey(ARG_PAGE_ID)) {
             mSetPage = getArguments().getInt(ARG_PAGE_ID);
@@ -59,7 +60,7 @@ public class WeekDetailFragment extends Fragment {
     }
 
     private android.support.v4.view.PagerAdapter buildAdapter() {
-        return(new PagerAdapter(getActivity(), getChildFragmentManager(), Integer.parseInt(mItem.id)));
+        return(new PagerAdapter(getActivity(), getChildFragmentManager(), getArguments().getInt(ARG_GROUP_ID), getArguments().getInt(ARG_CHILD_ID)));
     }
 
     public int getPage() {

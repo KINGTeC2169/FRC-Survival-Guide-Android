@@ -1,5 +1,6 @@
 package com.rtzoeller;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,9 +18,38 @@ import java.util.Map;
 /**
  * Created by rtzoeller on 8/17/13.
  */
-public class WeekExpandableListFragment extends Fragment {
+public class WeekExpandableListFragment extends Fragment implements ExpandableListView.OnChildClickListener {
     private static final String NAME = "NAME";
     private static final String DESCRIPTION = "DESCRIPTION";
+
+    /**
+     * The fragment's current callback object, which is notified of list item
+     * clicks.
+     */
+    private Callbacks mCallbacks = sDummyCallbacks;
+
+    /**
+     * A callback interface that all activities containing this fragment must
+     * implement. This mechanism allows activities to be notified of item
+     * selections.
+     */
+    public interface Callbacks {
+        /**
+         * Callback for when an item has been selected.
+         */
+        public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id);
+    }
+
+    /**
+     * A dummy implementation of the {@link Callbacks} interface that does
+     * nothing. Used only when this fragment is not attached to an activity.
+     */
+    private static Callbacks sDummyCallbacks = new Callbacks() {
+        @Override
+        public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+            return true;
+        }
+    };
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -35,29 +66,16 @@ public class WeekExpandableListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View result = inflater.inflate(R.layout.fragment_expandable_week_list, container, false);
-        ((ExpandableListView)result.findViewById(R.id.expandableListView)).setAdapter(buildAdapter());
+
+        ExpandableListView expandableListView = (ExpandableListView)result.findViewById(R.id.expandableListView);
+        expandableListView.setAdapter(buildAdapter());
+        expandableListView.setOnChildClickListener(this);
         return result;
     }
 
     private SimpleExpandableListAdapter buildAdapter() {
         List<Map<String, String>> groupData = new ArrayList<Map<String, String>>();
         List<List<Map<String, String>>> childData = new ArrayList<List<Map<String, String>>>();
-
-//        for (int i = 0; i < WeekContent.ITEMS.size(); i++) {
-//            Map<String, String> curGroupMap = new HashMap<String, String>();
-//            groupData.add(curGroupMap);
-//            curGroupMap.put(NAME, WeekContent.ITEMS.get(i).name);
-//            curGroupMap.put(DESCRIPTION, (i % 2 == 0) ? "This group is even" : "This group is odd");
-//
-//            List<Map<String, String>> children = new ArrayList<Map<String, String>>();
-//            for (int j = 0; j < 5; j++) {
-//                Map<String, String> curChildMap = new HashMap<String, String>();
-//                children.add(curChildMap);
-//                // curChildMap.put(NAME, "Child " + j);
-//                curChildMap.put(DESCRIPTION, (j % 2 == 0) ? "Hello " + j: "Good Morning "+ j);
-//            }
-//            childData.add(children);
-//        }
 
         for (int i = 0; i < WeekContent.PARENTS.size(); i++) {
             Map<String, String> curGroupMap = new HashMap<String, String>();
@@ -91,5 +109,32 @@ public class WeekExpandableListFragment extends Fragment {
 
         return adapter;
     }
+
+    @Override
+    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+        mCallbacks.onChildClick(parent, v, groupPosition, childPosition, id);
+        return true;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // Activities containing this fragment must implement its callbacks.
+        if (!(activity instanceof Callbacks)) {
+            throw new IllegalStateException("Activity must implement fragment's callbacks.");
+        }
+
+        mCallbacks = (Callbacks) activity;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+
+        // Reset the active callbacks interface to the dummy implementation.
+        mCallbacks = sDummyCallbacks;
+    }
+
 
 }

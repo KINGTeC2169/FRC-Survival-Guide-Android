@@ -7,21 +7,25 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ExpandableListView;
 
 public class WeekListActivity extends FragmentActivity
-        implements WeekListFragment.Callbacks {
+        implements WeekExpandableListFragment.Callbacks {
 
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
      * device.
      */
     private boolean mTwoPane;
-    private String id = null;
+    private boolean mHasContent = false;
+    private int groupPosition;
+    private int childPosition;
     private int page;
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
@@ -36,9 +40,13 @@ public class WeekListActivity extends FragmentActivity
         mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
 
         if (savedInstanceState != null) {
-            // Load the week id that we should display
-            id = savedInstanceState.getString(WeekDetailFragment.ARG_ITEM_ID);
+            // Load the page that we should display
+            groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
+            childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
             page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
+        } else {
+            groupPosition = -1;
+            childPosition = -1;
         }
         listInflate(R.id.week_list_container);
 
@@ -48,54 +56,17 @@ public class WeekListActivity extends FragmentActivity
             findViewById(R.id.week_detail_container).setVisibility(View.GONE);
         }
 
+        onChildClick(groupPosition, childPosition); // Set the detail fragment to display the correct id
 
-        onItemSelected(id); // Set the detail fragment to display the correct id
-    }
-
-    /**
-     * Callback method from {@link WeekListFragment.Callbacks}
-     * indicating that the item with the given ID was selected.
-     */
-    @Override
-    public void onItemSelected(String id) {
-        if (this.id != id) {
-            page = 0;
-            this.id = id;
-        }
-        if (id != null) {
-            // Make sure we have a week selected and we aren't just
-            // feeding through a null value from our saved state
-            if (mTwoPane) {
-                // In two-pane mode, show the detail view in this activity by
-                // adding or replacing the detail fragment using a
-                // fragment transaction.
-                detailInflate(R.id.week_detail_container);
-
-            } else {
-                // In single-pane mode, simply start the detail activity
-                // for the selected item ID.
-
-                detailInflate(R.id.week_list_container);
-                setTitle(WeekContent.ITEM_MAP.get(id).name);
-                getActionBar().setDisplayHomeAsUpEnabled(true);
-
-            }
-        } else if (mTwoPane) {
-            // We have no week to display but we can still show the user a screen
-            // prompting them to pick a week
-            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.week_detail_container, fragment)
-                    .commit();
-            page = 0;
-        }
     }
 
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        state.putString(WeekDetailFragment.ARG_ITEM_ID, id); // Save the id of the week we are displaying
-
+        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
+        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
+        Log.e("Group ", Integer.toString(groupPosition));
+        Log.e("Child ", Integer.toString(childPosition));
         WeekDetailFragment fragment = (WeekDetailFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
         int pageNumber;
@@ -120,7 +91,7 @@ public class WeekListActivity extends FragmentActivity
                 // http://developer.android.com/design/patterns/navigation.html#up-vs-back
                 //
 
-                id = null;
+                mHasContent = false;
                 page = 0;
                 getActionBar().setDisplayHomeAsUpEnabled(false);
                 setTitle(R.string.app_name);
@@ -146,9 +117,10 @@ public class WeekListActivity extends FragmentActivity
         boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null;
         if(listVisible && detailVisible) {
             page = 0;
-            onItemSelected(null);
+            mHasContent = false;
+            onChildClick(-1, -1);
         } else if(!listVisible){
-            id = null;
+            mHasContent = false;
             page = 0;
             getActionBar().setDisplayHomeAsUpEnabled(false);
             setTitle(R.string.app_name);
@@ -191,12 +163,58 @@ public class WeekListActivity extends FragmentActivity
 
     private void detailInflate(int resourceId) {
         Bundle arguments = new Bundle();
-        arguments.putString(WeekDetailFragment.ARG_ITEM_ID, id);
+        arguments.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
+        arguments.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
         arguments.putInt(WeekDetailFragment.ARG_PAGE_ID, page);
         WeekDetailFragment fragment = new WeekDetailFragment();
         fragment.setArguments(arguments);
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_DETAIL_TAG)
                 .commit();
+    }
+
+    public boolean onChildClick(int groupPosition, int childPosition) {
+        mHasContent = !(groupPosition == -1 || childPosition == -1);
+        if (this.groupPosition != groupPosition) {
+            page = 0;
+            this.groupPosition = groupPosition;
+            this.childPosition = childPosition;
+        } else if (this.childPosition != childPosition) {
+            page = 0;
+            this.childPosition = childPosition;
+        }
+        if (mHasContent) {
+            // Make sure we have a week selected and we aren't just
+            // feeding through a null value from our saved state
+            if (mTwoPane) {
+                // In two-pane mode, show the detail view in this activity by
+                // adding or replacing the detail fragment using a
+                // fragment transaction.
+                detailInflate(R.id.week_detail_container);
+
+            } else {
+                // In single-pane mode, simply start the detail activity
+                // for the selected item ID.
+
+                detailInflate(R.id.week_list_container);
+                setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
+                getActionBar().setDisplayHomeAsUpEnabled(true);
+
+            }
+        } else if (mTwoPane) {
+            // We have no week to display but we can still show the user a screen
+            // prompting them to pick a week
+            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.week_detail_container, fragment)
+                    .commit();
+            page = 0;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+        return onChildClick(groupPosition, childPosition);
     }
 }
