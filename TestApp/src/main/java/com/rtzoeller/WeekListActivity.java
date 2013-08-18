@@ -183,7 +183,7 @@ public class WeekListActivity extends FragmentActivity
     }
 
     private void listInflate(int resourceId) {
-        WeekListFragment fragment = new WeekListFragment();
+        WeekExpandableListFragment fragment = new WeekExpandableListFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_LIST_TAG)
                 .commit();
