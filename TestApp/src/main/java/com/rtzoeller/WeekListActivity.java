@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +26,7 @@ public class WeekListActivity extends FragmentActivity
     private int groupPosition;
     private int childPosition;
     private int page;
+    private boolean[] expandedItems;
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
 
@@ -39,15 +39,25 @@ public class WeekListActivity extends FragmentActivity
 
         mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
 
+        // Resize expandedItems to match the number of groups
+        expandedItems = new boolean[WeekContent.PARENTS.size()];
+
         if (savedInstanceState != null) {
             // Load the page that we should display
             groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
             childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
             page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
+
+            if (savedInstanceState.containsKey(WeekExpandableListFragment.ARG_EXPANDED_ITEMS)) {
+                expandedItems = savedInstanceState.getBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS);
+            }
         } else {
             groupPosition = -1;
             childPosition = -1;
         }
+
+        // Instantiate the list fragment
+        // We do this after we have loaded our array of expandedItems
         listInflate(R.id.week_list_container);
 
         if (mTwoPane) {
@@ -63,20 +73,27 @@ public class WeekListActivity extends FragmentActivity
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
-        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
-        Log.e("Group ", Integer.toString(groupPosition));
-        Log.e("Child ", Integer.toString(childPosition));
         WeekDetailFragment fragment = (WeekDetailFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
         int pageNumber;
+        int groupPosition;
+        int childPosition;
         if (fragment != null) {
             pageNumber = fragment.getPage();
+            groupPosition = this.groupPosition;
+            childPosition = this.childPosition;
         } else {
             pageNumber = 0;
+            groupPosition = -1;
+            childPosition = -1;
         }
-
         state.putInt(WeekDetailFragment.ARG_PAGE_ID, pageNumber); // Save the page of the week we are displaying
+        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
+        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
+
+        if (expandedItems != null) {
+          state.putBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS, expandedItems);
+        }
     }
 
     @Override
@@ -154,14 +171,18 @@ public class WeekListActivity extends FragmentActivity
         return true;
     }
 
-    private void listInflate(int resourceId) {
+    private WeekExpandableListFragment listInflate(int resourceId) {
+        Bundle arguments = new Bundle();
+        arguments.putBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS, expandedItems);
         WeekExpandableListFragment fragment = new WeekExpandableListFragment();
+        fragment.setArguments(arguments);
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_LIST_TAG)
                 .commit();
+        return fragment;
     }
 
-    private void detailInflate(int resourceId) {
+    private WeekDetailFragment detailInflate(int resourceId) {
         Bundle arguments = new Bundle();
         arguments.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
         arguments.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
@@ -171,6 +192,7 @@ public class WeekListActivity extends FragmentActivity
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_DETAIL_TAG)
                 .commit();
+        return fragment;
     }
 
     public boolean onChildClick(int groupPosition, int childPosition) {
@@ -216,5 +238,15 @@ public class WeekListActivity extends FragmentActivity
     @Override
     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         return onChildClick(groupPosition, childPosition);
+    }
+
+    @Override
+    public void onGroupExpand(int groupPosition) {
+        expandedItems[groupPosition] = true;
+    }
+
+    @Override
+    public void onGroupCollapse(int groupPosition) {
+        expandedItems[groupPosition] = false;
     }
 }

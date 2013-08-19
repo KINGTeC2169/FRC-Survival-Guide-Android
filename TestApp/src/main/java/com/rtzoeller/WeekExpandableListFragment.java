@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
+import android.widget.ExpandableListView.OnGroupCollapseListener;
+import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.SimpleExpandableListAdapter;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,9 +20,11 @@ import java.util.Map;
 /**
  * Created by rtzoeller on 8/17/13.
  */
-public class WeekExpandableListFragment extends Fragment implements ExpandableListView.OnChildClickListener {
+public class WeekExpandableListFragment extends Fragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
     private static final String NAME = "NAME";
     private static final String DESCRIPTION = "DESCRIPTION";
+    public static final String ARG_EXPANDED_ITEMS = "expanded_items";
+    private boolean[] setExpandedItems;
 
     /**
      * The fragment's current callback object, which is notified of list item
@@ -38,6 +42,8 @@ public class WeekExpandableListFragment extends Fragment implements ExpandableLi
          * Callback for when an item has been selected.
          */
         public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id);
+        public void onGroupExpand(int groupPosition);
+        public void onGroupCollapse(int groupPosition);
     }
 
     /**
@@ -48,6 +54,16 @@ public class WeekExpandableListFragment extends Fragment implements ExpandableLi
         @Override
         public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
             return true;
+        }
+
+        @Override
+         public void onGroupExpand(int groupPosition) {
+
+        }
+
+        @Override
+        public void onGroupCollapse(int groupPosition) {
+
         }
     };
 
@@ -61,6 +77,10 @@ public class WeekExpandableListFragment extends Fragment implements ExpandableLi
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setExpandedItems = new boolean[WeekContent.PARENTS.size()];
+        if (getArguments().containsKey(ARG_EXPANDED_ITEMS)) {
+            setExpandedItems = getArguments().getBooleanArray(ARG_EXPANDED_ITEMS);
+        }
     }
 
     @Override
@@ -70,6 +90,13 @@ public class WeekExpandableListFragment extends Fragment implements ExpandableLi
         ExpandableListView expandableListView = (ExpandableListView)result.findViewById(R.id.expandableListView);
         expandableListView.setAdapter(buildAdapter());
         expandableListView.setOnChildClickListener(this);
+        expandableListView.setOnGroupExpandListener(this);
+        expandableListView.setOnGroupCollapseListener(this);
+        for (int i = 0; i < setExpandedItems.length; i++) {
+            if (setExpandedItems[i]) {
+                expandableListView.expandGroup(i);
+            }
+        }
         return result;
     }
 
@@ -114,6 +141,16 @@ public class WeekExpandableListFragment extends Fragment implements ExpandableLi
     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
         mCallbacks.onChildClick(parent, v, groupPosition, childPosition, id);
         return true;
+    }
+
+    @Override
+    public void onGroupExpand(int groupPosition) {
+        mCallbacks.onGroupExpand(groupPosition);
+    }
+
+    @Override
+    public void onGroupCollapse(int groupPosition) {
+        mCallbacks.onGroupCollapse(groupPosition);
     }
 
     @Override
