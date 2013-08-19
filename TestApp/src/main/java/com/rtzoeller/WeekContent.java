@@ -26,7 +26,7 @@ public class WeekContent {
         addItem(parents[0], new Week("4","Week 5","Wiring and Testing"));
         addItem(parents[0], new Week("5","Week 6","Programming and Driving"));
 
-        addItem(parents[1], new Week("0","Setting up the Pit", "A Home for your Robot"));
+        addItem(parents[1], new Week("0","Pit Setup", "A Home for your Robot"));
     }
 
     private static void addItem(Week parent, Week child) {
