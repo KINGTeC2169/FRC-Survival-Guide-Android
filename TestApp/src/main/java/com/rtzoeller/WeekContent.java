@@ -1,17 +1,13 @@
 package com.rtzoeller;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by rtzoeller on 6/24/13.
  */
 public class WeekContent {
     // Stores the items for the Week list
-    public static List<Week> ITEMS = new ArrayList<Week>();
-    public static Map<String, Week> ITEM_MAP = new HashMap<String, Week>();
 
     public static List<List<Week>> CHILDREN = new ArrayList<List<Week>>();
     public static List<Week> PARENTS = new ArrayList<Week>();
@@ -30,9 +26,6 @@ public class WeekContent {
     }
 
     private static void addItem(Week parent, Week child) {
-        // TODO: Clean up old ListView implementation
-        ITEMS.add(child);
-        ITEM_MAP.put(child.id, child);
 
         if (!PARENTS.contains(parent)) { // Make sure we haven't added this parent already
             PARENTS.add(parent); // TODO: Replace this check with a constant or logarithmic time algorithm
