@@ -13,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.Toast;
 
 public class WeekListActivity extends FragmentActivity
         implements WeekExpandableListFragment.Callbacks {
@@ -120,6 +121,17 @@ public class WeekListActivity extends FragmentActivity
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
                         .create().show();
+                return true;
+            case R.id.contactUs:
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("message/rfc822");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"apps@kingtec2169.com"});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Survival Guide");
+                try {
+                    startActivity(Intent.createChooser(intent, "Contact Us"));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                }
                 return true;
             case R.id.settings:
                 startActivity(new Intent(this, SettingsActivity.class));
