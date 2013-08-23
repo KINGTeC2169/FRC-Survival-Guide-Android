@@ -14,15 +14,24 @@ public class WeekContent {
 
     static {
         // Add the 6 weeks
-        Week[] parents = {new Week("0", "Build Season", ""), new Week("1","At Competition", "")};
+        Week[] parents = {new Week("0", "Build Season", ""), new Week("1", "Competition", ""), new Week("2", "Off-Season", "")};
         addItem(parents[0], new Week("0", "Week 1", "Designing and Planning"));
-        addItem(parents[0], new Week("1","Week 2","Prototyping and Early Building"));
-        addItem(parents[0], new Week("2","Week 3","Building Modules"));
-        addItem(parents[0], new Week("3","Week 4","Assembling the Robot"));
-        addItem(parents[0], new Week("4","Week 5","Wiring and Testing"));
-        addItem(parents[0], new Week("5","Week 6","Programming and Driving"));
+        addItem(parents[0], new Week("1", "Week 2", "Prototyping and Early Building"));
+        addItem(parents[0], new Week("2", "Week 3", "Putting It All Together"));
+        addItem(parents[0], new Week("3", "Week 4", "Wiring and Testing"));
+        addItem(parents[0], new Week("4", "Week 5", "Programming and Tinkering"));
+        addItem(parents[0], new Week("5", "Week 6", "A Last Goodbye"));
 
-        addItem(parents[1], new Week("0","Pit Setup", "A Home for your Robot"));
+        addItem(parents[1], new Week("0", "The Pits", "A Home for Your Robot"));
+        addItem(parents[1], new Week("1", "Scouting", "Your Eyes in the Sky"));
+        addItem(parents[1], new Week("2", "Chairman's", "The Core of FIRST"));
+        addItem(parents[1], new Week("3", "Spirit", "Loud and Proud"));
+        addItem(parents[1], new Week("4", "Competing in the Game", "The Exciting Part!"));
+
+        addItem(parents[2], new Week("0", "Fundraising", "Providing Financial Stability"));
+        addItem(parents[2], new Week("1", "Tournaments", "Letting Your Robot Live Again"));
+        addItem(parents[2], new Week("2", "Outreach", "Spreading the Word"));
+        addItem(parents[2], new Week("3", "Preparing for Next Year", "A New Beginning"));
     }
 
     private static void addItem(Week parent, Week child) {
