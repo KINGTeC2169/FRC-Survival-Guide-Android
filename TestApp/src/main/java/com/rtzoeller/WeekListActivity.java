@@ -19,16 +19,19 @@ import com.actionbarsherlock.view.MenuItem;
 public class WeekListActivity extends SherlockFragmentActivity
         implements WeekExpandableListFragment.Callbacks {
 
-    /**
-     * Whether or not the activity is in two-pane mode, i.e. running on a tablet
-     * device.
-     */
+    // Is the current view displaying more than one fragment?
+    // True on small tablets in landscape and on large tablets in either orientation
     private boolean mTwoPane;
+    // Is there any content selected to display
     private boolean mHasContent = false;
+    // The current viewPager to display
     private int groupPosition;
     private int childPosition;
+    /** The page number to feed forward to our {@link WeekDetailFragment} **/
     private int page;
+    /** What items are expanded in our {@link WeekExpandableListFragment} **/
     private boolean[] expandedItems;
+    // Tags for retrieving fragments from the SupportFragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
 
@@ -37,19 +40,23 @@ public class WeekListActivity extends SherlockFragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_twopane);
 
+        // Set the default values for the settings page
+        // Only sets the values the first time the app is launched after install
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
+        // Check whether or not we have room for two fragments to display
         mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
 
         // Resize expandedItems to match the number of groups
         expandedItems = new boolean[WeekContent.PARENTS.size()];
 
         if (savedInstanceState != null) {
-            // Load the page that we should display
+            // Load the selected ViewPager id
             groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
             childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
+            // Load the page id
             page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
-
+            // Load the array of expanded list items
             if (savedInstanceState.containsKey(WeekExpandableListFragment.ARG_EXPANDED_ITEMS)) {
                 expandedItems = savedInstanceState.getBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS);
             }
@@ -63,13 +70,15 @@ public class WeekListActivity extends SherlockFragmentActivity
         listInflate(R.id.week_list_container);
 
         if (mTwoPane) {
+            // Show the second fragment pane if we are on a big enough screen
             findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
         } else {
+            // Hide the second fragment pane if we shouldn't display two fragments (for small screens)
             findViewById(R.id.week_detail_container).setVisibility(View.GONE);
         }
 
-        onChildClick(groupPosition, childPosition); // Set the detail fragment to display the correct id
-
+        /** Simulate a click event so the {@link WeekDetailFragment} shows the correct content **/
+        onChildClick(groupPosition, childPosition);
     }
 
     @Override
@@ -77,6 +86,7 @@ public class WeekListActivity extends SherlockFragmentActivity
         super.onSaveInstanceState(state);
         WeekDetailFragment fragment = (WeekDetailFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
+        // Retrieve what data we are currently showing
         int pageNumber;
         int groupPosition;
         int childPosition;
@@ -89,10 +99,14 @@ public class WeekListActivity extends SherlockFragmentActivity
             groupPosition = -1;
             childPosition = -1;
         }
-        state.putInt(WeekDetailFragment.ARG_PAGE_ID, pageNumber); // Save the page of the week we are displaying
-        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
-        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
+        // Attach the current display information to our Activity state
+        state.putInt(WeekDetailFragment.ARG_PAGE_ID, pageNumber);
+        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition);
+        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition);
 
+        // Attach what items are loaded to our Activity state
+        // If we don't pass any data through, upon loading the array will be initialized to all false values
+        // Which is the desired behavior
         if (expandedItems != null) {
           state.putBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS, expandedItems);
         }
@@ -102,32 +116,35 @@ public class WeekListActivity extends SherlockFragmentActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                // This ID represents the Home or Up button. In the case of this
-                // activity, the Up button is shown. Use NavUtils to allow users
-                // to navigate up one level in the application structure. For
-                // more details, see the Navigation pattern on Android Design:
-                //
-                // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-                //
-
+                /** The Up button shown in the ActionBar.
+                 *  Inflates a {@link WeekExpandableListFragment} when selected. **/
+                // Remove the content we have loaded
                 mHasContent = false;
                 page = 0;
+                // Reset the action bar to the main level configuration
                 getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                 setTitle(R.string.app_name);
-
+                /* Inflates the list into the list container
+                This button can only be pressed when mTwoPane is false, so we won't ever re-inflate
+                the list unnecessarily. */
                 listInflate(R.id.week_list_container);
-
                 return true;
             case R.id.about:
+                /** The About KING TeC item in the options menu.
+                 *  Launches a dialog telling the user about KING TeC **/
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
                         .create().show();
                 return true;
             case R.id.contactUs:
+                /** The Contact Us item in the options menu.
+                 *  Launches an email selection dialog handled by the OS **/
+                // Build the email information
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("message/rfc822");
                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"apps@kingtec2169.com"});
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Survival Guide");
+                // Try to pass the email information to the OS
                 try {
                     startActivity(Intent.createChooser(intent, "Contact Us"));
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -135,6 +152,8 @@ public class WeekListActivity extends SherlockFragmentActivity
                 }
                 return true;
             case R.id.settings:
+                /** The Settings item in the options menu.
+                 *  Launches a {@link SettingsActivity} when selected. **/
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
         }
@@ -143,28 +162,44 @@ public class WeekListActivity extends SherlockFragmentActivity
 
     @Override
     public void onBackPressed() {
+        // Check which fragments are visible
         boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null;
         boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null;
         if(listVisible && detailVisible) {
+            /* We are in two pane mode showing content,
+            so we should remove that content from view */
+            // Remove the content
             page = 0;
             mHasContent = false;
+            // Simulate a list click event to refresh the display
             onChildClick(-1, -1);
-        } else if(!listVisible){
+        } else if(!listVisible) {
+            /* We are in one pane mode and the list is not visible,
+            which means we are displaying content. We should return to
+            showing a list of items when pressed */
+            // Remove the content
             mHasContent = false;
             page = 0;
+            // Reset the action bar to the main level configuration
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
             setTitle(R.string.app_name);
-
+            // Inflate the list
             listInflate(R.id.week_list_container);
-        } else if(!detailVisible){
+        } else if(!detailVisible) {
+            /* We are in one pane mode and showing the list. We should
+            check to see if we prompt before exiting and then potentially exit. */
+            // Check if we are set to confirm on exit
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
             boolean confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
 
             if(confirmExit) {
+                // If we need to confirm, start a dialog asking the user
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setTitle("Really Exit?")
                         .setMessage("Are you sure you want to exit?")
+                        // Do nothing if no is clicked
                         .setNegativeButton(android.R.string.no, null)
+                        // Call the parent behavior if yes is pressed (exit the app)
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
                             public void onClick(DialogInterface arg0, int arg1) {
@@ -172,6 +207,7 @@ public class WeekListActivity extends SherlockFragmentActivity
                             }
                         }).create().show();
             } else {
+                // If we have ended up in some unrecognized state, leave the app
                 super.onBackPressed();
             }
         }
@@ -250,16 +286,21 @@ public class WeekListActivity extends SherlockFragmentActivity
 
     @Override
     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+        /* Strip any unnecessary data and call a variant of this method.
+        This method is called by the ExpandableListView,
+        and the 2-argument variant is what our activity uses. */
         return onChildClick(groupPosition, childPosition);
     }
 
     @Override
     public void onGroupExpand(int groupPosition) {
+        // Update the array of which items are expanded
         expandedItems[groupPosition] = true;
     }
 
     @Override
     public void onGroupCollapse(int groupPosition) {
+        // Update the array of which items are expanded
         expandedItems[groupPosition] = false;
     }
 }

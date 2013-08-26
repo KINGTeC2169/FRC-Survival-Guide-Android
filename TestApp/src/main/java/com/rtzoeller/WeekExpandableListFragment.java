@@ -43,6 +43,7 @@ public class WeekExpandableListFragment extends SherlockFragment implements OnCh
          * Callback for when an item has been selected.
          */
         public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id);
+        // Callbacks to record which groups are expanded
         public void onGroupExpand(int groupPosition);
         public void onGroupCollapse(int groupPosition);
     }
@@ -59,12 +60,10 @@ public class WeekExpandableListFragment extends SherlockFragment implements OnCh
 
         @Override
          public void onGroupExpand(int groupPosition) {
-
         }
 
         @Override
         public void onGroupCollapse(int groupPosition) {
-
         }
     };
 
@@ -174,6 +173,4 @@ public class WeekExpandableListFragment extends SherlockFragment implements OnCh
         // Reset the active callbacks interface to the dummy implementation.
         mCallbacks = sDummyCallbacks;
     }
-
-
 }
