@@ -1,21 +1,22 @@
 package com.rtzoeller;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.view.MenuItem;
+
+import com.actionbarsherlock.app.SherlockPreferenceActivity;
+import com.actionbarsherlock.view.MenuItem;
 
 /**
  * Created by rtzoeller on 7/11/13.
  */
-public class SettingsActivity extends Activity {
+public class SettingsActivity extends SherlockPreferenceActivity {
+    public static final String KEY_CONFIRM_EXIT = "confirm_exit";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new SettingsFragment())
-                .commit();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // Load the preferences from an XML resource
+        addPreferencesFromResource(R.xml.preferences);
     }
 
     @Override

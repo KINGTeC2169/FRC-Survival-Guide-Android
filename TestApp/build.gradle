@@ -8,16 +8,21 @@ buildscript {
 }
 apply plugin: 'android'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile files('libs/android-support-v4.jar')
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
 }
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 18
     buildToolsVersion "17.0.0"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 17
+        minSdkVersion 7
+        targetSdkVersion 18
     }
 }

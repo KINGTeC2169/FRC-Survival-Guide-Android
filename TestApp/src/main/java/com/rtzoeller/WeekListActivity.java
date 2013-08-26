@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.FragmentActivity;
 import android.view.ContextThemeWrapper;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
-public class WeekListActivity extends FragmentActivity
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
+
+public class WeekListActivity extends SherlockFragmentActivity
         implements WeekExpandableListFragment.Callbacks {
 
     /**
@@ -111,7 +112,7 @@ public class WeekListActivity extends FragmentActivity
 
                 mHasContent = false;
                 page = 0;
-                getActionBar().setDisplayHomeAsUpEnabled(false);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                 setTitle(R.string.app_name);
 
                 listInflate(R.id.week_list_container);
@@ -151,13 +152,13 @@ public class WeekListActivity extends FragmentActivity
         } else if(!listVisible){
             mHasContent = false;
             page = 0;
-            getActionBar().setDisplayHomeAsUpEnabled(false);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
             setTitle(R.string.app_name);
 
             listInflate(R.id.week_list_container);
         } else if(!detailVisible){
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-            boolean confirmExit = sharedPref.getBoolean(SettingsFragment.KEY_CONFIRM_EXIT, true);
+            boolean confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
 
             if(confirmExit) {
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
@@ -178,7 +179,7 @@ public class WeekListActivity extends FragmentActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
+        MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
@@ -232,7 +233,7 @@ public class WeekListActivity extends FragmentActivity
 
                 detailInflate(R.id.week_list_container);
                 setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
-                getActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
             }
         } else if (mTwoPane) {
