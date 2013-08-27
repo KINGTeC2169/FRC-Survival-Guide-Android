@@ -71,4 +71,22 @@ public class WeekDetailFragment extends SherlockFragment {
             return mSetPage;
         }
     }
+
+    public Bundle saveState() {
+        // Save the state of the fragment so we can recreate it later
+        Bundle bundle = new Bundle();
+        bundle.putInt(ARG_GROUP_ID, getArguments().getInt(ARG_GROUP_ID));
+        bundle.putInt(ARG_CHILD_ID, getArguments().getInt(ARG_CHILD_ID));
+        bundle.putInt(ARG_PAGE_ID, getPage());
+        return bundle;
+    }
+
+    public static Bundle createBundle(int group, int child, int page) {
+        // Create a bundle to be passed to this fragment
+        Bundle bundle = new Bundle();
+        bundle.putInt(ARG_GROUP_ID, group);
+        bundle.putInt(ARG_CHILD_ID, child);
+        bundle.putInt(ARG_PAGE_ID, page);
+        return bundle;
+    }
 }

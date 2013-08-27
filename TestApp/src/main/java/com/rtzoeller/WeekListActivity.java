@@ -24,9 +24,6 @@ public class WeekListActivity extends SherlockFragmentActivity
     private boolean mTwoPane;
     // Is there any content selected to display
     private boolean mHasContent = false;
-    // The current viewPager to display
-    private int groupPosition;
-    private int childPosition;
     /** The page number to feed forward to our {@link WeekDetailFragment} **/
     private int page;
     /** What items are expanded in our {@link WeekExpandableListFragment} **/
@@ -48,21 +45,30 @@ public class WeekListActivity extends SherlockFragmentActivity
         mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
 
         // Resize expandedItems to match the number of groups
+        // All elements default to false so if we can't load data
+        // the array is still initialized properly
         expandedItems = new boolean[WeekContent.PARENTS.size()];
 
+        // Set our ViewPager data to a default
+        // If we have saved data to load these will get overwritten
+        int groupPosition = -1;
+        int childPosition = -1;
+        page = 0;
+
+        // Attempt to load saved data
         if (savedInstanceState != null) {
-            // Load the selected ViewPager id
-            groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
-            childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
-            // Load the page id
-            page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
+            // Load the saved ViewPager data
+            if (savedInstanceState.containsKey(WeekDetailFragment.ARG_GROUP_ID) &&
+                    savedInstanceState.containsKey(WeekDetailFragment.ARG_CHILD_ID) &&
+                    savedInstanceState.containsKey(WeekDetailFragment.ARG_PAGE_ID)) {
+                groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
+                childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
+                page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
+            }
             // Load the array of expanded list items
             if (savedInstanceState.containsKey(WeekExpandableListFragment.ARG_EXPANDED_ITEMS)) {
                 expandedItems = savedInstanceState.getBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS);
             }
-        } else {
-            groupPosition = -1;
-            childPosition = -1;
         }
 
         // Instantiate the list fragment
@@ -86,23 +92,10 @@ public class WeekListActivity extends SherlockFragmentActivity
         super.onSaveInstanceState(state);
         WeekDetailFragment fragment = (WeekDetailFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
-        // Retrieve what data we are currently showing
-        int pageNumber;
-        int groupPosition;
-        int childPosition;
-        if (fragment != null) {
-            pageNumber = fragment.getPage();
-            groupPosition = this.groupPosition;
-            childPosition = this.childPosition;
-        } else {
-            pageNumber = 0;
-            groupPosition = -1;
-            childPosition = -1;
-        }
         // Attach the current display information to our Activity state
-        state.putInt(WeekDetailFragment.ARG_PAGE_ID, pageNumber);
-        state.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition);
-        state.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition);
+        if (fragment != null) {
+            state.putAll(fragment.saveState());
+        }
 
         // Attach what items are loaded to our Activity state
         // If we don't pass any data through, upon loading the array will be initialized to all false values
@@ -231,13 +224,9 @@ public class WeekListActivity extends SherlockFragmentActivity
         return fragment;
     }
 
-    private WeekDetailFragment detailInflate(int resourceId) {
-        Bundle arguments = new Bundle();
-        arguments.putInt(WeekDetailFragment.ARG_GROUP_ID, groupPosition); // Save the groupPosition of the week we are displaying
-        arguments.putInt(WeekDetailFragment.ARG_CHILD_ID, childPosition); // Save the childPosition of the week we are displaying
-        arguments.putInt(WeekDetailFragment.ARG_PAGE_ID, page);
+    private WeekDetailFragment detailInflate(int resourceId, Bundle bundle) {
         WeekDetailFragment fragment = new WeekDetailFragment();
-        fragment.setArguments(arguments);
+        fragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_DETAIL_TAG)
                 .commit();
@@ -245,15 +234,9 @@ public class WeekListActivity extends SherlockFragmentActivity
     }
 
     public boolean onChildClick(int groupPosition, int childPosition) {
+        // Check if we actually have content to display
         mHasContent = !(groupPosition == -1 || childPosition == -1);
-        if (this.groupPosition != groupPosition) {
-            page = 0;
-            this.groupPosition = groupPosition;
-            this.childPosition = childPosition;
-        } else if (this.childPosition != childPosition) {
-            page = 0;
-            this.childPosition = childPosition;
-        }
+        // Handle the click event appropriately
         if (mHasContent) {
             // Make sure we have a week selected and we aren't just
             // feeding through a null value from our saved state
@@ -261,16 +244,13 @@ public class WeekListActivity extends SherlockFragmentActivity
                 // In two-pane mode, show the detail view in this activity by
                 // adding or replacing the detail fragment using a
                 // fragment transaction.
-                detailInflate(R.id.week_detail_container);
-
+                detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
             } else {
                 // In single-pane mode, simply start the detail activity
                 // for the selected item ID.
-
-                detailInflate(R.id.week_list_container);
+                detailInflate(R.id.week_list_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
                 setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
             }
         } else if (mTwoPane) {
             // We have no week to display but we can still show the user a screen
@@ -279,6 +259,7 @@ public class WeekListActivity extends SherlockFragmentActivity
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.week_detail_container, fragment)
                     .commit();
+            // Set the saved page to 0
             page = 0;
         }
         return true;
@@ -289,6 +270,8 @@ public class WeekListActivity extends SherlockFragmentActivity
         /* Strip any unnecessary data and call a variant of this method.
         This method is called by the ExpandableListView,
         and the 2-argument variant is what our activity uses. */
+        // Reset our page id to 0 because we are updating the content
+        page = 0;
         return onChildClick(groupPosition, childPosition);
     }
 
