@@ -31,6 +31,7 @@ public class WeekListActivity extends SherlockFragmentActivity
     // Tags for retrieving fragments from the SupportFragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
+    private static final String ARG_SELECT_TAG = "selector_fragment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -156,9 +157,9 @@ public class WeekListActivity extends SherlockFragmentActivity
     @Override
     public void onBackPressed() {
         // Check which fragments are visible
-        boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null;
-        boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null;
-        if(listVisible && detailVisible) {
+        boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG).isVisible();
+        boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG).isVisible();
+        if(listVisible && detailVisible && mTwoPane) {
             /* We are in two pane mode showing content,
             so we should remove that content from view */
             // Remove the content
@@ -166,10 +167,9 @@ public class WeekListActivity extends SherlockFragmentActivity
             mHasContent = false;
             // Simulate a list click event to refresh the display
             onChildClick(-1, -1);
-        } else if(!listVisible) {
-            /* We are in one pane mode and the list is not visible,
-            which means we are displaying content. We should return to
-            showing a list of items when pressed */
+        } else if(detailVisible && !listVisible) {
+            /* We are in one pane mode and the content is visible.
+            We should return to showing a list of items when pressed */
             // Remove the content
             mHasContent = false;
             page = 0;
@@ -178,8 +178,8 @@ public class WeekListActivity extends SherlockFragmentActivity
             setTitle(R.string.app_name);
             // Inflate the list
             listInflate(R.id.week_list_container);
-        } else if(!detailVisible) {
-            /* We are in one pane mode and showing the list. We should
+        } else if(listVisible) {
+            /* We are currently not showing content. We should
             check to see if we prompt before exiting and then potentially exit. */
             // Check if we are set to confirm on exit
             SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -233,6 +233,14 @@ public class WeekListActivity extends SherlockFragmentActivity
         return fragment;
     }
 
+    private PromptSelectWeekFragment selectorInflate(int resourceId) {
+        PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
+        getSupportFragmentManager().beginTransaction()
+                .replace(resourceId, fragment, ARG_SELECT_TAG)
+                .commit();
+        return fragment;
+    }
+
     public boolean onChildClick(int groupPosition, int childPosition) {
         // Check if we actually have content to display
         mHasContent = !(groupPosition == -1 || childPosition == -1);
@@ -255,10 +263,7 @@ public class WeekListActivity extends SherlockFragmentActivity
         } else if (mTwoPane) {
             // We have no week to display but we can still show the user a screen
             // prompting them to pick a week
-            PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.week_detail_container, fragment)
-                    .commit();
+            selectorInflate(R.id.week_detail_container);
             // Set the saved page to 0
             page = 0;
         }
