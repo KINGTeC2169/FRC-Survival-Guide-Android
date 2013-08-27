@@ -150,6 +150,9 @@ public class WeekListActivity extends SherlockFragmentActivity
                  *  Launches a {@link SettingsActivity} when selected. **/
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
+            case R.id.search:
+                /** The Search item in the options menu. **/
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
