@@ -12,7 +12,10 @@ public class PageContent {
     // Stores the items for the Pages
     public static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
     // Number of pages in each week
-    public static final int numPages[][] = {{3,1,0,0,0,0},{0}};
+    public static final int numPages[][] = {
+            {3,1,0,0,0,0},
+            {0,0,0,0,0},
+            {0,0,0,0}};
     // Which content is currently in memory
     private static int loaded_group;
     private static int loaded_child;
