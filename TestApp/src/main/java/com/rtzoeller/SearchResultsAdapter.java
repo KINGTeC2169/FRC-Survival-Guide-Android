@@ -24,21 +24,39 @@ public class SearchResultsAdapter extends ArrayAdapter<int[]> {
 
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
+        ViewHolder holder;
+
         if (view == null) {
+            // There isn't a cached view, so we need to inflate one
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(android.R.layout.simple_list_item_1, null);
+
+            // Find the TextView we want to modify and bind it to our holder class
+            holder = new ViewHolder();
+            holder.title = (TextView) view.findViewById(android.R.id.text1);
+
+            view.setTag(holder);
+        } else {
+            // There is a cached view, we should recycle it
+            holder = (ViewHolder) view.getTag();
         }
 
+        // Get which data we should show
         int[] key = results.get(position);
         if (key != null) {
+            // Update the context of our content
             PageContent content = new PageContent(context);
+            // Get the data from our content
             Page result = content.get(key[0], key[1], key[2]);
-            TextView textView = (TextView) view.findViewById(android.R.id.text1);
-            if (textView != null) {
-               textView.setText(result.title);
-            }
+            // Bind the data to a TextView
+            holder.title.setText(result.title);
         }
 
         return view;
+    }
+
+    private static class ViewHolder {
+        // Acts as a cache for our content
+        TextView title;
     }
 }
