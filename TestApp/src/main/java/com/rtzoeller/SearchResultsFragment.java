@@ -1,25 +1,22 @@
 package com.rtzoeller;
 
-import android.app.ProgressDialog;
+
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by rtzoeller on 8/27/13.
  */
 public class SearchResultsFragment extends SherlockListFragment {
     public static final String ARG_SEARCH_ID = "search_id";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,15 +25,19 @@ public class SearchResultsFragment extends SherlockListFragment {
         }
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
+        WeekListActivity activity = ((WeekListActivity)getSherlockActivity());
+        activity.page = item[2];
+        activity.onChildClick(item[0], item[1]);
+    }
+
     private class CreateArrayListTask extends AsyncTask<String, Void, ArrayList<int[]>> {
-        private final ProgressDialog dialog = new ProgressDialog(getSherlockActivity());
         private Context context;
 
         @Override
         protected void onPreExecute() {
-            this.dialog.setMessage("Fetching results...");
-            this.dialog.show();
-
             attemptContextUpdate();
         }
         @Override
@@ -49,7 +50,7 @@ public class SearchResultsFragment extends SherlockListFragment {
                         for (int k = 0; k < content.numPages[i][j]; k++) {
                             Page page = content.get(i, j, k);
                             if (page != null && page.text != null && page.title != null) {
-                                if (page.title.contains(keyword.toLowerCase()) || page.text.contains(keyword.toLowerCase())) {
+                                if (page.title.toLowerCase().contains(keyword.toLowerCase()) || page.text.toLowerCase().contains(keyword.toLowerCase())) {
                                     int[] result = {i, j, k};
                                     results.add(result);
                                 }
@@ -64,8 +65,6 @@ public class SearchResultsFragment extends SherlockListFragment {
 
         @Override
         protected void onPostExecute(ArrayList<int[]> results) {
-            if(this.dialog.isShowing())
-                this.dialog.dismiss();
             attemptContextUpdate();
             setListAdapter(new SearchResultsAdapter(context, android.R.layout.simple_list_item_1, results));
         }
@@ -75,5 +74,4 @@ public class SearchResultsFragment extends SherlockListFragment {
                 context = getSherlockActivity();
         }
     }
-
 }

@@ -15,6 +15,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.widget.SearchView;
 
 public class WeekListActivity extends SherlockFragmentActivity
         implements WeekExpandableListFragment.Callbacks {
@@ -25,13 +26,14 @@ public class WeekListActivity extends SherlockFragmentActivity
     // Is there any content selected to display
     private boolean mHasContent = false;
     /** The page number to feed forward to our {@link WeekDetailFragment} **/
-    private int page;
+    public int page;
     /** What items are expanded in our {@link WeekExpandableListFragment} **/
     private boolean[] expandedItems;
     // Tags for retrieving fragments from the SupportFragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
     private static final String ARG_SELECT_TAG = "selector_fragment";
+    private static final String ARG_SEARCH_TAG = "search_fragment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,9 +152,6 @@ public class WeekListActivity extends SherlockFragmentActivity
                  *  Launches a {@link SettingsActivity} when selected. **/
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
-            case R.id.search:
-                /** The Search item in the options menu. **/
-                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -162,7 +161,11 @@ public class WeekListActivity extends SherlockFragmentActivity
         // Check which fragments are visible
         boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG).isVisible();
         boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG).isVisible();
-        if(listVisible && detailVisible && mTwoPane) {
+        boolean searchVisible = getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG).isVisible();
+        if(searchVisible) {
+            /* We are showing the search results and we should stop */
+            listInflate(R.id.week_list_container);
+        } else if(listVisible && detailVisible && mTwoPane) {
             /* We are in two pane mode showing content,
             so we should remove that content from view */
             // Remove the content
@@ -213,6 +216,27 @@ public class WeekListActivity extends SherlockFragmentActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
+
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String newText) {
+                Bundle arguments = new Bundle();
+                arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
+                SearchResultsFragment fragment = new SearchResultsFragment();
+                fragment.setArguments(arguments);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.week_list_container, fragment, ARG_SEARCH_TAG)
+                        .commit();
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return true;
+            }
+        });
+
         return true;
     }
 

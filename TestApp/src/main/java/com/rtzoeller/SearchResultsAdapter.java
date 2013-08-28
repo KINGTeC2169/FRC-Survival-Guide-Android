@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class SearchResultsAdapter extends ArrayAdapter<int[]> {
     private Context context;
-    private ArrayList<int[]> results;
+    public ArrayList<int[]> results;
 
     public SearchResultsAdapter(Context context, int textViewResourceId, ArrayList<int[]> results) {
         super(context, textViewResourceId, results);
