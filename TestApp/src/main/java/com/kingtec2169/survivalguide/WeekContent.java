@@ -1,4 +1,4 @@
-package com.rtzoeller;
+package com.kingtec2169.survivalguide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Created by rtzoeller on 6/24/13.
  */
 public class WeekContent {
-    /** This class holds the content for the {@link com.rtzoeller.WeekExpandableListFragment} **/
+    /** This class holds the content for the {@link WeekExpandableListFragment} **/
     // The children of the ExpandableListView, holds the contents of each group
     public static List<List<Week>> CHILDREN = new ArrayList<List<Week>>();
     // The parents of the ExpandableListView, holds the head item of each group

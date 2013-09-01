@@ -1,4 +1,4 @@
-package com.rtzoeller;
+package com.kingtec2169.survivalguide;
 
 import android.content.Context;
 

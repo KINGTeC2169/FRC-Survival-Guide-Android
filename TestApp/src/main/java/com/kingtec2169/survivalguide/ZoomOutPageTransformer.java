@@ -1,4 +1,4 @@
-package com.rtzoeller;
+package com.kingtec2169.survivalguide;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

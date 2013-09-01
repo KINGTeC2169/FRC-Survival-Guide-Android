@@ -1,4 +1,4 @@
-package com.rtzoeller;
+package com.kingtec2169.survivalguide;
 
 /**
  * Created by rtzoeller on 6/24/13.
