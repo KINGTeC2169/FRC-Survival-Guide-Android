@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brainstorming">
+        <item>Brainstorming</item>
+        <item>Leaving Kickoff, the first thing your team should begin doing is
+            brainstorming. No idea is a bad idea here, and this is the time to come up with all kinds of
+            crazy designs. During this time you should begin planning strategy and deciding how and what
+            you want your robot to do.</item>
+        <item>ic_kt</item>
+    </string-array>
+
+    <string-array name="approaching_the_game">
+        <item>Approaching the Game</item>
+        <item>Before thinking about how your robot could accomplish the
+            game, it is important for you to decide what you want to accomplish! You\'ll need a
+            game-plan before you can design a robot. In order to design a robot around the best
+            strategy, KING TeC stages a mock game using human players instead of robots immediately
+            after Kickoff, revealing any strategies that may otherwise be overlooked.</item>
+        <item>ic_kt</item>
+    </string-array>
+
+    <string-array name="game_rules">
+        <item>Game Rules</item>
+        <item>Fully understanding the rules of the new game is critical to the design
+            process. Everyone on the team should read the rules at least once and your team should
+            appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
+        <item>ic_kt</item>
+    </string-array>
+
+    <string-array name="prototyping">
+        <item>Prototyping</item>
+        <item>The teams on Einstein Field at the FRC World Championship consistently do one thing right.
+            They test and test repeatedly, designing and breaking components of their robot before even
+            thinking about assembling them into a finalized design. Prototyping allows teams to find
+            flaws in their designs and fix them before it cuts into the crucial later weeks, where time
+            and resources need to be spent on programming and drive practice.
+            \n\nKING TeC assembles smaller two/three man teams that work on individual components of the
+            robot. How you prototype is up to your team, but it is important to keep the process moving.
+            Don\'t let a failure in one part constitute a failure as a whole!</item>
+        <item>ic_kt</item>
+    </string-array>
+</resources>
