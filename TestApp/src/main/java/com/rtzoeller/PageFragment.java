@@ -49,11 +49,12 @@ public class PageFragment extends SherlockFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Page pageContent = PageContent.get(group, child, position);
+        PageContent pageContent = new PageContent((getSherlockActivity()));
+        Page content = pageContent.get(group, child, position);
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
-        ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(pageContent.imageResourceId);
-        ((TextView)result.findViewById(R.id.pageDescription)).setText(pageContent.text);
+        ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(content.imageResourceId);
+        ((TextView)result.findViewById(R.id.pageDescription)).setText(content.text);
 
         return(result);
     }
