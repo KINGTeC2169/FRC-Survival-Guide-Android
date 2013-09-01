@@ -13,7 +13,7 @@ public class PageContent {
     public static Map<Key, Page> PAGE_MAP = new HashMap<Key, Page>();
     // Number of pages in each week
     public static final int numPages[][] = {
-            {3,1,0,0,0,0},
+            {3,3,0,0,0,0},
             {0,0,0,0,0},
             {0,0,0,0}};
     // Which content is currently in memory
@@ -52,7 +52,9 @@ public class PageContent {
                         PAGE_MAP.put(new Key(0, 0, 2), new Page(mContext, R.array.game_rules));
                         break;
                     case 1:
-                        PAGE_MAP.put(new Key(0, 1, 0), new Page(mContext, R.array.prototyping));
+                        PAGE_MAP.put(new Key(0, 1, 0), new Page(mContext, R.array.getting_materials));
+                        PAGE_MAP.put(new Key(0, 1, 1), new Page(mContext, R.array.prototyping));
+                        PAGE_MAP.put(new Key(0, 1, 2), new Page(mContext, R.array.chassis_building));
                         break;
                 }
                 break;
@@ -72,6 +74,8 @@ public class PageContent {
                         break;
                     case 1:
                         PAGE_MAP.remove(new Key(0, 1, 0));
+                        PAGE_MAP.remove(new Key(0, 1, 1));
+                        PAGE_MAP.remove(new Key(0, 1, 2));
                         break;
                 }
                 break;
