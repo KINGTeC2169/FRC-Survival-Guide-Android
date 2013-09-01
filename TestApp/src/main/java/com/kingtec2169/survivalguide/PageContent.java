@@ -34,7 +34,7 @@ public class PageContent {
 
     public static Page get (int group, int child, int position) {
         if (loaded_group != group || loaded_child != child) {
-            unload(loaded_group, loaded_child);
+            unload();
             load(group, child);
         }
         return PAGES.get(position);
@@ -61,7 +61,7 @@ public class PageContent {
         }
     }
 
-    private static void unload (int group, int child) {
+    private static void unload () {
         loaded_group = -1;
         loaded_child = -1;
         // Clear array to be refilled with new data
