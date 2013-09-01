@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rtzoeller"
+    package="com.kingtec2169.survivalguide"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.rtzoeller.WeekListActivity"
+            android:name="com.kingtec2169.survivalguide.WeekListActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".SettingsActivity"
+                android:name="com.kingtec2169.survivalguide.SettingsActivity"
                 android:label="@string/settings_name"
-                android:parentActivityName="com.rtzoeller.WeekListActivity" >
+                android:parentActivityName="com.kingtec2169.survivalguide.WeekListActivity" >
                 <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.rtzoeller.WeekListActivity" />
+                    android:value="com.kingtec2169.survivalguide.WeekListActivity" />
         </activity>
     </application>
 
