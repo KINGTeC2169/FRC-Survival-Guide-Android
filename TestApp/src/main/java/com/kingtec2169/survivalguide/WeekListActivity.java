@@ -22,7 +22,7 @@ public class WeekListActivity extends SherlockFragmentActivity
 
     // Is the current view displaying more than one fragment?
     // True on small tablets in landscape and on large tablets in either orientation
-    private boolean mTwoPane;
+    private ActivityConfigurations state;
     // Is there any content selected to display
     private boolean mHasContent = false;
     /** The page number to feed forward to our {@link WeekDetailFragment} **/
@@ -45,7 +45,11 @@ public class WeekListActivity extends SherlockFragmentActivity
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         // Check whether or not we have room for two fragments to display
-        mTwoPane = getResources().getBoolean(R.bool.has_two_panes);
+        if (getResources().getBoolean(R.bool.has_two_panes)) {
+            state = ActivityConfigurations.TWO_PANE;
+        } else {
+            state = ActivityConfigurations.ONE_PANE;
+        }
 
         // Resize expandedItems to match the number of groups
         // All elements default to false so if we can't load data
@@ -78,7 +82,7 @@ public class WeekListActivity extends SherlockFragmentActivity
         // We do this after we have loaded our array of expandedItems
         listInflate(R.id.week_list_container);
 
-        if (mTwoPane) {
+        if (state == ActivityConfigurations.TWO_PANE) {
             // Show the second fragment pane if we are on a big enough screen
             findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
         } else {
@@ -165,7 +169,7 @@ public class WeekListActivity extends SherlockFragmentActivity
         if(searchVisible) {
             /* We are showing the search results and we should stop */
             listInflate(R.id.week_list_container);
-        } else if(listVisible && detailVisible && mTwoPane) {
+        } else if(listVisible && detailVisible && state == ActivityConfigurations.TWO_PANE) {
             /* We are in two pane mode showing content,
             so we should remove that content from view */
             // Remove the content
@@ -275,7 +279,7 @@ public class WeekListActivity extends SherlockFragmentActivity
         if (mHasContent) {
             // Make sure we have a week selected and we aren't just
             // feeding through a null value from our saved state
-            if (mTwoPane) {
+            if (state == ActivityConfigurations.TWO_PANE) {
                 // In two-pane mode, show the detail view in this activity by
                 // adding or replacing the detail fragment using a
                 // fragment transaction.
@@ -287,7 +291,7 @@ public class WeekListActivity extends SherlockFragmentActivity
                 setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             }
-        } else if (mTwoPane) {
+        } else if (state == ActivityConfigurations.TWO_PANE) {
             // We have no week to display but we can still show the user a screen
             // prompting them to pick a week
             selectorInflate(R.id.week_detail_container);
