@@ -10,17 +10,15 @@ public class Page {
     public String text;
     public String title;
     public int imageResourceId;
-
-    public Page() { // Default constructor, elements would be set later
-        super();
-    }
+    public String tags;
 
     public Page(Context context, String[] contentResources) { // Accepts a calling context and an array of the page data
         super();
-        if(contentResources.length == 3) { // Make sure we have received a valid array
+        if(contentResources.length == 4) { // Make sure we have received a valid array
             this.title = contentResources[0];
             this.text = contentResources[1];
             this.imageResourceId = context.getResources().getIdentifier(contentResources[2], "drawable", context.getPackageName());
+            this.tags = contentResources[3];
         }
     }
 
@@ -29,10 +27,4 @@ public class Page {
 
     }
 
-    public Page(String title, String text, int imageResourceId) {  // Accepts two strings and an image resource id
-        super();
-        this.title = title;
-        this.text = text;
-        this.imageResourceId = imageResourceId;
-    }
 }
