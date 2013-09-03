@@ -45,12 +45,15 @@ public class SearchResultsFragment extends SherlockListFragment {
             ArrayList<int[]> results = new ArrayList<int[]>();
             PageContent content = new PageContent(getSherlockActivity());
             for (String keyword : keywords) {
+                String lowerKeyword = keyword.toLowerCase();
                 for (int i = 0; i < WeekContent.CHILDREN.size(); i++) {
                     for (int j = 0; j < WeekContent.CHILDREN.get(i).size(); j++) {
                         for (int k = 0; k < content.numPages[i][j]; k++) {
                             Page page = content.get(i, j, k);
-                            if (page != null && page.text != null && page.title != null) {
-                                if (page.title.toLowerCase().contains(keyword.toLowerCase()) || page.text.toLowerCase().contains(keyword.toLowerCase())) {
+                            if (page != null) {
+                                if (page.title.toLowerCase().contains(lowerKeyword)
+                                        || page.text.toLowerCase().contains(lowerKeyword)
+                                        || page.tags.toLowerCase().contains(lowerKeyword)) {
                                     int[] result = {i, j, k};
                                     results.add(result);
                                 }

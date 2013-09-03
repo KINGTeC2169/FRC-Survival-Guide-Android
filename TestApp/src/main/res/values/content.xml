@@ -7,6 +7,7 @@
             crazy designs. During this time you should begin planning strategy and deciding how and what
             you want your robot to do.</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 
     <string-array name="approaching_the_game">
@@ -17,6 +18,7 @@
             strategy, KING TeC stages a mock game using human players instead of robots immediately
             after Kickoff, revealing any strategies that may otherwise be overlooked.</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 
     <string-array name="game_rules">
@@ -25,6 +27,7 @@
             process. Everyone on the team should read the rules at least once and your team should
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 
     <string-array name="getting_materials">
@@ -37,6 +40,7 @@
             parts you think might break. Your priority should be getting the parts you need to start
             building!</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 
     <string-array name="prototyping">
@@ -50,6 +54,7 @@
             robot. How you prototype is up to your team, but it is important to keep the process moving.
             Don\'t let a failure in one part constitute a failure as a whole!</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 
     <string-array name="chassis_building">
@@ -60,5 +65,6 @@
             only will having driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
         <item>ic_kt</item>
+        <item></item>
     </string-array>
 </resources>
