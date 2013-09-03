@@ -38,17 +38,17 @@ public class WeekListActivity extends SherlockFragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_week_twopane);
 
         // Set the default values for the settings page
         // Only sets the values the first time the app is launched after install
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
-        // Check whether or not we have room for two fragments to display
-        if (getResources().getBoolean(R.bool.has_two_panes)) {
-            state = ActivityConfigurations.TWO_PANE;
+        state = getLayoutConfiguration();
+
+        if (state == ActivityConfigurations.DRAWER) {
+            setContentView(R.layout.activity_week_drawer);
         } else {
-            state = ActivityConfigurations.ONE_PANE;
+            setContentView(R.layout.activity_week_twopane);
         }
 
         // Resize expandedItems to match the number of groups
@@ -85,13 +85,27 @@ public class WeekListActivity extends SherlockFragmentActivity
         if (state == ActivityConfigurations.TWO_PANE) {
             // Show the second fragment pane if we are on a big enough screen
             findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
-        } else {
+        } else if (state == ActivityConfigurations.ONE_PANE) {
             // Hide the second fragment pane if we shouldn't display two fragments (for small screens)
             findViewById(R.id.week_detail_container).setVisibility(View.GONE);
+        } else if (state == ActivityConfigurations.DRAWER) {
+            // Show the second fragment pane, we are using a navigation drawer
+            findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
         }
 
         /** Simulate a click event so the {@link WeekDetailFragment} shows the correct content **/
         onChildClick(groupPosition, childPosition);
+    }
+
+    private ActivityConfigurations getLayoutConfiguration() {
+        // Determine what layout to use
+        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean(SettingsActivity.KEY_USE_DRAWER, true)) {
+            return ActivityConfigurations.DRAWER;
+        } else if (getResources().getBoolean(R.bool.has_two_panes)) {
+            return ActivityConfigurations.TWO_PANE;
+        } else {
+            return ActivityConfigurations.ONE_PANE;
+        }
     }
 
     @Override
@@ -169,8 +183,10 @@ public class WeekListActivity extends SherlockFragmentActivity
         if(searchVisible) {
             /* We are showing the search results and we should stop */
             listInflate(R.id.week_list_container);
-        } else if(listVisible && detailVisible && state == ActivityConfigurations.TWO_PANE) {
+        } else if((listVisible && detailVisible && state == ActivityConfigurations.TWO_PANE)
+                    || (detailVisible && state == ActivityConfigurations.DRAWER)) {
             /* We are in two pane mode showing content,
+            or we are using a Navigation Drawer showing content,
             so we should remove that content from view */
             // Remove the content
             page = 0;
@@ -284,14 +300,16 @@ public class WeekListActivity extends SherlockFragmentActivity
                 // adding or replacing the detail fragment using a
                 // fragment transaction.
                 detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
-            } else {
+            } else if (state == ActivityConfigurations.ONE_PANE) {
                 // In single-pane mode, simply start the detail activity
                 // for the selected item ID.
                 detailInflate(R.id.week_list_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
                 setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            } else if (state == ActivityConfigurations.DRAWER) {
+                detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
             }
-        } else if (state == ActivityConfigurations.TWO_PANE) {
+        } else if (state == ActivityConfigurations.TWO_PANE || state == ActivityConfigurations.DRAWER) {
             // We have no week to display but we can still show the user a screen
             // prompting them to pick a week
             selectorInflate(R.id.week_detail_container);

@@ -11,6 +11,7 @@ import com.actionbarsherlock.view.MenuItem;
  */
 public class SettingsActivity extends SherlockPreferenceActivity {
     public static final String KEY_CONFIRM_EXIT = "confirm_exit";
+    public static final String KEY_USE_DRAWER = "use_drawer";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
