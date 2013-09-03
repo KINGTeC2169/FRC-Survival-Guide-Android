@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- LAYOUT OF CONTENT
+     <string-array name="RESOURCE-ID">
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+    <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
     <string-array name="brainstorming">
         <item>Brainstorming</item>
         <item>Leaving Kickoff, the first thing your team should begin doing is
