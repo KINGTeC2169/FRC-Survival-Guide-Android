@@ -4,8 +4,10 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
@@ -36,6 +38,8 @@ public class WeekListActivity extends SherlockFragmentActivity
     private static final String ARG_LIST_TAG = "list_fragment";
     private static final String ARG_SELECT_TAG = "selector_fragment";
     private static final String ARG_SEARCH_TAG = "search_fragment";
+    // Toggle for the DrawerLayout
+    private ActionBarDrawerToggle drawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,8 +104,21 @@ public class WeekListActivity extends SherlockFragmentActivity
             // Show the second fragment pane, we are using a navigation drawer
             findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
             // Prevent the drawer from catching its own button presses
-            (findViewById(R.id.drawer_layout)).setFocusableInTouchMode(false);
-        }
+            DrawerLayout drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+            drawerLayout.setFocusableInTouchMode(false);
+
+            drawerToggle = new ActionBarDrawerToggle(
+                    this,                  /* host Activity */
+                    drawerLayout,         /* DrawerLayout object */
+                    R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
+                    R.string.drawer_open,  /* "open drawer" description */
+                    R.string.drawer_close  /* "close drawer" description */
+            );
+            drawerLayout.setDrawerListener(drawerToggle);
+
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+    }
 
         /** Simulate a click event so the {@link WeekDetailFragment} shows the correct content **/
         onChildClick(groupPosition, childPosition);
@@ -140,19 +157,29 @@ public class WeekListActivity extends SherlockFragmentActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                /** The Up button shown in the ActionBar.
-                 *  Inflates a {@link WeekExpandableListFragment} when selected. **/
-                // Remove the content we have loaded
-                mHasContent = false;
-                page = 0;
-                // Reset the action bar to the main level configuration
-                getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-                setTitle(R.string.app_name);
-                /* Inflates the list into the list container
-                This button can only be pressed when mTwoPane is false, so we won't ever re-inflate
-                the list unnecessarily. */
-                listInflate(R.id.week_list_container);
-                return true;
+                switch (state) {
+                    /** The Up button shown in the ActionBar.
+                     *  Inflates/Shows a {@link WeekExpandableListFragment} when selected. **/
+                    case DRAWER:
+                        if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
+                            ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+                        } else {
+                            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+                        }
+                        return true;
+                    case ONE_PANE:
+                        // Remove the content we have loaded
+                        mHasContent = false;
+                        page = 0;
+                        // Reset the action bar to the main level configuration
+                        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                        setTitle(R.string.app_name);
+                        /* Inflates the list into the list container
+                        This button can only be pressed when mTwoPane is false, so we won't ever re-inflate
+                        the list unnecessarily. */
+                        listInflate(R.id.week_list_container);
+                        return true;
+                }
             case R.id.about:
                 /** The About KING TeC item in the options menu.
                  *  Launches a dialog telling the user about KING TeC **/
@@ -396,5 +423,18 @@ public class WeekListActivity extends SherlockFragmentActivity
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        drawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        drawerToggle.onConfigurationChanged(newConfig);
     }
 }
