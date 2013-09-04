@@ -2,6 +2,7 @@ package com.kingtec2169.survivalguide;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,6 @@ import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.SimpleExpandableListAdapter;
 
-import com.actionbarsherlock.app.SherlockFragment;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +20,7 @@ import java.util.Map;
 /**
  * Created by rtzoeller on 8/17/13.
  */
-public class WeekExpandableListFragment extends SherlockFragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
+public class WeekExpandableListFragment extends Fragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
     private static final String NAME = "NAME";
     private static final String DESCRIPTION = "DESCRIPTION";
     public static final String ARG_EXPANDED_ITEMS = "expanded_items";

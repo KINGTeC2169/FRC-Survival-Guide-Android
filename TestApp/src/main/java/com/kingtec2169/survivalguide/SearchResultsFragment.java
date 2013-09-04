@@ -4,17 +4,16 @@ package com.kingtec2169.survivalguide;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ListView;
-
-import com.actionbarsherlock.app.SherlockListFragment;
 
 import java.util.ArrayList;
 
 /**
  * Created by rtzoeller on 8/27/13.
  */
-public class SearchResultsFragment extends SherlockListFragment {
+public class SearchResultsFragment extends ListFragment {
     public static final String ARG_SEARCH_ID = "search_id";
 
     @Override
@@ -28,7 +27,7 @@ public class SearchResultsFragment extends SherlockListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
-        WeekListActivity activity = ((WeekListActivity)getSherlockActivity());
+        WeekListActivity activity = ((WeekListActivity)getActivity());
         activity.page = item[2];
         activity.onChildClick(item[0], item[1]);
     }
@@ -43,7 +42,7 @@ public class SearchResultsFragment extends SherlockListFragment {
         @Override
         protected ArrayList<int[]> doInBackground(String...keywords) {
             ArrayList<int[]> results = new ArrayList<int[]>();
-            PageContent content = new PageContent(getSherlockActivity());
+            PageContent content = new PageContent(getActivity());
             for (String keyword : keywords) {
                 String lowerKeyword = keyword.toLowerCase();
                 for (int i = 0; i < WeekContent.CHILDREN.size(); i++) {
@@ -73,8 +72,8 @@ public class SearchResultsFragment extends SherlockListFragment {
         }
 
         private void attemptContextUpdate() {
-            if(getSherlockActivity() != null)
-                context = getSherlockActivity();
+            if(getActivity() != null)
+                context = getActivity();
         }
     }
 }

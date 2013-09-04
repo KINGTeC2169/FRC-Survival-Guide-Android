@@ -1,18 +1,17 @@
 package com.kingtec2169.survivalguide;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.actionbarsherlock.app.SherlockFragment;
-
 /**
  * A fragment representing a single Week detail screen.
  * This fragment is contained in a {@link WeekListActivity}
  */
-public class WeekDetailFragment extends SherlockFragment {
+public class WeekDetailFragment extends Fragment {
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
