@@ -188,56 +188,54 @@ public class WeekListActivity extends SherlockFragmentActivity
         boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG).isVisible();
         boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG).isVisible();
         boolean searchVisible = getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG).isVisible();
+
         if(searchVisible) {
             /* We are showing the search results and we should stop */
             listInflate(R.id.week_list_container);
-        } else if((listVisible && detailVisible && state == ActivityConfigurations.TWO_PANE)
-                    || (detailVisible && state == ActivityConfigurations.DRAWER)) {
-            /* We are in two pane mode showing content,
-            or we are using a Navigation Drawer showing content,
-            so we should remove that content from view */
-            // Remove the content
-            page = 0;
-            mHasContent = false;
-            // Simulate a list click event to refresh the display
-            onChildClick(-1, -1);
-        } else if(detailVisible && !listVisible) {
-            /* We are in one pane mode and the content is visible.
-            We should return to showing a list of items when pressed */
-            // Remove the content
-            mHasContent = false;
-            page = 0;
-            // Reset the action bar to the main level configuration
-            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-            setTitle(R.string.app_name);
-            // Inflate the list
-            listInflate(R.id.week_list_container);
-        } else if(listVisible) {
-            /* We are currently not showing content. We should
-            check to see if we prompt before exiting and then potentially exit. */
-            // Check if we are set to confirm on exit
-            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-            boolean confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
-
-            if(confirmExit) {
-                // If we need to confirm, start a dialog asking the user
-                new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
-                        .setTitle("Really Exit?")
-                        .setMessage("Are you sure you want to exit?")
-                        // Do nothing if no is clicked
-                        .setNegativeButton(android.R.string.no, null)
-                        // Call the parent behavior if yes is pressed (exit the app)
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                WeekListActivity.super.onBackPressed();
-                            }
-                        }).create().show();
-            } else {
-                // If we have ended up in some unrecognized state, leave the app
-                super.onBackPressed();
+        } else {
+            switch (state) {
+                case DRAWER:
+                    // Is the drawer currently open?
+                    if (!((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
+                        // It is closed so we should try to leave
+                        confirmExit();
+                    }
+                    break;
+                case TWO_PANE:
+                    if (detailVisible) {
+                        /* We are in two pane mode showing content,
+                        so we should remove that content from view */
+                        // Remove the content
+                        page = 0;
+                        mHasContent = false;
+                        // Simulate a list click event to refresh the display
+                        onChildClick(-1, -1);
+                    } else if (listVisible) {
+                        /* We are currently not showing content. We should
+                        try to exit */
+                        confirmExit();
+                    }
+                    break;
+                case ONE_PANE:
+                    if (detailVisible) {
+                        /* We are in one pane mode and the content is visible.
+                        We should return to showing a list of items when pressed */
+                        // Remove the content
+                        mHasContent = false;
+                        page = 0;
+                        // Reset the action bar to the main level configuration
+                        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                        setTitle(R.string.app_name);
+                        // Inflate the list
+                        listInflate(R.id.week_list_container);
+                    } else if (listVisible) {
+                        // We are showing the list, we should try to leave
+                        confirmExit();
+                    }
+                    break;
             }
         }
+
     }
 
     @Override
@@ -299,32 +297,45 @@ public class WeekListActivity extends SherlockFragmentActivity
     public boolean onChildClick(int groupPosition, int childPosition) {
         // Check if we actually have content to display
         mHasContent = !(groupPosition == -1 || childPosition == -1);
-        // Handle the click event appropriately
-        if (mHasContent) {
-            // Make sure we have a week selected and we aren't just
-            // feeding through a null value from our saved state
-            if (state == ActivityConfigurations.TWO_PANE) {
-                // In two-pane mode, show the detail view in this activity by
-                // adding or replacing the detail fragment using a
-                // fragment transaction.
-                detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
-            } else if (state == ActivityConfigurations.ONE_PANE) {
-                // In single-pane mode, simply start the detail activity
-                // for the selected item ID.
-                detailInflate(R.id.week_list_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
-                setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
-                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            } else if (state == ActivityConfigurations.DRAWER) {
-                detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
-            }
-        } else if (state == ActivityConfigurations.TWO_PANE || state == ActivityConfigurations.DRAWER) {
-            // We have no week to display but we can still show the user a screen
-            // prompting them to pick a week
-            selectorInflate(R.id.week_detail_container);
-            // Set the saved page to 0
-            page = 0;
+
+        switch (state) {
+            case DRAWER:
+                if (mHasContent) {
+                    // Launch the selected item in the main pane
+                    detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                } else {
+                    // Show the prompt
+                    selectorInflate(R.id.week_detail_container);
+                    // Reset the saved page
+                    page = 0;
+                }
+                break;
+            case TWO_PANE:
+                if (mHasContent) {
+                    // Launch the selected item in the right pane
+                    detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                } else {
+                    // Show the prompt
+                    selectorInflate(R.id.week_detail_container);
+                    // Reset the saved page
+                    page = 0;
+                }
+                break;
+            case ONE_PANE:
+                if (mHasContent) {
+                    // Launch the selected item in the current pane
+                    detailInflate(R.id.week_list_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                    // Reconfigure the action bar
+                    setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                } else {
+                    // We don't want to do anything because the only pane visible
+                    // is the list we are currently displaying
+                }
+                break;
         }
         return true;
+
     }
 
     @Override
@@ -347,5 +358,34 @@ public class WeekListActivity extends SherlockFragmentActivity
     public void onGroupCollapse(int groupPosition) {
         // Update the array of which items are expanded
         expandedItems[groupPosition] = false;
+    }
+
+    private void confirmExit() {
+        // Check if we are set to confirm on exit
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
+        // If we need to confirm exit do so, otherwise leave the app
+        if (confirmExit){
+            new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
+                    .setTitle("Really Exit?")
+                    .setMessage("Are you sure you want to exit?")
+                            // Do nothing if no is clicked
+                    .setNegativeButton(android.R.string.no, null)
+                            // Call the parent behavior if yes is pressed (exit the app)
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface arg0, int arg1) {
+                            Intent intent = new Intent(Intent.ACTION_MAIN);
+                            intent.addCategory(Intent.CATEGORY_HOME);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                        }
+                    }).create().show();
+        } else {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
     }
 }
