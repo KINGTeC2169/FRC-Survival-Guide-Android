@@ -1,12 +1,11 @@
 package com.kingtec2169.survivalguide;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.actionbarsherlock.app.SherlockFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.Random;
 /**
  * Created by rtzoeller on 7/3/13.
  */
-public class PromptSelectWeekFragment extends SherlockFragment {
+public class PromptSelectWeekFragment extends Fragment {
 
     private static final List<String> PROMPT_LIST = new ArrayList<String>();
 

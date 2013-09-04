@@ -1,21 +1,20 @@
 package com.kingtec2169.survivalguide;
 
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
-
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.view.MenuItem;
 
 /**
  * Created by rtzoeller on 7/11/13.
  */
-public class SettingsActivity extends SherlockPreferenceActivity {
+public class SettingsActivity extends PreferenceActivity {
     public static final String KEY_CONFIRM_EXIT = "confirm_exit";
     public static final String KEY_USE_DRAWER = "use_drawer";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.preferences);
     }

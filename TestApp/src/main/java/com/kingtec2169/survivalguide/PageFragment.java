@@ -5,15 +5,14 @@ package com.kingtec2169.survivalguide;
  */
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
-
-public class PageFragment extends SherlockFragment {
+public class PageFragment extends Fragment {
     private static final String KEY_POSITION = "position";
     private static final String KEY_GROUP = "group";
     private static final String KEY_CHILD = "child";
@@ -49,7 +48,7 @@ public class PageFragment extends SherlockFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        PageContent pageContent = new PageContent((getSherlockActivity()));
+        PageContent pageContent = new PageContent((getActivity()));
         Page content = pageContent.get(group, child, position);
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
