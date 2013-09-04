@@ -4,5 +4,7 @@
     <string name="app_name">Survival Guide</string>
     <string name="settings_name">Preferences</string>
     <string name="about_kt">FIRST FRC Team 2169 KING TeC is a robotics team based out of Prior Lake High School in Savage, MN. This app was developed as a resource to other FIRST FRC teams and as a way to help these teams succeed. App development was led by Ryan Z. and Mason T.</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
 
 </resources>
