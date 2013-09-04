@@ -29,4 +29,9 @@ public class SettingsActivity extends PreferenceActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        NavUtils.navigateUpFromSameTask(this);
+    }
 }
