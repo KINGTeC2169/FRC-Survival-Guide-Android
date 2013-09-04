@@ -99,6 +99,8 @@ public class WeekListActivity extends SherlockFragmentActivity
         } else if (state == ActivityConfigurations.DRAWER) {
             // Show the second fragment pane, we are using a navigation drawer
             findViewById(R.id.week_detail_container).setVisibility(View.VISIBLE);
+            // Prevent the drawer from catching its own button presses
+            (findViewById(R.id.drawer_layout)).setFocusableInTouchMode(false);
         }
 
         /** Simulate a click event so the {@link WeekDetailFragment} shows the correct content **/
@@ -196,7 +198,10 @@ public class WeekListActivity extends SherlockFragmentActivity
             switch (state) {
                 case DRAWER:
                     // Is the drawer currently open?
-                    if (!((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
+                    if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
+                        // Close it if it is
+                        ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+                    } else {
                         // It is closed so we should try to leave
                         confirmExit();
                     }
@@ -247,6 +252,10 @@ public class WeekListActivity extends SherlockFragmentActivity
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String newText) {
+                if (state == ActivityConfigurations.DRAWER) {
+                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+                }
+
                 Bundle arguments = new Bundle();
                 arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
                 SearchResultsFragment fragment = new SearchResultsFragment();
