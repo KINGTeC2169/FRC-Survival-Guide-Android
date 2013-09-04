@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.widget.DrawerLayout;
 import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -76,6 +78,12 @@ public class WeekListActivity extends SherlockFragmentActivity
             if (savedInstanceState.containsKey(WeekExpandableListFragment.ARG_EXPANDED_ITEMS)) {
                 expandedItems = savedInstanceState.getBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS);
             }
+        } else if (state == ActivityConfigurations.DRAWER) {
+            /* We don't have content stored from before we
+            (re)created the activity, so we should show the
+            Nav. Drawer if possible to prompt the user to pick
+            something. */
+            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
         }
 
         // Instantiate the list fragment
