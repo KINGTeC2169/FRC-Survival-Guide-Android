@@ -380,8 +380,18 @@ public class WeekListActivity extends ActionBarActivity
         /* Strip any unnecessary data and call a variant of this method.
         This method is called by the ExpandableListView,
         and the 2-argument variant is what our activity uses. */
+
+        // Are we using drawer based navigation
+        if (state == ActivityConfigurations.DRAWER) {
+            // See if we need to close the drawer and act on it
+            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+            if (sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true)) {
+                ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+            }
+        }
         // Reset our page id to 0 because we are updating the content
         page = 0;
+        // Update our display with the new click data
         return onChildClick(groupPosition, childPosition);
     }
 

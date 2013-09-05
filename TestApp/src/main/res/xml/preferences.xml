@@ -9,4 +9,9 @@
             android:key="use_drawer"
             android:title="Use the Navigation Drawer"
             android:defaultValue="true"/>
+    <CheckBoxPreference
+            android:key="close_drawer_on_click"
+            android:title="Close Drawer on Item Click"
+            android:defaultValue="true"
+            android:dependency="use_drawer"/>
 </PreferenceScreen>

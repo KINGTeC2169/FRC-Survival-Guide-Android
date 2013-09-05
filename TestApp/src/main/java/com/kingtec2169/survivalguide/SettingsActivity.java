@@ -14,6 +14,7 @@ import android.view.MenuItem;
 public class SettingsActivity extends PreferenceActivity {
     public static final String KEY_CONFIRM_EXIT = "confirm_exit";
     public static final String KEY_USE_DRAWER = "use_drawer";
+    public static final String KEY_CLOSE_DRAWER_ON_CLICK = "close_drawer_on_click";
 
     @SuppressLint("NewApi")
     @Override
