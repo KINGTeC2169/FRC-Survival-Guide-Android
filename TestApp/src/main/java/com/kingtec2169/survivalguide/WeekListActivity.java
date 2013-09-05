@@ -41,6 +41,12 @@ public class WeekListActivity extends ActionBarActivity
     private static final String ARG_SEARCH_TAG = "search_fragment";
     // Toggle for the DrawerLayout
     private ActionBarDrawerToggle drawerToggle = null;
+    // Cache for our settings so we can avoid looking them up later
+    // We recreate the activity from scratch after leaving settings,
+    // so we can get away with only checking the settings once
+    private boolean confirmExit;
+    private boolean useDrawer;
+    private boolean autoCloseDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +55,10 @@ public class WeekListActivity extends ActionBarActivity
         // Set the default values for the settings page
         // Only sets the values the first time the app is launched after install
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        // Update our cache to match the settings
+        refreshSettings();
 
+        // Find out which layout we should display through
         state = getLayoutConfiguration();
 
         if (state == ActivityConfigurations.DRAWER) {
@@ -127,7 +136,7 @@ public class WeekListActivity extends ActionBarActivity
 
     private ActivityConfigurations getLayoutConfiguration() {
         // Determine what layout to use
-        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean(SettingsActivity.KEY_USE_DRAWER, true)) {
+        if (useDrawer) {
             return ActivityConfigurations.DRAWER;
         } else if (getResources().getBoolean(R.bool.has_two_panes)) {
             return ActivityConfigurations.TWO_PANE;
@@ -384,8 +393,7 @@ public class WeekListActivity extends ActionBarActivity
         // Are we using drawer based navigation
         if (state == ActivityConfigurations.DRAWER) {
             // See if we need to close the drawer and act on it
-            SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-            if (sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true)) {
+            if (autoCloseDrawer) {
                 ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
             }
         }
@@ -408,9 +416,6 @@ public class WeekListActivity extends ActionBarActivity
     }
 
     private void confirmExit() {
-        // Check if we are set to confirm on exit
-        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
         // If we need to confirm exit do so, otherwise leave the app
         if (confirmExit){
             new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
@@ -451,5 +456,12 @@ public class WeekListActivity extends ActionBarActivity
         if (drawerToggle != null) {
             drawerToggle.onConfigurationChanged(newConfig);
         }
+    }
+
+    private void refreshSettings() {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
+        useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, true);
+        autoCloseDrawer = sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true);
     }
 }
