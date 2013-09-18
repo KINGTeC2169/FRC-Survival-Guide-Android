@@ -9,6 +9,9 @@
     </string-array> -->
     <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
+    <!--LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+        &lt;a href="ADDRESS">NAME&lt;/a>-->
+
     <string-array name="brainstorming">
         <item>Brainstorming</item>
         <item>Leaving Kickoff, the first thing your team should begin doing is
@@ -73,6 +76,52 @@
             every robot design out there, and it is important to get a driving robot as soon as possible. Not
             only will having driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="drive_practice">
+        <item>Drive Practice</item>
+        <item>When competing at competition, nothing can make or break your teams experience than how
+            your drivers work together and with the robot. While six weeks is not a lot of time to build
+            a robot, it is important to find time to let your drivers practice. The earlier the better,
+            but the season goes fast and we often are only able to practice driving during the last few
+            days of the build season.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tweaking_programming">
+        <item>Tweaking Programming</item>
+        <item>While you hopefully have the main functionality of your robot programmed by this point,
+            odds are you won\'t get everything perfect the first time. Your programmers should be focusing
+            on fixing the major bugs and getting everything working, but after that it is time to bring
+            in the drive team.\n\nAlthough programmers like to think they know everything about the robot,
+            it is important to remind them that they most likely won\'t be driving it at competition.
+            If they will be, your team has lucked out! If not, the programmers should sit down with the
+            drive team and fine tune the controls until the drivers are content.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="late_build_changes">
+        <item>Building the Unexpected</item>
+        <item>Like the real world, build season is often full of unexpected surprises. In the case of
+            a robot-building emergency, don\'t panic. Last minute changes happen on every team, and the
+            important thing to remember is that you can continue building after the six weeks are over.\n\n
+            You are allowed to bring a small amount of robot-related parts to competition, which means
+            you can manufacture parts at home and install them on the first day of competition.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bag_and_tag">
+        <item>Bagging and Tagging</item>
+        <item>While in the past your robot had to be crated up, in recent years a new procedure for sealing
+            away your robot has been unveiled. All official events with the exception of the Championship are
+            "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
+            of Build Season. More information is available in the
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/8/">administrative manual&lt;/a>.</item>
         <item>ic_kt</item>
         <item></item>
     </string-array>
