@@ -6,6 +6,8 @@ package com.kingtec2169.survivalguide;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +55,11 @@ public class PageFragment extends Fragment {
 
         View result = inflater.inflate(R.layout.fragment_pager_item, container, false);
         ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(content.imageResourceId);
-        ((TextView)result.findViewById(R.id.pageDescription)).setText(content.text);
+        TextView textView =((TextView)result.findViewById(R.id.pageDescription));
+        // Parse the text with an HTML parser to recognize links and formatting
+        textView.setText(Html.fromHtml(content.text));
+        // Make links clickable
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
 
         return(result);
     }
