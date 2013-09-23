@@ -52,7 +52,8 @@
             team to begin purchasing materials, especially materials that need to be shipped.
             Unfortunately you can\'t build a robot without supplies, and it is much better to be
             waiting for them during Weeks One and Two than during Week Six.
-            &lt;br>Have your team put together a list of expected materials, and don\'t forget to
+            &lt;br>
+            Have your team put together a list of expected materials, and don\'t forget to
             include extras for any parts you think might break.
             Your priority should be getting the parts you need to start building!</item>
         <item>ic_kt</item>
@@ -68,7 +69,8 @@
             thinking about assembling them into a finalized design. Prototyping allows teams to find
             flaws in their designs and fix them before it cuts into the crucial later weeks, where time
             and resources need to be spent on programming and drive practice.
-            &lt;br>KING TeC assembles smaller two/three man teams that work on individual components of the
+            &lt;br>
+            KING TeC assembles smaller two/three man teams that work on individual components of the
             robot. How you prototype is up to your team, but it is important to keep the process moving.
             Don\'t let a failure in one part constitute a failure as a whole!</item>
         <item>ic_kt</item>
@@ -120,7 +122,8 @@
             Make sure to check if existing functions are available before trying to implement your
             own; they will be easier to use and are much less likely to contain bugs than code you or
             your team writes.
-            &lt;br>One of the features that is not stressed enough in FRC programming is code reuse.
+            &lt;br>
+            One of the features that is not stressed enough in FRC programming is code reuse.
             When writing the functions for this year\'s robot, think about how you can write the code
             so that it is still viable next year. Although your robot will change from year to year,
             there is no reason you cannot recycle some of the programming ideas and implementations.
@@ -140,7 +143,8 @@
             odds are you won\'t get everything perfect the first time. Your programmers should be focusing
             on fixing the major bugs and getting everything working, but after that it is time to bring
             in the drive team.
-            &lt;br>Although programmers like to think they know everything about the robot,
+            &lt;br>
+            Although programmers like to think they know everything about the robot,
             it is important to remind them that they most likely won\'t be driving it at competition.
             If they will be, your team has lucked out! If not, the programmers should sit down with the
             drive team and fine tune the controls until the drivers are content.</item>
@@ -166,7 +170,7 @@
             away your robot has been unveiled. All official events with the exception of the Championship are
             "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
             of Build Season. More information is available in the
-            &lt;a href="http://frc-manual.usfirst.org/viewItem/8/">administrative manual&lt;/a>.</item>
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/8">administrative manual&lt;/a>.</item>
         <item>ic_kt</item>
         <item></item>
     </string-array>
