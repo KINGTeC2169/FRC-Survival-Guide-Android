@@ -9,8 +9,12 @@
     </string-array> -->
     <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
-    <!--LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
-        &lt;a href="ADDRESS">NAME&lt;/a>-->
+    <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+        &lt;a href="ADDRESS">NAME&lt;/a> -->
+    <!-- LINE BREAKS SHOULD BE FORMATTED AS
+        &lt;br> -->
+
+    <!-- Week One -->
 
     <string-array name="brainstorming">
         <item>Brainstorming</item>
@@ -47,13 +51,15 @@
         <item>While the details of your design may not be set in stone, it is important for your
             team to begin purchasing materials, especially materials that need to be shipped.
             Unfortunately you can\'t build a robot without supplies, and it is much better to be
-            waiting for them during Weeks One and Two than during Week Six.\n\nHave your team
-            put together a list of expected materials, and don\'t forget to include extras for any
-            parts you think might break. Your priority should be getting the parts you need to start
-            building!</item>
+            waiting for them during Weeks One and Two than during Week Six.
+            &lt;br>Have your team put together a list of expected materials, and don\'t forget to
+            include extras for any parts you think might break.
+            Your priority should be getting the parts you need to start building!</item>
         <item>ic_kt</item>
         <item></item>
     </string-array>
+
+    <!-- Week Two -->
 
     <string-array name="prototyping">
         <item>Prototyping</item>
@@ -62,7 +68,7 @@
             thinking about assembling them into a finalized design. Prototyping allows teams to find
             flaws in their designs and fix them before it cuts into the crucial later weeks, where time
             and resources need to be spent on programming and drive practice.
-            \n\nKING TeC assembles smaller two/three man teams that work on individual components of the
+            &lt;br>KING TeC assembles smaller two/three man teams that work on individual components of the
             robot. How you prototype is up to your team, but it is important to keep the process moving.
             Don\'t let a failure in one part constitute a failure as a whole!</item>
         <item>ic_kt</item>
@@ -91,12 +97,50 @@
         <item></item>
     </string-array>
 
+    <!-- Week Four -->
+
+    <string-array name="early_programming">
+        <item>Getting Started Programming</item>
+        <item>In order to test your robot, you need to be able to control it. Start with the basics,
+            and begin programming one subsystem at a time. It is important to remember that you
+            shouldn\'t worry about perfecting the code at this time; save the fine-tuning and control
+            loops for later. As long as you can control the subsystems at this point, and are able to
+            read from any sensors that you might have, you\'re doing fine.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <!-- Week Five -->
+
+    <string-array name="main_programming">
+        <item>Programming</item>
+        <item>By this point, you should be able to control every part of your robot. It is time to
+            stop working on implementing new features and perfect the ones you have. This is the time
+            to create control loops which make the driver\'s job easier, such as a PID controller.
+            Make sure to check if existing functions are available before trying to implement your
+            own; they will be easier to use and are much less likely to contain bugs than code you or
+            your team writes.
+            &lt;br>One of the features that is not stressed enough in FRC programming is code reuse.
+            When writing the functions for this year\'s robot, think about how you can write the code
+            so that it is still viable next year. Although your robot will change from year to year,
+            there is no reason you cannot recycle some of the programming ideas and implementations.
+            However, you may be required to release the code as open-source if you plan to use code
+            from previous years, in order to comply with
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/285">R16&lt;/a> of the
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/3">Game Manual&lt;/a>.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <!-- Week Six -->
+
     <string-array name="tweaking_programming">
         <item>Tweaking Programming</item>
         <item>While you hopefully have the main functionality of your robot programmed by this point,
             odds are you won\'t get everything perfect the first time. Your programmers should be focusing
             on fixing the major bugs and getting everything working, but after that it is time to bring
-            in the drive team.\n\nAlthough programmers like to think they know everything about the robot,
+            in the drive team.
+            &lt;br>Although programmers like to think they know everything about the robot,
             it is important to remind them that they most likely won\'t be driving it at competition.
             If they will be, your team has lucked out! If not, the programmers should sit down with the
             drive team and fine tune the controls until the drivers are content.</item>
@@ -108,7 +152,8 @@
         <item>Building the Unexpected</item>
         <item>Like the real world, build season is often full of unexpected surprises. In the case of
             a robot-building emergency, don\'t panic. Last minute changes happen on every team, and the
-            important thing to remember is that you can continue building after the six weeks are over.\n\n
+            important thing to remember is that you can continue building after the six weeks are over.
+            &lt;br>
             You are allowed to bring a small amount of robot-related parts to competition, which means
             you can manufacture parts at home and install them on the first day of competition.</item>
         <item>ic_kt</item>
