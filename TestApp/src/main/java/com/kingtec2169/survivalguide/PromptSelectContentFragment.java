@@ -14,17 +14,17 @@ import java.util.Random;
 /**
  * Created by rtzoeller on 7/3/13.
  */
-public class PromptSelectWeekFragment extends Fragment {
+public class PromptSelectContentFragment extends Fragment {
 
     private static final List<String> PROMPT_LIST = new ArrayList<String>();
 
     static {
-        PROMPT_LIST.add("Pick a week to learn about!");
-        PROMPT_LIST.add("Go ahead, click a week and get started!");
+        PROMPT_LIST.add("Pick an item to learn about!");
+        PROMPT_LIST.add("Go ahead, click an item and get started!");
         PROMPT_LIST.add("Well, what are you waiting for?");
     }
 
-    public PromptSelectWeekFragment() { // Empty public constructor mandated by the fragment manager
+    public PromptSelectContentFragment() { // Empty public constructor mandated by the fragment manager
     }
 
     @Override

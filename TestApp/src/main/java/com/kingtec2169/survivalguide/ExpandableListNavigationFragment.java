@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * Created by rtzoeller on 8/17/13.
  */
-public class WeekExpandableListFragment extends Fragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
+public class ExpandableListNavigationFragment extends Fragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
     private static final String NAME = "NAME";
     private static final String DESCRIPTION = "DESCRIPTION";
     public static final String ARG_EXPANDED_ITEMS = "expanded_items";
@@ -70,13 +70,13 @@ public class WeekExpandableListFragment extends Fragment implements OnChildClick
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public WeekExpandableListFragment() {
+    public ExpandableListNavigationFragment() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setExpandedItems = new boolean[WeekContent.PARENTS.size()];
+        setExpandedItems = new boolean[NavigationListContent.PARENTS.size()];
         if (getArguments().containsKey(ARG_EXPANDED_ITEMS)) {
             setExpandedItems = getArguments().getBooleanArray(ARG_EXPANDED_ITEMS);
         }
@@ -103,20 +103,20 @@ public class WeekExpandableListFragment extends Fragment implements OnChildClick
         List<Map<String, String>> groupData = new ArrayList<Map<String, String>>();
         List<List<Map<String, String>>> childData = new ArrayList<List<Map<String, String>>>();
 
-        for (int i = 0; i < WeekContent.PARENTS.size(); i++) {
+        for (int i = 0; i < NavigationListContent.PARENTS.size(); i++) {
             Map<String, String> curGroupMap = new HashMap<String, String>();
             groupData.add(curGroupMap);
-            Week parent = WeekContent.PARENTS.get(i);
+            NavigationListItem parent = NavigationListContent.PARENTS.get(i);
 
             curGroupMap.put(NAME, parent.name);
             curGroupMap.put(DESCRIPTION, parent.description);
 
             List<Map<String, String>> children = new ArrayList<Map<String, String>>();
-            for (int j = 0; j < WeekContent.CHILDREN.get(Integer.parseInt(parent.id)).size(); j++) {
+            for (int j = 0; j < NavigationListContent.CHILDREN.get(Integer.parseInt(parent.id)).size(); j++) {
                 Map<String, String> curChildMap = new HashMap<String, String>();
                 children.add(curChildMap);
 
-                Week child = WeekContent.CHILDREN.get(i).get(j);
+                NavigationListItem child = NavigationListContent.CHILDREN.get(i).get(j);
                 curChildMap.put(NAME, child.name);
                 curChildMap.put(DESCRIPTION, child.description);
             }
