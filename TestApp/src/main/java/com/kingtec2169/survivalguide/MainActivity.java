@@ -22,17 +22,17 @@ import android.widget.Toast;
 
 import android.support.v7.app.ActionBarActivity;
 
-public class WeekListActivity extends ActionBarActivity
-        implements WeekExpandableListFragment.Callbacks {
+public class MainActivity extends ActionBarActivity
+        implements ExpandableListNavigationFragment.Callbacks {
 
     // Is the current view displaying more than one fragment?
     // True on small tablets in landscape and on large tablets in either orientation
     private ActivityConfigurations state;
     // Is there any content selected to display
     private boolean mHasContent = false;
-    /** The page number to feed forward to our {@link WeekDetailFragment} **/
+    /** The page number to feed forward to our {@link ContentFragment} **/
     public int page;
-    /** What items are expanded in our {@link WeekExpandableListFragment} **/
+    /** What items are expanded in our {@link ExpandableListNavigationFragment} **/
     private boolean[] expandedItems;
     // Tags for retrieving fragments from the SupportFragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
@@ -70,7 +70,7 @@ public class WeekListActivity extends ActionBarActivity
         // Resize expandedItems to match the number of groups
         // All elements default to false so if we can't load data
         // the array is still initialized properly
-        expandedItems = new boolean[WeekContent.PARENTS.size()];
+        expandedItems = new boolean[NavigationListContent.PARENTS.size()];
 
         // Set our ViewPager data to a default
         // If we have saved data to load these will get overwritten
@@ -81,16 +81,16 @@ public class WeekListActivity extends ActionBarActivity
         // Attempt to load saved data
         if (savedInstanceState != null) {
             // Load the saved ViewPager data
-            if (savedInstanceState.containsKey(WeekDetailFragment.ARG_GROUP_ID) &&
-                    savedInstanceState.containsKey(WeekDetailFragment.ARG_CHILD_ID) &&
-                    savedInstanceState.containsKey(WeekDetailFragment.ARG_PAGE_ID)) {
-                groupPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_GROUP_ID);
-                childPosition = savedInstanceState.getInt(WeekDetailFragment.ARG_CHILD_ID);
-                page = savedInstanceState.getInt(WeekDetailFragment.ARG_PAGE_ID);
+            if (savedInstanceState.containsKey(ContentFragment.ARG_GROUP_ID) &&
+                    savedInstanceState.containsKey(ContentFragment.ARG_CHILD_ID) &&
+                    savedInstanceState.containsKey(ContentFragment.ARG_PAGE_ID)) {
+                groupPosition = savedInstanceState.getInt(ContentFragment.ARG_GROUP_ID);
+                childPosition = savedInstanceState.getInt(ContentFragment.ARG_CHILD_ID);
+                page = savedInstanceState.getInt(ContentFragment.ARG_PAGE_ID);
             }
             // Load the array of expanded list items
-            if (savedInstanceState.containsKey(WeekExpandableListFragment.ARG_EXPANDED_ITEMS)) {
-                expandedItems = savedInstanceState.getBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS);
+            if (savedInstanceState.containsKey(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS)) {
+                expandedItems = savedInstanceState.getBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS);
             }
         } else if (state == ActivityConfigurations.DRAWER) {
             /* We don't have content stored from before we
@@ -130,7 +130,7 @@ public class WeekListActivity extends ActionBarActivity
             getSupportActionBar().setHomeButtonEnabled(true);
     }
 
-        /** Simulate a click event so the {@link WeekDetailFragment} shows the correct content **/
+        /** Simulate a click event so the {@link ContentFragment} shows the correct content **/
         onChildClick(groupPosition, childPosition);
     }
 
@@ -148,7 +148,7 @@ public class WeekListActivity extends ActionBarActivity
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        WeekDetailFragment fragment = (WeekDetailFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
+        ContentFragment fragment = (ContentFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
         // Attach the current display information to our Activity state
         if (fragment != null) {
@@ -159,7 +159,7 @@ public class WeekListActivity extends ActionBarActivity
         // If we don't pass any data through, upon loading the array will be initialized to all false values
         // Which is the desired behavior
         if (expandedItems != null) {
-          state.putBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS, expandedItems);
+          state.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
         }
     }
 
@@ -169,7 +169,7 @@ public class WeekListActivity extends ActionBarActivity
             case android.R.id.home:
                 switch (state) {
                     /** The Up button shown in the ActionBar.
-                     *  Inflates/Shows a {@link WeekExpandableListFragment} when selected. **/
+                     *  Inflates/Shows a {@link ExpandableListNavigationFragment} when selected. **/
                     case DRAWER:
                         if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
                             ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
@@ -312,10 +312,10 @@ public class WeekListActivity extends ActionBarActivity
         return true;
     }
 
-    private WeekExpandableListFragment listInflate(int resourceId) {
+    private ExpandableListNavigationFragment listInflate(int resourceId) {
         Bundle arguments = new Bundle();
-        arguments.putBooleanArray(WeekExpandableListFragment.ARG_EXPANDED_ITEMS, expandedItems);
-        WeekExpandableListFragment fragment = new WeekExpandableListFragment();
+        arguments.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
+        ExpandableListNavigationFragment fragment = new ExpandableListNavigationFragment();
         fragment.setArguments(arguments);
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_LIST_TAG)
@@ -323,8 +323,8 @@ public class WeekListActivity extends ActionBarActivity
         return fragment;
     }
 
-    private WeekDetailFragment detailInflate(int resourceId, Bundle bundle) {
-        WeekDetailFragment fragment = new WeekDetailFragment();
+    private ContentFragment detailInflate(int resourceId, Bundle bundle) {
+        ContentFragment fragment = new ContentFragment();
         fragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_DETAIL_TAG)
@@ -332,8 +332,8 @@ public class WeekListActivity extends ActionBarActivity
         return fragment;
     }
 
-    private PromptSelectWeekFragment selectorInflate(int resourceId) {
-        PromptSelectWeekFragment fragment = new PromptSelectWeekFragment();
+    private PromptSelectContentFragment selectorInflate(int resourceId) {
+        PromptSelectContentFragment fragment = new PromptSelectContentFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_SELECT_TAG)
                 .commit();
@@ -348,7 +348,7 @@ public class WeekListActivity extends ActionBarActivity
             case DRAWER:
                 if (mHasContent) {
                     // Launch the selected item in the main pane
-                    detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
@@ -359,7 +359,7 @@ public class WeekListActivity extends ActionBarActivity
             case TWO_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the right pane
-                    detailInflate(R.id.week_detail_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
@@ -370,9 +370,9 @@ public class WeekListActivity extends ActionBarActivity
             case ONE_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the current pane
-                    detailInflate(R.id.week_list_container, WeekDetailFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page));
                     // Reconfigure the action bar
-                    setTitle(WeekContent.CHILDREN.get(groupPosition).get(childPosition).name);
+                    setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 } else {
                     // We don't want to do anything because the only pane visible

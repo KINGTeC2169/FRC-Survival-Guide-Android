@@ -27,7 +27,7 @@ public class SearchResultsFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
-        WeekListActivity activity = ((WeekListActivity)getActivity());
+        MainActivity activity = ((MainActivity)getActivity());
         activity.page = item[2];
         activity.onChildClick(item[0], item[1]);
     }
@@ -45,8 +45,8 @@ public class SearchResultsFragment extends ListFragment {
             PageContent content = new PageContent(getActivity());
             for (String keyword : keywords) {
                 String lowerKeyword = keyword.toLowerCase();
-                for (int i = 0; i < WeekContent.CHILDREN.size(); i++) {
-                    for (int j = 0; j < WeekContent.CHILDREN.get(i).size(); j++) {
+                for (int i = 0; i < NavigationListContent.CHILDREN.size(); i++) {
+                    for (int j = 0; j < NavigationListContent.CHILDREN.get(i).size(); j++) {
                         for (int k = 0; k < content.numPages[i][j]; k++) {
                             Page page = content.get(i, j, k);
                             if (page != null) {

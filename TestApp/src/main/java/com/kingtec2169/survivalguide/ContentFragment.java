@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 
 /**
  * A fragment representing a single Week detail screen.
- * This fragment is contained in a {@link WeekListActivity}
+ * This fragment is contained in a {@link MainActivity}
  */
-public class WeekDetailFragment extends Fragment {
+public class ContentFragment extends Fragment {
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -23,7 +23,7 @@ public class WeekDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private Week mItem;
+    private NavigationListItem mItem;
     private ViewPager mViewPager = null;
     private int mSetPage;
 
@@ -31,7 +31,7 @@ public class WeekDetailFragment extends Fragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public WeekDetailFragment() {
+    public ContentFragment() {
     }
 
     @Override
@@ -39,7 +39,7 @@ public class WeekDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_CHILD_ID)) {
-            mItem = WeekContent.CHILDREN.get(getArguments().getInt(ARG_GROUP_ID)).get(getArguments().getInt(ARG_CHILD_ID));
+            mItem = NavigationListContent.CHILDREN.get(getArguments().getInt(ARG_GROUP_ID)).get(getArguments().getInt(ARG_CHILD_ID));
         }
         if (getArguments().containsKey(ARG_PAGE_ID)) {
             mSetPage = getArguments().getInt(ARG_PAGE_ID);
