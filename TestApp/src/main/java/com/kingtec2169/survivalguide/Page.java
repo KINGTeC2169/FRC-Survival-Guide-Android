@@ -7,6 +7,7 @@ import android.content.Context;
  */
 public class Page {
     // Holder class for the Pages in the ViewPager
+    public int layoutResourceId;
     public String text;
     public String title;
     public int imageResourceId;
@@ -14,11 +15,12 @@ public class Page {
 
     public Page(Context context, String[] contentResources) { // Accepts a calling context and an array of the page data
         super();
-        if(contentResources.length == 4) { // Make sure we have received a valid array
-            this.title = contentResources[0];
-            this.text = contentResources[1];
-            this.imageResourceId = context.getResources().getIdentifier(contentResources[2], "drawable", context.getPackageName());
-            this.tags = contentResources[3];
+        if(contentResources.length == 5) { // Make sure we have received a valid array
+            this.layoutResourceId = context.getResources().getIdentifier(contentResources[0], "layout", context.getPackageName());
+            this.title = contentResources[1];
+            this.text = contentResources[2];
+            this.imageResourceId = context.getResources().getIdentifier(contentResources[3], "drawable", context.getPackageName());
+            this.tags = contentResources[4];
         }
     }
 
