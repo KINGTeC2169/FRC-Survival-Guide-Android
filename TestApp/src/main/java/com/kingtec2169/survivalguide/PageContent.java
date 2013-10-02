@@ -14,7 +14,7 @@ public class PageContent {
     // Number of pages in each week
     public static final int numPages[][] = {
             {3,3,0,1,1,4},
-            {0,0,0,0,0},
+            {0,0,0,3,0},
             {0,0,0,0}};
     // Which content is currently in memory
     private static int loaded_group;
@@ -67,6 +67,15 @@ public class PageContent {
                         PAGES.add(new Page(mContext, R.array.tweaking_programming));
                         PAGES.add(new Page(mContext, R.array.late_build_changes));
                         PAGES.add(new Page(mContext, R.array.bag_and_tag));
+                        break;
+                }
+                break;
+            case 1:
+                switch (child) {
+                    case 3:
+                        PAGES.add(new Page(mContext, R.array.spirit_importance));
+                        PAGES.add(new Page(mContext, R.array.spirit_team_image));
+                        PAGES.add(new Page(mContext, R.array.spirit_swag));
                         break;
                 }
                 break;
