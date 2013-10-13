@@ -1,5 +1,6 @@
 package com.kingtec2169.survivalguide;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -54,7 +55,12 @@ public class ContentFragment extends Fragment {
         ViewPager pager = (ViewPager)result.findViewById(R.id.pager);
         pager.setAdapter(buildAdapter());
         pager.setCurrentItem(mSetPage);
-        pager.setPageTransformer(true, new ZoomOutPageTransformer());
+        // If the device we are on supports View operations such as resizing and setting alpha,
+        // then apply these effects to the pages. On versions older than Honeycomb, these transformations
+        // do not exist.
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            pager.setPageTransformer(true, new ZoomOutPageTransformer());
+        }
         mViewPager = pager;
         return(result);
     }
