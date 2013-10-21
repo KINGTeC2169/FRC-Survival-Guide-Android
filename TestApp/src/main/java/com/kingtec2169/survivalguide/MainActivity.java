@@ -374,10 +374,11 @@ public class MainActivity extends ActionBarActivity
                     // Reconfigure the action bar
                     setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-                } else {
-                    // We don't want to do anything because the only pane visible
-                    // is the list we are currently displaying
                 }
+//              else {
+//                    We don't want to do anything because the only pane visible
+//                    is the list we are currently displaying
+//                }
                 break;
         }
         return true;

@@ -9,9 +9,9 @@ import java.util.List;
 public class NavigationListContent {
     /** This class holds the content for the {@link ExpandableListNavigationFragment} **/
     // The children of the ExpandableListView, holds the contents of each group
-    public static List<List<NavigationListItem>> CHILDREN = new ArrayList<List<NavigationListItem>>();
+    public static final List<List<NavigationListItem>> CHILDREN = new ArrayList<List<NavigationListItem>>();
     // The parents of the ExpandableListView, holds the head item of each group
-    public static List<NavigationListItem> PARENTS = new ArrayList<NavigationListItem>();
+    public static final List<NavigationListItem> PARENTS = new ArrayList<NavigationListItem>();
 
     static {
         // Populate the list of parents

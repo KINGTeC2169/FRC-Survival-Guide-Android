@@ -11,8 +11,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class PagerAdapter extends FragmentPagerAdapter {
     Context context = null;
-    int group;
-    int child;
+    final int group;
+    final int child;
 
     public PagerAdapter(Context context, FragmentManager mgr, int group, int child) {
         super(mgr);

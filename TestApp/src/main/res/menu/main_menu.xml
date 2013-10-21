@@ -3,14 +3,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:survivalguide="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/settings"
-          android:title="Settings" />
+          android:title="@string/settings_name" />
     <item android:id="@+id/contactUs"
-          android:title="Contact Us" />
+          android:title="@string/contact_us_name" />
     <item android:id="@+id/about"
-          android:title="About KING TeC" />
+          android:title="@string/about_name" />
     <item
           android:id="@+id/search"
           survivalguide:actionViewClass="android.support.v7.widget.SearchView"
           survivalguide:showAsAction="ifRoom|collapseActionView"
-          android:title="Search" />
+          android:title="@string/search_name" />
 </menu>

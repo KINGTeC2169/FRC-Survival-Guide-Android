@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class PageContent {
     // Stores the items for the Pages
-    public static List<Page> PAGES = new ArrayList<Page>();
+    public static final List<Page> PAGES = new ArrayList<Page>();
     // Number of pages in each week
     public static final int numPages[][] = {
             {3,3,0,1,1,4},
