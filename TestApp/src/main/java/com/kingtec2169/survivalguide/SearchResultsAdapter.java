@@ -13,8 +13,8 @@ import java.util.ArrayList;
  * Created by rtzoeller on 8/27/13.
  */
 public class SearchResultsAdapter extends ArrayAdapter<int[]> {
-    private Context context;
-    public ArrayList<int[]> results;
+    private final Context context;
+    public final ArrayList<int[]> results;
 
     public SearchResultsAdapter(Context context, int textViewResourceId, ArrayList<int[]> results) {
         super(context, textViewResourceId, results);
