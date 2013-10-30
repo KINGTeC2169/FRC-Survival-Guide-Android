@@ -85,9 +85,13 @@ public class ContentFragment extends Fragment {
                         .setTabListener(tabListener));
             }
 
-            // Select the correct page
-            // This becomes necessary when using the Search function in the app
-            actionBar.setSelectedNavigationItem(mSetPage);
+            // Don't set the page of a blank pager
+            // doing so will crash the app
+            if (PageContent.numPages[group][child] != 0) {
+                // Select the correct page
+                // This becomes necessary when using the Search function in the app
+                actionBar.setSelectedNavigationItem(mSetPage);
+            }
         }
     }
 
