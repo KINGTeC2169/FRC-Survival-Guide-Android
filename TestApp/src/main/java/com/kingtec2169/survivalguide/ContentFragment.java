@@ -117,7 +117,12 @@ public class ContentFragment extends Fragment {
                 super.onPageSelected(position);
                 if (getActivity() != null) {
                     ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
-                    if (actionBar!= null) {
+                    // We can't set the page here if the tabs haven't been created yet.
+                    // mSetPage will be received on this orientation change so this
+                    // method will only be used when swiping between tabs, instead of
+                    // when the fragment is instantiated
+                    if (actionBar!= null && actionBar.getTabCount() > position) {
+                        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
                         actionBar.setSelectedNavigationItem(position);
                     }
                 }
