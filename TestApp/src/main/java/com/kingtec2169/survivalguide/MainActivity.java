@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.widget.SearchView;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
@@ -250,6 +251,10 @@ public class MainActivity extends ActionBarActivity
                         // Remove the content
                         page = 0;
                         mHasContent = false;
+
+                        // Reset the navigation bar to  remove any tabs from view
+                        resetNavigationBar();
+
                         // Simulate a list click event to refresh the display
                         onChildClick(-1, -1);
                     } else if (listVisible) {
@@ -268,6 +273,10 @@ public class MainActivity extends ActionBarActivity
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         setTitle(R.string.app_name);
+
+                        // Reset the navigation bar to  remove any tabs from view
+                        resetNavigationBar();
+
                         // Inflate the list
                         listInflate(R.id.week_list_container);
                     } else if (listVisible) {
@@ -464,5 +473,15 @@ public class MainActivity extends ActionBarActivity
         confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
         useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, true);
         autoCloseDrawer = sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true);
+    }
+
+    private void resetNavigationBar() {
+        // Make sure we have a clean, tab free environment since we are not showing content
+        ActionBar actionBar = getSupportActionBar();
+        // We might not have an action bar after orientation changes,
+        // so we need to confirm that it is not null
+        if (actionBar != null) {
+            actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        }
     }
 }
