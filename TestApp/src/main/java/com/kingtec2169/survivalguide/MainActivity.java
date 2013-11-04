@@ -184,6 +184,9 @@ public class MainActivity extends ActionBarActivity
                         page = 0;
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                        // Reset the navigation bar to remove any tabs from view
+                        resetNavigationBar();
+                        // Show the correct title
                         setTitle(R.string.app_name);
                         /* Inflates the list into the list container
                         This button can only be pressed when mTwoPane is false, so we won't ever re-inflate
@@ -252,7 +255,7 @@ public class MainActivity extends ActionBarActivity
                         page = 0;
                         mHasContent = false;
 
-                        // Reset the navigation bar to  remove any tabs from view
+                        // Reset the navigation bar to remove any tabs from view
                         resetNavigationBar();
 
                         // Simulate a list click event to refresh the display
@@ -274,7 +277,7 @@ public class MainActivity extends ActionBarActivity
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         setTitle(R.string.app_name);
 
-                        // Reset the navigation bar to  remove any tabs from view
+                        // Reset the navigation bar to remove any tabs from view
                         resetNavigationBar();
 
                         // Inflate the list
