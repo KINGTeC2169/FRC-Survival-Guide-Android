@@ -3,14 +3,12 @@ package com.kingtec2169.survivalguide;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.astuetz.viewpager.extensions.PagerSlidingTabStrip;
 
 /**
  * A fragment representing a single Week detail screen.
@@ -43,56 +41,6 @@ public class ContentFragment extends Fragment {
         if (getArguments().containsKey(ARG_PAGE_ID)) {
             mSetPage = getArguments().getInt(ARG_PAGE_ID);
         }
-
-        // If we have access to an ActionBar,
-        // display tabs representing the pages available
-        ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
-        if (getArguments().containsKey(ARG_GROUP_ID) && getArguments().containsKey(ARG_CHILD_ID) && actionBar != null) {
-            int group = getArguments().getInt(ARG_GROUP_ID);
-            int child = getArguments().getInt(ARG_CHILD_ID);
-
-            // TODO: Move ActionBar calls to the activity
-            actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-            actionBar.removeAllTabs();
-
-            ActionBar.TabListener tabListener = new ActionBar.TabListener() {
-                @Override
-                public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-                    // When the tab is selected, switch to the
-                    // corresponding page in the ViewPager.
-                    if (mViewPager != null) {
-                        mViewPager.setCurrentItem(tab.getPosition());
-                    }
-                }
-
-                @Override
-                public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-
-                }
-
-                @Override
-                public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-
-                }
-            };
-
-            // Add a tab for each page of the set
-            // Using the titles from each page.
-            for (int i = 0; i < PageContent.numPages[group][child]; i++) {
-                Log.e("TitleOf", "" + group + " " + child + " " + i);
-                actionBar.addTab(actionBar.newTab()
-                        .setText(PageFragment.getTitle(getActivity(), group, child, i))
-                        .setTabListener(tabListener));
-            }
-
-            // Don't set the page of a blank pager
-            // doing so will crash the app
-            if (PageContent.numPages[group][child] != 0) {
-                // Select the correct page
-                // This becomes necessary when using the Search function in the app
-                actionBar.setSelectedNavigationItem(mSetPage);
-            }
-        }
     }
 
     @Override
@@ -110,24 +58,14 @@ public class ContentFragment extends Fragment {
             pager.setPageTransformer(true, new ZoomOutPageTransformer());
         }
 
-        pager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-            @Override
-            public void onPageSelected(int position) {
-                // When swiping between tabs, set the correct tab as selected
-                super.onPageSelected(position);
-                if (getActivity() != null) {
-                    ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
-                    // We can't set the page here if the tabs haven't been created yet.
-                    // mSetPage will be received on this orientation change so this
-                    // method will only be used when swiping between tabs, instead of
-                    // when the fragment is instantiated
-                    if (actionBar!= null && actionBar.getTabCount() > position) {
-                        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-                        actionBar.setSelectedNavigationItem(position);
-                    }
-                }
-            }
-        });
+        // If there is content showing show the tabs.
+        // If no content is visible attempting to show tabs
+        // will crash the app.
+        if(pager.getAdapter().getCount() != 0) {
+            PagerSlidingTabStrip tabs = (PagerSlidingTabStrip)result.findViewById(R.id.tabs);
+            tabs.setViewPager(pager);
+        }
+
         mViewPager = pager;
         return(result);
     }
