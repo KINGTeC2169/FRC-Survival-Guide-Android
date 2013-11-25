@@ -30,14 +30,21 @@
     <list id="69894f01-a225-4613-b017-d77392e7412a" name="Default" comment="Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" />
     <list id="576a1463-9d5a-4213-b60c-2874e84fdac0" name="Revert: 0:bb6145d832f8: Initial Commit&#10;App Navigation in place&#10;TODO: Content" comment="" />
     <list default="true" id="8767e702-7a75-47a8-963c-28b915f212ca" name="Revert: 1:4e8922840e85: Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/SurvivalGuide.apk" afterPath="$PROJECT_DIR$/TestApp/SurvivalGuide.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/MainActivity.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/astuetz/viewpager/extensions/PagerSlidingTabStrip.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/astuetz/viewpager/extensions/PagerSlidingTabStrip.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/TestApp.iml" afterPath="$PROJECT_DIR$/TestApp/TestApp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppProject.iml" afterPath="$PROJECT_DIR$/TestAppProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/drawable/background_tab.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/drawable/background_tab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/build.gradle" afterPath="$PROJECT_DIR$/TestApp/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/colors.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/layout/pager.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/layout/pager.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TestApp.iws" />
@@ -109,7 +116,7 @@
       <file leaf-file-name="ContentFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="7" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2890">
+            <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -126,36 +133,43 @@
       </file>
       <file leaf-file-name="dialog_about.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="561">
+            <state line="12" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12903225" vertical-offset="0" max-vertical-offset="697">
-              <folding>
-                <element signature="e#424#442#0" expanded="true" />
-              </folding>
+            <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="0.5086705" vertical-offset="215" max-vertical-offset="561">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="fragment_pager_item.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -167,7 +181,7 @@
     </FindUsagesManager>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Program Files\Java\jdk1.7.0_45\bin\release.keystore" />
+    <option name="KEY_STORE_PATH" value="C:\Users\KING\Downloads\release.keystore" />
     <option name="KEY_ALIAS" value="survivalguide" />
   </component>
   <component name="GradleLocalSettings">
@@ -181,19 +195,35 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="Survival Guide" />
+              <option name="name" value="Survival-Guide" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="Survival Guide" />
+                <option name="name" value="Survival-Guide" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="TestApp" />
                 <option name="path" value="$PROJECT_DIR$/TestApp" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Users" />
+              <option name="path" value="$PROJECT_DIR$/../../../.." />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="Users" />
+                <option name="path" value="$PROJECT_DIR$/../../../.." />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -514,7 +544,9 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="C:\Users" value="1385268032098" />
         <entry key="C:\Users\KING TeC\Documents\Survival Guide" value="1382123279258" />
+        <entry key="C:\Users\KING\Documents\Repos\Survival-Guide" value="1385349651941" />
         <entry key="C:\Users\rtzoeller\AndroidStudioProjects\TestAppProject" value="1377492829966" />
       </map>
     </option>
@@ -554,8 +586,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -591,172 +623,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestAppProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Survival Guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="survivalguide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -773,7 +643,7 @@
     <property name="ExportedModule" value="TestApp" />
     <property name="ExportedApkPath" value="C:\Users\KING TeC\Documents\Survival Guide\TestApp\TestApp.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="true" />
-    <property name="AndroidProguardConfigPaths" value="C:\Users\KING TeC\AppData\Local\Android\android-studio\sdk\tools\proguard\proguard-android.txt;C:\Users\KING TeC\AppData\Local\Android\android-studio\sdk\tools\proguard\proguard-android-optimize.txt" />
+    <property name="AndroidProguardConfigPaths" value="C:\Users\KING\AppData\Local\Android\android-studio\sdk\tools\proguard\proguard-android.txt;C:\Users\KING\AppData\Local\Android\android-studio\sdk\tools\proguard\proguard-android-optimize.txt" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -1011,13 +881,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15833333" sideWeight="0.67250824" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1027,18 +896,19 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40151516" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4009662" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.6595289" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17291667" sideWeight="0.59845984" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1727672" sideWeight="0.59845984" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33441558" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.52585256" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15833333" sideWeight="0.67250824" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1098,6 +968,95 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="7" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2890">
           <folding />
         </state>
@@ -1111,23 +1070,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="12" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/content.xml">
@@ -1151,16 +1110,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="59" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.61290324" vertical-offset="204" max-vertical-offset="1190">
-          <folding />
-        </state>
+        <state line="31" column="59" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.61290324" vertical-offset="204" max-vertical-offset="1190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/SearchResultsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="64" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.22580644" vertical-offset="323" max-vertical-offset="1037">
-          <folding />
-        </state>
+        <state line="33" column="64" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.22580644" vertical-offset="323" max-vertical-offset="1037" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/content.xml">
@@ -1172,19 +1127,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="7" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2669">
+        <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
@@ -1195,21 +1150,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="561">
+        <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="561">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12903225" vertical-offset="0" max-vertical-offset="697">
-          <folding>
-            <element signature="e#424#442#0" expanded="true" />
-          </folding>
+        <state line="12" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="0.5086705" vertical-offset="215" max-vertical-offset="561">
+          <folding />
         </state>
       </provider>
     </entry>
