@@ -329,4 +329,89 @@
         <item></item>
     </string-array>
 
+    <!-- Pits -->
+
+    <string-array name="pits_design">
+        <item>fragment_pager_item</item>
+        <item>Pit Design</item>
+        <item>Designing your pit is one of the most important things to do before you head to
+            competition. Creating your pit is not something to take lightly considering it
+            represents your team in the pits at competitions. There are many different aspects to
+            consider when designing your teams pit. One main thing to think about is implementing
+            your team\'s name and number into your pit. Your name and number should be clearly visible
+            to everyone whether they are judges, other team members/mentors, or volunteers; it is
+            very important that your pit is noticeable to all of these people.
+            &lt;br>The design of your pit is also supposed to not only display your teams name and
+            number but also your teams theme and values. Judges are constantly in the pits so it is
+            important that your team’s values are displayed openly. This can be shown by hanging up
+            posters, displaying your sponsors names, or even banners. Hanging a banner across the
+            top of your pit is an easy way to display a lot of information that can easily be seen
+            by everyone. As you can see, there are many ways to show your teams theme and values in
+            your pit design. The best advice we can give is to have fun and be creative!</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_organization">
+        <item>fragment_pager_item</item>
+        <item>Organization</item>
+        <item>Organization is one of the most important things in your team’s pit. Without a system
+            of organization it is almost inevitable that you will lose something. There are many
+            different ways to organize your pit. You will have a ton of tools and items you will be
+            bringing with you that will all seem to end up in your pit. It is a good idea to have
+            boxes, cabinets, etc. so items are not lost or stolen. Organizing your pit crew\'s tools
+            is a vitally important thing for your team’s success because if your robot breaks during
+            competition you want to be able to find these tools easily. It is also important to leave
+            tools that are commonly needed during competition in a close by place so they can be accessed easily.
+            &lt;br>Aside from the tools there are many other things that will need to be organized
+            in your pit whether they are computers, batteries, or even jackets. It is a good idea
+            to have an easily accessible area with the batteries so you can quickly change them when
+            necessary. Computers are not something you likely want to leave out in the open, even if
+            there is someone always in your pit, it is best to put them in a safe place such as a
+            cabinet or even just under a table out of site. Jackets and other such items can easily
+            be put into a box or crate so they are not taking up space inside the pit. Lastly, always
+            remember to leave space to work when needed.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_crew">
+        <item>fragment_pager_item</item>
+        <item>Pit Crew</item>
+        <item>The pit crew are some of the most crucial people off the field. It is important to
+            allow them the space necessary in the pit for immediate work and for those moments of
+            rushed panic. The pit crew should be ready for anything at any time. The crew should be
+            about 5-6 people so there is not too few or too many people in the pits. The pits can
+            easily get crowded so it is important to not have too many people around so there is
+            plenty of space to work on the robot. With the drive team and the pit crew constantly
+            in and out of the pits it’s important to keep a minimal amount of people besides them in
+            the area to avoid overcrowding. A last reminder, it is very important to have mechanical
+            people in the pit crew, but a programmer is just as necessary for a successful robot.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_judges">
+        <item>fragment_pager_item</item>
+        <item>Talking With Judges</item>
+        <item>Talking with judges is obviously one of the most important parts of the pits. Judges
+            are constantly walking through the pits at competitions so don’t forget to always show
+            gracious professionalism. When judges come and talk to teams in the pits they are truly
+            curious and eager to learn about your team and your robot. The judges will ask questions
+            that are either relevant to your robot or your team so it is wise to have experts of both
+            in your pits. When talking to judges always be informative. It is also important that
+            when judges come to your team’s pit that a team member is doing most or all of the
+            talking, not a mentor or parent. The judges are there to talk to the team, not the
+            mentors.
+            &lt;br>While the majority of the questions asked in the pit will be about your team\'s
+            robot the judges will also be looking for contenders for the other awards at the
+            competition. This will be even amplified if you are competing for the Chairman\'s award.
+            It is important to have an expert on your team’s outreach, marketing, and fundraising
+            side of your team in the pits as well. They will help answer these questions for the
+            judges. Judges are also not the only ones coming to talk in the pits; you will have pit
+            scouters, alliance partners, and volunteers always coming by also. Remember to always
+            be in a good mood!</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
 </resources>
