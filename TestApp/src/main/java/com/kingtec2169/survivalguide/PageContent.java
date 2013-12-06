@@ -15,7 +15,7 @@ public class PageContent {
     public static final int numPages[][] = {
             {3,3,0,1,1,4},
             {4,0,4,3,0},
-            {4,0,0,0}};
+            {4,1,0,0}};
     // Which content is currently in memory
     private static int loaded_group;
     private static int loaded_child;
@@ -98,6 +98,9 @@ public class PageContent {
                         PAGES.add(new Page(mContext, R.array.fundraising_grants));
                         PAGES.add(new Page(mContext, R.array.fundraising_major_events));
                         PAGES.add(new Page(mContext, R.array.fundraising_minor_events));
+                        break;
+                    case 1:
+                        PAGES.add(new Page(mContext, R.array.tournaments_about));
                         break;
                 }
                 break;
