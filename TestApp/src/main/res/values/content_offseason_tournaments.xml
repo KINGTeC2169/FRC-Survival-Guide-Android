@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="tournaments_about">
+        <item>fragment_pager_item</item>
+        <item>Why Off-Season Tournament\'s</item>
+        <item>The main reason for off season regionals are to train rookie team members and get back
+            into the swing of robotics. Before the real regionals begin, it is very useful to give
+            the new team members a taste of what to expect. These mini competitions also give teams
+            a great opportunity to train members whether it is in driving, scouting or spirit.
+            These competitions are hosted by FRC teams and are one day events normally held in
+            gymnasiums of the hosting team. Around thirty teams can be found at these regionals.
+            Official FIRST fields are shipped to the location and official FIRST judges, refs, and
+            tech managers are running the event. These regionals provide a nice opportunity for
+            FIRST volunteers to get trained into leadership positions. Awards are given out and
+            winners are crowned all in good fun.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
