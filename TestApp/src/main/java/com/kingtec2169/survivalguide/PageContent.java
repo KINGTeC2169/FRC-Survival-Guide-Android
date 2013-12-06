@@ -14,7 +14,7 @@ public class PageContent {
     // Number of pages in each week
     public static final int numPages[][] = {
             {3,3,3,1,1,4},
-            {4,0,4,3,0},
+            {4,2,4,3,0},
             {4,1,3,1}};
     // Which content is currently in memory
     private static int loaded_group;
@@ -82,6 +82,10 @@ public class PageContent {
                         PAGES.add(new Page(mContext, R.array.pits_organization));
                         PAGES.add(new Page(mContext, R.array.pits_crew));
                         PAGES.add(new Page(mContext, R.array.pits_judges));
+                        break;
+                    case 1:
+                        PAGES.add(new Page(mContext, R.array.scouting_match));
+                        PAGES.add(new Page(mContext, R.array.scouting_pits));
                         break;
                     case 2:
                         PAGES.add(new Page(mContext, R.array.chairmans_about));

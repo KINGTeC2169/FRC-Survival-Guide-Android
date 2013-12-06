@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="scouting_match">
+        <item>fragment_pager_item</item>
+        <item>Match Scouting</item>
+        <item>One of the most essential roles in a team at competition is scouting. Observing other
+            robots during matches will help your team make decisions about alliance partners, as
+            well as provide inspiration for any future changes to your strategy. Your team should
+            look for other robots that are compatible with your own – having three identical robots
+            on the same team probably isn\'t the best strategy. Even if your team is not going to be
+            an alliance captain it is important that you keep scouting; if your team is picked your
+            alliance partners may turn to you for help picking the third robot and for strategy.
+            Scouting in the stands is designed to give your team as much information as possible
+            about the performance of other robots. Your team can record both qualitative and
+            quantitative information, but should have a standardized system for recording information.
+            &lt;br>On the field performance depends on more than just the robot, it also depends
+            on the driver. Have your scouting crew look at how other teams perform under stress,
+            and make note of any flaws in their strategy that your team can exploit.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="scouting_pits">
+        <item>fragment_pager_item</item>
+        <item>Match Scouting</item>
+        <item>Pit scouting is a great way to see every robot up close. You are able to see specifics
+            of the robot\'s design and also some features not necessarily apparent on the field. As a
+            team you should record important details such as the weight, height, drive-train and
+            scoring capabilities. While pit scouting can\'t give you information about on the field
+            performance, it can give your team an idea of what robots to look out for and what robots
+            to consider for specialty purposes, such as pushing opponents out of the way. Make sure
+            to take pictures of each robot to help connect each team with their robot.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
