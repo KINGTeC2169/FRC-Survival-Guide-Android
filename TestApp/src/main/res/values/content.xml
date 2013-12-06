@@ -24,7 +24,7 @@
             brainstorming. No idea is a bad idea here, and this is the time to come up with all kinds of
             crazy designs. During this time you should begin planning strategy and deciding how and what
             you want your robot to do.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -36,7 +36,7 @@
             game-plan before you can design a robot. In order to design a robot around the best
             strategy, KING TeC stages a mock game using human players instead of robots immediately
             after Kickoff, revealing any strategies that may otherwise be overlooked.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -46,7 +46,7 @@
         <item>Fully understanding the rules of the new game is critical to the design
             process. Everyone on the team should read the rules at least once and your team should
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -61,7 +61,7 @@
             Have your team put together a list of expected materials, and don\'t forget to
             include extras for any parts you think might break.
             Your priority should be getting the parts you need to start building!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -79,7 +79,7 @@
             KING TeC assembles smaller two/three man teams that work on individual components of the
             robot. How you prototype is up to your team, but it is important to keep the process moving.
             Don\'t let a failure in one part constitute a failure as a whole!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -91,7 +91,7 @@
             every robot design out there, and it is important to get a driving robot as soon as possible. Not
             only will having driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -103,7 +103,7 @@
             a robot, it is important to find time to let your drivers practice. The earlier the better,
             but the season goes fast and we often are only able to practice driving during the last few
             days of the build season.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -117,7 +117,7 @@
             shouldn\'t worry about perfecting the code at this time; save the fine-tuning and control
             loops for later. As long as you can control the subsystems at this point, and are able to
             read from any sensors that you might have, you\'re doing fine.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -141,7 +141,7 @@
             from previous years, in order to comply with
             &lt;a href="http://frc-manual.usfirst.org/viewItem/285">R16&lt;/a> of the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/3">Game Manual&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -159,7 +159,7 @@
             it is important to remind them that they most likely won\'t be driving it at competition.
             If they will be, your team has lucked out! If not, the programmers should sit down with the
             drive team and fine tune the controls until the drivers are content.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -172,7 +172,7 @@
             &lt;br>
             You are allowed to bring a small amount of robot-related parts to competition, which means
             you can manufacture parts at home and install them on the first day of competition.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -184,7 +184,7 @@
             "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
             of Build Season. More information is available in the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/8">administrative manual&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -197,7 +197,7 @@
             are by other teams, the more likely you are to get picked for alliance selections. You
             also want to keep the competition energy high because it makes an even more exciting
             atmosphere for everyone in the arena.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -216,7 +216,7 @@
             sky is the limit. Teams wear everything from matching shoes, to matching bracelets. Be creative
             and remember to not shy far from your name. If teams will wonder how your mascot is relevant to
             your name, it’s probably not the best idea.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -228,7 +228,7 @@
             completely covered in buttons. Other simple and cost effective ideas are pencils and
             bracelets. Swag gets your team name and number out to other teams. Continue to keep in
             mind your message, your image, and how you want other teams to remember you.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -258,7 +258,7 @@
             is an important aspect of FIRST.
             &lt;br>More information can be found on the
             &lt;a href="http://www.usfirst.org/roboticsprograms/first-fundraising-toolkit">FIRST Fundraising Toolkit&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -274,7 +274,7 @@
             grants, a team may apply for a general team grant or for a grant for specific, needed
             items. An example of items to buy with grant money, which may be stated when
             applying for the grant, is the purchase of computers, hard drives, and tablets.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -304,7 +304,7 @@
             they provide positive networking environments for both the hosts and attendees. If a
             team is small or new to planning an event of such a large magnitude, it can team up with
             one or two other local teams and split the profits.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -325,7 +325,263 @@
             has the potential to earn well over $500 and into the thousands of dollars. When
             combined, these minor fundraising events can earn more money than one or two major
             events.</item>
-        <item>ic_kt</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Pits -->
+
+    <string-array name="pits_design">
+        <item>fragment_pager_item</item>
+        <item>Pit Design</item>
+        <item>Designing your pit is one of the most important things to do before you head to
+            competition. Creating your pit is not something to take lightly considering it
+            represents your team in the pits at competitions. There are many different aspects to
+            consider when designing your teams pit. One main thing to think about is implementing
+            your team\'s name and number into your pit. Your name and number should be clearly visible
+            to everyone whether they are judges, other team members/mentors, or volunteers; it is
+            very important that your pit is noticeable to all of these people.
+            &lt;br>The design of your pit is also supposed to not only display your teams name and
+            number but also your teams theme and values. Judges are constantly in the pits so it is
+            important that your team’s values are displayed openly. This can be shown by hanging up
+            posters, displaying your sponsors names, or even banners. Hanging a banner across the
+            top of your pit is an easy way to display a lot of information that can easily be seen
+            by everyone. As you can see, there are many ways to show your teams theme and values in
+            your pit design. The best advice we can give is to have fun and be creative!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_organization">
+        <item>fragment_pager_item</item>
+        <item>Organization</item>
+        <item>Organization is one of the most important things in your team’s pit. Without a system
+            of organization it is almost inevitable that you will lose something. There are many
+            different ways to organize your pit. You will have a ton of tools and items you will be
+            bringing with you that will all seem to end up in your pit. It is a good idea to have
+            boxes, cabinets, etc. so items are not lost or stolen. Organizing your pit crew\'s tools
+            is a vitally important thing for your team’s success because if your robot breaks during
+            competition you want to be able to find these tools easily. It is also important to leave
+            tools that are commonly needed during competition in a close by place so they can be accessed easily.
+            &lt;br>Aside from the tools there are many other things that will need to be organized
+            in your pit whether they are computers, batteries, or even jackets. It is a good idea
+            to have an easily accessible area with the batteries so you can quickly change them when
+            necessary. Computers are not something you likely want to leave out in the open, even if
+            there is someone always in your pit, it is best to put them in a safe place such as a
+            cabinet or even just under a table out of site. Jackets and other such items can easily
+            be put into a box or crate so they are not taking up space inside the pit. Lastly, always
+            remember to leave space to work when needed.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_crew">
+        <item>fragment_pager_item</item>
+        <item>Pit Crew</item>
+        <item>The pit crew are some of the most crucial people off the field. It is important to
+            allow them the space necessary in the pit for immediate work and for those moments of
+            rushed panic. The pit crew should be ready for anything at any time. The crew should be
+            about 5-6 people so there is not too few or too many people in the pits. The pits can
+            easily get crowded so it is important to not have too many people around so there is
+            plenty of space to work on the robot. With the drive team and the pit crew constantly
+            in and out of the pits it’s important to keep a minimal amount of people besides them in
+            the area to avoid overcrowding. A last reminder, it is very important to have mechanical
+            people in the pit crew, but a programmer is just as necessary for a successful robot.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_judges">
+        <item>fragment_pager_item</item>
+        <item>Talking With Judges</item>
+        <item>Talking with judges is obviously one of the most important parts of the pits. Judges
+            are constantly walking through the pits at competitions so don’t forget to always show
+            gracious professionalism. When judges come and talk to teams in the pits they are truly
+            curious and eager to learn about your team and your robot. The judges will ask questions
+            that are either relevant to your robot or your team so it is wise to have experts of both
+            in your pits. When talking to judges always be informative. It is also important that
+            when judges come to your team’s pit that a team member is doing most or all of the
+            talking, not a mentor or parent. The judges are there to talk to the team, not the
+            mentors.
+            &lt;br>While the majority of the questions asked in the pit will be about your team\'s
+            robot the judges will also be looking for contenders for the other awards at the
+            competition. This will be even amplified if you are competing for the Chairman\'s award.
+            It is important to have an expert on your team’s outreach, marketing, and fundraising
+            side of your team in the pits as well. They will help answer these questions for the
+            judges. Judges are also not the only ones coming to talk in the pits; you will have pit
+            scouters, alliance partners, and volunteers always coming by also. Remember to always
+            be in a good mood!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Chairman's -->
+
+    <string-array name="chairmans_about">
+        <item>fragment_pager_item</item>
+        <item>What is Chairman\'s?</item>
+        <item>As stated in the FRC Manual section 6.4.1: \"The Chairman\'s Award was created to keep
+            the central focus of FRC on the ultimate goal of transforming the culture in ways that
+            will inspire greater levels of respect and honor for science and technology, as well as
+            encouraging more of today\'s youth to become scientists, engineers, and technologists.
+            &lt;br>The Chairman\'s Award represents the spirit of FIRST. It honors the team that, in
+            the judges\' estimation, best represents a model for other teams to emulate, and which
+            embodies the goals and purpose of FIRST. It remains FIRST\'s most prestigious award.\"
+            &lt;br>Any non-rookie team can compete for the Chairman\'s Award. It focuses on a team\'s
+            current and previous year. The Chairman\'s Award is one of three ways to qualify for the
+            FIRST Championship. The winners are given the opportunity to compete at the FIRST
+            Championship to be inducted into the First Hall of Fame. The FIRST Hall of Fame consists
+            of teams that have won the Chairman’s Award at the FIRST Championship. A new rule for the
+            2014 season states that a team can compete for the Chairman\'s Award at every regional they
+            attend until they win. In previous seasons, teams could only compete at one regional event.
+            &lt;br>Chairman\'s is composed largely of three different pieces: the written portion,
+            the speech, and the video.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chairmans_writing">
+        <item>fragment_pager_item</item>
+        <item>The Written Portion</item>
+        <item>The written piece of Chairman’s has two main parts, the essay and the executive
+            summary. The essay is a 10,000 character written explanation of how your team spreads
+            the mission of FIRST. At first 10,000 characters can seem like a lot, but you will most
+            likely have to shrink your essay in order to meet these requirements. While writing your
+            essay do not worry about word count. You will be better off writing your essay and them
+            combining and removing sentences. It\'s important that you start your essay early that way
+            your speech and video can play off of it.
+            &lt;br>The executive summary is a series of question that you will have to answer. The
+            majority of the questions have a 500 character word limit. You will also include your
+            team name, number and sponsors. These short answers have to do with how your team has
+            spread FIRST, and how FIRST has impacted your team. Along with the written pieces, you
+            will need to submit four photos at the same time. These photos are to show judges how
+            you’ve spread FIRST. These four photos can be no more than 1.0 MB of memory.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chairmans_speech">
+        <item>fragment_pager_item</item>
+        <item>The Speech</item>
+        <item>Although teams can probably talk about how they spread the mission of FIRST for hours,
+            teams are only given a short five minute time period to tell judges all about how they
+            impact their community. After the five minute presentation time, teams will have a five
+            minute question answer session. Teams must send in up to three representatives - members
+            or mentors.
+            &lt;br>&lt;br>The Chairman\'s presentation can seem very scary but here are some tips to
+            keep in mind while creating and performing your presentation:
+            &lt;br>&lt;br>&#8226;\tDon\'t let the judges emotions get to you. They have had long days of
+            speeches and are probably very tired and bored. Don\'t let this get to you while presenting.
+            &lt;br>&lt;br>&#8226;\tThe room may be very small; you should bring only what is necessary.
+            &lt;br>&lt;br>&#8226;\tExactly how much time you have depends on the judges. Some judges may start
+            the clock when you start the drawer.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chairmans_video">
+        <item>fragment_pager_item</item>
+        <item>The Video</item>
+        <item>The Chairman\'s video can be no longer than three minutes nor shorter than one. The
+            Chairman\'s video is mandatory in order to compete for the award. Before judges make
+            their final decision as to who wins between a few final teams, they watch these videos.
+            The video is very important because it is the last thing the judges will remember. When
+            a team wins, the video is broadcasted to the rest of the teams on the big screen at regional
+            or district events.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Tournaments -->
+
+    <string-array name="tournaments_about">
+        <item>fragment_pager_item</item>
+        <item>Why Off-Season Tournament\'s</item>
+        <item>The main reason for off season regionals are to train rookie team members and get back
+            into the swing of robotics. Before the real regionals begin, it is very useful to give
+            the new team members a taste of what to expect. These mini competitions also give teams
+            a great opportunity to train members whether it is in driving, scouting or spirit.
+            These competitions are hosted by FRC teams and are one day events normally held in
+            gymnasiums of the hosting team. Around thirty teams can be found at these regionals.
+            Official FIRST fields are shipped to the location and official FIRST judges, refs, and
+            tech managers are running the event. These regionals provide a nice opportunity for
+            FIRST volunteers to get trained into leadership positions. Awards are given out and
+            winners are crowned all in good fun.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Outreach -->
+
+    <string-array name="outreach_about">
+        <item>fragment_pager_item</item>
+        <item>Outreach</item>
+        <item>Teams spread the mission of FIRST in many different ways. Outreach events are important
+            to help get your team name out into the world of FIRST and out into your community. Your
+            team can do many forms of outreach in order to spread the world of science and technology.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="outreach_mentoring">
+        <item>fragment_pager_item</item>
+        <item>Mentoring</item>
+        <item>One way to spread STEM is through mentoring other teams. You might consider starting a
+            FTC team to form a funnel program at your school into your FRC team. You can also start
+            other teams in your surrounding area through presenting at their schools. Whether its FLL,
+            FTC or FRC, kids are given the opportunity to learn about science and technology and FIRST
+            is an exciting organization to have fun in.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="outreach_demonstrations">
+        <item>fragment_pager_item</item>
+        <item>Demonstrations</item>
+        <item>Whether it is at your local grocery store or at a science museum, demonstrations are a
+            great way to reach out to your local community. You can allow kids to drive the robots
+            and teach adults about its benefits. Demonstrations are a great opportunity for your team
+            to find interested people and get them involved. A few fun places to give demonstrations
+            is at local schools, malls, and museums.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Preparing for next year -->
+
+    <string-array name="preparing_for_next_year">
+        <item>fragment_pager_item</item>
+        <item>Preparing for Next Year</item>
+        <item>After the competition season ends, everyone deserves a rest, but there is still a lot
+            of work to do. Your team must decide what you will be doing with your robot. Maybe it
+            performed so well in competition that you want to keep it in operating conditions for
+            demonstrations, or teaching new members about your robot. Maybe you will want to take it
+            all apart so you can reuse parts for next year’s robot. Either way, your workspace
+            probably could use some cleanup and organization of tools and parts after the last six
+            weeks of mayhem. As your team grows it is important to keep up on the organization of
+            your workspace to facilitate safety and productivity, as well as avoid the expense of
+            having to replace lost tools or robot parts.
+            &lt;br>If your team seeks to compete for the chairman’s award next year, you have more
+            work to do. Demonstrations in your community during the summer goes a long way towards
+            a convincing judges of your teams’ positive impact. If you kept your robot in operating
+            condition, all the better. It will be your greatest tool for attracting positive interest
+            in your robotics team, and to promote FIRST. KING TeC showcases their robot in an annual
+            town parade in August, and brings it to schools for demonstrations in the fall and spring.
+            &lt;br>How will you attract the most talented kids for your team next year? September
+            is the best month to begin promoting your team to potential new members. Even though
+            the FRC game isn’t released until January, there is a steep learning curve to follow if
+            your new members want to learn all there is to know about an FRC robot, how the
+            competitions work, and building skills. KING TeC makes it a priority that all our members
+            are familiar with operating the power tools and the proper safety procedures to follow.
+            Senior members can host classes in CAD or programming for the new members to learn essential
+            software skills that will reap benefits during the competition season.
+            &lt;br>To prepare new students for the intense atmosphere of first robotics competitions,
+            consider using last years’ robot to compete at a mock regional in the fall. Older teams
+            host small scale unofficial competitions in their high schools in the fall in order to
+            train new members for the roles they will have at an actual competition. In Minnesota,
+            KING TeC hosts the Minne-mini regional at their high school, where around 30 teams compete
+            for a day. Search the Chief Delphi forums for practice competitions in your area.</item>
+        <item></item>
         <item></item>
     </string-array>
 

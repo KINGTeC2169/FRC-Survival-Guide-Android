@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Survival-Guide.iml" filepath="$PROJECT_DIR$/Survival-Guide.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestApp/TestApp.iml" filepath="$PROJECT_DIR$/TestApp/TestApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestAppProject.iml" filepath="$PROJECT_DIR$/TestAppProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../Users.iml" filepath="$PROJECT_DIR$/../../../../Users.iml" />
+      <module fileurl="file://D:/../../Users.iml" filepath="D:/../../Users.iml" />
     </modules>
   </component>
 </project>
