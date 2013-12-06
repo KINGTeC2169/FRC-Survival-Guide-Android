@@ -107,6 +107,43 @@
         <item></item>
     </string-array>
 
+    <!-- Week Three -->
+
+    <string-array name="module_building">
+        <item>fragment_pager_item</item>
+        <item>Building Modules</item>
+        <item>Hopefully by now prototyping has shown you some viable strategies and mechanisms for
+            the game. Prototypes are great for finding out what designs work well, but your robot should
+            not be made of prototypes! It's time to start building modules out of the designs you have
+            tested; even if not every component has been fully tested it is important to start
+            building what you can as soon as you can!
+            &lt;br>While building components in modular sections is often the most efficient workflow,
+            where many people can work on assembly at once, it is important to remember that in the
+            end every module must come together to form a robot. Don\'t forget to talk between
+            work-groups to make sure that everybody is on the same page!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="beginning_wiring">
+        <item>fragment_pager_item</item>
+        <item>Starting Electrical</item>
+        <item>Although it may seem absurd to start designing your electrical configuration without a
+            complete robot, you\'re going to want to have the main board designed and built early so
+            it can be installed on the chassis. Try to have all of your main electrical components in
+            one place, so that parts can be swapped out if need be.
+            &lt;br>Even though the electrical system is often designed to fit in a small, compact space
+            it is important to not get carried away and create an impermeable board. Every electrical
+            component on your robot will generate heat, and the last thing your team needs is part of
+            the robot shutting down during competition from overheating. Consider ventilation when
+            designing your system!
+            &lt;br>Labelling parts of the system is also a critically important step; one which can
+            never be started too early. If your team\'s main electrician is absent on competition day,
+            would your team be able to fix any problems that arose?</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <!-- Week Four -->
 
     <string-array name="early_programming">
