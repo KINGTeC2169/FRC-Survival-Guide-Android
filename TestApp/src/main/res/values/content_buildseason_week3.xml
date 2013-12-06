@@ -33,6 +33,21 @@
         <item></item>
     </string-array>
 
+    <string-array name="robot_assembly">
+        <item>fragment_pager_item</item>
+        <item>Putting it All Together</item>
+        <item>When you are putting all of your components together, it is important to keep the robot
+            as a whole in mind. Be sure that your mechanisms will not interfere with each other and
+            that the mechanisms as well as the motors and electrical components that are required
+            have enough room. Also think about the order in which you should attach the components.
+            It\'s a good idea to start with your drive train or frame and then attach the other
+            components onto it where they belong. Make sure you leave a little room for error on
+            your frame, it\'s never fun when you have to make more room around your mechanisms so
+            they can fit together properly. Keep your overall goal in mind and go one step at a time.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="beginning_wiring">
         <item>fragment_pager_item</item>
         <item>Starting Electrical</item>
