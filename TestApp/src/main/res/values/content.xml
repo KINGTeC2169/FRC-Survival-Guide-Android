@@ -24,7 +24,7 @@
             brainstorming. No idea is a bad idea here, and this is the time to come up with all kinds of
             crazy designs. During this time you should begin planning strategy and deciding how and what
             you want your robot to do.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -36,7 +36,7 @@
             game-plan before you can design a robot. In order to design a robot around the best
             strategy, KING TeC stages a mock game using human players instead of robots immediately
             after Kickoff, revealing any strategies that may otherwise be overlooked.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -46,7 +46,7 @@
         <item>Fully understanding the rules of the new game is critical to the design
             process. Everyone on the team should read the rules at least once and your team should
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -61,7 +61,7 @@
             Have your team put together a list of expected materials, and don\'t forget to
             include extras for any parts you think might break.
             Your priority should be getting the parts you need to start building!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -79,7 +79,7 @@
             KING TeC assembles smaller two/three man teams that work on individual components of the
             robot. How you prototype is up to your team, but it is important to keep the process moving.
             Don\'t let a failure in one part constitute a failure as a whole!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -91,7 +91,7 @@
             every robot design out there, and it is important to get a driving robot as soon as possible. Not
             only will having driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -103,7 +103,7 @@
             a robot, it is important to find time to let your drivers practice. The earlier the better,
             but the season goes fast and we often are only able to practice driving during the last few
             days of the build season.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -117,7 +117,7 @@
             shouldn\'t worry about perfecting the code at this time; save the fine-tuning and control
             loops for later. As long as you can control the subsystems at this point, and are able to
             read from any sensors that you might have, you\'re doing fine.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -141,7 +141,7 @@
             from previous years, in order to comply with
             &lt;a href="http://frc-manual.usfirst.org/viewItem/285">R16&lt;/a> of the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/3">Game Manual&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -159,7 +159,7 @@
             it is important to remind them that they most likely won\'t be driving it at competition.
             If they will be, your team has lucked out! If not, the programmers should sit down with the
             drive team and fine tune the controls until the drivers are content.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -172,7 +172,7 @@
             &lt;br>
             You are allowed to bring a small amount of robot-related parts to competition, which means
             you can manufacture parts at home and install them on the first day of competition.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -184,7 +184,7 @@
             "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
             of Build Season. More information is available in the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/8">administrative manual&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -197,7 +197,7 @@
             are by other teams, the more likely you are to get picked for alliance selections. You
             also want to keep the competition energy high because it makes an even more exciting
             atmosphere for everyone in the arena.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -216,7 +216,7 @@
             sky is the limit. Teams wear everything from matching shoes, to matching bracelets. Be creative
             and remember to not shy far from your name. If teams will wonder how your mascot is relevant to
             your name, it’s probably not the best idea.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -228,7 +228,7 @@
             completely covered in buttons. Other simple and cost effective ideas are pencils and
             bracelets. Swag gets your team name and number out to other teams. Continue to keep in
             mind your message, your image, and how you want other teams to remember you.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -258,7 +258,7 @@
             is an important aspect of FIRST.
             &lt;br>More information can be found on the
             &lt;a href="http://www.usfirst.org/roboticsprograms/first-fundraising-toolkit">FIRST Fundraising Toolkit&lt;/a>.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -274,7 +274,7 @@
             grants, a team may apply for a general team grant or for a grant for specific, needed
             items. An example of items to buy with grant money, which may be stated when
             applying for the grant, is the purchase of computers, hard drives, and tablets.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -304,7 +304,7 @@
             they provide positive networking environments for both the hosts and attendees. If a
             team is small or new to planning an event of such a large magnitude, it can team up with
             one or two other local teams and split the profits.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -325,7 +325,7 @@
             has the potential to earn well over $500 and into the thousands of dollars. When
             combined, these minor fundraising events can earn more money than one or two major
             events.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -348,7 +348,7 @@
             top of your pit is an easy way to display a lot of information that can easily be seen
             by everyone. As you can see, there are many ways to show your teams theme and values in
             your pit design. The best advice we can give is to have fun and be creative!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -371,7 +371,7 @@
             cabinet or even just under a table out of site. Jackets and other such items can easily
             be put into a box or crate so they are not taking up space inside the pit. Lastly, always
             remember to leave space to work when needed.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -387,7 +387,7 @@
             in and out of the pits it’s important to keep a minimal amount of people besides them in
             the area to avoid overcrowding. A last reminder, it is very important to have mechanical
             people in the pit crew, but a programmer is just as necessary for a successful robot.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -411,7 +411,7 @@
             judges. Judges are also not the only ones coming to talk in the pits; you will have pit
             scouters, alliance partners, and volunteers always coming by also. Remember to always
             be in a good mood!</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -436,7 +436,7 @@
             attend until they win. In previous seasons, teams could only compete at one regional event.
             &lt;br>Chairman\'s is composed largely of three different pieces: the written portion,
             the speech, and the video.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -456,7 +456,7 @@
             spread FIRST, and how FIRST has impacted your team. Along with the written pieces, you
             will need to submit four photos at the same time. These photos are to show judges how
             you’ve spread FIRST. These four photos can be no more than 1.0 MB of memory.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -475,7 +475,7 @@
             &lt;br>&lt;br>&#8226;\tThe room may be very small; you should bring only what is necessary.
             &lt;br>&lt;br>&#8226;\tExactly how much time you have depends on the judges. Some judges may start
             the clock when you start the drawer.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -488,7 +488,7 @@
             The video is very important because it is the last thing the judges will remember. When
             a team wins, the video is broadcasted to the rest of the teams on the big screen at regional
             or district events.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -507,7 +507,7 @@
             tech managers are running the event. These regionals provide a nice opportunity for
             FIRST volunteers to get trained into leadership positions. Awards are given out and
             winners are crowned all in good fun.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -519,7 +519,7 @@
         <item>Teams spread the mission of FIRST in many different ways. Outreach events are important
             to help get your team name out into the world of FIRST and out into your community. Your
             team can do many forms of outreach in order to spread the world of science and technology.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -531,7 +531,7 @@
             other teams in your surrounding area through presenting at their schools. Whether its FLL,
             FTC or FRC, kids are given the opportunity to learn about science and technology and FIRST
             is an exciting organization to have fun in.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -543,7 +543,7 @@
             and teach adults about its benefits. Demonstrations are a great opportunity for your team
             to find interested people and get them involved. A few fun places to give demonstrations
             is at local schools, malls, and museums.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
@@ -581,7 +581,7 @@
             train new members for the roles they will have at an actual competition. In Minnesota,
             KING TeC hosts the Minne-mini regional at their high school, where around 30 teams compete
             for a day. Search the Chief Delphi forums for practice competitions in your area.</item>
-        <item>ic_kt</item>
+        <item></item>
         <item></item>
     </string-array>
 
