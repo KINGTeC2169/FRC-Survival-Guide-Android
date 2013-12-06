@@ -289,6 +289,7 @@ public class MainActivity extends ActionBarActivity
         inflater.inflate(R.menu.main_menu, menu);
 
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
+        getSupportActionBar().setIcon(R.drawable.ic_kt); // TODO: Find actual cause of problem, remove this "fix"
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String newText) {
