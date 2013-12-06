@@ -546,4 +546,43 @@
         <item>ic_kt</item>
         <item></item>
     </string-array>
+
+    <!-- Preparing for next year -->
+
+    <string-array name="preparing_for_next_year">
+        <item>fragment_pager_item</item>
+        <item>Preparing for Next Year</item>
+        <item>After the competition season ends, everyone deserves a rest, but there is still a lot
+            of work to do. Your team must decide what you will be doing with your robot. Maybe it
+            performed so well in competition that you want to keep it in operating conditions for
+            demonstrations, or teaching new members about your robot. Maybe you will want to take it
+            all apart so you can reuse parts for next year’s robot. Either way, your workspace
+            probably could use some cleanup and organization of tools and parts after the last six
+            weeks of mayhem. As your team grows it is important to keep up on the organization of
+            your workspace to facilitate safety and productivity, as well as avoid the expense of
+            having to replace lost tools or robot parts.
+            &lt;br>If your team seeks to compete for the chairman’s award next year, you have more
+            work to do. Demonstrations in your community during the summer goes a long way towards
+            a convincing judges of your teams’ positive impact. If you kept your robot in operating
+            condition, all the better. It will be your greatest tool for attracting positive interest
+            in your robotics team, and to promote FIRST. KING TeC showcases their robot in an annual
+            town parade in August, and brings it to schools for demonstrations in the fall and spring.
+            &lt;br>How will you attract the most talented kids for your team next year? September
+            is the best month to begin promoting your team to potential new members. Even though
+            the FRC game isn’t released until January, there is a steep learning curve to follow if
+            your new members want to learn all there is to know about an FRC robot, how the
+            competitions work, and building skills. KING TeC makes it a priority that all our members
+            are familiar with operating the power tools and the proper safety procedures to follow.
+            Senior members can host classes in CAD or programming for the new members to learn essential
+            software skills that will reap benefits during the competition season.
+            &lt;br>To prepare new students for the intense atmosphere of first robotics competitions,
+            consider using last years’ robot to compete at a mock regional in the fall. Older teams
+            host small scale unofficial competitions in their high schools in the fall in order to
+            train new members for the roles they will have at an actual competition. In Minnesota,
+            KING TeC hosts the Minne-mini regional at their high school, where around 30 teams compete
+            for a day. Search the Chief Delphi forums for practice competitions in your area.</item>
+        <item>ic_kt</item>
+        <item></item>
+    </string-array>
+
 </resources>
