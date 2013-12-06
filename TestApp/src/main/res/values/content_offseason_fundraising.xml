@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="fundraising_obtaining_sponsors">
+        <item>fragment_pager_item</item>
+        <item>Obtaining Sponsors</item>
+        <item>Sponsorships often give teams large amounts of money for little effort,
+            especially when compared to other methods of fundraising. Sponsors can be either
+            corporate, at a major business such as JCPenny, or local, with locations that include
+            a local hardware store and a restaurant. However, when obtaining sponsors it is
+            important to remember that non-monetary sponsorship may be just as valuable as money.
+            Many companies can offer mentorship or supply donations.
+            &lt;br>The first step to getting sponsors is asking team members if any parents work for
+            companies that could potentially offer money, mentors, or donations to the team. This
+            option should be explored first because connections make companies much more likely to
+            want to support the team. Ask the  parents for the people to contact regarding
+            sponsorship at their companies, and call the contacts to schedule meetings with those
+            who grant sponsorship. Once a meeting is scheduled, sponsorship is almost guaranteed.
+            Prepare an interactive PowerPoint and speech, and be ready to answer questions.
+            &lt;br>If no parents work at companies that could sponsor the team or additional
+            sponsors are needed, there are many other options. Go to the websites of local teams and
+            find out which companies sponsor them, as large companies usually sponsor several teams
+            in their base areas. Local companies are also often willing to sponsor robotics teams.
+            Although they might not be able to give as much money, having support from the community
+            is an important aspect of FIRST.
+            &lt;br>More information can be found on the
+            &lt;a href="http://www.usfirst.org/roboticsprograms/first-fundraising-toolkit">FIRST Fundraising Toolkit&lt;/a>.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_grants">
+        <item>fragment_pager_item</item>
+        <item>Applying for Grants</item>
+        <item>Grants typically offer a one-time source of money for teams. The monetary
+            amount, however, is rarely small. FIRST offers grants to its teams, but many of
+            these are aimed towards and only eligible to rookie teams. Many corporations
+            offer several grants to both rookie and veteran teams. At this time, these companies
+            include NASA, Rockwell Automation, and PTC. Local educational foundations and
+            donation-based non-profit organizations also often offer grants. When applying for
+            grants, a team may apply for a general team grant or for a grant for specific, needed
+            items. An example of items to buy with grant money, which may be stated when
+            applying for the grant, is the purchase of computers, hard drives, and tablets.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_major_events">
+        <item>fragment_pager_item</item>
+        <item>Major Fundraising Events</item>
+        <item>One reliable and consistent way to raise money is to host large fundraising events. These
+            events often span several days of work and should be planned well in advance. Although a lot
+            of work, these events provide an excellent way to raise funds for your team.
+            &lt;br>One example of a major fundraising event is hosting a summer day camp for
+            local youth. This doubles as an outreach activity because FIRST supports the introduction
+            of STEAM (Science, Technology, Engineering, Art, and Mathematics) in community outreach
+            to young people. Teams can charge anywhere from $50 to $250 per student for a one or two
+            weeklong day camp. There are many options of concepts to teach the attending students,
+            and these include MIT’s Scratch programming and robots built with Vex or FLL kit-of-parts.
+            Teams can either host these camps themselves at their high school or at other community
+            locations, and local “community education” groups can run and manage the camps.
+            &lt;br>Teams can host school-sponsored activities to raise both money and local awareness.
+            Planning and holding a themed school dance should raise anywhere from $1,000 to $5,000 per year.
+            Examples of themes are winter, Valentine’s Day, and Halloween. Robotic concepts such as
+            laser lights and automated decorations can even be incorporated into the dance. Students
+            will be drawn to attend the dance with promotions that students DJ the music and there are
+            fun, unique elements such as balloon drops.
+            &lt;br>Hosting an off-season regional competition spreads awareness of the team and earns
+            money. Prices to charge per attending team range from $50 to $500, and this adds up
+            quickly if 20+ teams attend. Teams return continually to well-organized events because
+            they provide positive networking environments for both the hosts and attendees. If a
+            team is small or new to planning an event of such a large magnitude, it can team up with
+            one or two other local teams and split the profits.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_minor_events">
+        <item>fragment_pager_item</item>
+        <item>Minor Fundraising Events</item>
+        <item>Smaller fundraising events may raise less money, but they are easier to plan and host
+            more of. Many successfully spread awareness in a team’s local community. One example is
+            bagging groceries at a local supermarket. Past robots can be displayed and, if the store
+            allows it, driven. Customers are usually excited to hear about the robots and community
+            outreach of a FIRST team, and they are often willing to donate. This typically earns a
+            team $500 to $1,500. Another small fundraising event that can be done at a supermarket
+            is selling hot dogs outside the building in the summer. Local stores will often donate
+            the equipment, and they will possibly donate the supplies. Watch for stores that offer
+            this, and request a shift. This can make a team around $500 to $1,000. Many local and
+            chain restaurants offer high school teams benefit nights. On these nights, a certain
+            percentage of sales is granted to the promoted team. If a team advertises properly, it
+            has the potential to earn well over $500 and into the thousands of dollars. When
+            combined, these minor fundraising events can earn more money than one or two major
+            events.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

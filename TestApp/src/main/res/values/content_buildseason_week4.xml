@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="early_programming">
+        <item>fragment_pager_item</item>
+        <item>Getting Started Programming</item>
+        <item>In order to test your robot, you need to be able to control it. Start with the basics,
+            and begin programming one subsystem at a time. It is important to remember that you
+            shouldn\'t worry about perfecting the code at this time; save the fine-tuning and control
+            loops for later. As long as you can control the subsystems at this point, and are able to
+            read from any sensors that you might have, you\'re doing fine.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
