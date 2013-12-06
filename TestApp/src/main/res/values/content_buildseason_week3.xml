@@ -51,4 +51,21 @@
         <item></item>
         <item></item>
     </string-array>
+
+    <string-array name="thinking_about_programming">
+        <item>fragment_pager_item</item>
+        <item>Planning Programming</item>
+        <item>Even though it may seem early to start planning your programming, during Week 3 of build
+            season it is important to start narrowing down the specifics of your program. Think about
+            how your code will be organized, and determine who will be responsible for programming each
+            section of the robot.
+            &lt;br>Talk with your electrical department and find out how the robot is going to be wired!
+            Even if this information is tentative, it is helpful to know how your robot is configured,
+            especially what ports each system is plugged into. This is also an excellent time to
+            make sure your robot\'s firmware and computer\'s software is up to date. Not having the
+            right updates can cause major problems at competition, and may even prevent you from passing
+            inspection. Plan ahead so that your robot can compete!</item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>
