@@ -30,7 +30,7 @@
             Scouting in the stands is designed to give your team as much information as possible
             about the performance of other robots. Your team can record both qualitative and
             quantitative information, but should have a standardized system for recording information.
-            &lt;br>On the field performance depends on more than just the robot, it also depends
+            &lt;br>On-the-field performance depends on more than just the robot, it also depends
             on the driver. Have your scouting crew look at how other teams perform under stress,
             and make note of any flaws in their strategy that your team can exploit.</item>
         <item></item>
@@ -39,7 +39,7 @@
 
     <string-array name="scouting_pits">
         <item>fragment_pager_item</item>
-        <item>Match Scouting</item>
+        <item>Pit Scouting</item>
         <item>Pit scouting is a great way to see every robot up close. You are able to see specifics
             of the robot\'s design and also some features not necessarily apparent on the field. As a
             team you should record important details such as the weight, height, drive-train and
