@@ -13,7 +13,7 @@ public class PageContent {
     public static final List<Page> PAGES = new ArrayList<Page>();
     // Number of pages in each week
     public static final int numPages[][] = {
-            {3,3,4,2,1,4},
+            {3,3,4,2,2,3},
             {4,2,4,3,0},
             {4,1,3,1}};
     // Which content is currently in memory
@@ -68,9 +68,9 @@ public class PageContent {
                         break;
                     case 4:
                         PAGES.add(new Page(mContext, R.array.main_programming));
+                        PAGES.add(new Page(mContext, R.array.drive_practice));
                         break;
                     case 5:
-                        PAGES.add(new Page(mContext, R.array.drive_practice));
                         PAGES.add(new Page(mContext, R.array.tweaking_programming));
                         PAGES.add(new Page(mContext, R.array.late_build_changes));
                         PAGES.add(new Page(mContext, R.array.bag_and_tag));
