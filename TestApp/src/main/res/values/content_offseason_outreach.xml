@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="outreach_about">
+        <item>fragment_pager_item</item>
+        <item>Outreach</item>
+        <item>Teams spread the mission of FIRST in many different ways. Outreach events are important
+            to help get your team name out into the world of FIRST and out into your community. Your
+            team can do many forms of outreach in order to spread the world of science and technology.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="outreach_mentoring">
+        <item>fragment_pager_item</item>
+        <item>Mentoring</item>
+        <item>One way to spread STEM is through mentoring other teams. You might consider starting a
+            FTC team to form a funnel program at your school into your FRC team. You can also start
+            other teams in your surrounding area through presenting at their schools. Whether its FLL,
+            FTC or FRC, kids are given the opportunity to learn about science and technology and FIRST
+            is an exciting organization to have fun in.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="outreach_demonstrations">
+        <item>fragment_pager_item</item>
+        <item>Demonstrations</item>
+        <item>Whether it is at your local grocery store or at a science museum, demonstrations are a
+            great way to reach out to your local community. You can allow kids to drive the robots
+            and teach adults about its benefits. Demonstrations are a great opportunity for your team
+            to find interested people and get them involved. A few fun places to give demonstrations
+            is at local schools, malls, and museums.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

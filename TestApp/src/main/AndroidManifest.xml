@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingtec2169.survivalguide"
+    android:versionCode="8"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:debuggable="false"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_kt"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.kingtec2169.survivalguide.SettingsActivity"
+                android:label="@string/settings_name"
+                android:parentActivityName="com.kingtec2169.survivalguide.MainActivity" >
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.kingtec2169.survivalguide.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

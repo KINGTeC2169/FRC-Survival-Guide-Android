@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="main_programming">
+        <item>fragment_pager_item</item>
+        <item>Programming</item>
+        <item>By this point, you should be able to control every part of your robot. It is time to
+            stop working on implementing new features and perfect the ones you have. This is the time
+            to create control loops which make the driver\'s job easier, such as a PID controller.
+            Make sure to check if existing functions are available before trying to implement your
+            own; they will be easier to use and are much less likely to contain bugs than code you or
+            your team writes.
+            &lt;br>
+            One of the features that is not stressed enough in FRC programming is code reuse.
+            When writing the functions for this year\'s robot, think about how you can write the code
+            so that it is still viable next year. Although your robot will change from year to year,
+            there is no reason you cannot recycle some of the programming ideas and implementations.
+            However, you may be required to release the code as open-source if you plan to use code
+            from previous years, in order to comply with
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/285">R16&lt;/a> of the
+            &lt;a href="http://frc-manual.usfirst.org/viewItem/3">Game Manual&lt;/a>.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="drive_practice">
+        <item>fragment_pager_item</item>
+        <item>Practicing Driving</item>
+        <item>Driving the robot at competition is an incredibly stressful job, and one that no amount
+            of practice can fully prepare you for. In addition, no two robots are exactly the same, so
+            experience driving from previous years will not always transfer. By Week 5 your team should
+            have enough of a robot working to at least be driving, and ideally your team is completely
+            done building and the robot is programmed.
+            &lt;br>By setting up a makeshift field your drivers should be able to get a feel for both
+            the robot and the game. If your team has old robots available, try pitting the new one
+            against a ragtag defense. This will give you an idea of what your robot is and isn\'t capable
+            of doing. Don\'t forget to try and practice scoring!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

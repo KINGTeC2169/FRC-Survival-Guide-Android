@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="getting_materials">
+        <item>fragment_pager_item</item>
+        <item>Getting Materials</item>
+        <item>While the details of your design may not be set in stone, it is important for your
+            team to begin purchasing materials, especially materials that need to be shipped.
+            Unfortunately you can\'t build a robot without supplies, and it is much better to be
+            waiting for them during Weeks One and Two than during Week Six.
+            &lt;br>Have your team put together a list of expected materials, and don\'t forget to
+            include extras for any parts you think might break.
+            Your priority should be getting the parts you need to start building!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prototyping">
+        <item>fragment_pager_item</item>
+        <item>Prototyping</item>
+        <item>The teams on Einstein Field at the FRC World Championship consistently do one thing right.
+            They test and test repeatedly, designing and breaking components of their robot before even
+            thinking about assembling them into a finalized design. Prototyping allows teams to find
+            flaws in their designs and fix them before it cuts into the crucial later weeks, where time
+            and resources need to be spent on programming and drive practice.
+            &lt;br>
+            KING TeC assembles smaller two/three man teams that work on individual components of the
+            robot. How you prototype is up to your team, but it is important to keep the process moving.
+            Don\'t let a failure in one part constitute a failure as a whole!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chassis_building">
+        <item>fragment_pager_item</item>
+        <item>Building the Chassis</item>
+        <item>Although you may not have a completely finalized robot design at this point in time, it is
+            extremely important that you begin building the chassis. The drive-train is the heart of almost
+            every robot design out there, and it is important to get a driving robot as soon as possible. Not
+            only will having a driving robot guarantee you some level of success on the field, without a
+            frame the components and modules you are prototyping will have nowhere to go!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

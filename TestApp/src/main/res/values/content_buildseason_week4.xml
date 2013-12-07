@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="early_programming">
+        <item>fragment_pager_item</item>
+        <item>Getting Started Programming</item>
+        <item>In order to test your robot, you need to be able to control it. Start with the basics,
+            and begin programming one subsystem at a time. It is important to remember that you
+            shouldn\'t worry about perfecting the code at this time; save the fine-tuning and control
+            loops for later. As long as you can control the subsystems at this point, and are able to
+            read from any sensors that you might have, you\'re doing fine.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="finishing_electrical">
+        <item>fragment_pager_item</item>
+        <item>Finishing Electrical</item>
+        <item>This is the time for your electrical department to have finished your wiring. It is
+            imperative that it is done so that your team will have as much time as possible for driving practice.
+            Some tips for a successful season are:
+            &lt;br>&lt;br>&#8226;\tDouble check all wire connections and make sure that they are
+            secure, even one wire coming loose could mean your entire robot shutting off.
+            &lt;br>&lt;br>&#8226;\tMake sure your power distribution board has fuses of the proper
+            amperage placed in their respective slots to prevent damaging any electrical components.
+            &lt;br>&lt;br>&#8226;\tIt is strongly recommended that all points of connection are
+            labeled from one point to another, this can save huge amounts of time when trying to
+            diagnose electrical problems.
+            &lt;br>&lt;br>&#8226;\tIf nothing else, make sure your electrical is neat and tidy in
+            its final form. It looks more impressive to the judges, and makes fixing things way more easy.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>

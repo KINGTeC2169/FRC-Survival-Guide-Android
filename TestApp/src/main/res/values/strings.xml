@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Survival Guide</string>
+    <string name="settings_name">Preferences</string>
+    <string name="about_kt">KING TeC is more than just a robotics team. We have been changing our
+        culture for more than seven years by competing in world class robotics competitions while
+        working together with our sponsors, school, community, and volunteers. By working with FIRST,
+        the premiere robotics competition of its kind, KING TeC provides nearly unlimited technological
+        opportunities to grow young minds within our community into the technology leaders of tomorrow.
+        Find out more about KING TeC at www.kingtec2169.com.</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+
+    <string name="contact_us_name">Contact Us</string>
+    <string name="about_name">About KING TeC</string>
+    <string name="search_name">Search</string>
+
+</resources>

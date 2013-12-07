@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT OF CONTENT
+    <string-array name="RESOURCE-ID">
+        <item>LAYOUT NAME</item>
+        <item>TITLE</item>
+        <item>MAIN TEXT</item>
+        <item>IMAGE NAME</item>
+        <item>TAGS</item>
+    </string-array> -->
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="module_building">
+        <item>fragment_pager_item</item>
+        <item>Building Modules</item>
+        <item>Hopefully by now prototyping has shown you some viable strategies and mechanisms for
+            the game. Prototypes are great for finding out what designs work well, but your robot should
+            not be made of prototypes! It\'s time to start building modules out of the designs you have
+            tested; even if not every component has been fully tested it is important to start
+            building what you can as soon as you can!
+            &lt;br>While building components in modular sections is often the most efficient workflow,
+            where many people can work on assembly at once, it is important to remember that in the
+            end every module must come together to form a robot. Don\'t forget to talk between
+            work-groups to make sure that everybody is on the same page!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="robot_assembly">
+        <item>fragment_pager_item</item>
+        <item>Putting it All Together</item>
+        <item>When you are putting all of your components together, it is important to keep the robot
+            as a whole in mind. Be sure that your mechanisms will not interfere with each other and
+            that the mechanisms as well as the motors and electrical components that are required
+            have enough room. Also think about the order in which you should attach the components.
+            It\'s a good idea to start with your drive train or frame and then attach the other
+            components onto it where they belong. Make sure you leave a little room for error on
+            your frame, it\'s never fun when you have to make more room around your mechanisms so
+            they can fit together properly. Keep your overall goal in mind and go one step at a time.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="beginning_wiring">
+        <item>fragment_pager_item</item>
+        <item>Starting Electrical</item>
+        <item>Although it may seem absurd to start designing your electrical configuration without a
+            complete robot, you\'re going to want to have the main board designed and built early so
+            it can be installed on the chassis. Try to have all of your main electrical components in
+            one place, so that parts can be swapped out if need be.
+            &lt;br>Even though the electrical system is often designed to fit in a small, compact space
+            it is important to not get carried away and create an impermeable board. Every electrical
+            component on your robot will generate heat, and the last thing your team needs is part of
+            the robot shutting down during competition from overheating. Consider ventilation when
+            designing your system!
+            &lt;br>Labelling parts of the system is also a critically important step; one which can
+            never be started too early. If your team\'s main electrician is absent on competition day,
+            would your team be able to fix any problems that arose?</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="thinking_about_programming">
+        <item>fragment_pager_item</item>
+        <item>Planning Programming</item>
+        <item>Even though it may seem early to start planning your programming, during Week 3 of build
+            season it is important to start narrowing down the specifics of your program. Think about
+            how your code will be organized, and determine who will be responsible for programming each
+            section of the robot.
+            &lt;br>Talk with your electrical department and find out how the robot is going to be wired!
+            Even if this information is tentative, it is helpful to know how your robot is configured,
+            especially what ports each system is plugged into. This is also an excellent time to
+            make sure your robot\'s firmware and computer\'s software is up to date. Not having the
+            right updates can cause major problems at competition, and may even prevent you from passing
+            inspection. Plan ahead so that your robot can compete!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
