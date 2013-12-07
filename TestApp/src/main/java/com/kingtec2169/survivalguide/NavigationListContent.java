@@ -28,7 +28,6 @@ public class NavigationListContent {
         addItem(parents[1], new NavigationListItem("1", "Scouting", "Your Eyes in the Sky"));
         addItem(parents[1], new NavigationListItem("2", "Chairman's", "The Core of FIRST"));
         addItem(parents[1], new NavigationListItem("3", "Spirit", "Loud and Proud"));
-        addItem(parents[1], new NavigationListItem("4", "Competing in the Game", "The Exciting Part!"));
         // Add children to the third parent
         addItem(parents[2], new NavigationListItem("0", "Fundraising", "Providing Financial Stability"));
         addItem(parents[2], new NavigationListItem("1", "Tournaments", "Letting Your Robot Live Again"));
