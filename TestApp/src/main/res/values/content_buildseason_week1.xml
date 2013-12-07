@@ -49,18 +49,4 @@
         <item></item>
         <item></item>
     </string-array>
-
-    <string-array name="getting_materials">
-        <item>fragment_pager_item</item>
-        <item>Getting Materials</item>
-        <item>While the details of your design may not be set in stone, it is important for your
-            team to begin purchasing materials, especially materials that need to be shipped.
-            Unfortunately you can\'t build a robot without supplies, and it is much better to be
-            waiting for them during Weeks One and Two than during Week Six.
-            &lt;br>Have your team put together a list of expected materials, and don\'t forget to
-            include extras for any parts you think might break.
-            Your priority should be getting the parts you need to start building!</item>
-        <item></item>
-        <item></item>
-    </string-array>
 </resources>

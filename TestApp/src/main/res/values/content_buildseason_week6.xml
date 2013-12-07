@@ -17,6 +17,18 @@
     &lt;br> -->
 
 <resources>
+    <string-array name="drive_practice">
+        <item>fragment_pager_item</item>
+        <item>Drive Practice</item>
+        <item>When competing at competition, nothing can make or break your teams experience than how
+            your drivers work together and with the robot. While six weeks is not a lot of time to build
+            a robot, it is important to find time to let your drivers practice. The earlier the better,
+            but the season goes fast and we often are only able to practice driving during the last few
+            days of the build season.</item>
+        <item></item>
+        <item></item>
+    </string-array>
+    
     <string-array name="tweaking_programming">
         <item>fragment_pager_item</item>
         <item>Tweaking Programming</item>
