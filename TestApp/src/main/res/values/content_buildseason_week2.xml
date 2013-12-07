@@ -17,6 +17,20 @@
     &lt;br> -->
 
 <resources>
+    <string-array name="getting_materials">
+        <item>fragment_pager_item</item>
+        <item>Getting Materials</item>
+        <item>While the details of your design may not be set in stone, it is important for your
+            team to begin purchasing materials, especially materials that need to be shipped.
+            Unfortunately you can\'t build a robot without supplies, and it is much better to be
+            waiting for them during Weeks One and Two than during Week Six.
+            &lt;br>Have your team put together a list of expected materials, and don\'t forget to
+            include extras for any parts you think might break.
+            Your priority should be getting the parts you need to start building!</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
     <string-array name="prototyping">
         <item>fragment_pager_item</item>
         <item>Prototyping</item>
@@ -41,18 +55,6 @@
             every robot design out there, and it is important to get a driving robot as soon as possible. Not
             only will having driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
-        <item></item>
-        <item></item>
-    </string-array>
-
-    <string-array name="drive_practice">
-        <item>fragment_pager_item</item>
-        <item>Drive Practice</item>
-        <item>When competing at competition, nothing can make or break your teams experience than how
-            your drivers work together and with the robot. While six weeks is not a lot of time to build
-            a robot, it is important to find time to let your drivers practice. The earlier the better,
-            but the season goes fast and we often are only able to practice driving during the last few
-            days of the build season.</item>
         <item></item>
         <item></item>
     </string-array>
