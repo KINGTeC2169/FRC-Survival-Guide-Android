@@ -38,4 +38,20 @@
         <item></item>
         <item></item>
     </string-array>
+
+    <string-array name="drive_practice">
+        <item>fragment_pager_item</item>
+        <item>Practicing Driving</item>
+        <item>Driving the robot at competition is an incredibly stressful job, and one that no amount
+            of practice can fully prepare you for. In addition, no two robots are exactly the same, so
+            experience driving from previous years will not always transfer. By Week 5 your team should
+            have enough of a robot working to at least be driving, and ideally your team is completely
+            done building and the robot is programmed.
+            &lt;br>By setting up a makeshift field your drivers should be able to get a feel for both
+            the robot and the game. If your team has old robots available, try pitting the new one
+            against a ragtag defense. This will give you an idea of what your robot is and isn\'t capable
+            of doing. Don\'t forget to try and practice scoring!</item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>
