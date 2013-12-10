@@ -4,7 +4,7 @@
     <CheckBoxPreference
             android:key="confirm_exit"
             android:title="Confirm Exit on Back Button"
-            android:defaultValue="true"/>
+            android:defaultValue="false"/>
     <CheckBoxPreference
             android:key="use_drawer"
             android:title="Use the Navigation Drawer"
