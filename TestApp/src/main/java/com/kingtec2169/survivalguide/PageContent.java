@@ -13,8 +13,8 @@ public class PageContent {
     public static final List<Page> PAGES = new ArrayList<Page>();
     // Number of pages in each week
     public static final int numPages[][] = {
-            {3,3,0,1,1,4},
-            {4,0,4,3,0},
+            {3,3,4,2,2,3},
+            {4,2,4,3,0},
             {4,1,3,1}};
     // Which content is currently in memory
     private static int loaded_group;
@@ -56,14 +56,21 @@ public class PageContent {
                         PAGES.add(new Page(mContext, R.array.prototyping));
                         PAGES.add(new Page(mContext, R.array.chassis_building));
                         break;
+                    case 2:
+                        PAGES.add(new Page(mContext, R.array.module_building));
+                        PAGES.add(new Page(mContext, R.array.robot_assembly));
+                        PAGES.add(new Page(mContext, R.array.beginning_wiring));
+                        PAGES.add(new Page(mContext, R.array.thinking_about_programming));
+                        break;
                     case 3:
                         PAGES.add(new Page(mContext, R.array.early_programming));
+                        PAGES.add(new Page(mContext, R.array.finishing_electrical));
                         break;
                     case 4:
                         PAGES.add(new Page(mContext, R.array.main_programming));
+                        PAGES.add(new Page(mContext, R.array.drive_practice));
                         break;
                     case 5:
-                        PAGES.add(new Page(mContext, R.array.drive_practice));
                         PAGES.add(new Page(mContext, R.array.tweaking_programming));
                         PAGES.add(new Page(mContext, R.array.late_build_changes));
                         PAGES.add(new Page(mContext, R.array.bag_and_tag));
@@ -77,6 +84,10 @@ public class PageContent {
                         PAGES.add(new Page(mContext, R.array.pits_organization));
                         PAGES.add(new Page(mContext, R.array.pits_crew));
                         PAGES.add(new Page(mContext, R.array.pits_judges));
+                        break;
+                    case 1:
+                        PAGES.add(new Page(mContext, R.array.scouting_match));
+                        PAGES.add(new Page(mContext, R.array.scouting_pits));
                         break;
                     case 2:
                         PAGES.add(new Page(mContext, R.array.chairmans_about));

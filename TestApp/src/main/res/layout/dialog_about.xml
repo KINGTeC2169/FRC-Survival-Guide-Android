@@ -22,7 +22,7 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/about_logo"
             android:paddingLeft="5dp"
-            android:autoLink="email"
+            android:autoLink="web"
             android:textColor="@android:color/primary_text_dark"/>
 
 </RelativeLayout>

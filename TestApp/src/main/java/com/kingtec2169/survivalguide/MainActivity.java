@@ -196,6 +196,8 @@ public class MainActivity extends ActionBarActivity
                  *  Launches a dialog telling the user about KING TeC **/
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
+                        .setNeutralButton("Dismiss", null)
+                        .setTitle(R.string.about_name)
                         .create().show();
                 return true;
             case R.id.contactUs:
@@ -289,6 +291,7 @@ public class MainActivity extends ActionBarActivity
         inflater.inflate(R.menu.main_menu, menu);
 
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
+        getSupportActionBar().setIcon(R.drawable.ic_kt); // TODO: Find actual cause of problem, remove this "fix"
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String newText) {

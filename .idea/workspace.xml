@@ -30,9 +30,35 @@
     <list id="69894f01-a225-4613-b017-d77392e7412a" name="Default" comment="Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" />
     <list id="576a1463-9d5a-4213-b60c-2874e84fdac0" name="Revert: 0:bb6145d832f8: Initial Commit&#10;App Navigation in place&#10;TODO: Content" comment="" />
     <list default="true" id="8767e702-7a75-47a8-963c-28b915f212ca" name="Revert: 1:4e8922840e85: Added a subset of Week One content&#10;Configured PageContent to use resource id's&#10;TODO: Move the PageContent from strings.xml to it's own file&#10;TODO: Organize the titles with their content (possibly in an xml array)" comment="">
+      <change type="DELETED" beforePath="D:\Repos\Survival Guide\TestApp\src\main\res\values\content.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/SurvivalGuide.apk" afterPath="$PROJECT_DIR$/TestApp/SurvivalGuide.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/ic_launcher-web.png" afterPath="$PROJECT_DIR$/TestApp/src/main/ic_launcher-web.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/TestApp/src/main/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/TestApp/src/main/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/TestApp/src/main/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/TestApp/src/main/res/drawable-xxhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/MainActivity.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/NavigationListContent.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/NavigationListContent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/PageContent.java" afterPath="$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/PageContent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/layout/activity_week_twopane.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/layout/activity_week_twopane.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week1.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week2.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week3.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week4.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week5.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week6.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_buildseason_week6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_chairmans.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_chairmans.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_pits.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_pits.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_scouting.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_scouting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_spirit.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_competition_spirit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_fundraising.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_fundraising.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_outreach.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_outreach.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_preparingfornextyear.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_preparingfornextyear.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_tournaments.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/content_offseason_tournaments.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/xml/preferences.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/xml/preferences.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TestApp.iws" />
@@ -104,7 +130,7 @@
       <file leaf-file-name="ContentFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1700">
+            <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -113,7 +139,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
+            <state line="16" column="0" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -134,7 +160,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12903225" vertical-offset="0" max-vertical-offset="782">
+            <state line="9" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.29032257" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -143,7 +169,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="-15.64" vertical-offset="0" max-vertical-offset="561">
+            <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -588,6 +614,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -735,7 +762,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -807,6 +833,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -832,19 +871,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1028,13 +1054,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4741474" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19791667" sideWeight="0.6595289" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.52585256" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3404711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.52585256" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1047,8 +1073,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40364027" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.6595289" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2805139" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -1075,6 +1101,54 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/dialog_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/java/com/kingtec2169/survivalguide/ContentFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1836">
@@ -1246,20 +1320,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/menu/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="36" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
@@ -1275,13 +1335,6 @@
         <state line="33" column="64" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.22580644" vertical-offset="323" max-vertical-offset="1037" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="46" selection-start="336" selection-end="336" vertical-scroll-proportion="0.032258064" vertical-offset="153" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/layout/fragment_pager_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="57" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
@@ -1294,7 +1347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="16" column="0" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
@@ -1311,7 +1364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="-15.64" vertical-offset="0" max-vertical-offset="561">
+        <state line="23" column="19" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
@@ -1325,7 +1378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestApp/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="0.12903225" vertical-offset="0" max-vertical-offset="782">
+        <state line="9" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.29032257" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
