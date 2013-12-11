@@ -196,6 +196,8 @@ public class MainActivity extends ActionBarActivity
                  *  Launches a dialog telling the user about KING TeC **/
                 new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Holo))
                         .setView(this.getLayoutInflater().inflate(R.layout.dialog_about, null))
+                        .setNeutralButton("Dismiss", null)
+                        .setTitle(R.string.about_name)
                         .create().show();
                 return true;
             case R.id.contactUs:
