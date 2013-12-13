@@ -22,9 +22,12 @@ public class ContentFragment extends Fragment {
     public static final String ARG_GROUP_ID = "group_id";
     public static final String ARG_CHILD_ID = "child_id";
     public static final String ARG_PAGE_ID = "page_id";
+    public static final String ARG_COMBINE_CONTENT_ID = "combine_content_id";
 
     private ViewPager mViewPager = null;
     private int mSetPage = 0;
+
+    private boolean combineContent;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -36,10 +39,16 @@ public class ContentFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Should we show two pages full of content
+        if (getArguments().containsKey(ARG_COMBINE_CONTENT_ID)) {
+            combineContent = getArguments().getBoolean(ARG_COMBINE_CONTENT_ID);
+        }
         // Is there a specific page we should display
         if (getArguments().containsKey(ARG_PAGE_ID)) {
             mSetPage = getArguments().getInt(ARG_PAGE_ID);
+            if (combineContent) {
+                mSetPage /= 2;
+            }
         }
     }
 
@@ -71,7 +80,7 @@ public class ContentFragment extends Fragment {
     }
 
     private android.support.v4.view.PagerAdapter buildAdapter() {
-        return(new PagerAdapter(getActivity(), getChildFragmentManager(), getArguments().getInt(ARG_GROUP_ID), getArguments().getInt(ARG_CHILD_ID)));
+        return(new PagerAdapter(getActivity(), getChildFragmentManager(), getArguments().getInt(ARG_GROUP_ID), getArguments().getInt(ARG_CHILD_ID), combineContent));
     }
 
     public int getPage() {
@@ -91,12 +100,13 @@ public class ContentFragment extends Fragment {
         return bundle;
     }
 
-    public static Bundle createBundle(int group, int child, int page) {
+    public static Bundle createBundle(int group, int child, int page, boolean combineContent) {
         // Create a bundle to be passed to this fragment
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_GROUP_ID, group);
         bundle.putInt(ARG_CHILD_ID, child);
         bundle.putInt(ARG_PAGE_ID, page);
+        bundle.putBoolean(ARG_COMBINE_CONTENT_ID, combineContent);
         return bundle;
     }
 }

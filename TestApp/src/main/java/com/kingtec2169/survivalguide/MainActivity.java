@@ -47,6 +47,9 @@ public class MainActivity extends ActionBarActivity
     private boolean confirmExit;
     private boolean useDrawer;
     private boolean autoCloseDrawer;
+    // Should we combine two pages of content into one view?
+    // This happens only on large (10") tablets
+    private boolean combineContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,9 @@ public class MainActivity extends ActionBarActivity
 
         // Find out which layout we should display through
         state = getLayoutConfiguration();
+
+        // Check if we should combine content
+        combineContent = getResources().getBoolean(R.bool.combine_content);
 
         if (state == ActivityConfigurations.DRAWER) {
             setContentView(R.layout.activity_week_drawer);
@@ -354,7 +360,7 @@ public class MainActivity extends ActionBarActivity
             case DRAWER:
                 if (mHasContent) {
                     // Launch the selected item in the main pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
@@ -365,7 +371,7 @@ public class MainActivity extends ActionBarActivity
             case TWO_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the right pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
@@ -376,7 +382,7 @@ public class MainActivity extends ActionBarActivity
             case ONE_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the current pane
-                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page));
+                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
                     // Reconfigure the action bar
                     setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
