@@ -16,19 +16,22 @@ public class PageFragmentContainer extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View result = inflater.inflate(R.layout.fragment_combined_content, container, false);
 
-        // Make sure there is a fragment in every entry to prevent null pointer exceptions
-        // by creating fragments where none exist
-        // TODO: Make content expand to fill the frame if only one fragment exists
-        for (int i = 0; i < content.length; i++) {
-            if (content[i] == null)
-                content[i] = new Fragment();
+        // Swap in content for the placeholders
+        if(content[0] != null) {
+            if(content[1] != null) {
+                // There is two pages of content
+                getChildFragmentManager().beginTransaction()
+                        .replace(R.id.left, content[0])
+                        .replace(R.id.right, content[1])
+                        .commit();
+            } else {
+                // There is one page of content
+                result.findViewById(R.id.right).setVisibility(View.GONE);
+                getChildFragmentManager().beginTransaction()
+                        .replace(R.id.left, content[0])
+                        .commit();
+            }
         }
-
-        // Swap in the content for the placeholders
-        getChildFragmentManager().beginTransaction()
-                .replace(R.id.left, content[0])
-                .replace(R.id.right, content[1])
-                .commit();
 
         return result;
     }
