@@ -473,8 +473,8 @@ public class MainActivity extends ActionBarActivity
 
     private void refreshSettings() {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, true);
-        useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, true);
+        confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, false);
+        useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, false);
         autoCloseDrawer = sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true);
     }
 }
