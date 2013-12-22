@@ -14,7 +14,7 @@ public class PageContent {
     // Number of pages in each week
     public static final int numPages[][] = {
             {3,3,4,2,2,3},
-            {4,2,4,3,0},
+            {4,2,4,3},
             {4,1,3,1}};
     // Which content is currently in memory
     private static int loaded_group;
