@@ -15,6 +15,7 @@ repositories {
 dependencies {
     compile 'com.android.support:support-v4:18.0.+'
     compile 'com.android.support:appcompat-v7:18.0.+'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }
 
 android {
@@ -22,7 +23,7 @@ android {
     buildToolsVersion '19'
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 8
         targetSdkVersion 19
     }
 }
