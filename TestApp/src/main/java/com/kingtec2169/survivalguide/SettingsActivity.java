@@ -1,5 +1,12 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This activity handles the loading and displaying of the app settings. Although this
+// activity uses deprecated methods, there is not a clean solution using fragments.
+// The PreferenceFragment, added in API level 11, does not have a support version.
+// Implementing this activity using a PreferenceFragment would require two codebases,
+// one for Gingerbread and Froyo devices and one for Honeycomb and up.
+
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -8,9 +15,6 @@ import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 
-/**
- * Created by rtzoeller on 7/11/13.
- */
 public class SettingsActivity extends PreferenceActivity {
     public static final String KEY_CONFIRM_EXIT = "confirm_exit";
     public static final String KEY_USE_DRAWER = "use_drawer";

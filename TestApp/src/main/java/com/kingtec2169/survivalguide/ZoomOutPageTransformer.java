@@ -1,12 +1,14 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class provides an animation for the ViewPager used to display content. It
+// scales the content based on its distance from the equilibrium and also makes it
+// translucent.
+
 import android.annotation.SuppressLint;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-/**
- * Created by rtzoeller on 7/3/13.
- */
 public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
     private static final float MIN_SCALE = 0.85f;
     private static final float MIN_ALPHA = 0.5f;

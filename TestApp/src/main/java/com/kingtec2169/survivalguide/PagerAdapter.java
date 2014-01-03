@@ -1,8 +1,9 @@
 package com.kingtec2169.survivalguide;
 
-/**
- * Created by rtzoeller on 6/24/13.
- */
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class is an adapter used to bind fragments holding content to the
+// ViewPager. If the device is a 10" tablet two pages of content are to be shown,
+// so the PageFragmentContainer replaces the singular PageFragment.
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
