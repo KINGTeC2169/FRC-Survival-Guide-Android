@@ -1,13 +1,12 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class acts as a holder for the list items in the ExpandableListNavigationFragment.
+
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by rtzoeller on 6/24/13.
- */
 public class NavigationListContent {
-    /** This class holds the content for the {@link ExpandableListNavigationFragment} **/
     // The children of the ExpandableListView, holds the contents of each group
     public static final List<List<NavigationListItem>> CHILDREN = new ArrayList<List<NavigationListItem>>();
     // The parents of the ExpandableListView, holds the head item of each group

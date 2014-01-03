@@ -1,5 +1,9 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This fragment is responsible for searching for the correct content and
+// displaying it as a List. Searching is done by forcing all titles, content and tags
+// to lowercase and looking for a direct match of the lowercase input.
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -10,9 +14,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by rtzoeller on 8/27/13.
- */
 public class SearchResultsFragment extends ListFragment {
     public static final String ARG_SEARCH_ID = "search_id";
 
