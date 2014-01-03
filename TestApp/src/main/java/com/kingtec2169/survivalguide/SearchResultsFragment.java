@@ -30,7 +30,9 @@ public class SearchResultsFragment extends ListFragment {
         int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
         MainActivity activity = ((MainActivity)getActivity());
         activity.page = item[2];
-        activity.onChildClick(item[0], item[1]);
+        // Call onChildClick with null arguments to indicate that the method should not
+        // reset the page to 0
+        activity.onChildClick(null, null, item[0], item[1], 0);
     }
 
     private class CreateArrayListTask extends AsyncTask<String, Void, ArrayList<int[]>> {
