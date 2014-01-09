@@ -1,5 +1,10 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// A fragment containing a list of headers and content groups in an ExpandableList. This
+// fragment requires managing activities to implement a series of callbacks used to pass
+// click events.
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,9 +22,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by rtzoeller on 8/17/13.
- */
 public class ExpandableListNavigationFragment extends Fragment implements OnChildClickListener, OnGroupExpandListener, OnGroupCollapseListener {
     private static final String NAME = "NAME";
     private static final String DESCRIPTION = "DESCRIPTION";

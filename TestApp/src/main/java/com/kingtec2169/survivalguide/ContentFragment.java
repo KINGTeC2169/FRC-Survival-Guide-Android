@@ -1,5 +1,10 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This fragment displays content in a ViewPager. A reference to this content is
+// passed in through a bundle. This fragment is used in the MainActivity of the
+// FRC Survival Guide.
+
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,18 +15,12 @@ import android.view.ViewGroup;
 
 import com.astuetz.PagerSlidingTabStrip;
 
-/**
- * A fragment representing a single Week detail screen.
- * This fragment is contained in a {@link MainActivity}
- */
 public class ContentFragment extends Fragment {
-    /**
-     * The fragment argument representing the item ID that this fragment
-     * represents.
-     */
+    // Identifiers for the selected content
     public static final String ARG_GROUP_ID = "group_id";
     public static final String ARG_CHILD_ID = "child_id";
     public static final String ARG_PAGE_ID = "page_id";
+    // Identifier for how content will be displayed on phones and 7" tablets vs. 10" tablets
     public static final String ARG_COMBINE_CONTENT_ID = "combine_content_id";
 
     private ViewPager mViewPager = null;
