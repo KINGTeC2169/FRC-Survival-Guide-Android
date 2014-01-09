@@ -1,5 +1,10 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// The main activity of the FRC Survival Guide, this activity handles the loading and
+// displaying of all content and is responsible for selecting the appropriate layouts
+// based on screen sizes and preferences.
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -410,8 +415,14 @@ public class MainActivity extends ActionBarActivity
                 ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
             }
         }
-        // Reset our page id to 0 because we are updating the content
-        page = 0;
+
+        if (!(parent == null && v == null)) {
+            // Reset our page id to 0 because we are updating the content.
+            // If they both equal null that indicates that we are returning a search results
+            // click, so we shouldn't clear the page id.
+            page = 0;
+        }
+
         // Update our display with the new click data
         return onChildClick(groupPosition, childPosition);
     }
@@ -472,6 +483,8 @@ public class MainActivity extends ActionBarActivity
     }
 
     private void refreshSettings() {
+        // Get the settings from the SharedPreferences config
+        // Important: make sure the default values here match the default values declared in XML
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, false);
         useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, false);

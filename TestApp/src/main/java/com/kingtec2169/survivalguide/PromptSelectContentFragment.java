@@ -1,5 +1,9 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This fragment displays a line of text to the user. This fragment is used in
+// the FRC Survival Guide to tell the user to select content if none is selected.
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,9 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by rtzoeller on 7/3/13.
- */
 public class PromptSelectContentFragment extends Fragment {
 
     private static final List<String> PROMPT_LIST = new ArrayList<String>();

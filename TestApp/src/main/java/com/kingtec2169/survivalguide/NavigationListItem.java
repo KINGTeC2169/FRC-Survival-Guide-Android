@@ -1,10 +1,9 @@
 package com.kingtec2169.survivalguide;
 
-/**
- * Created by rtzoeller on 6/24/13.
- */
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class acts as a holder for the list items in the ExpandableListNavigationFragment.
+
 public class NavigationListItem {
-    // Holder class for week data
     public String name;
     public String description;
     public String id;

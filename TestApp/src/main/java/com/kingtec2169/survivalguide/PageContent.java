@@ -1,13 +1,16 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class is responsible for loading and storing content from XML as it is requested.
+// It loads content into memory in blocks, with all of the content shown in
+// the ViewPager being loaded at once. When a new block of content is loaded, the old block
+// is unloaded.
+
 import android.content.Context;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by rtzoeller on 6/27/13.
- */
 public class PageContent {
     // Stores the items for the Pages
     public static final List<Page> PAGES = new ArrayList<Page>();

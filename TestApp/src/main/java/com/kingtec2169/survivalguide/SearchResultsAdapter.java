@@ -1,5 +1,12 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This adapter connects content returned from searching the app to a
+// ListView. This adapter also acts as a holder to cache the text, so that the
+// titles are not read from XML on every re-draw. This is especially important as
+// getting the titles potentially requires PageContent to re-load content from
+// multiple blocks, causing heavy performance penalties.
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +16,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by rtzoeller on 8/27/13.
- */
 public class SearchResultsAdapter extends ArrayAdapter<int[]> {
     private final Context context;
     public final ArrayList<int[]> results;

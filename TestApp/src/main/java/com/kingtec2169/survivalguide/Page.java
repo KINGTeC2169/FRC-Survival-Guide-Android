@@ -1,12 +1,13 @@
 package com.kingtec2169.survivalguide;
 
+// Created by Ryan Zoeller of FIRST FRC team 2169.
+// This class acts as a holder for the pages used to display content. It is responsible for
+// parsing which layout to use for a page and keeping that content in memory, to avoid reading
+// repeatedly from XML.
+
 import android.content.Context;
 
-/**
- * Created by rtzoeller on 6/27/13.
- */
 public class Page {
-    // Holder class for the Pages in the ViewPager
     // How many items this entry should have
     public int expectedLength;
     // Information loaded from XML
