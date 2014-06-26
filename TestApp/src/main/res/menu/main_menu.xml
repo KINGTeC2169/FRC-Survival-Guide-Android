@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:survivalguide="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/settings"
           android:title="@string/settings_name" />
     <item android:id="@+id/contactUs"
@@ -10,7 +9,7 @@
           android:title="@string/about_name" />
     <item
           android:id="@+id/search"
-          survivalguide:actionViewClass="android.widget.SearchView"
-          survivalguide:showAsAction="ifRoom|collapseActionView"
+          android:actionViewClass="android.widget.SearchView"
+          android:showAsAction="ifRoom|collapseActionView"
           android:title="@string/search_name" />
 </menu>
