@@ -7,9 +7,6 @@ package com.kingtec2169.survivalguide;
 // Implementing this activity using a PreferenceFragment would require two codebases,
 // one for Gingerbread and Froyo devices and one for Honeycomb and up.
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
@@ -20,13 +17,10 @@ public class SettingsActivity extends PreferenceActivity {
     public static final String KEY_USE_DRAWER = "use_drawer";
     public static final String KEY_CLOSE_DRAWER_ON_CLICK = "close_drawer_on_click";
 
-    @SuppressLint("NewApi")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.preferences);
     }
