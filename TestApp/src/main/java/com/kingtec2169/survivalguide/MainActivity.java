@@ -299,29 +299,30 @@ public class MainActivity extends Activity
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
 
-//        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String newText) {
-//                if (state == ActivityConfigurations.DRAWER) {
-//                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
-//                }
-//
-//                Bundle arguments = new Bundle();
-//                arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
-//                SearchResultsFragment fragment = new SearchResultsFragment();
-//                fragment.setArguments(arguments);
-//                getFragmentManager().beginTransaction()
-//                        .replace(R.id.week_list_container, fragment, ARG_SEARCH_TAG)
-//                        .commit();
-//                return true;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                return true;
-//            }
-//        });
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        getActionBar().setIcon(R.drawable.ic_kt);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String newText) {
+                if (state == ActivityConfigurations.DRAWER) {
+                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+                }
+
+                Bundle arguments = new Bundle();
+                arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
+                SearchResultsFragment fragment = new SearchResultsFragment();
+                fragment.setArguments(arguments);
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.week_list_container, fragment, ARG_SEARCH_TAG)
+                        .commit();
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return true;
+            }
+        });
 
         return true;
     }
