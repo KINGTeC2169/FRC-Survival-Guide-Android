@@ -5,10 +5,10 @@ package com.kingtec2169.survivalguide;
 // displaying it as a List. Searching is done by forcing all titles, content and tags
 // to lowercase and looking for a direct match of the lowercase input.
 
+import android.app.ListFragment;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ListView;
 

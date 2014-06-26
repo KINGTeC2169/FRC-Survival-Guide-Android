@@ -5,6 +5,7 @@ package com.kingtec2169.survivalguide;
 // displaying of all content and is responsible for selecting the appropriate layouts
 // based on screen sizes and preferences.
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,9 +14,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.SearchView;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.Menu;
@@ -23,11 +22,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
-import android.support.v7.app.ActionBarActivity;
-
-public class MainActivity extends ActionBarActivity
+public class MainActivity extends Activity
         implements ExpandableListNavigationFragment.Callbacks, SearchResultsFragment.HandlesPaging {
 
     // Is the current view displaying more than one fragment?
@@ -137,8 +135,8 @@ public class MainActivity extends ActionBarActivity
             );
             drawerLayout.setDrawerListener(drawerToggle);
 
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
+            getActionBar().setDisplayHomeAsUpEnabled(true);
+            getActionBar().setHomeButtonEnabled(true);
     }
 
         /** Simulate a click event so the {@link ContentFragment} shows the correct content **/
@@ -159,7 +157,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        ContentFragment fragment = (ContentFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
+        ContentFragment fragment = (ContentFragment)getFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
 
         // Attach the current display information to our Activity state
         if (fragment != null) {
@@ -193,7 +191,7 @@ public class MainActivity extends ActionBarActivity
                         mHasContent = false;
                         page = 0;
                         // Reset the action bar to the main level configuration
-                        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                        getActionBar().setDisplayHomeAsUpEnabled(false);
                         // Show the correct title
                         setTitle(R.string.app_name);
                         /* Inflates the list into the list container
@@ -238,9 +236,9 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onBackPressed() {
         // Check which fragments are visible
-        boolean listVisible = getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_LIST_TAG).isVisible();
-        boolean detailVisible = getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG).isVisible();
-        boolean searchVisible = getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG) != null && getSupportFragmentManager().findFragmentByTag(ARG_SEARCH_TAG).isVisible();
+        boolean listVisible = getFragmentManager().findFragmentByTag(ARG_LIST_TAG) != null && getFragmentManager().findFragmentByTag(ARG_LIST_TAG).isVisible();
+        boolean detailVisible = getFragmentManager().findFragmentByTag(ARG_DETAIL_TAG) != null && getFragmentManager().findFragmentByTag(ARG_DETAIL_TAG).isVisible();
+        boolean searchVisible = getFragmentManager().findFragmentByTag(ARG_SEARCH_TAG) != null && getFragmentManager().findFragmentByTag(ARG_SEARCH_TAG).isVisible();
 
         if(searchVisible) {
             /* We are showing the search results and we should stop */
@@ -281,7 +279,7 @@ public class MainActivity extends ActionBarActivity
                         mHasContent = false;
                         page = 0;
                         // Reset the action bar to the main level configuration
-                        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                        getActionBar().setDisplayHomeAsUpEnabled(false);
                         setTitle(R.string.app_name);
 
                         // Inflate the list
@@ -301,30 +299,29 @@ public class MainActivity extends ActionBarActivity
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
 
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
-        getSupportActionBar().setIcon(R.drawable.ic_kt); // TODO: Find actual cause of problem, remove this "fix"
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String newText) {
-                if (state == ActivityConfigurations.DRAWER) {
-                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
-                }
-
-                Bundle arguments = new Bundle();
-                arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
-                SearchResultsFragment fragment = new SearchResultsFragment();
-                fragment.setArguments(arguments);
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.week_list_container, fragment, ARG_SEARCH_TAG)
-                        .commit();
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return true;
-            }
-        });
+//        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String newText) {
+//                if (state == ActivityConfigurations.DRAWER) {
+//                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+//                }
+//
+//                Bundle arguments = new Bundle();
+//                arguments.putString(SearchResultsFragment.ARG_SEARCH_ID, newText);
+//                SearchResultsFragment fragment = new SearchResultsFragment();
+//                fragment.setArguments(arguments);
+//                getFragmentManager().beginTransaction()
+//                        .replace(R.id.week_list_container, fragment, ARG_SEARCH_TAG)
+//                        .commit();
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                return true;
+//            }
+//        });
 
         return true;
     }
@@ -334,7 +331,7 @@ public class MainActivity extends ActionBarActivity
         arguments.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
         ExpandableListNavigationFragment fragment = new ExpandableListNavigationFragment();
         fragment.setArguments(arguments);
-        getSupportFragmentManager().beginTransaction()
+        getFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_LIST_TAG)
                 .commit();
         return fragment;
@@ -343,7 +340,7 @@ public class MainActivity extends ActionBarActivity
     private ContentFragment detailInflate(int resourceId, Bundle bundle) {
         ContentFragment fragment = new ContentFragment();
         fragment.setArguments(bundle);
-        getSupportFragmentManager().beginTransaction()
+        getFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_DETAIL_TAG)
                 .commit();
         return fragment;
@@ -351,7 +348,7 @@ public class MainActivity extends ActionBarActivity
 
     private PromptSelectContentFragment selectorInflate(int resourceId) {
         PromptSelectContentFragment fragment = new PromptSelectContentFragment();
-        getSupportFragmentManager().beginTransaction()
+        getFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_SELECT_TAG)
                 .commit();
         return fragment;
@@ -390,7 +387,7 @@ public class MainActivity extends ActionBarActivity
                     detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
                     // Reconfigure the action bar
                     setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
-                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                    getActionBar().setDisplayHomeAsUpEnabled(true);
                 }
                 break;
         }
