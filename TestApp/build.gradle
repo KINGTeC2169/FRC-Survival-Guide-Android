@@ -13,17 +13,17 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.+'
-    compile 'com.android.support:support-v13:20.0.+'
+    compile 'com.android.support:support-v4:21.0.+'
+    compile 'com.android.support:support-v13:21.0.+'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 'android-L'
     buildToolsVersion '20'
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 20
+        minSdkVersion 'L'
+        targetSdkVersion 'L'
     }
     productFlavors {
     }
