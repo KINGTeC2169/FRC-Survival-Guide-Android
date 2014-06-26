@@ -28,7 +28,7 @@ import android.widget.Toast;
 import android.support.v7.app.ActionBarActivity;
 
 public class MainActivity extends ActionBarActivity
-        implements ExpandableListNavigationFragment.Callbacks {
+        implements ExpandableListNavigationFragment.Callbacks, SearchResultsFragment.HandlesPaging {
 
     // Is the current view displaying more than one fragment?
     // True on small tablets in landscape and on large tablets in either orientation
@@ -392,10 +392,6 @@ public class MainActivity extends ActionBarActivity
                     setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 }
-//              else {
-//                    We don't want to do anything because the only pane visible
-//                    is the list we are currently displaying
-//                }
                 break;
         }
         return true;
@@ -480,6 +476,14 @@ public class MainActivity extends ActionBarActivity
         if (drawerToggle != null) {
             drawerToggle.onConfigurationChanged(newConfig);
         }
+    }
+
+    @Override
+    public void goToPage(int group, int child, int page) {
+        this.page = page; // Set the desired page
+        // Call onChildClick with null arguments to indicate that the method should not
+        // reset the page to 0
+        this.onChildClick(null, null, group, child, 0);
     }
 
     private void refreshSettings() {

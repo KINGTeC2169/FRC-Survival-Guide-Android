@@ -15,6 +15,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class SearchResultsFragment extends ListFragment {
+
+    public interface HandlesPaging {
+        void goToPage(int group, int child, int page);
+    }
+
     public static final String ARG_SEARCH_ID = "search_id";
 
     @Override
@@ -28,11 +33,8 @@ public class SearchResultsFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
-        MainActivity activity = ((MainActivity)getActivity());
-        activity.page = item[2];
-        // Call onChildClick with null arguments to indicate that the method should not
-        // reset the page to 0
-        activity.onChildClick(null, null, item[0], item[1], 0);
+        HandlesPaging activity = (HandlesPaging)getActivity();
+        activity.goToPage(item[0], item[1], item[2]);
     }
 
     private class CreateArrayListTask extends AsyncTask<String, Void, ArrayList<int[]>> {
