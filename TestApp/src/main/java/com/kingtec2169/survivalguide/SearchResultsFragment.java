@@ -50,8 +50,8 @@ public class SearchResultsFragment extends ListFragment {
             PageContent content = new PageContent(getActivity());
             for (String keyword : keywords) {
                 String lowerKeyword = keyword.toLowerCase();
-                for (int i = 0; i < NavigationListContent.CHILDREN.size(); i++) {
-                    for (int j = 0; j < NavigationListContent.CHILDREN.get(i).size(); j++) {
+                for (int i = 0; i < ExpandableRecyclerViewFragment.items.size(); i++) {
+                    for (int j = 0; j < ExpandableRecyclerViewFragment.items.get(i).getChildren().size(); j++) {
                         for (int k = 0; k < content.numPages[i][j]; k++) {
                             Page page = content.get(i, j, k);
                             if (page != null) {
