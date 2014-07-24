@@ -15,18 +15,18 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.RecyclerView;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ExpandableListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity
-        implements ExpandableListNavigationFragment.Callbacks, SearchResultsFragment.HandlesPaging {
+        implements ExpandableRecyclerViewFragment.Callbacks, SearchResultsFragment.HandlesPaging {
 
     // Is the current view displaying more than one fragment?
     // True on small tablets in landscape and on large tablets in either orientation
@@ -35,9 +35,9 @@ public class MainActivity extends Activity
     private boolean mHasContent = false;
     /** The page number to feed forward to our {@link ContentFragment} **/
     public int page;
-    /** What items are expanded in our {@link ExpandableListNavigationFragment} **/
+    /** What items are expanded in our {@link com.kingtec2169.survivalguide.ExpandableRecyclerViewFragment} **/
     private boolean[] expandedItems;
-    // Tags for retrieving fragments from the SupportFragmentManager
+    // Tags for retrieving fragments from the FragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
     private static final String ARG_SELECT_TAG = "selector_fragment";
@@ -79,7 +79,7 @@ public class MainActivity extends Activity
         // Resize expandedItems to match the number of groups
         // All elements default to false so if we can't load data
         // the array is still initialized properly
-        expandedItems = new boolean[NavigationListContent.PARENTS.size()];
+        expandedItems = new boolean[ExpandableRecyclerViewFragment.items.size()];
 
         // Set our ViewPager data to a default
         // If we have saved data to load these will get overwritten
@@ -98,8 +98,8 @@ public class MainActivity extends Activity
                 page = savedInstanceState.getInt(ContentFragment.ARG_PAGE_ID);
             }
             // Load the array of expanded list items
-            if (savedInstanceState.containsKey(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS)) {
-                expandedItems = savedInstanceState.getBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS);
+            if (savedInstanceState.containsKey(ExpandableRecyclerViewFragment.ARG_EXPANDED_ITEMS)) {
+                expandedItems = savedInstanceState.getBooleanArray(ExpandableRecyclerViewFragment.ARG_EXPANDED_ITEMS);
             }
         } else if (state == ActivityConfigurations.DRAWER) {
             /* We don't have content stored from before we
@@ -168,7 +168,7 @@ public class MainActivity extends Activity
         // If we don't pass any data through, upon loading the array will be initialized to all false values
         // Which is the desired behavior
         if (expandedItems != null) {
-          state.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
+          state.putBooleanArray(ExpandableRecyclerViewFragment.ARG_EXPANDED_ITEMS, expandedItems);
         }
     }
 
@@ -327,10 +327,11 @@ public class MainActivity extends Activity
         return true;
     }
 
-    private ExpandableListNavigationFragment listInflate(int resourceId) {
+    private ExpandableRecyclerViewFragment listInflate(int resourceId) {
         Bundle arguments = new Bundle();
-        arguments.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
-        ExpandableListNavigationFragment fragment = new ExpandableListNavigationFragment();
+        arguments.putBooleanArray(ExpandableRecyclerViewFragment.ARG_EXPANDED_ITEMS, expandedItems);
+        ExpandableRecyclerViewFragment fragment = new ExpandableRecyclerViewFragment();
+        fragment.setCallbacks(this);
         fragment.setArguments(arguments);
         getFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_LIST_TAG)
@@ -387,7 +388,9 @@ public class MainActivity extends Activity
                     // Launch the selected item in the current pane
                     detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
                     // Reconfigure the action bar
-                    setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
+                    // Get the page title
+                    // TODO: Fix crash caused by clicking menu items in multiple groups
+                    setTitle(ExpandableRecyclerViewFragment.items.get(groupPosition).getChildren().get(childPosition).getText1());
                     getActionBar().setDisplayHomeAsUpEnabled(true);
                 }
                 break;
@@ -397,9 +400,9 @@ public class MainActivity extends Activity
     }
 
     @Override
-    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+    public boolean onChildClick(RecyclerView parent, View v, int groupPosition, int childPosition) {
         /* Strip any unnecessary data and call a variant of this method.
-        This method is called by the ExpandableListView,
+        This method is called by the RecyclerView,
         and the 2-argument variant is what our activity uses. */
 
         // Are we using drawer based navigation
@@ -481,7 +484,7 @@ public class MainActivity extends Activity
         this.page = page; // Set the desired page
         // Call onChildClick with null arguments to indicate that the method should not
         // reset the page to 0
-        this.onChildClick(null, null, group, child, 0);
+        this.onChildClick(null, null, group, child);
     }
 
     private void refreshSettings() {
