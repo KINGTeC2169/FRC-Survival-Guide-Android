@@ -37,7 +37,7 @@ public class NavigationListContent {
     private static void addItem(NavigationListItem parent, NavigationListItem child) {
 
         if (!PARENTS.contains(parent)) { // Make sure we haven't added this parent already
-            PARENTS.add(parent); // TODO: Replace this check with a constant or logarithmic time algorithm
+            PARENTS.add(parent);
         }
 
         while (CHILDREN.size() <= Integer.parseInt(parent.id)) { // If we haven't created an array for this data point

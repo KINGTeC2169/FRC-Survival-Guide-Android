@@ -4,8 +4,8 @@ package com.kingtec2169.survivalguide;
 // This activity handles the loading and displaying of the app settings. Although this
 // activity uses deprecated methods, there is not a clean solution using fragments.
 // The PreferenceFragment, added in API level 11, does not have a support version.
-// Implementing this activity using a PreferenceFragment would require two codebases,
-// one for Gingerbread and Froyo devices and one for Honeycomb and up.
+
+// TODO: Now that support for pre-ICS devices has been dropped, rewrite this to use a PreferenceFragment
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
