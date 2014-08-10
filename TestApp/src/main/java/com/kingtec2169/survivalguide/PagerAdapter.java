@@ -5,10 +5,10 @@ package com.kingtec2169.survivalguide;
 // ViewPager. If the device is a 10" tablet two pages of content are to be shown,
 // so the PageFragmentContainer replaces the singular PageFragment.
 
-import android.app.Fragment;
-import android.app.FragmentManager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.content.Context;
-import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 
 public class PagerAdapter extends FragmentPagerAdapter {
     Context context = null;

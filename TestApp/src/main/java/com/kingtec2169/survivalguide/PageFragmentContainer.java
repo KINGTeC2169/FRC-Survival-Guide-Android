@@ -5,7 +5,7 @@ package com.kingtec2169.survivalguide;
 // are replaced with fragments when it is bound to the display. If only one fragment is passed
 // in, that fragment will fill the entire screen.
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
