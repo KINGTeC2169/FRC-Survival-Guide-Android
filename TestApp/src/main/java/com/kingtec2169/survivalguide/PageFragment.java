@@ -5,7 +5,7 @@ package com.kingtec2169.survivalguide;
 // selected content is passed in through a bundle, which is then looked up from the PageContent
 // class.
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;

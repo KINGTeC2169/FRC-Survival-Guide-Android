@@ -4,7 +4,7 @@ package com.kingtec2169.survivalguide;
 // This fragment displays a line of text to the user. This fragment is used in
 // the FRC Survival Guide to tell the user to select content if none is selected.
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
