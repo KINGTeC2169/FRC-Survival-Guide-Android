@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-// TODO: Fix crash on devices pre-API 17
-
 public class PageFragmentContainer extends Fragment {
     // Holds the left and right fragments/content
     private Fragment[] content = new Fragment[2];
