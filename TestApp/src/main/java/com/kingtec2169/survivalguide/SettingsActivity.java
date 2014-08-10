@@ -1,14 +1,11 @@
 package com.kingtec2169.survivalguide;
 
 // Created by Ryan Zoeller of FIRST FRC team 2169.
-// This activity handles the loading and displaying of the app settings. Although this
-// activity uses deprecated methods, there is not a clean solution using fragments.
-// The PreferenceFragment, added in API level 11, does not have a support version.
-
-// TODO: Now that support for pre-ICS devices has been dropped, rewrite this to use a PreferenceFragment
+// This activity handles the loading and displaying of the app settings using a PreferenceFragment.
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 
@@ -21,8 +18,8 @@ public class SettingsActivity extends PreferenceActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-        // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.preferences);
+        // Load a fragment showing the preferences
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new SurvivalGuidePreferenceFragment()).commit();
     }
 
     @Override
@@ -39,5 +36,17 @@ public class SettingsActivity extends PreferenceActivity {
     @Override
     public void onBackPressed() {
         NavUtils.navigateUpFromSameTask(this);
+    }
+
+
+    public static class SurvivalGuidePreferenceFragment extends PreferenceFragment
+    {
+        @Override
+        public void onCreate(final Bundle savedInstanceState)
+        {
+            super.onCreate(savedInstanceState);
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.preferences);
+        }
     }
 }
