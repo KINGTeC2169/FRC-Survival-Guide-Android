@@ -24,7 +24,7 @@ android {
     buildToolsVersion '20'
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 20
     }
     productFlavors {
     }
