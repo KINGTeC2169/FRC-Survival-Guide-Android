@@ -27,6 +27,9 @@ import android.widget.Toast;
 
 import android.support.v7.app.ActionBarActivity;
 
+import icepick.Icepick;
+import icepick.Icicle;
+
 public class MainActivity extends ActionBarActivity
         implements ExpandableListNavigationFragment.Callbacks, SearchResultsFragment.HandlesPaging {
 
@@ -34,11 +37,18 @@ public class MainActivity extends ActionBarActivity
     // True on small tablets in landscape and on large tablets in either orientation
     private ActivityConfigurations state;
     // Is there any content selected to display
-    private boolean mHasContent = false;
-    /** The page number to feed forward to our {@link ContentFragment} **/
-    public int page;
+    public boolean mHasContent = false;
+    /** The state information to feed forward to our {@link ContentFragment} **/
+    // TODO: Rewrite to use a state class instead of primitive member variables
+    @Icicle
+    public int page = 0;
+    @Icicle
+    public int groupPosition = -1;
+    @Icicle
+    public int childPosition = -1;
     /** What items are expanded in our {@link ExpandableListNavigationFragment} **/
-    private boolean[] expandedItems;
+    @Icicle
+    public boolean[] expandedItems = new boolean[NavigationListContent.PARENTS.size()];
     // Tags for retrieving fragments from the SupportFragmentManager
     private static final String ARG_DETAIL_TAG = "detail_fragment";
     private static final String ARG_LIST_TAG = "list_fragment";
@@ -59,6 +69,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Icepick.restoreInstanceState(this, savedInstanceState);
 
         // Set the default values for the settings page
         // Only sets the values the first time the app is launched after install
@@ -78,32 +89,7 @@ public class MainActivity extends ActionBarActivity
             setContentView(R.layout.activity_week_twopane);
         }
 
-        // Resize expandedItems to match the number of groups
-        // All elements default to false so if we can't load data
-        // the array is still initialized properly
-        expandedItems = new boolean[NavigationListContent.PARENTS.size()];
-
-        // Set our ViewPager data to a default
-        // If we have saved data to load these will get overwritten
-        int groupPosition = -1;
-        int childPosition = -1;
-        page = 0;
-
-        // Attempt to load saved data
-        if (savedInstanceState != null) {
-            // Load the saved ViewPager data
-            if (savedInstanceState.containsKey(ContentFragment.ARG_GROUP_ID) &&
-                    savedInstanceState.containsKey(ContentFragment.ARG_CHILD_ID) &&
-                    savedInstanceState.containsKey(ContentFragment.ARG_PAGE_ID)) {
-                groupPosition = savedInstanceState.getInt(ContentFragment.ARG_GROUP_ID);
-                childPosition = savedInstanceState.getInt(ContentFragment.ARG_CHILD_ID);
-                page = savedInstanceState.getInt(ContentFragment.ARG_PAGE_ID);
-            }
-            // Load the array of expanded list items
-            if (savedInstanceState.containsKey(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS)) {
-                expandedItems = savedInstanceState.getBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS);
-            }
-        } else if (state == ActivityConfigurations.DRAWER) {
+        if (savedInstanceState == null && state == ActivityConfigurations.DRAWER) {
             /* We don't have content stored from before we
             (re)created the activity, so we should show the
             Nav. Drawer if possible to prompt the user to pick
@@ -159,19 +145,14 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
+
+        // Get the page currently being displayed
         ContentFragment fragment = (ContentFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
-
-        // Attach the current display information to our Activity state
         if (fragment != null) {
-            state.putAll(fragment.saveState());
+            page = fragment.getPage();
         }
 
-        // Attach what items are loaded to our Activity state
-        // If we don't pass any data through, upon loading the array will be initialized to all false values
-        // Which is the desired behavior
-        if (expandedItems != null) {
-          state.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
-        }
+        Icepick.saveInstanceState(this, state);
     }
 
     @Override
@@ -357,9 +338,12 @@ public class MainActivity extends ActionBarActivity
         return fragment;
     }
 
-    public boolean onChildClick(int groupPosition, int childPosition) {
+    public boolean onChildClick(int group, int child) {
+        this.groupPosition = group;
+        this.childPosition = child;
+
         // Check if we actually have content to display
-        mHasContent = !(groupPosition == -1 || childPosition == -1);
+        mHasContent = groupPosition != -1 && childPosition != -1;
 
         switch (state) {
             case DRAWER:
