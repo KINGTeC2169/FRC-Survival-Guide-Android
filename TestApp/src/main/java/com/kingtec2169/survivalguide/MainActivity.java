@@ -39,13 +39,8 @@ public class MainActivity extends ActionBarActivity
     // Is there any content selected to display
     public boolean mHasContent = false;
     /** The state information to feed forward to our {@link ContentFragment} **/
-    // TODO: Rewrite to use a state class instead of primitive member variables
     @Icicle
-    public int page = 0;
-    @Icicle
-    public int groupPosition = -1;
-    @Icicle
-    public int childPosition = -1;
+    public ContentIdHolder contentId = new ContentIdHolder(-1, -1, 0);
     /** What items are expanded in our {@link ExpandableListNavigationFragment} **/
     @Icicle
     public boolean[] expandedItems = new boolean[NavigationListContent.PARENTS.size()];
@@ -128,7 +123,7 @@ public class MainActivity extends ActionBarActivity
     }
 
         /** Simulate a click event so the {@link ContentFragment} shows the correct content **/
-        onChildClick(groupPosition, childPosition);
+        onChildClick(contentId.groupPosition, contentId.childPosition);
     }
 
     private ActivityConfigurations getLayoutConfiguration() {
@@ -149,7 +144,7 @@ public class MainActivity extends ActionBarActivity
         // Get the page currently being displayed
         ContentFragment fragment = (ContentFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
         if (fragment != null) {
-            page = fragment.getPage();
+            contentId.page = fragment.getPage();
         }
 
         Icepick.saveInstanceState(this, state);
@@ -172,7 +167,7 @@ public class MainActivity extends ActionBarActivity
                     case ONE_PANE:
                         // Remove the content we have loaded
                         mHasContent = false;
-                        page = 0;
+                        contentId.page = 0;
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         // Show the correct title
@@ -243,7 +238,7 @@ public class MainActivity extends ActionBarActivity
                         /* We are in two pane mode showing content,
                         so we should remove that content from view */
                         // Remove the content
-                        page = 0;
+                        contentId.page = 0;
                         mHasContent = false;
 
                         // Simulate a list click event to refresh the display
@@ -260,7 +255,7 @@ public class MainActivity extends ActionBarActivity
                         We should return to showing a list of items when pressed */
                         // Remove the content
                         mHasContent = false;
-                        page = 0;
+                        contentId.page = 0;
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         setTitle(R.string.app_name);
@@ -339,41 +334,41 @@ public class MainActivity extends ActionBarActivity
     }
 
     public boolean onChildClick(int group, int child) {
-        this.groupPosition = group;
-        this.childPosition = child;
+        contentId.groupPosition = group;
+        contentId.childPosition = child;
 
         // Check if we actually have content to display
-        mHasContent = groupPosition != -1 && childPosition != -1;
+        mHasContent = contentId.groupPosition != -1 && contentId.childPosition != -1;
 
         switch (state) {
             case DRAWER:
                 if (mHasContent) {
                     // Launch the selected item in the main pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
                     // Reset the saved page
-                    page = 0;
+                    contentId.page = 0;
                 }
                 break;
             case TWO_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the right pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
                     // Reset the saved page
-                    page = 0;
+                    contentId.page = 0;
                 }
                 break;
             case ONE_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the current pane
-                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(groupPosition, childPosition, page, combineContent));
+                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
                     // Reconfigure the action bar
-                    setTitle(NavigationListContent.CHILDREN.get(groupPosition).get(childPosition).name);
+                    setTitle(NavigationListContent.CHILDREN.get(contentId.groupPosition).get(contentId.childPosition).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 }
                 break;
@@ -400,7 +395,7 @@ public class MainActivity extends ActionBarActivity
             // Reset our page id to 0 because we are updating the content.
             // If they both equal null that indicates that we are returning a search results
             // click, so we shouldn't clear the page id.
-            page = 0;
+            contentId.page = 0;
         }
 
         // Update our display with the new click data
@@ -464,7 +459,7 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void goToPage(int group, int child, int page) {
-        this.page = page; // Set the desired page
+        contentId.page = page; // Set the desired page
         // Call onChildClick with null arguments to indicate that the method should not
         // reset the page to 0
         this.onChildClick(null, null, group, child, 0);
