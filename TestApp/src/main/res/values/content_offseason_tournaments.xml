@@ -19,7 +19,7 @@
 <resources>
     <string-array name="tournaments_about">
         <item>fragment_pager_item</item>
-        <item>Why Off-Season Tournament\'s</item>
+        <item>Why Off-Season Tournaments</item>
         <item>The main reason for off season regionals are to train rookie team members and get back
             into the swing of robotics. Before the real regionals begin, it is very useful to give
             the new team members a taste of what to expect. These mini competitions also give teams
