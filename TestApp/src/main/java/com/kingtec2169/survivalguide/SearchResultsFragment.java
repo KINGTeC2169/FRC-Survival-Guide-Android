@@ -47,13 +47,13 @@ public class SearchResultsFragment extends ListFragment {
         @Override
         protected ArrayList<int[]> doInBackground(String...keywords) {
             ArrayList<int[]> results = new ArrayList<int[]>();
-            PageContent content = new PageContent(getActivity());
+            PageContent.refresh(getActivity());
             for (String keyword : keywords) {
                 String lowerKeyword = keyword.toLowerCase();
                 for (int i = 0; i < NavigationListContent.CHILDREN.size(); i++) {
                     for (int j = 0; j < NavigationListContent.CHILDREN.get(i).size(); j++) {
-                        for (int k = 0; k < content.numPages[i][j]; k++) {
-                            Page page = content.get(i, j, k);
+                        for (int k = 0; k < PageContent.numPages[i][j]; k++) {
+                            Page page = PageContent.get(i, j, k);
                             if (page != null) {
                                 if (page.title.toLowerCase().contains(lowerKeyword)
                                         || page.text.toLowerCase().contains(lowerKeyword)

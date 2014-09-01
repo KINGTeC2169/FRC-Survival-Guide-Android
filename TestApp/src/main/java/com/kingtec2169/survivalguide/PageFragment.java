@@ -49,14 +49,14 @@ public class PageFragment extends Fragment {
 
     static String getTitle(Context context, int group, int child, int position) {
         // Use the index to retrieve the correct content and its title
-        PageContent content = new PageContent(context);
-        return(content.get(group, child, position).title);
+        PageContent.refresh(context);
+        return(PageContent.get(group, child, position).title);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        PageContent pageContent = new PageContent((getActivity()));
-        Page content = pageContent.get(group, child, position);
+        PageContent.refresh(getActivity());
+        Page content = PageContent.get(group, child, position);
 
         View result = inflater.inflate(content.layoutResourceId, container, false);
         switch (content.layoutResourceId) {

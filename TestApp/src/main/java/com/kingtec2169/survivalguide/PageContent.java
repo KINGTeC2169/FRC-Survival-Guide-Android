@@ -25,8 +25,7 @@ public class PageContent {
     // The context we should load our resources from
     private static Context mContext;
 
-    // Load the pages from the application resources
-    PageContent(Context context) {
+    public static void refresh(Context context) {
         if (PAGES.isEmpty()) { // If no content has been loaded set the loaded variable to reflect that
             loaded_group = -1;
             loaded_child = -1;

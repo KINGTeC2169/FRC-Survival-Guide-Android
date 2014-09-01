@@ -125,7 +125,7 @@ public class ExpandableListNavigationFragment extends Fragment implements OnChil
             childData.add(children);
         }
 
-        SimpleExpandableListAdapter adapter = new SimpleExpandableListAdapter(getActivity(),
+        return new SimpleExpandableListAdapter(getActivity(),
                 groupData,
                 android.R.layout.simple_expandable_list_item_1,
                 new String[] { NAME, DESCRIPTION},
@@ -135,8 +135,6 @@ public class ExpandableListNavigationFragment extends Fragment implements OnChil
                 R.layout.expandable_list_view_row,
                 new String[] { NAME, DESCRIPTION},
                 new int[] { android.R.id.text1, android.R.id.text2 });
-
-        return adapter;
     }
 
     @Override
