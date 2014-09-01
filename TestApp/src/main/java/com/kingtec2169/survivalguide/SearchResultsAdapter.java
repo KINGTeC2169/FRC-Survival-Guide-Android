@@ -49,9 +49,9 @@ public class SearchResultsAdapter extends ArrayAdapter<int[]> {
         int[] key = results.get(position);
         if (key != null) {
             // Update the context of our content
-            PageContent content = new PageContent(context);
+            PageContent.refresh(context);
             // Get the data from our content
-            Page result = content.get(key[0], key[1], key[2]);
+            Page result = PageContent.get(key[0], key[1], key[2]);
             // Bind the data to a TextView
             holder.title.setText(result.title);
         }
