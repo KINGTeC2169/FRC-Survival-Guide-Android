@@ -89,7 +89,7 @@ public class MainActivity extends ActionBarActivity
             (re)created the activity, so we should show the
             Nav. Drawer if possible to prompt the user to pick
             something. */
-            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.START);
         }
 
         // Instantiate the list fragment
@@ -158,10 +158,10 @@ public class MainActivity extends ActionBarActivity
                     /** The Up button shown in the ActionBar.
                      *  Inflates/Shows a {@link ExpandableListNavigationFragment} when selected. **/
                     case DRAWER:
-                        if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
-                            ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+                        if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.START)) {
+                            ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.START);
                         } else {
-                            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+                            ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.START);
                         }
                         return true;
                     case ONE_PANE:
@@ -225,9 +225,9 @@ public class MainActivity extends ActionBarActivity
             switch (state) {
                 case DRAWER:
                     // Is the drawer currently open?
-                    if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.LEFT)) {
+                    if (((DrawerLayout)findViewById(R.id.drawer_layout)).isDrawerOpen(Gravity.START)) {
                         // Close it if it is
-                        ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+                        ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.START);
                     } else {
                         // It is closed so we should try to leave
                         confirmExit();
@@ -283,7 +283,7 @@ public class MainActivity extends ActionBarActivity
             @Override
             public boolean onQueryTextSubmit(String newText) {
                 if (state == ActivityConfigurations.DRAWER) {
-                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.LEFT);
+                    ((DrawerLayout)findViewById(R.id.drawer_layout)).openDrawer(Gravity.START);
                 }
 
                 Bundle arguments = new Bundle();
@@ -387,7 +387,7 @@ public class MainActivity extends ActionBarActivity
         if (state == ActivityConfigurations.DRAWER) {
             // See if we need to close the drawer and act on it
             if (autoCloseDrawer) {
-                ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.LEFT);
+                ((DrawerLayout)findViewById(R.id.drawer_layout)).closeDrawer(Gravity.START);
             }
         }
 
