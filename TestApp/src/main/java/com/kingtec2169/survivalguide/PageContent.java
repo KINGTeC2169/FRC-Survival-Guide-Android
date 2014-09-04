@@ -42,6 +42,10 @@ public class PageContent {
         return PAGES.get(position);
     }
 
+    public static Page get(ContentIdHolder contentId) {
+        return PageContent.get(contentId.getGroupPosition(), contentId.getChildPosition(), contentId.getPage());
+    }
+
     private static void load (int group, int child) {
         loaded_group = group;
         loaded_child = child;

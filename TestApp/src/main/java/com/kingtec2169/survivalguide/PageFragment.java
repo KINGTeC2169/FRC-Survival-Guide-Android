@@ -17,31 +17,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PageFragment extends Fragment {
-    private static final String KEY_POSITION = "position";
-    private static final String KEY_GROUP = "group";
-    private static final String KEY_CHILD = "child";
-
-    int group;
-    int child;
-    int position;
+    private static final String KEY_CONTENT_ID = "contentId";
+    public ContentIdHolder contentId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Retrieve the index of the content we want to show
-        group = getArguments() != null ? getArguments().getInt(KEY_GROUP) : 0;
-        child = getArguments() != null ? getArguments().getInt(KEY_CHILD) : 0;
-        position = getArguments() != null ? getArguments().getInt(KEY_POSITION) : 1;
+        if (getArguments() != null) {
+            contentId = getArguments().getParcelable(KEY_CONTENT_ID);
+        } else {
+            contentId = new ContentIdHolder(0, 0, 0);
+        }
     }
 
-    static PageFragment newInstance(int group, int child, int position) {
+    static PageFragment newInstance(ContentIdHolder contentId) {
         PageFragment frag = new PageFragment();
         Bundle args = new Bundle();
 
         // Pass the index of the content to show to the fragment
-        args.putInt(KEY_POSITION, position);
-        args.putInt(KEY_GROUP, group);
-        args.putInt(KEY_CHILD, child);
+        args.putParcelable(KEY_CONTENT_ID, contentId);
         frag.setArguments(args);
 
         return(frag);
@@ -53,10 +48,16 @@ public class PageFragment extends Fragment {
         return(PageContent.get(group, child, position).title);
     }
 
+    static String getTitle(Context context, ContentIdHolder contentId) {
+        // Use the index to retrieve the correct content and its title
+        PageContent.refresh(context);
+        return(PageContent.get(contentId).title);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         PageContent.refresh(getActivity());
-        Page content = PageContent.get(group, child, position);
+        Page content = PageContent.get(contentId);
 
         View result = inflater.inflate(content.layoutResourceId, container, false);
         switch (content.layoutResourceId) {

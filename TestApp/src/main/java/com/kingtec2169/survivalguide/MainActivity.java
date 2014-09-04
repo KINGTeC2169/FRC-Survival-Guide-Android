@@ -123,7 +123,7 @@ public class MainActivity extends ActionBarActivity
     }
 
         /** Simulate a click event so the {@link ContentFragment} shows the correct content **/
-        onChildClick(contentId.groupPosition, contentId.childPosition);
+        onChildClick(contentId.getGroupPosition(), contentId.getChildPosition());
     }
 
     private ActivityConfigurations getLayoutConfiguration() {
@@ -144,7 +144,7 @@ public class MainActivity extends ActionBarActivity
         // Get the page currently being displayed
         ContentFragment fragment = (ContentFragment)getSupportFragmentManager().findFragmentByTag(ARG_DETAIL_TAG);
         if (fragment != null) {
-            contentId.page = fragment.getPage();
+            contentId.setPage(fragment.getPage());
         }
 
         Icepick.saveInstanceState(this, state);
@@ -167,7 +167,7 @@ public class MainActivity extends ActionBarActivity
                     case ONE_PANE:
                         // Remove the content we have loaded
                         mHasContent = false;
-                        contentId.page = 0;
+                        contentId.setPage(0);
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         // Show the correct title
@@ -238,7 +238,7 @@ public class MainActivity extends ActionBarActivity
                         /* We are in two pane mode showing content,
                         so we should remove that content from view */
                         // Remove the content
-                        contentId.page = 0;
+                        contentId.setPage(0);
                         mHasContent = false;
 
                         // Simulate a list click event to refresh the display
@@ -255,7 +255,7 @@ public class MainActivity extends ActionBarActivity
                         We should return to showing a list of items when pressed */
                         // Remove the content
                         mHasContent = false;
-                        contentId.page = 0;
+                        contentId.setPage(0);
                         // Reset the action bar to the main level configuration
                         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                         setTitle(R.string.app_name);
@@ -334,41 +334,41 @@ public class MainActivity extends ActionBarActivity
     }
 
     public boolean onChildClick(int group, int child) {
-        contentId.groupPosition = group;
-        contentId.childPosition = child;
+        contentId.setGroupPosition(group);
+        contentId.setChildPosition(child);
 
         // Check if we actually have content to display
-        mHasContent = contentId.groupPosition != -1 && contentId.childPosition != -1;
+        mHasContent = contentId.getGroupPosition() != -1 && contentId.getChildPosition() != -1;
 
         switch (state) {
             case DRAWER:
                 if (mHasContent) {
                     // Launch the selected item in the main pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.getGroupPosition(), contentId.getChildPosition(), contentId.getPage(), combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
                     // Reset the saved page
-                    contentId.page = 0;
+                    contentId.setPage(0);
                 }
                 break;
             case TWO_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the right pane
-                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
+                    detailInflate(R.id.week_detail_container, ContentFragment.createBundle(contentId.getGroupPosition(), contentId.getChildPosition(), contentId.getPage(), combineContent));
                 } else {
                     // Show the prompt
                     selectorInflate(R.id.week_detail_container);
                     // Reset the saved page
-                    contentId.page = 0;
+                    contentId.setPage(0);
                 }
                 break;
             case ONE_PANE:
                 if (mHasContent) {
                     // Launch the selected item in the current pane
-                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(contentId.groupPosition, contentId.childPosition, contentId.page, combineContent));
+                    detailInflate(R.id.week_list_container, ContentFragment.createBundle(contentId.getGroupPosition(), contentId.getChildPosition(), contentId.getPage(), combineContent));
                     // Reconfigure the action bar
-                    setTitle(NavigationListContent.CHILDREN.get(contentId.groupPosition).get(contentId.childPosition).name);
+                    setTitle(NavigationListContent.CHILDREN.get(contentId.getGroupPosition()).get(contentId.getChildPosition()).name);
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                 }
                 break;
@@ -395,7 +395,7 @@ public class MainActivity extends ActionBarActivity
             // Reset our page id to 0 because we are updating the content.
             // If they both equal null that indicates that we are returning a search results
             // click, so we shouldn't clear the page id.
-            contentId.page = 0;
+            contentId.setPage(0);
         }
 
         // Update our display with the new click data
@@ -458,11 +458,11 @@ public class MainActivity extends ActionBarActivity
     }
 
     @Override
-    public void goToPage(int group, int child, int page) {
-        contentId.page = page; // Set the desired page
+    public void goToPage(ContentIdHolder contentId) {
+        this.contentId.setPage(contentId.getPage()); // Set the desired page
         // Call onChildClick with null arguments to indicate that the method should not
         // reset the page to 0
-        this.onChildClick(null, null, group, child, 0);
+        this.onChildClick(null, null, contentId.getGroupPosition(), contentId.getChildPosition(), 0);
     }
 
     private void refreshSettings() {
