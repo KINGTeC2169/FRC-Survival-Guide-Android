@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class SearchResultsFragment extends ListFragment {
 
     public interface HandlesPaging {
-        void goToPage(int group, int child, int page);
+        void goToPage(ContentIdHolder contentId);
     }
 
     public static final String ARG_SEARCH_ID = "search_id";
@@ -32,12 +32,12 @@ public class SearchResultsFragment extends ListFragment {
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        int[] item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
+        ContentIdHolder item = ((SearchResultsAdapter)l.getAdapter()).results.get(position);
         HandlesPaging activity = (HandlesPaging)getActivity();
-        activity.goToPage(item[0], item[1], item[2]);
+        activity.goToPage(item);
     }
 
-    private class CreateArrayListTask extends AsyncTask<String, Void, ArrayList<int[]>> {
+    private class CreateArrayListTask extends AsyncTask<String, Void, ArrayList<ContentIdHolder>> {
         private Context context;
 
         @Override
@@ -45,8 +45,8 @@ public class SearchResultsFragment extends ListFragment {
             attemptContextUpdate();
         }
         @Override
-        protected ArrayList<int[]> doInBackground(String...keywords) {
-            ArrayList<int[]> results = new ArrayList<int[]>();
+        protected ArrayList<ContentIdHolder> doInBackground(String...keywords) {
+            ArrayList<ContentIdHolder> results = new ArrayList<ContentIdHolder>();
             PageContent.refresh(getActivity());
             for (String keyword : keywords) {
                 String lowerKeyword = keyword.toLowerCase();
@@ -58,8 +58,7 @@ public class SearchResultsFragment extends ListFragment {
                                 if (page.title.toLowerCase().contains(lowerKeyword)
                                         || page.text.toLowerCase().contains(lowerKeyword)
                                         || page.tags.toLowerCase().contains(lowerKeyword)) {
-                                    int[] result = {i, j, k};
-                                    results.add(result);
+                                    results.add(new ContentIdHolder(i, j, k));
                                 }
                             }
                         }
@@ -71,7 +70,7 @@ public class SearchResultsFragment extends ListFragment {
         }
 
         @Override
-        protected void onPostExecute(ArrayList<int[]> results) {
+        protected void onPostExecute(ArrayList<ContentIdHolder> results) {
             attemptContextUpdate();
             setListAdapter(new SearchResultsAdapter(context, android.R.layout.simple_list_item_1, results));
         }

@@ -7,9 +7,9 @@ import android.os.Parcelable;
  * Created by rtzoeller on 8/29/14.
  */
 public class ContentIdHolder implements Parcelable {
-    public int groupPosition;
-    public int childPosition;
-    public int page;
+    private int groupPosition;
+    private int childPosition;
+    private int page;
 
     public ContentIdHolder(int groupPosition, int childPosition, int page) {
         this.groupPosition = groupPosition;
@@ -24,6 +24,10 @@ public class ContentIdHolder implements Parcelable {
         this.groupPosition = data[0];
         this.childPosition = data[1];
         this.page = data[2];
+    }
+
+    public static ContentIdHolder newInstance(ContentIdHolder contentId) {
+        return new ContentIdHolder(contentId.groupPosition, contentId.childPosition, contentId.page);
     }
 
     @Override
@@ -45,4 +49,31 @@ public class ContentIdHolder implements Parcelable {
             return new ContentIdHolder[size];
         }
     };
+
+    public int getPage() {
+        return page;
+    }
+
+    public ContentIdHolder setPage(int page) {
+        this.page = page;
+        return this;
+    }
+
+    public int getGroupPosition() {
+        return groupPosition;
+    }
+
+    public ContentIdHolder setGroupPosition(int groupPosition) {
+        this.groupPosition = groupPosition;
+        return this;
+    }
+
+    public int getChildPosition() {
+        return childPosition;
+    }
+
+    public ContentIdHolder setChildPosition(int childPosition) {
+        this.childPosition = childPosition;
+        return this;
+    }
 }

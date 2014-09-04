@@ -16,11 +16,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SearchResultsAdapter extends ArrayAdapter<int[]> {
+public class SearchResultsAdapter extends ArrayAdapter<ContentIdHolder> {
     private final Context context;
-    public final ArrayList<int[]> results;
+    public final ArrayList<ContentIdHolder> results;
 
-    public SearchResultsAdapter(Context context, int textViewResourceId, ArrayList<int[]> results) {
+    public SearchResultsAdapter(Context context, int textViewResourceId, ArrayList<ContentIdHolder> results) {
         super(context, textViewResourceId, results);
         this.context = context;
         this.results = results;
@@ -46,12 +46,12 @@ public class SearchResultsAdapter extends ArrayAdapter<int[]> {
         }
 
         // Get which data we should show
-        int[] key = results.get(position);
-        if (key != null) {
+        ContentIdHolder contentId = results.get(position);
+        if (contentId != null) {
             // Update the context of our content
             PageContent.refresh(context);
             // Get the data from our content
-            Page result = PageContent.get(key[0], key[1], key[2]);
+            Page result = PageContent.get(contentId);
             // Bind the data to a TextView
             holder.title.setText(result.title);
         }
