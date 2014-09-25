@@ -52,7 +52,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             return(container);
         } else {
             // We only are showing one page of content because this is a small device
-            return PageFragment.newInstance(ContentIdHolder.newInstance(contentId));
+            return PageFragment.newInstance(ContentIdHolder.newInstance(ContentIdHolder.newInstance(contentId).setPage(pageNumber)));
         }
     }
 

@@ -76,4 +76,13 @@ public class ContentIdHolder implements Parcelable {
         this.childPosition = childPosition;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "ContentIdHolder{" +
+                "groupPosition=" + groupPosition +
+                ", childPosition=" + childPosition +
+                ", page=" + page +
+                '}';
+    }
 }
