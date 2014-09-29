@@ -6,6 +6,8 @@ package com.kingtec2169.survivalguide;
 // repeatedly from XML.
 
 import android.content.Context;
+import android.support.annotation.ArrayRes;
+import android.support.annotation.IdRes;
 
 public class Page {
     // How many items this entry should have
@@ -47,11 +49,11 @@ public class Page {
         }
     }
 
-    public Page(Context context, int arrayResourceId) { // Accepts a calling context and a resource id for the array of the page data
+    public Page(Context context, @ArrayRes int arrayResourceId) { // Accepts a calling context and a resource id for the array of the page data
         this(context, context.getResources().getStringArray(arrayResourceId));
     }
 
-    public static int getExpectedLength(int layoutResourceId) {
+    public static int getExpectedLength(@IdRes int layoutResourceId) {
         // These numbers should include the layout tag in their length
         switch (layoutResourceId) {
             case R.layout.fragment_pager_item:

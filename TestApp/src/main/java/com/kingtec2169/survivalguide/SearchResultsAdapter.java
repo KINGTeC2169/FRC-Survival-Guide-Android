@@ -8,6 +8,7 @@ package com.kingtec2169.survivalguide;
 // multiple blocks, causing heavy performance penalties.
 
 import android.content.Context;
+import android.support.annotation.LayoutRes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,7 @@ public class SearchResultsAdapter extends ArrayAdapter<ContentIdHolder> {
     private final Context context;
     public final ArrayList<ContentIdHolder> results;
 
-    public SearchResultsAdapter(Context context, int textViewResourceId, ArrayList<ContentIdHolder> results) {
+    public SearchResultsAdapter(Context context, @LayoutRes int textViewResourceId, ArrayList<ContentIdHolder> results) {
         super(context, textViewResourceId, results);
         this.context = context;
         this.results = results;

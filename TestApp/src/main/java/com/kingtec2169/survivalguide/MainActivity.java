@@ -12,6 +12,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.IdRes;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -305,7 +306,7 @@ public class MainActivity extends ActionBarActivity
         return true;
     }
 
-    private ExpandableListNavigationFragment listInflate(int resourceId) {
+    private ExpandableListNavigationFragment listInflate(@IdRes int resourceId) {
         Bundle arguments = new Bundle();
         arguments.putBooleanArray(ExpandableListNavigationFragment.ARG_EXPANDED_ITEMS, expandedItems);
         ExpandableListNavigationFragment fragment = new ExpandableListNavigationFragment();
@@ -316,7 +317,7 @@ public class MainActivity extends ActionBarActivity
         return fragment;
     }
 
-    private ContentFragment detailInflate(int resourceId, Bundle bundle) {
+    private ContentFragment detailInflate(@IdRes int resourceId, Bundle bundle) {
         ContentFragment fragment = new ContentFragment();
         fragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction()
@@ -325,7 +326,7 @@ public class MainActivity extends ActionBarActivity
         return fragment;
     }
 
-    private PromptSelectContentFragment selectorInflate(int resourceId) {
+    private PromptSelectContentFragment selectorInflate(@IdRes int resourceId) {
         PromptSelectContentFragment fragment = new PromptSelectContentFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(resourceId, fragment, ARG_SELECT_TAG)
