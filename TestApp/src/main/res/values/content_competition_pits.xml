@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
-
 <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
 <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
@@ -18,7 +9,7 @@
 
 <resources>
     <string-array name="pits_design">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Pit Design</item>
         <item>Designing your pit is one of the most important things to do before you head to
             competition. Creating your pit is not something to take lightly considering it
@@ -35,11 +26,10 @@
             by everyone. As you can see, there are many ways to show your teams theme and values in
             your pit design. The best advice we can give is to have fun and be creative!</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="pits_organization">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Organization</item>
         <item>Organization is one of the most important things in your team’s pit. Without a system
             of organization it is almost inevitable that you will lose something. There are many
@@ -58,11 +48,10 @@
             be put into a box or crate so they are not taking up space inside the pit. Lastly, always
             remember to leave space to work when needed.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="pits_crew">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Pit Crew</item>
         <item>The pit crew are some of the most crucial people off the field. It is important to
             allow them the space necessary in the pit for immediate work and for those moments of
@@ -74,11 +63,10 @@
             the area to avoid overcrowding. A last reminder, it is very important to have mechanical
             people in the pit crew, but a programmer is just as necessary for a successful robot.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="pits_judges">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Talking With Judges</item>
         <item>Talking with judges is obviously one of the most important parts of the pits. Judges
             are constantly walking through the pits at competitions so don’t forget to always show
@@ -97,7 +85,6 @@
             judges. Judges are also not the only ones coming to talk in the pits; you will have pit
             scouters, alliance partners, and volunteers always coming by also. Remember to always
             be in a good mood!</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>

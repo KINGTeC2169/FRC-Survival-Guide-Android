@@ -59,16 +59,24 @@ public class PageFragment extends Fragment {
         PageContent.refresh(getActivity());
         Page content = PageContent.get(contentId);
 
+        TextView textView;
+
         View result = inflater.inflate(content.layoutResourceId, container, false);
         switch (content.layoutResourceId) {
             case R.layout.fragment_pager_item:
                 ((ImageView)result.findViewById(R.id.pageImage)).setImageResource(content.imageResourceId);
-                TextView textView =((TextView)result.findViewById(R.id.pageDescription));
+                textView = ((TextView)result.findViewById(R.id.pageDescription));
                 // Parse the text with an HTML parser to recognize links and formatting
                 textView.setText(Html.fromHtml(content.text));
                 // Make links clickable
                 textView.setMovementMethod(LinkMovementMethod.getInstance());
                 break;
+            case R.layout.fragment_pager_item_no_image:
+                textView = ((TextView)result.findViewById(R.id.pageDescription));
+                // Parse the text with an HTML parser to recognize links and formatting
+                textView.setText(Html.fromHtml(content.text));
+                // Make links clickable
+                textView.setMovementMethod(LinkMovementMethod.getInstance());
             default:
                 break;
         }

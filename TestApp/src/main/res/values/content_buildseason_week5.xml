@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
-
 <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
 <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
@@ -18,7 +9,7 @@
 
 <resources>
     <string-array name="main_programming">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Programming</item>
         <item>By this point, you should be able to control every part of your robot. It is time to
             stop working on implementing new features and perfect the ones you have. This is the time
@@ -36,11 +27,10 @@
             &lt;a href="http://frc-manual.usfirst.org/viewItem/3#removeid_700">R13&lt;/a> of the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/3">Game Manual&lt;/a>.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="drive_practice">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Practicing Driving</item>
         <item>Driving the robot at competition is an incredibly stressful job, and one that no amount
             of practice can fully prepare you for. In addition, no two robots are exactly the same, so
@@ -51,7 +41,6 @@
             the robot and the game. If your team has old robots available, try pitting the new one
             against a ragtag defense. This will give you an idea of what your robot is and isn\'t capable
             of doing. Don\'t forget to try and practice scoring!</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>

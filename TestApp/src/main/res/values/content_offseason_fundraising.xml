@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
-
 <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
 <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
@@ -18,7 +9,7 @@
 
 <resources>
     <string-array name="fundraising_obtaining_sponsors">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Obtaining Sponsors</item>
         <item>Sponsorships often give teams large amounts of money for little effort,
             especially when compared to other methods of fundraising. Sponsors can be either
@@ -42,11 +33,10 @@
             &lt;br>More information can be found on the
             &lt;a href="http://www.usfirst.org/roboticsprograms/first-fundraising-toolkit">FIRST Fundraising Toolkit&lt;/a>.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="fundraising_grants">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Applying for Grants</item>
         <item>Grants typically offer a one-time source of money for teams. The monetary
             amount, however, is rarely small. FIRST offers grants to its teams, but many of
@@ -58,11 +48,10 @@
             items. An example of items to buy with grant money, which may be stated when
             applying for the grant, is the purchase of computers, hard drives, and tablets.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="fundraising_major_events">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Major Fundraising Events</item>
         <item>One reliable and consistent way to raise money is to host large fundraising events. These
             events often span several days of work and should be planned well in advance. Although a lot
@@ -88,11 +77,10 @@
             team is small or new to planning an event of such a large magnitude, it can team up with
             one or two other local teams and split the profits.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="fundraising_minor_events">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Minor Fundraising Events</item>
         <item>Smaller fundraising events may raise less money, but they are easier to plan and host
             more of. Many successfully spread awareness in a team’s local community. One example is
@@ -108,7 +96,6 @@
             has the potential to earn well over $500 and into the thousands of dollars. When
             combined, these minor fundraising events can earn more money than one or two major
             events.</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>

@@ -41,6 +41,11 @@ public class Page {
                         this.imageResourceId = context.getResources().getIdentifier(contentResources[3], "drawable", context.getPackageName());
                         this.tags = contentResources[4];
                         break;
+                    case R.layout.fragment_pager_item_no_image:
+                        this.title = contentResources[1];
+                        this.text = contentResources[2];
+                        this.tags = contentResources[3];
+                        break;
                 }
             }
         } else {
@@ -58,6 +63,8 @@ public class Page {
         switch (layoutResourceId) {
             case R.layout.fragment_pager_item:
                 return 5;
+            case R.layout.fragment_pager_item_no_image:
+                return 4;
             default:
                 // Something is wrong
                 return 0;
