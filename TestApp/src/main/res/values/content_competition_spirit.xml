@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
-
 <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
 <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
@@ -18,18 +9,17 @@
 
 <resources>
     <string-array name="spirit_importance">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Importance of Spirit</item>
         <item>While at competitions it\'s important that you make your team known. The more noticed you
             are by other teams, the more likely you are to get picked for alliance selections. You
             also want to keep the competition energy high because it makes an even more exciting
             atmosphere for everyone in the arena.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="spirit_team_image">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Team Image</item>
         <item>Before competition it is important to develop a team image or look. This look can be
             fun and exciting; teams wear everything from animal costumes to capes and crowns, each
@@ -44,18 +34,16 @@
             and remember to not shy far from your name. If teams will wonder how your mascot is relevant to
             your name, it’s probably not the best idea.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="spirit_swag">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Swag</item>
         <item>Swag is a giveaway item for other teams. Although swag is far from mandatory, it can
             help advertise your team. Many teams do buttons, while at competition you can see people
             completely covered in buttons. Other simple and cost effective ideas are pencils and
             bracelets. Swag gets your team name and number out to other teams. Continue to keep in
             mind your message, your image, and how you want other teams to remember you.</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>

@@ -1,0 +1,18 @@
+Contains information on formatting the xml for each page layout
+
+Format of fragment_pager_item:
+<string-array name="RESOURCE-ID">
+    <item>LAYOUT NAME</item>
+    <item>TITLE</item>
+    <item>MAIN TEXT</item>
+    <item>IMAGE NAME</item>
+    <item>TAGS</item>
+</string-array>
+
+Format of fragment_pager_item_no_image:
+<string-array name="RESOURCE-ID">
+    <item>LAYOUT NAME</item>
+    <item>TITLE</item>
+    <item>MAIN TEXT</item>
+    <item>TAGS</item>
+</string-array>

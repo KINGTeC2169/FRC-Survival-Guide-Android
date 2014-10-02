@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
-
 <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
 <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
@@ -18,7 +9,7 @@
 
 <resources>
     <string-array name="tweaking_programming">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Tweaking Programming</item>
         <item>While you hopefully have the main functionality of your robot programmed by this point,
             odds are you won\'t get everything perfect the first time. Your programmers should be focusing
@@ -30,11 +21,10 @@
             If they will be, your team has lucked out! If not, the programmers should sit down with the
             drive team and fine tune the controls until the drivers are content.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="late_build_changes">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Building the Unexpected</item>
         <item>Like the real world, build season is often full of unexpected surprises. In the case of
             a robot-building emergency, don\'t panic. Last minute changes happen on every team, and the
@@ -43,18 +33,16 @@
             You are allowed to bring a small amount of robot-related parts to competition, which means
             you can manufacture parts at home and install them on the first day of competition.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="bag_and_tag">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Bagging and Tagging</item>
         <item>While in the past your robot had to be crated up, in recent years a new procedure for sealing
             away your robot has been unveiled. All official events with the exception of the Championship are
             "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
             of Build Season. More information is available in the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/8">administrative manual&lt;/a>.</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>

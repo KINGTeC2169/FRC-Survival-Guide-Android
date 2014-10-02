@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- LAYOUT OF CONTENT
-    <string-array name="RESOURCE-ID">
-        <item>LAYOUT NAME</item>
-        <item>TITLE</item>
-        <item>MAIN TEXT</item>
-        <item>IMAGE NAME</item>
-        <item>TAGS</item>
-    </string-array> -->
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
 
-    <!-- TAGS SHOULD BE SEPARATED BY SPACES-->
-
-    <!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
-        &lt;a href="ADDRESS">NAME&lt;/a> -->
-    <!-- LINE BREAKS SHOULD BE FORMATTED AS
-        &lt;br> -->
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
 
 <resources>
     <string-array name="brainstorming">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Brainstorming</item>
         <item>Leaving Kickoff, the first thing your team should begin doing is
             brainstorming. No idea is a bad idea here, and this is the time to come up with all kinds of
             crazy designs. During this time you should begin planning strategy and deciding how and what
             you want your robot to do.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="approaching_the_game">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Approaching the Game</item>
         <item>Before thinking about how your robot could accomplish the
             game, it is important for you to decide what you want to accomplish! You\'ll need a
@@ -37,16 +27,14 @@
             strategy, KING TeC stages a mock game using human players instead of robots immediately
             after Kickoff, revealing any strategies that may otherwise be overlooked.</item>
         <item></item>
-        <item></item>
     </string-array>
 
     <string-array name="game_rules">
-        <item>fragment_pager_item</item>
+        <item>fragment_pager_item_no_image</item>
         <item>Game Rules</item>
         <item>Fully understanding the rules of the new game is critical to the design
             process. Everyone on the team should read the rules at least once and your team should
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
-        <item></item>
         <item></item>
     </string-array>
 </resources>
