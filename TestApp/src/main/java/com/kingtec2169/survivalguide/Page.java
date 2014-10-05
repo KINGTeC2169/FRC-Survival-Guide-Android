@@ -33,20 +33,19 @@ public class Page {
 
             // Make sure the expected length matches what we are actually working with
             if(contentResources.length == expectedLength) {
+                PageLayout pageLayout;
                 // Store the XML data
                 switch (layoutResourceId) {
                     case R.layout.fragment_pager_item:
-                        this.title = contentResources[1];
-                        this.text = contentResources[2];
-                        this.imageResourceId = context.getResources().getIdentifier(contentResources[3], "drawable", context.getPackageName());
-                        this.tags = contentResources[4];
+                        pageLayout = new PageLayoutTextAndImage();
                         break;
                     case R.layout.fragment_pager_item_no_image:
-                        this.title = contentResources[1];
-                        this.text = contentResources[2];
-                        this.tags = contentResources[3];
+                        pageLayout = new PageLayoutTextOnly();
                         break;
+                    default:
+                        pageLayout = new PageLayoutTextOnly(); // Use a simple definition
                 }
+                pageLayout.setupPage(this, contentResources, context);
             }
         } else {
             // Something is wrong with the XML data
@@ -59,16 +58,20 @@ public class Page {
     }
 
     public static int getExpectedLength(@IdRes int layoutResourceId) {
+        PageLayout pageLayout;
         // These numbers should include the layout tag in their length
         switch (layoutResourceId) {
             case R.layout.fragment_pager_item:
-                return 5;
+                pageLayout = new PageLayoutTextAndImage();
+                break;
             case R.layout.fragment_pager_item_no_image:
-                return 4;
+                pageLayout = new PageLayoutTextOnly();
+                break;
             default:
                 // Something is wrong
                 return 0;
         }
+        return pageLayout.getNumParameters();
     }
 
 }
