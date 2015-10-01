@@ -58,6 +58,7 @@ public class MainActivity extends ActionBarActivity
     private boolean confirmExit;
     private boolean useDrawer;
     private boolean autoCloseDrawer;
+    private static boolean spanish;
     // Should we combine two pages of content into one view?
     // This happens only on large (10") tablets
     private boolean combineContent;
@@ -473,5 +474,11 @@ public class MainActivity extends ActionBarActivity
         confirmExit = sharedPref.getBoolean(SettingsActivity.KEY_CONFIRM_EXIT, false);
         useDrawer = sharedPref.getBoolean(SettingsActivity.KEY_USE_DRAWER, false);
         autoCloseDrawer = sharedPref.getBoolean(SettingsActivity.KEY_CLOSE_DRAWER_ON_CLICK, true);
+        spanish = sharedPref.getBoolean(SettingsActivity.KEY_LANGUAGE_SPANISH, false);
+    }
+
+    public static boolean getLanguage()
+    {
+        return spanish;
     }
 }

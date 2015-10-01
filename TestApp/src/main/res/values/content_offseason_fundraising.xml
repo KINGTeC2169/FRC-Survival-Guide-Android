@@ -75,7 +75,7 @@ dinero, tener apoyo de la comunidad es un aspecto importante de FIRST-
         <item></item>
     </string-array>
 
-    <string-array name="Spanish">
+    <string-array name="fundraising_grantsSpanish">
         <item>fragment_pager_item_no_image</item>
         <item>Conseguir Becas</item>
         <item>Los becas casi siempre son una fuente de dinero que sólo puede ser usada una vez. La
