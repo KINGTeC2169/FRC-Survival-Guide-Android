@@ -19,6 +19,17 @@
         <item></item>
     </string-array>
 
+    <string-array name="early_programmingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Programación Inicial</item>
+        <item>Para poder probar su robot, necesitan poder controlarlo. Empiezan con lo básico, y empeoren
+programando un subsistema a la vez. Es importante recordar que no es importante que no deben
+preocuparse por perfeccionar el código en este momento, guarden la afinación y vueltas de control
+para el final. Por ahora, mientras puedan controlar el subsistema y sean capaces de obtener lecturas
+de los sensores que estén usando van bien.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="finishing_electrical">
         <item>fragment_pager_item_no_image</item>
         <item>Finishing Electrical</item>
@@ -36,4 +47,23 @@
             its final form. It looks more impressive to the judges, and makes fixing things way more easy.</item>
         <item></item>
     </string-array>
+
+    <string-array name="finishing_electricalSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Terminando la Parte Eléctrica</item>
+        <item>This is the time for your electrical department to have finished your wiring. It is
+            imperative that it is done so that your team will have as much time as possible for driving practice.
+            Some tips for a successful season are:
+            &lt;br>&lt;br>&#8226;\tDouble check all wire connections and make sure that they are
+            secure, even one wire coming loose could mean your entire robot shutting off.
+            &lt;br>&lt;br>&#8226;\tMake sure your power distribution board has fuses of the proper
+            amperage placed in their respective slots to prevent damaging any electrical components.
+            &lt;br>&lt;br>&#8226;\tIt is strongly recommended that all points of connection are
+            labeled from one point to another, this can save huge amounts of time when trying to
+            diagnose electrical problems.
+            &lt;br>&lt;br>&#8226;\tIf nothing else, make sure your electrical is neat and tidy in
+            its final form. It looks more impressive to the judges, and makes fixing things way more easy.</item>
+        <item></item>
+    </string-array>
+
 </resources>

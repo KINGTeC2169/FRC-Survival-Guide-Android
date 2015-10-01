@@ -18,6 +18,16 @@
         <item></item>
     </string-array>
 
+    <string-array name="spirit_importanceSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>La importancia del Espíritu</item>
+        <item>Durante las competencias, es importante que den a conocer a su equipo. Mientras mas
+sepan de ustedes, es más probable que  los escojan en las alianzas. También quieren
+mantener la energía de competencia alta, pues hace que la atmósfera en la arena sea más
+emocionante para todos.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="spirit_team_image">
         <item>fragment_pager_item_no_image</item>
         <item>Team Image</item>
@@ -36,6 +46,23 @@
         <item></item>
     </string-array>
 
+    <string-array name="spirit_team_imageSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Imagen del Equipo</item>
+        <item>Antes de la competencia, es importante desarrollar una imagen o atuendo. El atuendo puede
+ser algo divertido y emocionante; los equipos usan desde  disfraces de animales hasta capas
+y coronas, cada equipo con su propio atuendo. Puede ser difícil crear una imagen propia,
+pero tengan en cuenta que no tiene que ser extravagante para ser reconocida. Como
+campeones del FIRST World Imagery Award, KING TeC demostró que no necesitas estar
+excéntrico para destacar. Empiecen con una playera para el equipo. Hagan que el nombre y
+número de su equipo sea fácil de leer, así si un equipo o juez los está buscando los puede
+encontrar fácilmente. Después de crear su playera, el cielo es el límite. Los equipos usan
+desde zapatos hasta pulseras iguales. Sean creativos, y recuerden de no alejarse del
+nombre de su equipo.  Si los equipos se preguntan por que su mascota es relevante para su
+nombre, es probable que no sea la mejor idea.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="spirit_swag">
         <item>fragment_pager_item_no_image</item>
         <item>Swag</item>
@@ -44,6 +71,18 @@
             completely covered in buttons. Other simple and cost effective ideas are pencils and
             bracelets. Swag gets your team name and number out to other teams. Continue to keep in
             mind your message, your image, and how you want other teams to remember you.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="spirit_swagSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Swag/giveaways</item>
+        <item>Swag es un artículo de reglo para otros equipos. Aunque swag no es obligatorio, puede servir
+como propaganda para su equipo. Muchas equipos utilizan broches, durante las
+competencias puedes ver a gente cubierta en broches. Otras ideas fáciles y baratas son
+lápices y pulseras. Swag hace que el nombre y numero de tu equipo llegue a otros equipos.
+Tengan en mente su mensaje, su imagen y como quieren que los demás equipos se
+acuerden de ustedes.</item>
         <item></item>
     </string-array>
 </resources>

@@ -28,6 +28,25 @@
         <item></item>
     </string-array>
 
+    <string-array name="pits_designSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Diseño de los Pits</item>
+        <item>Diseñar el pit es una de las cosas mas importantes de hacer antes de dirigirse a la
+competencia. La creación del pit es algo que no se debe tomar a la ligera, ya que deben
+considerar que es lo que representa a tu equipo en los pits durante la competencia. Existen
+varios aspectos que deben considerar mientras diseñen el pit de su equipo. El nombre de su
+equipo, así como su numero, debe estar en un punto donde todos lo puedan ver, tanto
+miembros o mentores de otros equipos como jueces y voluntarios; es muy importante que su
+nombre se de a notar. Los jueces están de manera constante en los pits, entonces es muy
+importante que estén los valores de su equipo estén a la vista. La mejor manera de hacerlo
+es colgando posters con los logos de sus patrocinadores o incluso banderines a colocados
+en la parte superior de su pit, que es una muy buena manera de mostrar una gran cantidad
+de información para que todos la puedan ver. Como pueden ver, hay muchas maneras de
+mostrar el tema de su equipo y sus valores en el diseño del pit. El mejor consejo que les
+podemos dar es que se diviertan y sean creativos!</item>
+        <item></item>
+    </string-array>
+
     <string-array name="pits_organization">
         <item>fragment_pager_item_no_image</item>
         <item>Organization</item>
@@ -50,6 +69,28 @@
         <item></item>
     </string-array>
 
+    <string-array name="pits_organizationSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Organización</item>
+        <item>La organización es un de las cosas más importantes en el pit de su equipo. Sin un sistema
+de organización, es casi inevitable que pierdan algo. Existen varias maneras para organizar
+su pit. Van a tener muchas herramientas y objetos que van a traer y acabarán de alguna
+manera u otra en su pit. Es una buena idea traer cajas, un mueble con cajones, etc. para que
+los objetos no se pierdan o se los roben. Organizar las herramientas del equipo del pit es de
+vital importancia para el éxito de su equipo, ya que si su robot se descompone durante la
+competencia les conviene tener las herramientas que van a necesitar a la mano. También es
+importante tener a la mano las herramientas que utilizan frecuentemente. Además de las
+herramientas, hay otras cosas que necesitan mantener organizadas en su pit, como
+computadoras, baterías o incluso chamarras. Es una buena idea designar un espacio de
+acceso fácil con baterías para poder cambiarlas rápidamente cuando sea necesario. Las
+computadoras son algo que no van a querer dejar al descubierto, aun cuando haya siempre
+alguien es su pit, así que lo mejor sería dejarlos en un lugar seguro como un gabinete o
+abajo de una mesa. Las chamarras y otros objetos de ese estilo se pueden guardar en una
+caja para que no ocupen espacio dentro del pit. Por ultimo, recuerden siempre dejar espacio
+libre para poder trabajar cuando sea necesario.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="pits_crew">
         <item>fragment_pager_item_no_image</item>
         <item>Pit Crew</item>
@@ -62,6 +103,21 @@
             in and out of the pits it’s important to keep a minimal amount of people besides them in
             the area to avoid overcrowding. A last reminder, it is very important to have mechanical
             people in the pit crew, but a programmer is just as necessary for a successful robot.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_crewSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Equipo de Pit</item>
+        <item>El equipo de pit son de la personas mas cruciales fuera del campo. Es importante dejarles el
+espacio necesario dentro del pit para trabajo inmediato o momentos de pánico. El equipo de
+pit debe estar preparado para cualquier cosa en cualquier momento. El equipo debe estar
+compuesto de 5-6 personas para que no haya gente de más o gente de menos en los pits.
+Con el equipo de manejo y el equipo de pits entrando y saliendo constantemente, es
+importante mantener la menor cantidad de gente posible para que haya suficiente espacio
+para el robot, ya que pits se pueden llenar de gente fácilmente. Un último recordatorio, es
+que es muy importante que haya mecánicos que seas parte del equipo de pit, pero un
+programador es igual de necesario para tener un robot exitoso.</item>
         <item></item>
     </string-array>
 
@@ -85,6 +141,28 @@
             judges. Judges are also not the only ones coming to talk in the pits; you will have pit
             scouters, alliance partners, and volunteers always coming by also. Remember to always
             be in a good mood!</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pits_judgesSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Plática con los Jueces</item>
+        <item>Hablar con los jueces obviamente es una de las partes mas importantes de los pits. Los
+jueces siempre están caminando por los pits, así que no olviden siempre mostrar ‘gracious
+professionalism’. Cuando los jueces se acerquen a hablar con los equipos en los pits, tienen
+verdadera curiosidad y ganas de conocer a al equipo y su robot. Los jueces van a hacer
+preguntas sobre cosas relevantes sobre el robot o el equipos, así que es sabio tener a gente
+experta en ambos en los pits. Cuando estés platicando con los jueces siempre sean
+informativos. También es importante que cuando los jueces se acerquen a su pit que un
+alumno esta haciendo toda o casi toda la platica, no un mentor o un papá. Los jueces están
+ahí para platicar con el equipo, no los mentores. Aunque la mayoría de las preguntas que
+hacen en el pit son su robot, los jueces también están buscando contendientes para los
+demás premios de la competencia. Esta se va a amplificar si están compitiendo por un
+premio Chairman’s. Es importante tener un experto en el ‘outreach’, marketing y fundraising
+de su equipo en los pits también. Ellos les ayudarán a contestar estas preguntas a los jueces.
+Los jueces no son los únicos que van a ir a babar con ustedes en los pits; van a tener ‘pit
+scouters’, compañeros de alianza y voluntarios siempre visitando. Recuerden siempre estar
+de buen humor!</item>
         <item></item>
     </string-array>
 </resources>

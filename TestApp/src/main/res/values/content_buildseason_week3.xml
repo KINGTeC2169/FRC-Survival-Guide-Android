@@ -23,6 +23,21 @@
         <item></item>
     </string-array>
 
+    <string-array name="module_buildingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Construcción de Módulos</item>
+        <item>Ojalá para este entonces hayan encontrado algunas estrategias y mecanismos viables para el juego
+después de haber hecho prototipos. Los prototipos son excelentes para encontrar que diseños son
+los que funcionan bien, pero no su robot no debe estar hecho de prototipos. Es hora de empezar a
+construir módulos a partir de los diseños que probaron; aunque no todos los componentes hay sido
+probados completamente es importante empezar a construir lo antes posible. Aunque construir
+componentes en secciones modulares si frecuentemente la parte más eficiente del flujo de trabajo,
+es muy importante recordar que al final todos los módulos deben juntarse para formar un robot. No
+se les olvide que debe haber comunicación entre los grupos de trabajo para asegurase que todos
+estén en la misma página.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="robot_assembly">
         <item>fragment_pager_item_no_image</item>
         <item>Putting it All Together</item>
@@ -34,6 +49,20 @@
             components onto it where they belong. Make sure you leave a little room for error on
             your frame, it\'s never fun when you have to make more room around your mechanisms so
             they can fit together properly. Keep your overall goal in mind and go one step at a time.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="robot_assemblySpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Juntar Todo</item>
+        <item>Cuando estén juntando todos los componentes, es importante tener presenta la idea del robot
+como uno solo. Estén seguros que sus mecanismos no interfieran el uno con el otro así como que
+los motores y componentes eléctricos que se requieren tengan suficiente espacio. También deben
+pensar en el orden en el cual van a juntar los componentes. Es una buena idea empezar con el drive
+train o con el armazón y luego montar las demás piezas en su lugar. Asegúrense que dejen muy
+poco espacio para errores, nunca es divertido cuando tiene que hacer espacio alrededor de los
+mecanismos para juntaron de mañera adecuada. Mantengan su meta global en mente y vayan pasa
+a paso.</item>
         <item></item>
     </string-array>
 
@@ -55,6 +84,22 @@
         <item></item>
     </string-array>
 
+    <string-array name="beginning_wiringSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Empezando con la aparte Eléctrica</item>
+        <item>Aunque pueda parecer absurdo empezar a diseñar su configuración eléctrica sin haber completado
+el robot, van a querer tener diseñado en tablero principal antes para poder instalarlo en el chasis.
+Intenten tener todos sus componentes eléctricos principales en un solo lugar, para poder cambiar
+las piezas si es necesario. A pesar de que el sistema eléctrico está diseñado para caber en un espacio
+pequeño y compacto, es importante no crear un tablero que sea impermeable. Todos los
+componentes eléctricos de su robot generan calor, y la última cosa que necesitan durante la
+competencia es que el robot por sobre-calentamiento. Consideren la ventilación cuando estén
+diseñando su sistema! Etiquetar las partes del sistema también es crítico en este paso; que nunca es
+demasiado temprano para empezar. Si el electricista principal del equipo esta ausenté el día de la
+competencia, ¿su equipo sería capaz de arreglar cualquier problema que pueda surgir?</item>
+        <item></item>
+    </string-array>
+
     <string-array name="thinking_about_programming">
         <item>fragment_pager_item_no_image</item>
         <item>Planning Programming</item>
@@ -68,6 +113,21 @@
             make sure your robot\'s firmware and computer\'s software is up to date. Not having the
             right updates can cause major problems at competition, and may even prevent you from passing
             inspection. Plan ahead so that your robot can compete!</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="thinking_about_programmingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Planear la Programación</item>
+        <item>Aunque puede parecer un poco precipitado empezar a planear la programación, durante la Semana
+3 de la temporada, es importante empezar a definir las partes específicas del programa. Piensen
+como van a organizar el código y determinen quién va a ser el responsable por programar cada
+parte del robot. Hablan con el departamento eléctrico del equipo y averigüen como va a estar
+conectado el robot. Aunque esta información no sea definitiva, es muy útil saber como va a estar
+configurado el robot, especialmente en que puertos está conectado casa sistema. Este también es el
+momento oportuno para asegurarse que el firmware de su robot esté actualizado. No tener las
+actualizaciones correctas puede causar problemas graves en la competencia, e incluso que no
+pasen la inspección. Planeen las cosas con tiempo para que sí robot pueda competir.</item>
         <item></item>
     </string-array>
 </resources>

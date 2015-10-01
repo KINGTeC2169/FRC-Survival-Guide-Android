@@ -35,6 +35,31 @@
         <item></item>
     </string-array>
 
+    <string-array name="fundraising_obtaining_sponsorsSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Conseguir Patrocinios</item>
+        <item>Los patrocinios casi siempre le otorgan a los equipos grandes cantidades de dinero por muy
+poco esfuerzo, comparado con otros métodos de recaudación de fondos. Los patrocinadores
+pueden ser corporativos, compañías grandes como JC Penny, o locales, como su ferretería
+local o un restaurante. Sin embargo, cuando obtengas un patrocinio, es importante recordar
+que apoyo no monetario puede ser igual de importante que el dinero. Muchas compañías
+ofrecen mentores o proveen donaciones. El primer paso para conseguir es preguntare a sus
+compañeros de equipo si trabajan en alguna compañía que pudiesen ofrecer dinero,
+mentores o donaciones al equipo. Esta opción debe ser explorada primero, ya que las
+conexiones hacen que las compañías estén más interesadas en apoyar al equipo. Pídanle a
+los padres de familia el contacto de la persona encargada de patrocinios en la compañía, y
+marquen para agendar una cita. Ya que se agendó la cita, el patrocinio está casi asegurado.
+Preparen una presentación interactiva y un discurso, y estén listos para contestar preguntas.
+Si ningún padre de familia trabaja en una compañía que pueda ser patrocinador o se
+necesitan más patrocinadores, existen muchas otras opciones. Visiten las páginas de internet
+de equipos locales y busquen cuales con las compañías que los apoyan, ya que las
+compañías grandes suele apoyar a varios equipos. Las compañías locales la mayoría de las
+veces están dispuestas a apoyar a equipos de robótica. Aunque no les puedan dar mucho
+dinero, tener apoyo de la comunidad es un aspecto importante de FIRST-
+            &lt;a href="http://www.usfirst.org/roboticsprograms/first-fundraising-toolkit">FIRST Fundraising Toolkit&lt;/a>.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="fundraising_grants">
         <item>fragment_pager_item_no_image</item>
         <item>Applying for Grants</item>
@@ -47,6 +72,22 @@
             grants, a team may apply for a general team grant or for a grant for specific, needed
             items. An example of items to buy with grant money, which may be stated when
             applying for the grant, is the purchase of computers, hard drives, and tablets.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="Spanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Conseguir Becas</item>
+        <item>Los becas casi siempre son una fuente de dinero que sólo puede ser usada una vez. La
+cantidad de dinero, sin embargo, casi nunca es pequeña. FIRST ofrece becas para sus
+equipos, pero están enfocadas para y sólo disponibles para equipos novatos. Muchas
+corporaciones ofrecen muchas becas tanto para equipos novatos como veteranos. En este
+momento, NASA, Rockwell Automation and PTC. Fundaciones educativas locales y
+organizaciones sin fines de lucro también pueden ofrecer becas. Cuando apliquen para
+conseguir becas, el equipo puede necesitar aplicar por becas para el equipo en general o
+para materiales en específico. Un ejemplo de materiales que puedes comprar con dinero de
+beca, que puede estar explícito cuando se aplique por una beca, es computadoras, discos
+duros y tabletas.</item>
         <item></item>
     </string-array>
 
@@ -79,6 +120,36 @@
         <item></item>
     </string-array>
 
+    <string-array name="fundraising_major_eventsSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Eventos de Recaudación de Fondos Grandes</item>
+        <item>Una manera segura y consistente de juntar dinero es organizar una recaudación de fondos.
+Este tipo de eventos duran varios días y se deben de planear con tiempo. Aunque requieren
+mucho trabajo, este tipo de eventos son una excelente manera de juntar fondos para su
+equipo. Un excelente ejemplo de un evento de recaudación de fondos grande es organizar
+un campamento para los jóvenes de su zona. Esto sirve a la vez como una actividad de
+outreach ya que FIRST apoya el uso de STEAM (Science,Technology, Engineering, Arts and
+Mathematics) en el outreach hacia gente joven. Los equipos pueden cobrar entre $50 y $250
+por estudiante por un campamento de una o dos semanas. Hay muchas opciones de
+conceptos que enseñar a los estudiante que atiendan, como el Scratch programming de MIT
+así como programar y construir robots con VEX o FLL. Los equipos pueden organizar los
+campamentos de manera en su escuela o en otros lugares de la comunidad, y
+organizaciones locales de ‘educación de la comunidad’ pueden administrar y manejar el
+campamento. Los equipos pueden organizar actividades patrocinadas por la escuela para
+juntar dinero hacer propaganda. Planear y llevar a cabo un baile escolar puede ayudar a
+juntar entre $1,000 y $5,000 al año. Como por ejemplo un baile de Invierno, de San Valentín
+o Halloween. Conceptos que tengan que ver con robótica pueden ser incorporados al baile,
+como lásers o decoraciones automatizadas. A los estudiantes les llamará la atención que
+otros estudiantes estén como DJ y haya cosas como ‘balloon drops’.  Organizar un regional
+fuera de temporada ayuda a promocionar el equipo y a juntar dinero. El  por equipo puedo
+ser entre $50 a $500, y esto crece sobre todo si invitan a más de 20 equipos. Los equipos
+regresan continuamente aventureros granizados porque proveen lugares de Networking
+positivos para los organizadores y los invitados. si un equipo es pequeño o nuevo en cuanto
+organización de eventos puede juntarse con algunos equipos locales y dividirse las
+ganancias.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="fundraising_minor_events">
         <item>fragment_pager_item_no_image</item>
         <item>Minor Fundraising Events</item>
@@ -98,4 +169,27 @@
             events.</item>
         <item></item>
     </string-array>
+
+    <string-array name="fundraising_minor_eventsSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Eventos de Recaudación de Fondos Pequeños</item>
+        <item>Aunque los eventos de recaudación pequeños tienen a juntar menos dinero son más fáciles
+de planear y llevar acabo. Muchos generan conciencia de manera exitosa en la comunidad
+del equipo. Un ejemplo de esto puede ser guardar el súper en bolsas en su supermercado
+más cercano. Robots de años pasados puede ser puestos a la vista y si la tienda lo permite,
+dejar los clientes lo manejen. Los clientes que siempre están emocionados al escuchar sobre
+robots y ‘community outreach’ de un equipo de FIRST y casi siempre están dispuestos a
+hacer una donación. Un equipo gana alrededor de $500 a $1500 en este tipo de eventos.
+Otro tipo de evento de recaudación pequeña  que se pueda hacer es vender hotdogs afuera
+de un supermercado cuando hace calor en el verano. Tiendas locales muchas veces donan
+equipo y hasta materiales. Busquen tiendas que hagan este tipo ofertas y pidan un turno de
+trabajo. Con esto, el equipo puede recaudar alrededor de $500 a $1000. Muchos
+restaurantes locales y de cadena ofrecen noches de beneficio para las escuelas. En dichas
+noches, un porcentaje de las ganancias se les dan al equipo que lo promociona. Sin equipo
+hace una promoción adecuada, tiene potencial de ganar más de $500 o hasta los miles de
+dólares. Cuando se combinan, los eventos pequeños pueden juntar más dinero que uno o
+dos eventos de recaudación grandes.</item>
+        <item></item>
+    </string-array>
+
 </resources>

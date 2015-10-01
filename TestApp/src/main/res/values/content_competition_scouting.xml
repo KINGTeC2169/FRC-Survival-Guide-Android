@@ -27,6 +27,25 @@
         <item></item>
     </string-array>
 
+    <string-array name="scouting_matchSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Scouting en los partidos</item>
+        <item>Hacer scouting es uno de los roles mas esenciales durante la competencia. Observar a otros
+robots durante la competencia le ayudara a su equipo a tomar decisiones sobre sus aliados,
+así como ser una fuente de inspiración para cualquier cambio a que vayan a hacer a su
+estrategia. Su equipo debe buscar a robots que sean compatibles con el suyo - tener tres
+robots idénticos en un mismo equipo probablemente no sea la mejor estrategia. Aun cuando
+su equipo no vaya a ser capitán de una alianza, es importante seguir con el scouting; si su
+equipo es elegido, sus aliados pueden pedirles ayuda para seleccionar un tercer robot o una
+estrategia. Scouting en las gradas esta diseñado para darle a su equipo la mayor cantidad de
+información posible a su equipo sobre los demás robots. Su equipo puede anotar información
+cualitativa y cuantitativa, pero debe tener un sistema estandarizado para hacerlo. En la
+cancha, el desempeño no sólo depende en el robot, también en el conductor. Hagan que su
+equipo de scouting se fije en como se desempeñan otros equipos cuando están bajo estrés,
+y anoten cualquier falla en su estrategia de la cual ustedes se puedan aprovechar.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="scouting_pits">
         <item>fragment_pager_item_no_image</item>
         <item>Pit Scouting</item>
@@ -37,6 +56,20 @@
             performance, it can give your team an idea of what robots to look out for and what robots
             to consider for specialty purposes, such as pushing opponents out of the way. Make sure
             to take pictures of each robot to help connect each team with their robot.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="scouting_pitsSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Scouting en los Pits</item>
+        <item>Hacer scouting en los pits es una muy buena manera de ver a todos los robots de cerca. Les
+permite ver cosas específicas del diseño del robot así como cosas que no son aparentes en
+la cancha. Como equipo, deben registrar detalles importantes como la altura, peso, ‘drive-
+train’, y capacidad para anotar. Mientras que hacer scouting en los pits no les puede
+proporcionar mucha información sobre el desempeño en la cancha del robot, les puede dar
+una idea de que robots mantener en cuenta y cuales considerar para situaciones especiales,
+como empujar a contrincantes por ejemplo. Asegúrense de tomar fotos de todos los robots
+para poder hacer la conexión entre los equipos y sus robots.</item>
         <item></item>
     </string-array>
 </resources>

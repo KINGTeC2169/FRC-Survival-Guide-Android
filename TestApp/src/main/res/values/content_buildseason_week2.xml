@@ -21,6 +21,18 @@
         <item></item>
     </string-array>
 
+    <string-array name="getting_materialsSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Obtener los Materiales</item>
+        <item>Aunque los detalles de su diseño no estén completos, es importante que tu equipo empiece a
+comprar materiales, en especial lo que requieren ser enviados por paquetería.
+Desafortunadamente, no se puede construir un robot sin materiales, y es mejor estarlos esperando
+durante la primera o segunda semana que durante la sexta. Haz que tu equipo escriba una lista de
+los materiales que creen que van a usar, y no olvides incluir repuestos para aquellas piezas que
+creas que se puedan romper. Su prioridad debería ser conseguir las partes para empezar a armar!</item>
+        <item></item>
+    </string-array>
+
     <string-array name="prototyping">
         <item>fragment_pager_item_no_image</item>
         <item>Prototyping</item>
@@ -36,6 +48,21 @@
         <item></item>
     </string-array>
 
+    <string-array name="prototypingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Hacer el Prototipo</item>
+        <item>Los equipos que están en el Einstein Field en el Campeonato Mundial de FRC hacen una cosa de
+manera consistente: hacer pruebas y pruebas hasta el cansancio, diseñando y rompiendo
+componentes de su robot antes de siquiera pensar en armarlos en un diseño definitivo. Hacer
+prototipos ayuda a que el equipo encuentre fallas en su diseño y arreglarlos antes que los afecte en
+semanas posteriores, donde el tiempo y los recursos se necesitan usar en programación y prácticas
+de manejo. KING TeC organiza equipos de dos o tres personas para trabajar en componentes
+individuales del robot. El proceso para hacer el prototipo depende de cada equipo, pero es
+importante que el proceso no se detenga. No dejen que una falla en una parte se convierta en una
+falla general.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="chassis_building">
         <item>fragment_pager_item_no_image</item>
         <item>Building the Chassis</item>
@@ -44,6 +71,18 @@
             every robot design out there, and it is important to get a driving robot as soon as possible. Not
             only will having a driving robot guarantee you some level of success on the field, without a
             frame the components and modules you are prototyping will have nowhere to go!</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chassis_buildingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Construcción del Chasis</item>
+        <item>Aunque puede que no hayan finalizado el diseño del robot en este momento, es muy importante
+que empiezan con la construcción del chasis. El drive-train es el corazón de casi todos los diseños de
+robot que existen, y es importante tener un robot que se pues manejar lo antes posible. El tener un
+robot que se pueda manejar lo antes posible no sólo te garantiza cierto éxito en la cancha, sin un
+armazón, los componentes y módulos de los cuales están haciendo prototipos no van a tener un
+lugar en donde ir.</item>
         <item></item>
     </string-array>
 </resources>
