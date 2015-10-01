@@ -18,6 +18,16 @@
         <item></item>
     </string-array>
 
+    <string-array name="brainstormingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Lluvia de Ideas</item>
+        <item>Saliendo del Kickoff, lo primero que su equipo tiene que hacer es empezar con el brainstorming.
+Ninguna idea es mala, pues aquí es el momento para pensar en todo tipo de diseño, por muy loco
+que sea. Durante este tiempo, deben empezar a planear una estrategia y decidir cómo y qué
+quieren que haga su robot.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="approaching_the_game">
         <item>fragment_pager_item_no_image</item>
         <item>Approaching the Game</item>
@@ -29,12 +39,34 @@
         <item></item>
     </string-array>
 
+    <string-array name="approaching_the_gameSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Entender el Juego</item>
+        <item>Antes de pensar como lograr que el robot pueda llevar a cabo el reto del juego, es importante
+decidir que es lo que quiere lograr el equipo. Van a necesitar una plan de acción antes de empezar a
+diseñar su robot. Para poder diseñar el robot basándose en la mejor estrategia, KING TeC organiza
+una simulación del juego, utilizando jugadores humanos en vez de robots, inmediatamente
+después del Kickoff. La simulación nos ayuda a encontrar estrategias en las cuales no habríamos
+pensado.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="game_rules">
         <item>fragment_pager_item_no_image</item>
         <item>Game Rules</item>
         <item>Fully understanding the rules of the new game is critical to the design
             process. Everyone on the team should read the rules at least once and your team should
             appoint a Rules Master, someone who your team can defer to for all rules-related questions.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="game_rulesSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Reglas del Juego</item>
+        <item>Entender las reglas del nuevo juego es esencial para el proceso de diseño. Todos los miembros del
+equipo deberían leer lar reglas del juego por lo menos una vez, y nombrar un Rule Master (Amo de
+las Reglas), alguien en su equipo a quien puedan usar como referencia cuando surgen una dudas
+sobre las reglas.</item>
         <item></item>
     </string-array>
 </resources>

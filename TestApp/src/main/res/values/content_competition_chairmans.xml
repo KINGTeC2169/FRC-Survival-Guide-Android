@@ -30,6 +30,25 @@
         <item></item>
     </string-array>
 
+    <string-array name="chairmans_aboutSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>¿Qué es el Chairman\'s?</item>
+        <item>Como esta estipulado en la sección 6.4.1 del Manual de FRC: “El premio Chairman’s fue
+creado para mantener el enfoque central de FRC en el fin último de transformar la cultura en
+maneras que inspiren mejores niveles de respeto hacia la ciencia y la tecnología, así como
+alentar a la juventud a que se convierta en científicos, ingenieros y tecnólogos. El premio
+Chairman’s representa el espíritu de FIRST. Sigue siendo el premio más prestigioso de
+FIRST.” Cualquier equipo que no sea novato puede competir por un premio Chairman’s. Se
+enfoca en el año actual y previo del equipo. El premio Chairman’s es una de tres maneras
+para clasificar al FIRST Championship. A los ganadores se les otorga la oportunidad de
+competir en el FIRST Championship para ser admitidos al FIRST Hall of Fame. El FIRST Hall
+of Fame consiste de equipos que han ganado un premio Chairman’s en el FIRST
+Championship. Una nueva regla para la temporada 2014 dice que un equipo puede competir
+por un premio Chairman’s en cada regional en el que participen hasta que ganen. En
+temporadas pasadas, los equipos sólo podían competir en un evento regional.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="chairmans_writing">
         <item>fragment_pager_item_no_image</item>
         <item>The Written Portion</item>
@@ -46,6 +65,26 @@
             spread FIRST, and how FIRST has impacted your team. Along with the written pieces, you
             will need to submit four photos at the same time. These photos are to show judges how
             you’ve spread FIRST. These four photos can be no more than 1.0 MB of memory.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chairmans_writingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>La Porción  Escrita</item>
+        <item>La porción escrita del Chairman’s tiene dos partes, el ensayo y el Executive Summary. El
+ensayo es una explicación de 10,000 caracteres sobre como su equipo comparte la misión
+de FIRST. Al principio, 10,000 caracteres puede parecer mucho, pero la mayoría de ustedes
+va a necesitar reducir su ensayo para cumplir el requerimiento. Cuando estén escribiendo su
+ensayo, no se preocupen por la cuenta de caracteres. Les conviene primero escribir el
+ensayo y luego combinar y quitar oraciones. Es importante que empiecen en ensayo con
+tiempo, así pueden basar su presentación y su video sobre el ensayo. El Executive Summary
+es una serie de preguntas que necesitaran contestar. La mayoría de las preguntas tienen un
+límite de 500 caracteres. También van a incluir el nombre de su equipo, su numero y sus
+patrocinadores. Estas respuestas cortas tienen que ver con como su equipo ha difundido a
+FIRST, y como FIRST ha impactado a su equipo. Junto con los componentes escritos, van a
+tener que mandar cuatro fotos al mismo tiempo. Estas fotos sirven para mostrarle a los
+jueces como han difundido a FIRST. Las cuatro fotos no deben ocupar mas de 1.0 MB de
+memoria.</item>
         <item></item>
     </string-array>
 
@@ -67,6 +106,23 @@
         <item></item>
     </string-array>
 
+    <string-array name="chairmans_speechSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>El Discurso</item>
+        <item>A pesar de que los equipos son capaces de hablar por horas sobre como han difundido la
+misión de FIRST, sólo pueden hablar por cinco minutos con los jueces sobre como han
+impactado a su comunidad. Después de los cinco minutos de presentación, los equipos
+tendrán cinco minutos para una sesión de pregunta y respuesta. Los equipos pueden mandar
+hasta tres representantes - tanto alumnos como mentores. La presentación del Chairman’s
+puede provocar algo de miedo, pero aquí hay un par de consejos para tomar en cuenta
+durante su presentación: No dejen que las emociones de los jueces los afecten. Han tenido
+un día muy pesado y muy probablemente estén cansados y aburridos. No dejen que esto les
+afecte mientras presentan. El cuarto puede ser pequeño; solo lleven lo necesario.
+Exactamente cuanto tiempo les queda depende de los jueces. Algunos jueces empiezan a
+contar en cuanto abran la puerta.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="chairmans_video">
         <item>fragment_pager_item_no_image</item>
         <item>The Video</item>
@@ -76,6 +132,17 @@
             The video is very important because it is the last thing the judges will remember. When
             a team wins, the video is broadcasted to the rest of the teams on the big screen at regional
             or district events.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chairmans_videoSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>El Video</item>
+        <item>El video del Chairman’s no debe durar más de tres minutos ni menos de uno. El video del
+Chairman’s es obligatorio para poder concursar por el premio. Antes de que los jueces tomen
+la decisión final, ven los videos. El video es importante porque es la última cosa que los
+jueces van a recordar. Cuando un equipo gana, el video es mostrado al resto de los equipos
+en la pantalla grande en el evento regional o distrital.</item>
         <item></item>
     </string-array>
 </resources>

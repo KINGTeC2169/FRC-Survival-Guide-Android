@@ -23,6 +23,20 @@
         <item></item>
     </string-array>
 
+    <string-array name="tweaking_programmingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Ajustes de Programación</item>
+        <item>WEsperemos que para este punto ya tengan programada la función principal de su robo t, lo
+más probable es que no les salga perfecto a la primera. Sus programadores deberían estarse
+concentrándonos en arreglar los problemas de programación y hacer que todo funcione,
+después de eso, es hora de traer a tu equipo de conductores. Aunque los programadores les
+gusta pensar que saben todo sobre robot, es importante recordarles que lo más probable es
+que no sean ellos quienes conduzcan el robot durante la competencia. Si sí van a manejar,
+su equipo tiene mucha suerte! Si no, los programadores necesitan sentarse con el equipo de
+conductores y hacer ajustes a los controles hasta que los conductores están satisfechos.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="late_build_changes">
         <item>fragment_pager_item_no_image</item>
         <item>Building the Unexpected</item>
@@ -35,6 +49,18 @@
         <item></item>
     </string-array>
 
+    <string-array name="late_build_changesSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Construyendo lo Inesperado</item>
+        <item>Así como la vida real, la temporada siempre está llena de sorpresa inesperadas. En caso de
+tener una emergencia con respecto al robot, no entren en pánico. Los cambios de último
+minuto suceden en todos los equipos, es importante recordar que seguir construyendo una
+vez terminadas las seis semanas. Está permitido traer partes del robot a la competencia, lo
+cual significa que pueden manufacturar partes en casa e instalarlas el primer día de la
+competencia.</item>
+        <item></item>
+    </string-array>
+
     <string-array name="bag_and_tag">
         <item>fragment_pager_item_no_image</item>
         <item>Bagging and Tagging</item>
@@ -43,6 +69,17 @@
             "Bag and Tag" events, meaning that your robot must be suffocated by a giant bag on the last day
             of Build Season. More information is available in the
             &lt;a href="http://frc-manual.usfirst.org/viewItem/8">administrative manual&lt;/a>.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bag_and_tagSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Embolsado y Etiquetado</item>
+        <item>Entras en años pasados su robot se tenía que guardar en un contenedor, en años recientes
+nos han enseñado un nuevo procedimiento para empaquetar robot. Todos los eventos
+oficiales, con excepción del campeonato, son eventos ‘embolsado y etiquetado’, lo cual
+significa que su robot debe estar sofocado por una bolsa enorme el último día de la
+temporada de construcción.</item>
         <item></item>
     </string-array>
 </resources>

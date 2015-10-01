@@ -29,6 +29,23 @@
         <item></item>
     </string-array>
 
+    <string-array name="main_programmingSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Programación</item>
+        <item>Para este entonces, ya deberían poder controlar cada parte de su robot. Es hora de dejar de
+trabajar en implementar funciones nuevas y perfeccionar las que ya tienen. Abres el
+momento para crear vueltas de control que ayudan a que el trabajo del conductor sea más
+fácil, como los controles PID. Asegúrense de revisar si existen funciones disponibles antes
+de querer implementar las suyas; seguro serán mucho más fáciles de usar y que tengan
+menor cantidad errores que el código que escriban. Uno de los puntos al cual no se le puede
+dar suficiente énfasis, es reutilizar código ya existente para programación en FRC. Mientras
+escriben el código para el robot este año, piensen también en como pueden escribirlo para
+que se pueda usar el próximo año. Aunque su robot va cambiar año con año, existe ninguna
+razón para no reciclar algunas de las ideas e implementaciones del programa.
+          </item>
+        <item></item>
+    </string-array>
+
     <string-array name="drive_practice">
         <item>fragment_pager_item_no_image</item>
         <item>Practicing Driving</item>
@@ -41,6 +58,22 @@
             the robot and the game. If your team has old robots available, try pitting the new one
             against a ragtag defense. This will give you an idea of what your robot is and isn\'t capable
             of doing. Don\'t forget to try and practice scoring!</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="drive_practiceSpanish">
+        <item>fragment_pager_item_no_image</item>
+        <item>Práctica de Manejo</item>
+        <item>Manejaron robots en la competencia en su trabajo increíblemente estresante y para el cual,
+sin importar las horas de práctica, nunca te vas a poder preparar completamente. Además,
+no hay dos robots que sean exactamente iguales, así que la experiencia de manejar robots
+en años pasados no siempre se transfiere. Para las Semana 5, su equipo debería tener el
+robot los suficientemente armado como para poder manejarlo, e idealmente, su equipo
+debería ya haber acabado con la construcción y programación del robot. Construyendo una
+simulación de la cancha, sus conductores deberían poder aprender cómo manejar el robot y
+cómo funciona el juego. Si tienen robots viejos disponibles, intenten hacerlos competir contra
+el robot nuevo. El hacer esto, les dará una muy buena idea de qué es lo que su robot es
+capaz de hacer. No olviden intentar y practicar anotaciones.</item>
         <item></item>
     </string-array>
 </resources>
