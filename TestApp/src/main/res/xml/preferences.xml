@@ -14,4 +14,8 @@
             android:title="Close Drawer on Item Click"
             android:defaultValue="true"
             android:dependency="use_drawer"/>
+    <CheckBoxPreference
+        android:key="translate_spanish"
+        android:title="Spanish"
+        android:defaultValue="false"/>
 </PreferenceScreen>
