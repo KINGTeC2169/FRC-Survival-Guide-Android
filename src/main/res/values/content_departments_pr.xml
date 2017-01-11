@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="pr">
+        <item>fragment_pager_item_no_image</item>
+        <item>Public Relations</item>
+        <item>Public Relations (PR) should be used to keep sponsors updated, energize a support base, and create and maintain a recognizable presence in FIRST by communicating with other teams. For an FRC team, the main goal of PR is to promote team events and community outreach. Teams should also give updates on the progress of the robot and competition updates as well. Teams with successful PR departments update social media regularly and use a variety of platforms to promote their team and the principles of FIRST.&lt;br>&lt;br>
+
+The trick to an engaged audience is strategically using different social media platforms to target a variety of demographics. For example, Twitter is very popular amongst teachers and higher level school district administrators, as well as FRC teams and sponsors. Therefore, Twitter should be used to share community outreach projects and progress on the robot Utilize twitter for short and frequent posts. Instagram and Snapchat are more popular amongst the members of different teams, so they are best used to share photos from meetings and action shots of robot construction. Many high school students use snapchat, so this can be a lucrative way to share less formal information about your team. Facebook is most commonly used amongst sponsors and parents of the team, so it\'s best used to share community outreach, occasional progress updates on the robot, and how the robot does at competitions. Long posts are best saved for Facebook. Do not attempt to post large albums of photos or text longer than a sentence or two on any social media platform other than Facebook.&lt;br>&lt;br>
+
+Another part of using social media effectively is varying how often posts are made on each platform. Posting frequency should match how often the target demographic uses the platform. For Twitter and Instagram, a post should be made about once a day. But with Snapchat, posts should be made about once a week. Facebook posts can be made sporadically.
+</item>
+        <item></item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="splashScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/ic_kt</item>
+    </style>
+
+    <style name="Theme.splashScreenTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="KINGTeC.BaseTheme" parent="Theme.AppCompat" >
+        <item name="android:statusBarColor">#c0392b</item>
+        <item name="colorPrimary">#e74c3c</item>
+        <item name="android:textColorSecondaryInverse">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+</resources>

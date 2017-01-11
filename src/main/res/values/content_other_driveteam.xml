@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="drive_team">
+        <item>fragment_pager_item_no_image</item>
+        <item>Drive Team</item>
+        <item>The drive team is the group of 4 individuals that includes the driver, operator, coach, and human player.&lt;br>&lt;br>
+Driver: The person who mans the main controls for the robot. Primarily, the driving.&lt;br>&lt;br>
+Operator: The person who mans the mechanisms for the robot. They must be able to work very well with the driver because they, together, physically control the robot.&lt;br>&lt;br>
+Coach: The person who guides the driver and operator during a match. They generally tell the drivers what to do or tell them what to be mindful of.&lt;br>&lt;br>
+This position can be filled by a mentor.&lt;br>&lt;br>
+Human Player: Usually, games include a task for a human to accomplish. The human player accomplishes this task.&lt;br>&lt;br>
+
+Ideally, members of the drive team should be familiar with technical aspects of the robot, possibly a member of one of the technical departments. This way they will know the design well, and how it functions. This could help to put ease on the amount of people in the pits. If you want at least two people from each department, the drive team could help satisfy some of those positions, making the pits less cluttered&lt;br>&lt;br>
+Students in any grade are encouraged to actively contribute to the team in all areas including being on the drive team. Students interested in being on the drive team are encouraged to talk to the mentors and students organizing the drive team if they have questions or need more information.&lt;br>&lt;br>&lt;br>
+
+Drive team members are expected to:&lt;br>&lt;br>
+Attend all days of all of the competitions during the regular competition season.  Drive team members must be there for all matches including delayed matches that take place after the event was scheduled to end.&lt;br>&lt;br>
+Show up for all of the practices.&lt;br>&lt;br>
+Be on time for all practices, meetings, and competitions.  At the competitions, drive team members will be responsible for getting the robot and themselves ready and queued for matches.&lt;br>&lt;br>
+Be able to concentrate in high stress situations.&lt;br>&lt;br>
+Read and respond as necessary to drive team emails and team emails in a timely manner.&lt;br>&lt;br>
+Work closely with and respond quickly and positively to the mentors and students leading the drive team.&lt;br>&lt;br>
+Be committed to excellence in being the best they can at their position.  For example, if a coach/strategy heads tells them to work on a particular driving skill, they will work on that skill and do their best to understand what the coach/strategy head is coaching them to do and learn it.&lt;br>&lt;br>
+Read all of the competition rules and updates. They need to be intimately familiar with the scoring and penalty rules.&lt;br>&lt;br>
+Avoid damaging the robot.  For example, if the mechanical heads say it will likely damage the robot to drive fast over a bump, the driver will respect that and not do it.&lt;br>&lt;br>
+Be respectful to all teams and be a good sport.  For example, help an opponent whose robot needs repair rather than laughing at them.  It is OK to celebrate winning. Congratulate opponents for a good competition and complement the good aspects of their robot and driving.  Boasting is prohibited.  Avoid damaging opponent\'s robots.&lt;br>&lt;br>
+Work on designing, building, programming, and fielding the robot.  Actively help pack the competition crates together before you leave for competitions and know what needs to be taken down to the competition fields.  Drive team members are key members of the pit crew that keep the robot in competition condition.&lt;br>&lt;br>
+Be ready for competitions by getting enough sleep (6 hours is not enough, 8 or more is better) for several days before and during the competition so they are well rested and able to perform their best.  At the competitions, they will go to bed by 10 pm each night before they compete.&lt;br>&lt;br>
+Team Leadership have final say who is on the drive team and will involve student leaders as is appropriate.&lt;br>&lt;br>&lt;br>
+
+They must understand that:&lt;br>&lt;br>
+It is a privilege to be on the drive team.&lt;br>&lt;br>
+Good drive team members are like test pilots. Highly skilled and able to communicate what they saw and how the robot behaved to the drive team leaders and coaches.&lt;br>&lt;br>
+Competitions are intense and not everyone performs under competition pressures as well as they do at practices.  Plenty of sleep and food help with this.&lt;br>&lt;br>
+They must always be on their best behavior as they are very visible members of the team.&lt;br>&lt;br>
+Being on the drive team is not for everyone and sometimes it becomes clear to the leadership that someone else will serve the team better and drive team members may be replaced.
+</item>
+        <item></item>
+    </string-array>
+
+</resources>

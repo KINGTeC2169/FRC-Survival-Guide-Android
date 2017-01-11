@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="spirit_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to Spirit</item>
+        <item>Spirit is important on every team.  Everyone can participate in spirit regardless of experience or ability.  The goal of spirit is simple; keep the morale on the team up and spirits high.  Throughout the season, tensions will rise and stress will become intense.  Keeping a positive attitude is extremely important.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="spirit_season">
+        <item>fragment_pager_item_no_image</item>
+        <item>Spirit During Build Season</item>
+        <item>Members of the team should always try to keep a positive attitude throughout the season.  Things like scheduled breaks, team activities, and games can help lighten the load during high stress environments.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="spirit_comp">
+        <item>fragment_pager_item_no_image</item>
+        <item>Spirit At Competition</item>
+        <item>Spirit at competition is very important. The more visible your team is, the more likely you will be remembered by everyone at the event which can help with sponsorships, awards, recruitment, and alliance selection.  Drive Teams really appreciate their team cheering them on, regardless of match outcome.  Teams should have cheers for a variety of scenarios as well as general cheers that can be done at any time.  Most teams incorporate their team name, number, and theme into their cheers.  The idea behind spirit is to have fun at competition and to cheer on FIRST and your team/alliance.&lt;br>&lt;br>
+	The spirit award is given out at competition to support the team exemplifying their team’s image through cheering.  Only one is given out at each competition so make sure to be loud and proud at all times.  In addition, spirit helps your team’s image for other awards such as Chairman’s or Imagery. The use of mascots, flags, and pom poms is highly recommended.&lt;br>&lt;br>
+	When making cheers, keep them short and to the point.  This makes them easier to memorize, cheer, and listen to.  Other teams have cheers of their own that can be edited to your own team and image.</item>
+        <item></item>
+    </string-array>
+
+
+
+</resources>

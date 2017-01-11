@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+
+    <string-array name="mech_tools">
+        <item>fragment_pager_item_no_image</item>
+        <item>Tools for your Workspace</item>
+        <item>With so many tools available in the world, it can be hard to decide which tools will be useful for FRC purposes? Here are some general principles for tools:&lt;br>&lt;br>
+You will want to be able to have as many abilities at competition as you can. Portable tools are important. &lt;br>&lt;br>
+Have a solid organization system. Without one, tools can easily get lost. &lt;br>&lt;br>
+Below is a list of tools that we feel are essential to an FRC team, with a minimum recommended quantity (it is assumed “one” unless specified otherwise). Some sections are split into essential tools that we use often, additional ones if you have the funds, and the luxury items that large FRC teams enjoy.&lt;br>
+This is by no means the definitive list of all tools that can be useful. You may find tools that work very well for your team. This is a list that either we on KING TeC have used or other teams have generally used and view fondly.&lt;br>&lt;br>&lt;br>
+
+Measuring&lt;br>&lt;br>
+Tape Measure (>2): tape measures are great for measuring longer lengths, like a drivetrain rail or a long manipulator. Two rolls of two different widths (1” and ½”) are sufficient, but the more the merrier.&lt;br>&lt;br>
+Speed Square (>1): great for marking perpendicular lines because of the lips at one end. As well as marking straight, perpendicular lines, it can also measure whether something is at a right angle during assembly.&lt;br>&lt;br>
+Caliper (>1): Calipers are great for measuring precise lengths. They come in dial or digital, and it is up to personal preference which one is better. &lt;br>&lt;br>&lt;br>
+
+Marking&lt;br>&lt;br>
+Scribe (>3): A tool that has a sharp tip at the end that can make clear marks in metal. This tool is vital for knowing where you will need to cut metal once you have measured it. When the team is busy fabricating parts of the robot, a scribe will be used very often, so having an ample amount is important.&lt;br>&lt;br>
+Center Punches(>3): Used for marking where holes will be drilled. Force is applied to the metal and a small mark is made that doubles as a mark where the hole should be and guides the drill during the drilling process.&lt;br>&lt;br>
+Manual: requires a hammer&lt;br>&lt;br>
+Snap Punch: does not require a hammer because it is spring loaded&lt;br>&lt;br>
+Transfer: requires hammer. Used to go through other holes of the same size to reach a spot to mark. Transfer punches are made for specific hole sizes&lt;br>&lt;br>&lt;br>
+
+Cutting&lt;br>&lt;br>
+The Essentials&lt;br>&lt;br>
+Band Saw: Band Saws, as far as cutting tools are concerned, strike the perfect balance between effectivity and price. You will need one that can cut wood, polycarbonate, and aluminum. If possible, get one that can cut steel, but those can be much more expensive. A band saw with adjustable speeds is also recommended.&lt;br>&lt;br>
+On 2169 we have a Grizzly G0640X, which has been completely satisfactory. Its has an adjustable speed and comes with a side shield and miter for keeping cuts straight&lt;br>&lt;br>
+Dremel: a small, handheld cutting machine that works for performing small and particular cuts, especially when the pieces being cut are already on the robot. Always have replacement cutting bits because they can break quite easily. Especially since they are generally for softer materials.&lt;br>&lt;br>
+Hacksaw: The non-powered alternative to cutting. If you do not have immediate access to the band saw and something may be too dense for the dremel to cut effectively, a hacksaw can work.&lt;br>&lt;br>&lt;br>
+The Additionals&lt;br>&lt;br>
+Chop Saw: The chop saw is great for cutting long pieces of metal tubing and other long, narrow materials. It does the job much quicker than a band saw. Unlike a band saw, there is no limit to the length of what you are cutting because their is no neck to get in the way. Chop saws usually do not cut sheet metal well.&lt;br>&lt;br>
+Manual Mill: A manual mill is a cutting/drilling machine that is used to get a much more precisely made product. Instead of moving material by hand, you can adjust the position with three handles, one for each plane.&lt;br>&lt;br>
+Manual Mills are quite pricey. 2169 uses the Bridgeport mill that is in our school’s metal shop, the same one used in their IT classes. Because of their price, we suggest that if you do not already have one at your disposal, that you save up for a CNC mill, which costs quite a bit more, but is quite a bit more useful.&lt;br>&lt;br>
+Manual Lathe: Lathes are used for cutting and shaping rounder materials, such as an axle. The material is spun and a cutting tool is used to shape the material that is being spun.&lt;br>&lt;br>&lt;br>
+The Luxuries&lt;br>&lt;br>
+CNC Mill: a CNC mill is a milling machine that is automated. If functions using installed software and reads CAD files. CNC mills are very pricey, but with the funds, they are very much worth the price.&lt;br>&lt;br>
+CNC cutting machines come in all different types. On 2169, we have an X-Carve from Inventables. But there are other CNC cutting machines such as:&lt;br>&lt;br>
+Water Jet Cutters&lt;br>
+Laser Cutters&lt;br>
+CNC Lathe: the same principle as a CNC mill, but a lathe.&lt;br>&lt;br>&lt;br>
+
+Drilling&lt;br>&lt;br>
+The Essentials&lt;br>&lt;br>
+Hand Drill (>1): Hand drills (cordless) are great for most hole drilling applications. You will want more than one because multiple kids may be working on different parts of the robot simultaneously and may need a hand drills.&lt;br>&lt;br>
+Drill Press: A hand drill is not always powerful enough for some drills. A hand drill’s chuck may not even fit larger bits (½” and up). If you are going to be drilling something like bearing holes, you will need a drill press.&lt;br>&lt;br>
+On 2169 we have a JET JDP-17MF/354169. It has adjustable speed and power. We also have a smaller Ryobi tabletop drill press for when two drill presses are needed.&lt;br>&lt;br>
+If you get two drill presses, get one smaller, weaker one and one larger, powerful one. It will save money and space.&lt;br>&lt;br>
+Drill Bits (Many of each important size): drill bits are one of the most used tools as they are used in both a hand drill and a drill press. The most often sizes include 5/32, 3/16, ¼, and 1-⅛.&lt;br>&lt;br>
+Tap Set: A tap set is an often forgot but very important tool. It is used to turn a regular hole, like a churro bar or an axle, into a threaded one that you can run a bolt through. This makes assembly of things much easier.&lt;br>&lt;br>
+The Additionals&lt;br>&lt;br>
+Machine Broach: Because of the nature of drill bits or end mills, drilling is limited mostly to circular holes. But sometimes, you may want a hole of a different shape, such as a hexagon for hex shafts. A machine broach is a tool that carves through a hole to change the shape. Each shape has its own broach.&lt;br>&lt;br>
+On 2169, we rarely use any other broach than a ½” or ⅜” hex broach because most other shapes are not commonly used in FRC.&lt;br>&lt;br>&lt;br>
+
+
+
+
+Bending&lt;br>&lt;br>
+The Additionals&lt;br>&lt;br>
+Brake: A brake is used for accurately and cleanly bending sheet metal to a desired angle&lt;br>&lt;br>
+Benders: There are a variety of tools that enable you to bend metals, from square tubes to circular tubes.&lt;br>&lt;br>
+The Luxuries&lt;br>&lt;br>
+CNC Brake: Some teams, like 148, have CNC brakes that have programmed angles to bend sheet metal tool. This makes fabricating a purely sheet metal robot, which 148 usually does, much easier.&lt;br>&lt;br>&lt;br>
+
+Joining
+(generally, one or the other)&lt;br>&lt;br>
+Rivet/Rivet Gun: teams can join pieces of metal by riveting the two together with gussets or brackets that are attached to both pieces of metal.&lt;br>&lt;br>
+On 2169 we prefer riveting because it is much easier to do at competition. Welding is not typically allowed in the pits at competition&lt;br>&lt;br>
+Welding: Welding is another method of joining metals together. Traditionally, you will want aluminum welding materials because aluminum much more common in FRC. However, having the capabilities of steel welding can also be beneficial. It is possible to weld aluminum without a welder if you use a propane torch, but results can be messy.&lt;br>&lt;br>&lt;br>
+The Additionals&lt;br>&lt;br>
+Pneumatic Rivet Gun: These rivet guns, attached to a pneumatic compressor, are very powerful. Riveting ¼” rivets by hand is nearly impossible, and pneumatic gun makes them much easier to use.&lt;br>&lt;br>&lt;br>
+
+Filing and Smoothing&lt;br>&lt;br>
+The Essentials&lt;br>&lt;br>
+Belt Sander: Used to smooth edges and remove a small amount of extraneous material.&lt;br>&lt;br>
+We have a Belt/disk combo. If the funds do not exist for that caliber of machinery, just one or the other will work.&lt;br>&lt;br>
+File (>4): Files are used to remove burrs on edges of cut metal. You should get many different sizes of files because some situations may require a smaller file, or some edges may be somewhat rounded.&lt;br>&lt;br>
+Deburr (>3): Deburrs are used to remove burrs from drilled holes. Have extra deburr bits because they can break.&lt;br>&lt;br>&lt;br>
+The Additionals:&lt;br>&lt;br>
+Bench Grinder: A bench grinder is like a belt sander on steroids. It can shape, sharpen, smooth, or polish just about any metal material you would ever use in FRC.&lt;br>&lt;br>&lt;br>
+
+Fastening&lt;br>&lt;br>
+Screwdrivers (>3): You are going to want screwdrivers for certain bolts, especially bolts on electrical components. Flathead and phillips are most common. You should have them of various sizes and lengths too. Electrical components have very small bolts, while mechanical bolts will be larger.&lt;br>&lt;br>
+Allen Wrenches (>4): Allen wrenches are also very commonly used in FRC, as installation bolts from gearboxes are often allen wrench bolts. As such, you should have at least 4 US allen wrench sets. You should also have some metric allen wrench sets just in case.&lt;br>&lt;br>
+Wrenches (>5): Wrenches are also commonly used for hex head bolts. Your team is going to need wrenches. There are various types of wrenches to consider.&lt;br>&lt;br>&lt;br>
+Regular: The most traditional&lt;br>&lt;br>
+Ratcheting: Configured like a traditional wrench, but it ratchets, alleviating some of the pains of using a traditional wrench.&lt;br>&lt;br>
+Socket: Attach sockets of a certain size to a socket handle. It ratchets as well&lt;br>&lt;br>
+Impact Driver (>1): A powered, handheld device that can aid in fastening and unfastening.&lt;br>&lt;br>
+Bolt Cutter: Sometimes a bolt will get stuck somewhere and you will not be able to get it out. You will need a bolt cutter for this. Bolt cutters allow you to clip a bolt in two.&lt;br>&lt;br>
+
+Clamping&lt;br>&lt;br>
+Vises&lt;br>&lt;br>
+Vise Grips (>3): vise grips are one of the most versatile handheld tools. If you need a strong grasp on something for more leverage, a vise grip will work. Having multiple is important because some applications may require more than one. The more vise grips, the merrier. And get them in various sizes. Some applications may favor a narrower nose.&lt;br>&lt;br>
+Drill Press Vise: a drill press vise will help stabilize the object being cut on the vise. Without one, the material may very easily spin with the drill bit.&lt;br>&lt;br>
+Table Vise: A table vise is important because it is firmly mounted on a worktable. Clamped objects will not move, which is useful in a wide variety of situations.&lt;br>&lt;br>
+Drill Press Clamp(>1): Another useful tool for stabilizing something cut on the drill press.&lt;br>&lt;br>
+C Clamps (>3): Clamps that can be used to clamp two pieces of metal together to to a table. Like a vise grip, a c clamp has a variety of possible uses. Ones of various sizes are preferred.&lt;br>&lt;br>
+Needle Nose Plier (>3): Pliers have many possible functions.&lt;br>&lt;br>&lt;br>
+
+Blunt Force&lt;br>&lt;br>
+Hammer: Useful in a wide variety of situations. Used for stronger applications.&lt;br>&lt;br>
+Mallet: Useful in many situations as well. Used for applications where less centralized/weaker force is needed.&lt;br>&lt;br>&lt;br>
+
+Chain&lt;br>&lt;br>
+Chain Breaker: A tool that helps you break chain.&lt;br>&lt;br>
+Chain Puller: A tool that helps you pull chain closer so you can link them together.&lt;br>&lt;br>
+Masterlink: The connecting link for two ends of chain.&lt;br>&lt;br>&lt;br>
+
+Electrical&lt;br>&lt;br>
+Soldering kit: For the electrical components on the robot, you will need a soldering kit to join wire to a motor or to other wire.&lt;br>&lt;br>
+Heat Gun: to be used on shrink wire wrap.&lt;br>&lt;br>
+Wire Stripper: A wire stripper will allow you to simply expose the end of a wire for soldering, crimping, etc.&lt;br>&lt;br>
+Diagonal Cutter: Cuts Zip ties and wires very easily.&lt;br>&lt;br>
+Crimper: You will need a crimping tool to attach wire connectors.&lt;br>&lt;br>
+On 2169 we use Anderson Connectors, and we recommend teams do the same. As such, an Anderson Crimper is suggested for crimping for Anderson connector.&lt;br>&lt;br>&lt;br>
+
+3D Printing&lt;br>&lt;br>
+3D printing is becoming a more and more popular item for FIRST robotics teams. For FRC, they are often used to print custom spacers or electrical mounting plates. Of course, 3D printers are not completely necessary, but they have become an expedient solution to many problems for teams with access to them.&lt;br>&lt;br>&lt;br>
+
+Other&lt;br>&lt;br>
+Vacuum: Keep your workspace clean!&lt;br>&lt;br>
+Compressor: Can be used if your have a pneumatic rivet gun or if your robot has pneumatic tires. Note that compressors are generally not allowed in the pits at competition&lt;br>&lt;br>
+Gear Puller: Helps you pull stuck objects off a shaft easily, such as a gear.&lt;br>&lt;br>
+PVC Cutter: Cuts PVC. PVC can easily be used for intake rollers.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_protoype">
+        <item>fragment_pager_item_no_image</item>
+        <item>Prototyping like a Pro</item>
+        <item>Prototyping is an important part of building and FRC, as well as almost anything that is created with constraints. Smart prototyping allows your team to accurately gauge potential final product effectiveness. Making most of what prototyping can offer is very hard, especially since you only have six weeks to build a robot. Time spent on prototypes can mean less time working on robots.&lt;br>&lt;br>
+However, effective prototyping can lead to less time spent on the actual robot because you may solve problems in the prototyping phase, long before you would have with an already constructed robot.&lt;br>&lt;br>
+Members in the electrical and programming departments should also be involved in prototyping, especially if a drivetrain is involved. The electrical department would be soldering/crimping/attaching wires to the motors, or installing a compressor to use for pneumatics. The programming department would be involved in programming the drivetrain, or if you want to, any prototypes you make, especially if you want to change motor speeds by providing different amounts of wattage.&lt;br>&lt;br>
+Because of the cross-department play here, your entire team must be on board with the designs you want to test. It is important to have all the technical departments together during the design phase because each department has different concerns. But you must also work together. This is a team effort.&lt;br>&lt;br>&lt;br>
+
+Concepts Regarding Prototyping&lt;br>&lt;br>
+To conserve money, most prototypes teams make are constructed out of wood since it is much cheaper than metal. However, if possible, you want the materials interacting with a game piece to be as accurate to what you plan to use on your final product.&lt;br>&lt;br>
+If you initially plan to power the mechanism with a 775 pro but find in testing that a BAG motor works better, use a BAG in the final product. If you initially test the Kit of Parts wheel as a shooter wheel but find that AndyMark\'s rubber wheels work better, use them on your final mechanism. The construction of your prototype at it’s peak performance should be as close as possible to your final robot’s design.&lt;br>&lt;br>&lt;br>
+
+Strategy and Prototyping&lt;br>&lt;br>
+In your strategy/design meetings, when you concluded discussion and decided what you want your robot to accomplish, you will naturally lead into a discussion on what mechanisms will accomplish your goal. Wheeled shooter or catapult? What kind of intake do you want? Pneumatic shooter or motor powered? These are questions prototyping can answer.&lt;br>&lt;br>
+If there is a disagreement or curiosity between two or three (more than three can be too large of an endeavor unless you have a large build team) designs and their advantages, design and build a prototype of each one and test them against each other. Make sure you test them in the same environment. Like any scientific experiment, you want to limit the amount of variables. The only variable in this experiment should be the mechanism being tested.&lt;br>&lt;br>
+Another thing to look into is researching past FIRST games and designs for effective robots. Many teams in 2011 looked back to high performing designs from 2007 and emulated them. Many 2016 designs harken back to 2012, especially non-low bar robots. Using past games to inspire designs is a great way to preemptively gauge how some mechanisms will perform.&lt;br>&lt;br>&lt;br>
+
+What Should you Prototype?&lt;br>&lt;br>
+You can prototype a lot of things for a robot, and if you “over-prototype,” you risk spending too much time. It is important to understand what you should prototype. Let’s explore the various parts of a robot and how you may want to go about prototyping them:&lt;br>&lt;br>
+Drivetrain: In most cases, you should not need to prototype your drivetrain. One of the principles of drivetrain selection is choosing a drivetrain that is accessible--easily designed, fabricated, and assembled--to your team. The accessibility of a drivetrain is important because the rest of your robot is going to be built around your drivetrain. The design for it should be made early, and the final should be built first, as you can even test prototypes using the actual, final robot’s drivetrain. If you plan on using the Kit of Parts drivetrain, you can quickly assemble it or a modified version (i.e. Team 1114’s “Kitbot on Steroids”) and use that for prototype testing. The image to the right is a picture of our 2016 drivetrain with our shooter prototype mounted to it. However, some types of drivetrains or aspects of drivetrains may benefit from prototyping. The drivetrain in the same picture was a result of prototyping. We tested different wheels, such as VexPro’s traction wheels, and found that these wheels would work best with our design.&lt;br>&lt;br>
+	If you have an ambitious drivetrain or a drivetrain you are trying out for the first time, you will want to test it first. However, build season is usually not the best time to make a drivetrain your team has never built before, especially if it is a very ambitious one like a swerve drive. Because of this, it is best to build and test these ambitious drivetrains in the off-season.&lt;br>&lt;br>
+	Remember, drivetrain prototypes do not necessary need to be powered. They can just be wheels that are free rotating, mounted on some wood bracings. The picture on the right is one of our to-scale prototypes of our 2010 drivetrain. Nothing is powered. It is simply mimicking how the drive may look and act.&lt;br>&lt;br>
+Intake: The intake of your robot is often defined by how your drivetrain is designed and by what game pieces you are dealing with. After analyzing the size and shape of the game piece, your design crew will come up with a mechanism or two that can accomplish the task of grabbing one of these pieces and transporting to to where it needs to go. It is the job of the prototype team to test the intake by constructing a primitive version of it. The main goal with the prototype intake is to test if it, indeed, succeeds at grabbing the game piece, and if you can increase its effectiveness by changing the material of the intake. If you have two different types of traction wheels, test them on the intake to see which one is faster. Is your game piece sometimes getting out of alignment or stuck in a corner? Try mecanum wheels or an archimedes screw orientation of tread. Those two designs are effective at centering ball game pieces.&lt;br>&lt;br>
+Shooters: Many FIRST games nowadays involve shooters. Shooters are finicky. Many calculations go into them, such as angle and speed. To begin, test different types. Teams have successfully used both wheel shooters and catapults. If both could potentially be successful (like in 2016 or 2014), test both. This is where the finicky part comes into play. You will have to focus many different variables to optimize your shooter.&lt;br>&lt;br>
+For wheeled shooters, you can go in many different directions, such as a dual wheel or single wheel. Once you have your shooter prototype made, test different speeds, different angles, different motors, different wheels, different compression on the ball, and anything else your team might want to test. It is important to make your prototypes easily adjustable. The less time wasted on changing variables, the more time you have to test them.&lt;br>&lt;br>
+Catapults, like wheeled shooters, can be achieved through different methods. Some teams like powering them with motors (examples include the “choo choo” style design, or simply powering one through gears/chain/belts with a mechanical or programmed stop). You could also make a pneumatic catapult, especially in games with lighter game pieces. Like wheeled shooters, there are many variables to change, like the length of the catapult arm, the angle, different pistons (bore and pitch), speeds of the motor, and the amount of elastic force if you’re using elastics.&lt;br>&lt;br>
+There are many other methods of shooting. These are just two common types. You may design a completely new way. But with all these shooters, there remains one constant fact: there is a lot of fine-tuning involved to maximize effectiveness. It is vitally important if you have a shooter mechanism on your robot that you prototype it and test it. Few things are as disheartening as skipping shooter prototyping, than later finding out the final product doesn’t work as intended.&lt;br>&lt;br>
+Arms: In games that involve arms, such as 2011 and 2007, arms double as your intake. What is important about intake prototypes are important for arms: the effectiveness of the object used to grab your game piece. Arm designs can use wheels as an intake, an actuated claw, or both. The second thing to look at is how the claw is actuated and how you will achieve that. Teams have used elevators, actuated  joints, or actuated arms on elevators! Prototyping an elevator can be tricky. Our team in 2015 did not prototype our elevator lift, but we did design it thoroughly in CAD and do the calculations on the load that the motors will be under when we are stacking totes. Actuated joints are generally easier to prototype as they can be made with a few bars of wood and a motor driving a joint. But what you should accomplish with an arm or elevator prototype is perfection of motors, ratios, and speeds. Arms and elevators require precision. Helping your drivers as much as you can in the prototyping phase is important. You also will need to test to calculate whether you will even be able to lift the game pieces.&lt;br>&lt;br>
+	These are by no means every mechanism used in FIRST. There are so many other mechanisms created every year. Many of them, like 2007’s ramp transformers or 2015’s can burglars, are game specific. For these mechanisms, it is important to prototype them and prove that they can be accomplished and are effective.&lt;br>&lt;br>
+
+Here is a general list of things that should be done for prototypes.&lt;br>&lt;br>
+
+Before Building a Prototype&lt;br>&lt;br>
+	After your team has decided the strategy you want to pursue and have formulated possible mechanisms to achieve that goal, you should begin your prototype with some math. Eric Husmann’s comment perfectly outlines this process. It is here that you make the calculations. Calculate the angle you think your catapult should be at to shoot the ball from the certain distance away. Calculate the amount of load that will be under an elevator’s gearbox and adjust what gearbox and motors you should use.&lt;br>&lt;br>
+
+Build the Prototype to those Calculations...&lt;br>&lt;br>
+	...But build them to be able to adjust what you will want to try changing. For a single wheel shooter, you may want to try different exit angles. As such, make a hood that can change the angle.&lt;br>&lt;br>
+
+Test, Test, Test….. And Adjust the Variables&lt;br>&lt;br>
+	See if you can increase the effectiveness of the mechanism by changing things. However, do this one variable at a time. For a shooter, perfect the angle at the desired distance, then see if different motor speeds will speed it up or make it more consistent. Or change the wheel and see if that has an effect. The picture on the right is the testing of a shooter prototype. The stack of totes and bin is our makeshift goal as the field elements were not done yet. The field elements are important, but they may take a while to make. In the beginning stages, use materials you have to mimic them as closely as possible.&lt;br>&lt;br>
+
+When Satisfied…&lt;br>&lt;br>
+When you are satisfied with the results, take the best iteration and apply that to the robot’s final design as closely as possible. With the information you have gained, the robot will be more effective and require less tampering with once it is built.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>The Mechanical Department</item>
+        <item>The mechanical department, in broad terms, is the group of people who are in charge of building the physical robot. This involves prototyping, fabrication, and assembly. Depending on the preference of the people on your team, you may split people into different, less broad groups. Some teams have “build leads” or “prototyping leads”. On 2169 we have two or three “Mechanical Heads” that decide which aspect of mechanical they will be leading, and delegate students of their department accordingly.&lt;br>&lt;br>
+        The Mechanical Department, more so than other departments, works very closely with CAD. In fact, on our team, the CAD department is made up almost solely of members who are also a part of the Mechanical Department. Whether members of the mechanical department are involved in CADing or not, members of the mechanical department should have a good understanding of mechanisms and how they function, as they will be designing them in CAD and/or building them. In CAD, the robot is given a theoretical shape, made up of individual parts that have been assembled. The mechanical department makes those parts.&lt;br>&lt;br>
+        The Mechanical department also communicates with the strategy, programming, and electrical departments.&lt;br>&lt;br>
+        The strategy department, which may include members from other departments such as mechanical, is heavily involved in strategizing what the robot your team will be building should do. The Mechanical department will be helping to design and fabricate what the strategy department formulated.&lt;br>&lt;br>
+        The electrical department and the mechanical department are the two departments that have physical components on the robot, and they must share space on the robot. They have to ensure everything has a place on the robot.&lt;br>&lt;br>
+        The programming department codes the things the electrical department installs on the robot. Because of this, the programming department needs to know what they are going to program. They will have to communicate with the CAD, electrical, and mechanical departments to know what they will be accomplishing.&lt;br>&lt;br>&lt;br>
+
+        Responsibilities of Heads/Leaders in this department:&lt;br>&lt;br>
+        Help guide the design phase of the robot to keep it feasible and formulate robot design options for the team to decide upon. The options should be based on goals for the robot based on the competition and team member input during design week.&lt;br>&lt;br>
+        Represent Mechanical department at meetings with details of work completed since last meeting and the goals for the future.&lt;br>&lt;br>
+        Communicate with Electrical and Programming Heads to guarantee their needs are met by the mechanical design and to coordinate cross-departmental systems.&lt;br>&lt;br>
+        Determine tasks and add them to project backlog&lt;br>&lt;br>
+        Assign tasks to Department Members&lt;br>&lt;br>
+        Guide work of Department Members to ensure they are properly performing tasks&lt;br>&lt;br>
+        Attend build sessions as much as possible&lt;br>&lt;br>
+        Potentially communicate with external fabricators and coordinate delivery of materials and CAD specifications for fabricated parts&lt;br>&lt;br>
+        Help determine materials and parts that must be ordered for robot at earliest stage possible&lt;br>&lt;br>
+        Make sure that the CAW is up to date and ready for submission at competitions&lt;br>&lt;br>
+        Train younger members to fill your shoes when you leave&lt;br>&lt;br>&lt;br>
+
+        Desired Experience and Skills:&lt;br>&lt;br>
+        Good communication skills&lt;br>&lt;br>
+        Ability to respectfully receive and consider input and ideas from department members&lt;br>&lt;br>
+        Proven aptitude for designing and/or building mechanical systems&lt;br>&lt;br>
+        At least a working knowledge of CAD software and CAD design process&lt;br>&lt;br>
+        Advanced knowledge of using machinery to fabricate parts </item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_week1">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mechanical Week 1</item>
+        <item>The first week of build season is an important one for every department, the mechanical department included. What the department will be doing depends on how many people you have at your disposal, and how many adults--mentors or simply students’ parents--are willing to chip in. The following a list of things the Mechanical department should get done or consider. If you have a large mechanical department, you can split into groups to accomplish these tasks separately. If not, you will have to be able to multitask:&lt;br>&lt;br>&lt;br>
+
+Design Process&lt;br>&lt;br>
+	Along with the strategy, electrical, programming, and CAD (if you have one) departments, the mechanical department should contribute in deciding what you want the robot your team will make to do.&lt;br>&lt;br>
+Do you want the robot to focus on pure offense?&lt;br>&lt;br>
+Is there an endgame task you want your robot to accomplish?&lt;br>&lt;br>
+How important is this endgame task? How many points does it award you?&lt;br>&lt;br>
+Do you want to focus on defense? Is there even defense?&lt;br>&lt;br>
+Do you want to try to do everything?&lt;br>&lt;br>
+We recommend you have highly sophisticated machinery or machining sponsors and a strong grasp of every mechanism you want to design for this task. “A jack of all trades; master of none” applies very well to FRC. If unprepared, trying to go for every task in the game can end with underwhelming results. The teams that can do everything consistently every year are veteran teams with strong sponsor support.&lt;br>&lt;br>
+What kind of drivetrain will work well in this game and help our strategy?&lt;br>&lt;br>
+	Each department has a special skill that is vital to the design process. The mechanical department’s role in the designing process is to have an idea of what the mechanical department can accomplish. If someone proposes a design that would be too difficult for the mechanical department to accomplish, the department should work to try to change the design to a more accomplishable goal. This is true for other departments as they should also be acting as a check on the designs, adding their input regarding the abilities of the department, determining whether a design or goal is feasible.&lt;br>&lt;br>&lt;br>
+
+Shopping?&lt;br>&lt;br>
+	If you do not have very many materials going into build season, you are going to NEED to purchase things during week one, especially the desired products from VexPro or Andymark. Products from FIRST suppliers go out of stock very quickly. Many products may even go out of stock on the first day of build, or before the build season even starts! Like the high traction Banebot Wheels in 2015, they may not even go back in stock until AFTER the build season, or even until after competitions end. Because of this, your team has to be ready to purchase things you may need quickly.&lt;br>&lt;br>
+It is hard to decide this early what you will need because your team most likely hasn’t finalized the design yet. As such, you will need to predict some product’s effectiveness. For example, in 2016, many teams purchased pneumatic wheels on kickoff day because they foresaw that these wheels would be effective. If your team sees a particular product being very effective, like pneumatic wheels in 2016, purchase them before they go out of stock.&lt;br>&lt;br>
+In our team, we like to make a pre-build season purchase, where we take inventory of what we have, and what we think we will need. This includes tools we think will increase productivity, metal that we think we will use and don’t already have enough of (sheet metal, VexPro versachassis, L stock, etc.), any electrical components you will need (motor controllers, control modules, etc.), and wheels. Over the years, your team can build up its inventory of materials.&lt;br>&lt;br>
+
+Once you solidify what prototypes you will be making, purchase any materials that will help you build and operate these prototypes, such as wood, wheels, pneumatic solenoids and pistons (we use Bimba products), and any motors you do not have. You will want these products as quickly as you can, so getting priority shipping is important. Priority shipping is why we like to purchase products before build season: priority shipping can be expensive, but you need products as soon as possible. Having them beforehand can be very beneficial.&lt;br>&lt;br>
+
+Make sure you keep track of what you are buying (and how expensive it was) so you can document what you end up using on your CAW (Cost Accounting Worksheet). The CAW is for documenting the cost of the robot you will end up making, and robot inspectors will want to see it. Accurately documenting your purchases and what ends up on your robot is important for that reason.&lt;br>&lt;br>&lt;br>
+
+Start Prototyping&lt;br>&lt;br>
+	Once a strategy and design is decided upon, it’s time for mechanical to shift into full throttle. Depending on if you use CAD or not, there are a few things that the mechanical department can do:&lt;br>&lt;br>
+  Your team does not plan on using CAD&lt;br>&lt;br>
+	Without CAD,  the mechanical department can get into prototyping immediately. Because there is no CAD department to check and make sure the prototypes are progressing well, it is the mechanical department’s job to make sure the members of the department are reaching this goal.&lt;br>&lt;br>
+  Your team does plan on using CAD&lt;br>&lt;br>
+	Oftentimes, those in the mechanical department/branch also help with CAD. If that is not the case and your team has a dedicated CAD department, then mechanical will just have to communicate closely with the CADers rather than participate in making the design electronically. Since it is important to get a prototype as close to the final product as possible, the two departments will have to communicate frequently on progress and plans so the prototype can accurately reflect the goal and design of the robot that will eventually be built based on the findings in the prototype phase.&lt;br>&lt;br>
+
+Prototyping will probably overflow into the second week. Most prototypes should be built by the end of the first week, but fine tuning will most likely be done well into the second week.&lt;br>&lt;br>
+
+Check the dedicated article about prototyping for more information regarding effective prototyping.&lt;br>&lt;br>&lt;br>
+
+Drivetrain&lt;br>&lt;br>
+	In most cases, the drivetrain should be the first choice that is made for a robot. Generally, teams like to stick to what they know, and most know tank drive style robots. But given that the drivetrain is the base for which everything is designed around, the decision for how it will be shaped is an important one, and should be an early one. In fact, the earlier your design is done and assembled, the better. Prototypes benefit from being tested on a drivetrain as close to your final one as possible. Your team may want to start building your drivetrain during week 1. If you are using the kit of parts or a variation on it (i.e. 1114’s “Kitbot on Steroids”), it should be quite easy to get it assembled quickly. No worries if  the building of your drivetrain is held up until week 2, especially in a game that may require a more particular and thought out drivetrain, like 2016 or 2010, but as already stated, the earlier it is designed and done, the better.&lt;br>&lt;br>
+
+Engineering Notebook&lt;br>&lt;br>
+	Engineering notebooks, while not required in FRC, are a great thing to strive to to. Engineering notebooks can really help teams win engineering awards at competition (Industrial Design, Innovation in Control, Creativity, Engineering Excellence, and Quality). In the engineering notebook, you document your progress, like building and testing. As far as awards are concerned, judges will be most impressed with analytical things rather than monotonous and obvious tasks like fabrication or assembly. They like things like documentation of CAD simulations or tables showing all the testing you did to tune a shooting mechanism.&lt;br>&lt;br>
+	The picture to the right is an example of a CAD simulation 2169 did in 2016 regarding the force that our drive rails would experience after jumping over the game’s rock wall.&lt;br>&lt;br>
+	It is important to keep up with your engineering notebook. One thing 2169 has done is to assign people to a certain date to fill out. They will have to get data on the different departments and what progress was made. Remember to take as many pictures as you can throughout build season. If people forget to update the notebook, you will at least have pictures to fall back on and jog your memory.&lt;br>&lt;br>&lt;br>
+
+Building Field Elements&lt;br>&lt;br>
+	The game FIRST releases every year is different, with different scoring receptacles or field obstacles. To accurate test your mechanisms and robot, it is best that you have the applicable field elements to test on. The game manual released at kickoff will have drawings for all the field elements in the game. With these drawings, you can build the field elements necessary for the game.&lt;br>&lt;br>
+	Some very high budget teams like 118 purchase field elements every year. However, most teams do not enjoy such privileges. As such, they must build their own field elements. The picture on the right is the tower we build for testing for 2016.&lt;br>&lt;br>
+Team’s generally use wood to build the field elements since its cheap. In 2016, the parents of our team members pitched in and built the defenses for FIRST Stronghold so we could focus more on designing a robot and prototyping. If volunteers are willing to help your team with making field elements, gratefully accept the request. You do not want to fall into spending too much time on field elements.&lt;br>&lt;br>
+Depending on the year, it will take a different amount of time to get all your desired field elements constructed. Some games, like 2016’s FIRST Stronghold, have a large amount of field elements. Some games, like 2014’s Aerial Assist, have a small amount of field elements. It is important to note, especially in games with a lot of elements like 2016, that you do not need to make elements you decide not to deal with. For example, in game like 2010 where an end game option was hanging, imagine that you opt out of hanging. There is no need to waste time constructing something you are not going to deal with. If you, later in the build season, find that you have time to design a hanging mechanism, go for it. Create the hanging bar, calculate, and test.&lt;br>&lt;br>&lt;br>
+
+Practice Bot?&lt;br>&lt;br>
+	Generally, larger teams like to make two robots every year, one competition robot and one bot to practice on. This allows the team to practice and make adjustments even after the six weeks. While your competition robot sits in a bag, your team can continue to make improvements. However, this does mean you will have to quickly make these adjustments on your competition robot when you get to your competition.&lt;br>&lt;br>
+	That said, practice robots can be very effective. However, they can also be very expensive, as you will have to spend twice as much money. And the most spendy parts of a robot are the electrical components ($435 for a RoboRio, $200 for a Power Distro board, etc.), which are the hardest parts to work around when designing a practice robot under constraints.&lt;br>&lt;br>
+Under strict budget restrictions that many teams have, teams may have to pick and choose what to do for their practice bot. You are not required to make the practice robot exactly the same as the competition robot or run them the same way. Your “practice robot” may just be your prototypes strapped to a drivetrain.&lt;br>&lt;br>
+	But it is important for your team to decide early on what you will do and how you will do it. If you are not planning to have very many mechanisms and think you can build the robot quickly enough, you may not feel the need to have one. But if you do not think you will get to everything you want to build in six weeks, having something to test and practice with is important.&lt;br>&lt;br>
+	At the very least keep the prototypes that ended up being emulated on the robot as they can act as a bare minimum testing device.&lt;br>&lt;br>
+As a takeaway, here’s a list of options you may have regarding an identical practice bot:&lt;br>&lt;br>
+Go back and forth between comp and practice bot, but do practice bot counterparts first: this allows you encounter problems before you start building the competition bot and fix those problems for the competition robot. If time or build structure is poorly managed, this may result in the competition robot being neglected. However, It can allow testing and building to occur simultaneously. If need be, you can turn the practice bot into the competition robot.&lt;br>&lt;br>
+Build them simultaneously: This generally requires more people working on the robot, so it may not work well for small teams. This method allows the team to build faster, but the advantage of troubleshooting problems on the practice bot before starting the competition robot is taken away.&lt;br>&lt;br>
+Build practice robot after bag and tag day: Allows you to get the competition robot done quicker and do testing on that robot. The practice bot is not bounded by bag and tag day. However, this does require heavy fabrication after bag and tag, when you may desire to use the days after bag and tag for just testing, improving, and practicing.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_week2">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mechanical Week 2</item>
+        <item>Week 1 focused on the strategy and what you want the robot to do. Week 2 focuses on solving the “how.” Prototyping started in week one, but it’s unlikely that everything got done. Most of week one was spent on the prototypes and field elements. There may not have been much time at all for testing. Week two will focus on whatever was not accomplished in week 1.&lt;br>&lt;br>&lt;br>
+
+        Prototyping&lt;br>&lt;br>
+        Week 2 should focus on testing prototypes. Have the prototypers test whatever prototypes they get done. If some teammates are not done with there’s, try to get them done in early in the week so they can test. Gauge what prototypes have priority. If you have a drivetrain prototype, that takes utmost priority, as any drivetrain situation should be figured out as early as possible because changes in the drivetrain can affect everything else along with it.&lt;br>&lt;br>
+        As they are testing, they should be changing things, such as materials, motor speeds, or pneumatic piston angles. This will allow them to test what works best. With that information, you should apply the best results to the final robot.&lt;br>&lt;br>
+        If you have a drivetrain already constructed, an added benefit to prototyping comes into play. If you have your drivetrain done, you can see how a prototype will fit on the drivetrain, and you can even test the prototyping on the drivetrain. This will give you information regarding the structure of these components. If the mechanisms need structural altering, it would be here where you learn that. Although, it is likely that your drivetrain will not be fully constructed. Your build team was or is busy with prototype and prototype testing, and that’s alright. These structural alterations can be incorporated into week 3 with little hassle. The CAD department, if you have one, would also discover and solve the exact problems you would learn from putting your prototypes on a drivetrain.&lt;br>&lt;br>
+        Reference the article dedicated to prototyping for more information.&lt;br>&lt;br>&lt;br>
+
+        Robot Design&lt;br>&lt;br>
+        With the information gained from prototyping, you can solidify what you want your robot to look like. The electrical (control systems) and programming department were also likely involved in prototyping, they are likely up to speed with the information retrieved from prototyping. If not, inform them, because it will be the programmers task to program the things you test, and the electrical and mechanical departments will have to work together to allocate where each part of the robot is going to go. Traditionally, the electrical department has to work around what the mechanical department does because of the nature of each department’s products (the mechanical department is making the mechanisms which depend greatly on where they go to work properly. As long as the electrical can fit their electrical board, the robot will work fine). However, both parts are necessary for your robot, so the mechanical department can not be so greedy and take up every spot where electrical could potentially and easily install the electrical components.&lt;br>&lt;br>
+        This may also be a moment where the mechanical department will work with the business department. Traditionally, teams reward their sponsors by putting the sponsor’s logo on their robot. The mechanical department should work with the business department to free up room to put a sticker or polycarb sheet that can bear the logo of the team’s sponsor(s). This aspect of the robot would be the easiest thing to change in the future, so if your team is unsure where to put the logos, it is alright to bypass this during week 2. However, it is important to show your team’s gratefulness for your sponsors, so you will want to do this at some point.&lt;br>&lt;br>&lt;br>
+
+        Some things to note for final design:&lt;br>&lt;br>
+        Remember to design it to be maintained. If you have worries about something being placed in such a way to limit maintenance, try to find a better spot for it. Murphy’s Law still applies in robotics. Design so you are preparing for the worst problems at competition. For example, the drivetrain motors on our 2016 robot (pictured on the right) were practically pushed up against each other, which made fixing them extremely difficult and cost us matches when we had to fix them at our second competition.&lt;br>&lt;br>
+
+        Also, make sure your final design meets the rules. Your robot needs to be within the height limit, the size limit, everything needs to be within your frame perimeter, and your mechanisms need to fit within the allotted “over the bumper” length AT ALL TIMES (not just in “deploy” and “undeployed,” like with pneumatically actuated mechanisms. Going from point A to B, your mechanism must always remain within the limit), etc. These are not problems you want to run into at competition. They can get you disqualified.&lt;br>&lt;br>
+
+        A special note should be made for keeping your robot within the weight limit. 120lbs for a robot may seem large, but you can very easily rack up weight with thick metal. Make sure you know what on the robot can be thinner (1/16” or VexPro’s .004”) and what metal should be thicker (⅛” or VexPro’s .1”). Generally, drivetrain rails should be thicker because they are supporting all the weight of your mechanism and will experience the most force from other robots or things the robot may run into. Most times, your other mechanisms can be constructed with 1/16” metal.&lt;br>&lt;br>
+        Most CAD softwares are equipped with mass assignment calculations, so using those to your advantage will aid you in determining your weight and adjusting the design accordingly&lt;br>&lt;br>
+        Miscalculations regarding weight can very easily result in your robot being too heavy, which is a pain to deal with at competition. In 2016 we estimated our weight incorrectly, which lead to our robot being almost 120lbs (that year’s weight limit), but without much of our electrical and pneumatic components installed. As a result, we had to redesign our front manipulator to be much more primitive in function, and to remake our shooter mechanism out of lighter, plastic tubing from VexPro.&lt;br>&lt;br>
+        Not only do you need to focus on just fitting in the weight limit, you also need to be mindful of the center of mass. Robots can and will tip if the robot’s center of mass is in an undesirable spot. Ideally, you want your center of mass to be low, about in line with your bumpers will be (or where your drivetrain is in a game without bumpers). These points are where the robot will experience the most contact force. Having the center of mass in line with where the point of contact is will minimize tipping due to pushing. Robots with a high center of mass have a very high chance of tipping. Accelerating, stopping, or turning too fast could result in a tipped robot!&lt;br>&lt;br>
+
+        Also make sure your design incorporates your bumpers. Most FIRST games since the mid-2000s have required them. You will need to design and construct them. For many drivetrain designs, like the very popular West Coast Drive, you may need to build a dedicated structure for your bumpers because your wheels are completely outside of your drive rails.&lt;br>&lt;br>
+        In any case, you must pay particular attention to bumper rules because they are specific.&lt;br>&lt;br>&lt;br>
+
+        Shopping Part 2&lt;br>&lt;br>
+        With your robot design finalized, order whatever materials you do not have that are incorporated in your design. Get priority shipping if possible.&lt;br>&lt;br>&lt;br>
+
+        Start Fabrication&lt;br>&lt;br>
+        Your team may have already began robot fabrication if you pursued your drivetrain early, but if not, You will want to try to begin by the end of week two. If you are deep into fabrication by week 2, you are ahead of schedule, or you have a very large build team that can get things done quickly.&lt;br>&lt;br>
+        Our team has a large amount of build members still crunching CAD files during week 2. This allows us to not end up hastily making parts that may later end up unusable. Once a certain amount of CAD files are made and your team feels comfortable with starting to fabricate, you can begin to do so. But as stated, the drivetrain should be the highest priority. The earlier you have a driving robot, the better.
+        </item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_week3">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mechanical Week 3</item>
+        <item>With your design wrapped up and fabrication started, week 3 should focus on continuing robot fabrication and continuing or starting assembly (depending on the state of your robot’s drivetrain). However your team is fabricating parts, whether it’s with a band saw and a drill press, an in-house CNC mill, or a sponsor’s shop, you should get mostly everything you want fabricated finished this week.&lt;br>&lt;br>
+Remember to keep your priorities straight: your drivetrain should be your highest priority during fabrication and assembly, next your main mechanism/intake, then any of your auxiliary mechanisms. Things should generally be fabricated and assembled in that order.&lt;br>&lt;br>&lt;br>
+
+Fabrication&lt;br>&lt;br>
+	Remember to employ the best fabrication practices. Be aware of your tools’ limitations and think through how you are to fabricate something. If you have a 4’x4’ sheet metal square, chances are it won’t fit in the bandsaw in certain orientations. Think through how you will be feeding it in (if you have that big of a sheet metal square then you should be using a friend to help support it at least), then make the marks accordingly. Hastily making marks leads to less productivity.&lt;br>&lt;br>
+	Other good techniques like match cutting and drilling should also be employed. Match cutting and drilling should be utilized when making multiple of one part, like a gusset. With the gusset, you measure and cut it out and drill the necessary holes. Measure everything else afterward and make sure everything is perfect. If it is within your determined margin of error (which varies depending on what part and where it is going), you can bind it to, in the case of a sheet metal gusset, another piece of sheet metal and use the completed piece as a guide. The same goes for match drilling. The completed holes act as a guide for all the subsequent pieces. This speeds up productivity immensely.&lt;br>&lt;br>
+	Remember: measure twice, cut once!&lt;br>&lt;br>&lt;br>
+
+STAYING ORGANIZED&lt;br>&lt;br>
+	One problem in fabricating/assembly lies in staying organized. Before build season, your team should have organized your shop as much as they could, with different metals placed in their necessary spots. Also, from a CAD drawing (or hand-drawn) to assembly, you should be able to tell the location of every piece you want . This includes making a list of every part, and assigning it a status, from drawing, fabrication, awaiting assembly, and assembled. Our team uses Trello to document the progress of pieces that will be put on the robot.&lt;br>&lt;br>
+	You should also have a designated spot to put pieces that are in a certain stage of completion. Being able to know how far the part is is great, but know where the physical part is located is just as important. We have many tupperware containers that are clearly and understandably labeled, such as “drivetrain fabricated parts,” where parts are to be placed so they do not get lost. Many parts, such as gussets, need to be made several times. To keep them all together inside the container, you can simply tape them together. Yes, our team goes through a lot of tape in one build season. If a part is too large to fit in a container, always have that part next to the container when storing it.&lt;br>&lt;br>&lt;br>
+
+Cutting Your Losses&lt;br>&lt;br>
+	When designing what you wanted your robot to do, you should have come up with high priority tasks and low priority tasks, such as, in the case of 2016, having “shooting in the high goal” as a high priority task and “hanging” as a low priority task. If you seem to be running behind on fabrication, it’s time to start deciding what is more important and focusing on them. As an example, we were running behind on build and fabrication in the 2016 season. Because of this, we decided to temporarily drop our hanging mechanism and focused on it after bag and tag day. We implemented our hanging mechanism at our second competition.&lt;br>&lt;br>&lt;br>
+
+Assembly:&lt;br>&lt;br>
+	Assembly is pretty straight forward: put the fabricated parts together. However, like fabrication, there are a few things to keep in mind: make it easy on yourself and think it through. There is usually a quickest way to assemble something correctly. Think through it, decide, then assemble.&lt;br>&lt;br>
+	There’s always the possibility you will run into problems during assembly. Say a shaft doesn’t quite fit through a hole, like a bearing. You may need to lathe or sand the shaft down. Be ready to employ good fabrication techniques during assembly to make everything fit together. Rarely, especially if all parts were made by hand/band saw/drill press, is every part going to work perfectly the first time without a little fixing.&lt;br>&lt;br>&lt;br>
+
+Drivetrain:&lt;br>&lt;br>
+Again, the drivetrain should be your first priority to have working as soon as you can. That includes getting everything fabricated and assembled for your drivetrain as quickly as you can, handing it off to electrical to wire it, then giving it to the programmers to test their code, and debug if they need to. If your drivetrain is not done by the middle of week three, you are going to need to pick up the pace. If you were working on anything else, drop it for now and get the drivetrain done.</item>
+        <item></item>
+    </string-array>
+    <string-array name="mech_week4_comp">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mechanical Week 4 and Beyond!</item>
+        <item>Week 4 should be the last week that the mechanical department has strict control over the robot. During or after week 4, the robot should be handed off to electrical for them to finish what they need to do (wiring, install solenoids, etc.), then handed to programming for them to test their code and troubleshoot and resolve any issues.&lt;br>&lt;br>&lt;br>
+
+Robot, Assemble!&lt;br>&lt;br>
+	At this point, your team should have all the important parts for mechanisms fabricated. If there are mechanisms you dropped during the last two weeks to save time, those can be revisited after the drivetrain and main mechanisms are finished and assembled and are handed off to the other departments. For now you must focus on just the drivetrain and main mechanisms. The robot with its drivetrain and main mechanism should be completely assembled by mid to late week 4. Auxiliary mechanisms, ideally, should be done and installed by the end of week four or early week 5 to allow ample time for the other departments to do their work and for the drive team to familiarize themselves with the mechanism and practice. However, if auxiliary mechanisms are done later than that, install them anyway. The other departments may be disgruntled with their tardiness, but their completion is better than nothing.&lt;br>&lt;br>
+	The picture on the right our 2016 robot with the drivetrain and its main mechanism: the ball transport and the shooter. The auxiliary mechanisms, our Cheval de Frise/Portcullis manipulator and our hanging mechanisms, had yet to be installed. Getting these main parts done allowed our electrical team, programming team, and the drive team to test the robot while we worked on the other parts of the robot.&lt;br>&lt;br>
+
+Generally, the last thing to be added are the sponsor logos. At this point, if you haven’t already talked to your business team, it is time to do so so you can allocate space to put sponsor logos. Thank you sponsors!&lt;br>&lt;br>&lt;br>
+
+Bumpers (if necessary)&lt;br>&lt;br>
+Teams handle making their bumpers differently. On 2169, we generally leave bumper building to whoever is crafty and likes working with fabrics. Bumpers do not have to be finished by Bag Day, but it is much easier to make them the right size if you have the robot to measure and test with as you are creating them. There are many online guides for bumpers, and we are always available to help you through the process.&lt;br>&lt;br>
+
+Fabric: Your team will need to decide what kind of fabric to use. KING TeC generally uses a heavy duty fabric. This is especially necessary if your team plans on a defensive strategy, or with a game that involves a lot of robot on robot or robot on field element contact. We suggest asking a fabric wholesaler or local tarp maker for fabric.&lt;br>&lt;br>
+Pool Noodles: Pool noodles can usually be found year-round at swim schools, but major retailers such as Target and Walmart will not sell them in the winter. The more dense the noodle is, the more shock is absorbed and the safer your robot will be. Different batches from the same manufacturer can have radically different densities. Don’t be afraid to test the squishiness of multiple pool noodles until finding adequate density. We usually buy up multiple noodles when we find a batch that works well so we don’t have to go noodle hunting every year.&lt;br>&lt;br>
+
+Team Number: Your team number will need to be displayed on the fabric. Teams generally either use stick-on/taped numbers or painted numbers. We recommend paint in order to ensure numbers do not fall off. A coat or two of fabric paint combined with a layer or two of acrylic paint seems to work best on bumpers (skipping the acrylic could result in your numbers becoming discolored as fabric paint usually picks up more dirt.)&lt;br>&lt;br>
+
+Generally, there are two types of bumpers:&lt;br>&lt;br>
+
+Single Colored: Bumpers that only have one color on them. As such, you must make two of these, one for each color (unless FIRST does not require alliance colored bumpers). If you do it this way, you can more easily make a single bumper part that wraps around the entire robot. Wrap-around bumpers may be better or worse for that year’s game, so if you are making the bumpers, ensure that you check with your mechanical team before deciding which kind of bumper to create.&lt;br>&lt;br>
+Double Colored: Single units that can alternate between two colors. This allows you to switch between colors while the bumpers are still attached to the robot. This reduces the amount of materials needed for bumpers (wood, pool noodles), but it is more complicated to build. The picture below is our 2016 bumpers, an example of a double colored bumper. If you wish to follow this route, we highly recommend using a guide as they are a bit tricky to visualize when cutting and sewing fabric. As always, we would be happy to assist you in this process. KING TeC usually creates this kind of bumper to make life easier for the drive team. Changing bumper color can be done quickly and easily and your bumpers will not be lost since they are attached to your robot.&lt;br>&lt;br>
+
+The Hand Off&lt;br>&lt;br>
+	Once a working robot--drivetrain with at least the main mechanism done--is done, you can hand it off to whichever department needs it: electrical, programming, or the drive team. Let them deal with their stuff while you can shift your focus to the following things:&lt;br>&lt;br>
+Fixing the Robot if another Department Breaks Something:&lt;br>&lt;br>
+	If one of the other departments, usually the drive team, breaks something on the robot, the mechanical department will need to fix it. First: determine the cause of the problem.&lt;br>&lt;br>
+Was the drive team being reckless? If so, give them a good talking to and fix it.&lt;br>&lt;br>
+Did it break because the part was not secured or supported well? If so, you will need to redesign that area to make sure it doesn’t happen again at competition. This may include making it with a stronger bar of metal (1/16” to ⅛”).&lt;br>&lt;br>
+Finish/Begin to Assemble Auxiliary Mechanisms (if you haven’t finished):&lt;br>&lt;br>
+	If your team had to table some of your auxiliary mechanisms, you can go back and finish these mechanisms. Once they are done, acquire the robot and put them on. These auxiliary mechanisms need to be practiced and some of them (hanging mechanism) require skilled drivers and/or operators to implement correctly.&lt;br>&lt;br>
+	If you did not design any auxiliary mechanisms or finished all of them, design one if there are parts of the game that you currently can not do. Consult with the strategy department to decide on which parts of the game would be best to pursue. Designing new mechanisms for an existent robot is hard. It can be difficult to work around your already designed and assembled robot. You may need to change a few things. Things like air tanks can moved easily. On the other hand, moving your main mechanism is not recommended. If you are designing a new mechanism, make sure you know what you may have to move and where you will be able to move them.&lt;br>&lt;br>
+	Remember, when designing a mechanism, always work with the other departments because they will need participate in programming or wiring the mechanism. They should be on board with whatever designs you choose to pursue.&lt;br>&lt;br>&lt;br>
+
+Drive Station&lt;br>&lt;br>
+	While you can get by with testing and practicing without a driver station, you are going to want to have a driver station for competition. A driver station is where your controllers are mounted and where the driver laptop is placed. Oftentimes two rectangles (large enough to mount controllers and the computer to sit), sheet metal, or plywood separated by standoffs will work for a driver station. The computer should snugly fit somewhere, so you may want to make brackets to keep the laptop on the station.&lt;br>&lt;br>
+	You want the station to be durable to keep it from breaking or getting damaged. Fortunately, you are not required to build a new driver station every year. You can use the same station year after year, changing out the controllers (joystick to gaming control, wheel, etc.) if need be.&lt;br>&lt;br>
+	Work with the drive team and programming department for drive station design. Remember, the design should be optimized for maximum comfortability for the drivers. Their input is important.&lt;br>&lt;br>&lt;br>
+
+Making Replacement Parts:&lt;br>&lt;br>
+	Parts break at competition. It happens. You need to prepare for this event. You can do this by making replacements. You should make replacements for mechanisms that extend past your frame perimeter, like intakes or manipulators. While spendy, you may want to get replacement motors and gearboxes for mechanisms and your drivetrain.&lt;br>&lt;br>
+	The picture on the right is one of a gear that was in our elevator lift gearbox in 2015. We had assembled replacement gearboxes and had spare parts at every competition we went to in case a gear broke.&lt;br>&lt;br>&lt;br>
+
+After Bag and Tag&lt;br>&lt;br>
+	For the most part, the days after bag and tag should be days of rest. You deserve it. Take a few days off to catch up on school or sleep.&lt;br>&lt;br>
+	Once you are satisfied with the time off, the mechanical department--and other technical departments for that matter--can come together and address what they should do. If the mechanical department decides they have work to do, go and do it. Some things you may decide to do :&lt;br>&lt;br>
+Build a practice robot if you haven’t already done so: Reference the section on practice robots in week 1.&lt;br>&lt;br>
+Anything from the previous section that you can still do (new mechanisms and spare parts.&lt;br>&lt;br>
+Reorganize your workshop.&lt;br>&lt;br>
+Prepare to leave for competition.&lt;br>&lt;br>
+Prepare a checklist that lists everything you will need to bring.&lt;br>&lt;br>
+Think of the tools you can bring and what ones you may need.&lt;br>&lt;br>
+Make your engineering notebook really nice. Catch up on days you missed.&lt;br>&lt;br>
+Make a plan for how to fix different parts of the robot in the event they break at competition.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mech_comp">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mechanical at Competition</item>
+        <item>At competition, the Mechanical department acts as essentially the pit crew for a NASCAR racer. They are responsible for maintaining the robot’s physical well-being. Generally, you want up to three mechanically inclined people in the pits at one time (including people on the drive team). Any more may crowd your pit.&lt;br>&lt;br>
+        These people will need to be able to work fast, calmly, and efficiently. If something fatal happens on the field, you need people you can rely on to fix it quickly. As such, the leaders of the mechanical department or the team will need to decide during the build season who is ready to be in the pits to work on the robot. Obviously, if you have more than three or four kids who would work well in the pits, you can split the kids into pit shifts. It does by no means have to be the same people in the pits at all time.&lt;br>&lt;br>
+        On 2169, we like to have a small group of kids stay in the pits while the robot is performing in a match or at Queueing. Someone in the stands, watching the match, should contact one of the members in the pit if an emergency arises so the team can be prepared to fix it immediately when the robot gets back.&lt;br>&lt;br>&lt;br>
+
+        Here is a list of specific duties you may come across as a member of the mechanical department:&lt;br>&lt;br>
+
+        Changes During Inspection/Practice Day&lt;br>&lt;br>
+        If you made any mechanical changes between bagging the robot and competition, you will have to implement them during the practice day. For example, between the Wisconsin Regional and the Worlds competition in St. Louis in 2015, we added our “Can Burglars,” which grabbed the bins from the middle during autonomous. We had to install that mechanism on our competition robot during the practice day at the Worlds competition. It is better that you make the changes before you get the robot inspected because they might want to reinspect your robot if the changes are noticeable. And the inspectors will be less than happy if the changes you made make your robot illegal.&lt;br>&lt;br>
+        General Maintenance:&lt;br>&lt;br>
+        After every match, just check every mechanism and part of the robot and make sure everything works and isn’t broken. Check bolts and shaft collars and things that could come loose. If you have treaded wheels, keep watch of them and replace the tread whenever you notice them getting bald. If your transmission is through chain and have a tensioning system, check the chain’s tension and change it if you notice it getting out of ideal tension.&lt;br>&lt;br>
+        Emergency Fixes:&lt;br>&lt;br>
+        Every pit crew member’s worst nightmare. Something, perhaps a mechanism, may break. A belt may snap. A weld may break. A motor may burn out. A bar may bend. In these emergency situations, it is time to dig into your spare parts and see what you may have to replace the broken part. The process is very similar to how fixes are done during the build season. First, you diagnose the problem. Did that structural component break because it was made out of plastic versachassis? If so, do you have enough weight to change it into metal? (if you even have metal versachassis). If not, what can you do to avoid it happening again? That is the primary principle: how can you keep this from repeating? It may just be a matter of changing how the drivers drive. Either way, you will need to address how to you are to fix it. Hopefully, you planned out your plan of attack for what you are fixing before going to the competition, because a plan will have to be executed either way.&lt;br>&lt;br>
+        Some large problems will take a lot time to fix, longer than the amount of time in between matches. You may have to think of and execute whatever temporary fix you can, or deal with not being able to run whatever needs fixing (this is easier to do for auxiliary mechanisms, much harder for a drivetrain). You will have to wait until you have a longer time to work to fix it completely, or do some fixing in the time in between matches&lt;br>&lt;br>
+        You cannot weld in the pits, so if a weld breaks, you are going to have to work around it, whether by having gussets or L brackets you can bolt or rivet.&lt;br>&lt;br>
+
+        This is why it is important to have replacement parts for motors, mechanisms, belts, and exposed structural components. Some teams like to bring entirely assembled mechanisms to competition so they can completely replace an entire mechanism if they need to. However, make sure whatever parts you bring are within the allowed weight for withheld parts. Usually the number is around 40 lbs, not including COTS (Commercial Off the Shelf) products.&lt;br>&lt;br>
+        Talking to Technical Judges and Pit Scouters:&lt;br>&lt;br>
+        Pit Crew members will need to be able to talk about the technical aspects of the robot because judges and other teams will ask you about them.&lt;br>&lt;br>
+
+        Pit scouters will ask questions about what your robot does. You will need to be able to explain the mechanisms and their functions. You should also be able to explain how the mechanisms function. What motor (if any) are they powered with? What gearbox/gearbox ratio are they geared with? If you do not know any answer to a question, ask a member who may know.&lt;br>&lt;br>
+
+        For judges, the discussion will be more formal. When mechanically inclined judges talk to your team, round up the nearby mechanically inclined kids to talk to the judge. Just like whenever talking to judges, remember your etiquette: no interrupting anyone, be respectful, etc.&lt;br>&lt;br>
+        The judges can get really in depth with the questions they ask, including your design process the finer details of creating these mechanisms. This is where your engineering notebook will help you significantly. Ideally, your notebook would include calculations, pictures of CAD files, simulation data, testing data, and more. You should be ready to use this notebook content to help answer their questions. It is important you rock these judging sessions because these will determine whether you get any of the technical awards.
+        </item>
+        <item></item>
+    </string-array>
+
+
+</resources>

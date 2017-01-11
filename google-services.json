@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "475402647592",
+    "firebase_url": "https://survival-guide-c8c56.firebaseio.com",
+    "project_id": "survival-guide-c8c56",
+    "storage_bucket": "survival-guide-c8c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475402647592:android:c17b6cf40bebb4b5",
+        "android_client_info": {
+          "package_name": "com.kingtec2169.survivalguideapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475402647592-1r569rm8dludlddndahd4st56itp20qd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingtec2169.survivalguideapp",
+            "certificate_hash": "57F68C5AD78FFD3CD5A1F49556B86155FAF0248D"
+          }
+        },
+        {
+          "client_id": "475402647592-luf66ousolg47md5e998kfbo16fgg7oj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5XQhIc22Z5ww0p5NwimyDel1MGmVWQko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475402647592-luf66ousolg47md5e998kfbo16fgg7oj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

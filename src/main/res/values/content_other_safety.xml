@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="safety_safe">
+        <item>fragment_pager_item_no_image</item>
+        <item>Safety</item>
+        <item>Your team should be safe in all of their endeavors. It is the role of the safety coordinator/captain/lead (whatever title your team decides upon) to make sure your team is safe at all times. Here is a list of things that a safety captain should oversee and maintain:&lt;br>&lt;br>
+First Aid Kit: Your team should have a first aid kit with everything you may need in case of an accident. You should keep a log of inventory, and document when supplies are used, so you can get more when needed. If any products included in the kit expire, make sure they are still good before going to competition.&lt;br>&lt;br>
+Injury Log: Have a log documenting when injuries occur. This can also give you an idea of what people get hurt doing. If these types of injuries repeat, you may want to adjust rules to stop these injuries from happening.&lt;br>&lt;br>
+Team Safety Manual: It is the role of the safety captain to create, maintain, or update your team’s safety rules. Your team should have a safety manual. Inspectors and judges will be impressed if you have a thorough set of rules your team has established. &lt;br>&lt;br>
+Emergency Contacts: Have a list of numbers people can contact in case of an emergency. These can be general, such as Poison Control’s number. More specifically, a student on the team could have a certain condition that requires a specific contact.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="safety_bring">
+        <item>fragment_pager_item_no_image</item>
+        <item>Things to Bring to Competition</item>
+        <item>Everything in the above list&lt;br>&lt;br>
+Judges may want to see them&lt;br>&lt;br>
+A copy of the FIRST Safety Manual&lt;br>&lt;br>
+Material to maintain a clean and safe pit area&lt;br>&lt;br>
+Handheld vacuum, broom, dustpan, etc.&lt;br>&lt;br>
+A small step ladder&lt;br>&lt;br>
+Stools cannot be substituted for a ladder. You WILL be caught&lt;br>&lt;br>
+Safety glasses&lt;br>&lt;br>
+Safety glasses are required in the pit area and on the field&lt;br>&lt;br>
+
+You are the designated person on your team to know where emergency exits are. Any time a judge, safety inspector, or anyone else has a safety related question or concern, you are the person to talk to.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="safety_awards">
+        <item>fragment_pager_item_no_image</item>
+        <item>Awards</item>
+        <item>There are safety related awards (Official FIRST Descriptions):&lt;br>&lt;br>
+Industrial Safety Award: Celebrates the team that progresses beyond safety fundamentals by using innovative ways to eliminate or protect against hazards.&lt;br>&lt;br>
+Safety Hard Hat Pin: A pin awarded to two teams per competition that exemplified proper safety practices.&lt;br>&lt;br>=
+Safety Animation Award: Every year teams can compete for the Safety Animation Award by submitting an animation that exemplifies good safety standards
+</item>
+        <item></item>
+    </string-array>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="inspect_prep">
+        <item>fragment_pager_item_no_image</item>
+        <item>How to Prepare</item>
+        <item>Preparation starts during week 1 of build season. The inspector will check basic things such as the robot’s size and weight. As such, those responsible for creating the design and building the robot need to have an understanding of the robot rules. Even during the building process, you need to check and make sure everything you are doing is staying within the allowed limit.&lt;br>&lt;br>
+This applies for everything on your robot, not just the structure. FIRST explicitly outlines allowed components, such as legal pneumatic components, legal wire gauges at different parts of your robot, bumper rules, legal motors, clear labels, etc. We cannot stress enough the importance of understanding all of the robot rules.&lt;br>&lt;br>
+Read through the Inspection Checklist. FIRST provides the checklist on firstinspires.org. Before bagging your robot, go through the checklist and do one as a team.&lt;br>&lt;br>
+Check for firmware updates for the Rio. This will save time during inspection because updating the Rio can take time. Firstinspires.org has a guide to update firmware.&lt;br>&lt;br>
+Follow the correct procedure for bagging and tagging.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="inspect_remember">
+        <item>fragment_pager_item_no_image</item>
+        <item>Things to Remember During Inspection</item>
+        <item>Remember, the inspectors want your team to compete and have a fun time. They are not there to criticize your team or punish you. Maintain a calm and collected demeanor  throughout inspection. The inspectors will be more willing to help if you are willing to listen.&lt;br>&lt;br>
+Only have a small amount of teammates in the pit during inspection. It is hard for the inspector to go through his or her checklist with even 6 kids in the pit.&lt;br>&lt;br>
+Have people in the pits that will know how to address any problems on the robot. The inspectors will be able to help you through problems, but having people who could program, work on the electrical, and fix mechanical problems will inspection run smoothly
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="inspect_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction</item>
+        <item>One of the most grueling parts of any robotics competition is the inspection.
+            During inspection, your robot is scrutinized by the robot inspectors. They go through
+            practically every detail on the robot to make sure it is safe and legal. Depending on
+            how prepared you are for inspection, it can either be a fairly quick and easy process,
+            or a long and stressful one.</item>
+        <item></item>
+    </string-array>
+</resources>

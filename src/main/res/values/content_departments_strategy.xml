@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="strat_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to Strategy</item>
+        <item>
+Strategy is the most important aspect of the first week in the build season.  It includes reading the game manual, evaluating the game, and deciding what kind of robot will be built.  It is also extremely beneficial to scout each team at a competition for alliance selections.  Picking the right alliance partner(s) is a very important part to achieving success at a competition (see the game manual for details on alliance selections).&lt;br>&lt;br>
+
+Strategy is important because members of a team need to build the correct robot.  Establishing a strategy at the beginning of build season reduces conflicts later on including design, fabrication, and programming.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="strat_findingstrat">
+        <item>fragment_pager_item_no_image</item>
+        <item>Finding a Strategy</item>
+        <item>Reading the Manual&lt;br>&lt;br>
+The game manual is the most valuable resource when trying to find a strategy.  The game manual includes game objectives, scoring values, penalties, aspects of the field, and more.  All members of the team should read the game manual regardless of their skills and interests because there are rules and guidelines for almost all areas.&lt;br>&lt;br>
+The manual should be read like a legal document.  The manual includes the terms and conditions all teams need to follow.  Keywords are bolded, capitalized, or otherwise indicated each time they are printed in the manual.  Definitions for these keywords are traditionally at the end of the manual.  By defining these terms, FIRST makes the game manual absolute meaning every word in the game manual is there for a reason.&lt;br>&lt;br>
+This reading method helps to illuminate the best strategy. Each team will have their own strategy based on the resources they have access to.  Resources include budget, experience, skill, number of team members, and time.  Each team MUST evaluate their team’s resources and form their strategy accordingly.  A rookie team with a small budget may choose a less ambitious strategy than a veteran team with many sponsors and team members.&lt;br>&lt;br>
+When reading, teams should especially examine scoring values and penalties.  The ways to score during a match (directly or indirectly) are: scoring points, playing defense, and drawing penalties.  Therefore, these are some of the most important methods to evaluate when teams develop their strategy.  Note: a strategy based around penalties is not in the best interest of FIRST or of competing teams so a team that finds themselves heavily incorporating penalties into their strategy should probably reevaluate their options.&lt;br>&lt;br>
+Teams should also stay updated on the forums, Q and A,  and rule updates FIRST provides.  For more information, read the game manual or check the FIRST website.&lt;br>&lt;br>&lt;br>
+
+Evaluations&lt;br>&lt;br>
+	 Once a team has read the game manual more than once, they should start evaluating and finding their own strategy.  There is no set way to accomplish this as every team builds a different robot.  However, there are some key things that all teams should incorporate into their strategy.&lt;br>&lt;br>
+	A team should not focus on every game objective.  Successful teams specialize in specific tasks and become experts at those tasks.  A winning robot can usually do two to three things on the field.  The tasks that a robot can’t do should be made up for by alliance partners during elimination matches.&lt;br>&lt;br>
+	Evaluating point scoring is an important part of finding a strategy.  Each action on the field scores a different amount of points.  Since it is the goal of each alliance to score the most points, finding the way each robot can individually score the most points effectively is crucial.  Usually more difficult tasks are worth higher point values so teams should decide whether or not they should go for the most difficult tasks (based on the resources that team has).&lt;br>&lt;br>
+	Complementing other team’s robots is another thing to consider when deciding strategy.  Teams with the most experience will usually be performing similar tasks on the field.  To complement a team with experience, pursuing tasks on the field that veteran teams usually can’t do could be a winning strategy.  Rookie teams should especially consider this to increase the chance of choosing/being chosen by a team with more experience during alliance selections.&lt;br>&lt;br>
+Evaluating the game as a whole can also help teams find their strategy.  Teams should ask themselves questions such as “is defense valuable in this year’s game?” and “will this game be high or low scoring?”.  To answer questions like these, keep in contact with other teams and be sure to keep reading the game manual.  Sometimes, the game animation will also give a score for the match given in the animation.  While the score in the animation may not be accurate, it can help teams visualize scoring options.&lt;br>&lt;br>
+
+Deciding the strategy of the robot should be done with other technical department’s input.  The technical departments--mechanical, CAD, electrical, and programming--will be in charge of shaping the robot  decided upon in strategy meetings.  Because of their role as creators of  the robot, they will have important and significant input regarding their department’s abilities and limits. A certain strategy may not be optimizable to its fullest potential if a department is limited by a factor (a strategy involving scoring goals in 2016 may be limited if the programming department has never programmed vision processing and are new to the subject). As such, you may want to explore different possibilities that can be reasonably obtained in the build season.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="strat_scouting">
+        <item>fragment_pager_item_no_image</item>
+        <item>Scouting</item>
+        <item>Scouting is vital to strategy.  It allows teams to collect reliable data for alliance selections.  There are many different types of scouting that teams usually perform and can usually be summarized into three categories: quantitative, qualitative, and pit scouting.&lt;br>&lt;br>&lt;br>
+Quantitative Scouting&lt;br>&lt;br>
+Know which robot is scoring which points during each match.  A robot could be a part of a high scoring match even though their alliance partner did the majority of the scoring.  Quantitative scouting is all about numbers. Have your team mark which robots scored what throughout the competition.  To do this, one person from a team should be designated one robot (the ratio between people and robots should be 1:1 if possible).  They should mark down how many of each objective that robot scored.  For example, if a robot scores two goals and raises three flags that should be indicated in quantitative scouting.  Quantitative scouting is traditionally done on paper however some teams choose to use an app.&lt;br>&lt;br>&lt;br>
+Qualitative Scouting&lt;br>&lt;br>
+	Numbers can’t record everything.  This is where qualitative data comes in.  Qualitative scouting is meant for the data numbers can’t account for.  This includes driver performance, human player ability, and robot performance notes (such as whether or not a robot tipped over, moved quickly, or drew a penalty).  This data should be collected throughout the competition and should almost always be done on paper.&lt;br>&lt;br>&lt;br>
+Pit Scouting&lt;br>&lt;br>
+Pit scouting includes walking through the pits and asking teams about their robots before competition starts.  Not only should you use their answers as data, but taking notes on the physical build of their robot is also important.  Teams should take notes on all parts of the robot including the drivetrain and mechanisms.  This is can be used for alliance selections later, such as if a team needs to pick a robot that is effective defensively, they should choose a robot with an appropriate drivetrain.
+</item>
+        <item></item>
+    </string-array>
+
+</resources>

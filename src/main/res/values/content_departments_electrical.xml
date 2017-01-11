@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="elect_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to Electricity</item>
+        <item>Electricity: A form of energy resulting from the existence of charged particles (such as electrons or protons), either statically as an accumulation of charge or dynamically as a current.&lt;br>&lt;br>
+Electrical circuit: a path in which electrons from a voltage or current source flow. &lt;br>&lt;br>
+
+Voltage: The difference in charge between the ends of the circuit (The force behind the
+     circuit or how strong it is)
+Measured in volts (V)&lt;br>&lt;br>
+Current: The rate at which charge is flowing (The amount of electrons flowing)&lt;br>&lt;br>
+Current (I) is measured in amperes, also known as amps (A)&lt;br>&lt;br>
+Related to wire gauge and resistance of wire material&lt;br>&lt;br>
+Not the speed of the electricity! Speed of electricity will stay relatively the same in any specific medium&lt;br>&lt;br>
+Resistance: A material’s tendency to resist the flow of electricity&lt;br>
+Resistance (R) is measured in ohms (Ω)&lt;br>&lt;br>
+
+- Voltage is directly proportional to current and resistance&lt;br>
+V = I • R  or  1V = 1A • 1Ω
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_tools">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical Tools</item>
+        <item>Wire: a single conductor(material most commonly being copper or aluminium)&lt;br>&lt;br>
+
+Cable: is two or more insulated wires wrapped in one jacket&lt;br>&lt;br>
+
+Dykes (wire cutter): Dikes are a general tool that end up working really well for electrical. Most commonly used for cutting wires and zip ties, the dikes can be very handy when you need to change the layout of your electrical board.&lt;br>&lt;br>
+
+Wire Striper: The wire stripper is one of the most important tools for electrical. It allows for the insulation on the ends of a wire to be cut without damaging the conductor. In most cases you only need to strip about 1 quarter inch, however the length you strip wire can vary based on the task you are performing.&lt;br>&lt;br>
+
+Voltmeter: This is one of the most useful tools when something goes wrong. The voltmeter allows you to check a variety of different things the most basic being volts, amps, resistance, continuity, and some have more capabilities.&lt;br>&lt;br>
+
+Small Screwdrivers: Small screwdrivers are a must in order to open the power distribution connectors, connect power to the rio, and open other small hard to reach connectors. Having a separate set of screwdrivers specifically for electrical helps keep the ends of the screwdriver in tact.&lt;br>&lt;br>
+
+Soldering Iron: The solder is useless without something to melt it. The Soldering Iron is what melts the solder, some soldering irons simply plug into the wall with no extra controls while others have different temperature settings. The digital soldering irons generally allow for heats ranging from 100-800 or 900. These hot temperatures can melt the insulation off low gauge wires so start with a lower temp then add heat until the solder melts quickly when heated.&lt;br>&lt;br>
+
+Solder: Solder is a combination of lead and tin, It has an very low melting point making it suitable for joining 2 wires together in a process similar to welding called soldering.&lt;br>&lt;br>
+
+Heat Shrink: Heat shrink is a much more effective means of covering a connection than electrical tape. It does require some planning and takes slightly more time to apply. It works exactly how it sounds, by shrinking when heat is applied. The heat generally is from a heat gun but if your budget is tight then a lighter or soldering iron will work however it reduces the life of your soldering iron.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_week1">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical Week 1</item>
+        <item>Like the other technical departments, the electrical department will focus on robot strategy by participating in the design process.&lt;br>&lt;br>
+
+Design Process&lt;br>&lt;br>
+Along with the strategy, electrical, programming, and CAD (if you have one) departments, the electrical department should contribute in deciding what you want to the robot to do.&lt;br>&lt;br>
+Do you want the robot to focus on pure offense?&lt;br>&lt;br>
+Is there an endgame task you want your robot to accomplish?&lt;br>&lt;br>
+How important is this endgame task? How many points does it reward you with?&lt;br>&lt;br>
+Do you want to focus on defense? Is there even defense?&lt;br>&lt;br>
+Do you want to try to do everything?&lt;br>&lt;br>
+You will need a lot of electrical components. Doing this will likely require a lot of motors, which requires a lot of controllers. This is expensive. Make sure your team is well prepared for taking on the difficult task of accomplishing everything.&lt;br>&lt;br>
+What kind of drivetrain will work well in this game and help our strategy?&lt;br>&lt;br>
+	Each department has a special skill that is vital to the design process. The electrical department’s role in the designing process is to know what the department can accomplish. If someone proposes a design that would be too difficult for the electrical department to accomplish, the department should work to try to change the design for it to be a more accomplishable goal for them. This is true for other departments as they should also be acting as a check on the designs, adding their input regarding the abilities of the department, determining whether a design or goal is feasible.&lt;br>&lt;br>
+
+Prototyping&lt;br>&lt;br>
+	The electrical department will most likely be working with the mechanical department on making prototypes. You may have to wire motors up, and possibly attach motor controllers, and Power Distro, et. al. to be able to do more than just power the motor with a battery.&lt;br>&lt;br>
+	If you have pneumatics to test, you may also have to hook up a pneumatics system for prototyping. However, if you don’t have pneumatics, you can also do the calculations, then mimic pneumatics by simply moving the prototypes with your hands. There is no inherent harm in this.&lt;br>&lt;br>
+
+Shopping&lt;br>&lt;br>
+	Do you need more of something? If you are running low on motor controllers, you may need more. This week is a great time to gauge what you may need more of, then order them. If you plan on ordering pistons, put it off until week 2 when you have the robot design finalized.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_components">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical Components</item>
+        <item>In order to make your robot drive you must have components. These are the basic components you need to get your robot up and running. With just these components you can drive up to 10 motors, power a compressor and solenoids, and have the ability to add whatever sensors you may need.&lt;br>&lt;br>
+            NI RoboRIO: This is the Brain of your robot. It is what reads the code and tells motors to move. It has multiple different ports for interfacing with sensors, motors, and other devices.&lt;br>&lt;br>
+Power Distribution Board: This is what provides power to the robot. The power distribution board or PDP for short allows you to split the Batteries main power into multiple outputs. Each output has its own breaker to ensure that your motors don\'t burn out.&lt;br>&lt;br>
+Motor Controllers: There are several types of motor controllers that are legal in FRC. The most common being the Talon SRX, the Victor SP, the Talon SR, the Victor 888, and the Jaguar. With the exception of the Talon SRX most controllers use PWM (Pulse Width Modulation) to receive commands from the RoboRio. The Talon SRX uses Can Wire. Both Methods will be expanded upon later.&lt;br>&lt;br>
+Pneumatic Control Module: The PCM or Pneumatic Control Module, allows you to add pneumatics to your robot. The PCM controls your compressor and solenoids to ensure a safe pneumatics system.&lt;br>&lt;br>
+Voltage Regulator Module: The VRM or Voltage Regulator Module converts the 12v from the PDP into different voltages and amperages. This is what is used to supply voltage to the router, any cameras, or lights.&lt;br>&lt;br>
+Radios: Radios otherwise known as Routers are used to communicate with the driver station. The router has 2 ethernet ports. One ethernet port is dedicated for the RoboRio, the 2nd ethernet port can be used for a variety of other devices like cameras, sensors, or offboard processors.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_week2">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical Week 2</item>
+        <item>Week 2 focuses on testing the prototypes that the electrical, mechanical, and possibly the programming departments have made. After that, you will be working with the technical departments and strategy to finalize the design of the robot. &lt;br>&lt;br>&lt;br>
+
+Prototyping&lt;br>&lt;br>
+	The week before should have focused on building the prototypes and wiring them. If need be, finish wiring up those prototypes and start testing. The mechanical department section has more information regarding prototypes. In general, the electrical should not need to change much about prototypes because most changes would be mechanical or programming. &lt;br>&lt;br>
+	Instances where you may need to change things in the prototype:&lt;br>&lt;br>
+Changing motors: you will need to rewire the motors&lt;br>&lt;br>
+Changing (theoretical) pistons: If you are prototyping with pistons, including theoretical ones, you may change the prototype by changing pistons, whether it be altering the bore size, the pitch, the type of solenoid (works less so with theoretical situations)&lt;br>&lt;br>
+	Prototyping specifically for electrical may involve the usage of different sensors or cameras. This will for sure involve the programming department as they will need to familiarize themselves with these sensors and how to use and program them. The electrical and programming departments should be familiar with any sensor or camera before they implement it on the robot. If either department is not familiar with their function or how to execute said function, chances are it will not find its way to working condition for the competition. &lt;br>&lt;br>&lt;br>
+
+Finalize the Design&lt;br>&lt;br>
+In finalizing the design, the electrical department will need to work with the CAD and mechanical departments for designing how the electrical components are to fit with all of the mechanical components. In many cases, the electrical components are mounted securely in protected areas. Exposed electrical components could lead to them to being damaged should something hit it, such as another robot or a game piece. As such, man teams decide to mount the electrical on a “belly pan,” which is mounted on the drivetrain, keeping it low to the ground and protected by the drivetrain rails. &lt;br>&lt;br>&lt;br>
+
+Modular?&lt;br>&lt;br>
+	Modular electrical boards are those that can, by unplugging motors, servos, cameras, etc., be completely removed from the robot. This can allow the mechanical department to work on the robot and the electrical department to work on the electrical board separately and simultaneously with ease. The picture on the right is our modular electrical board from 2016. It fit into a slot on the back of our shooter mechanism.&lt;br>&lt;br>
+Remember, because of the usual compactness of modular boards, it can be hard for things to be clearly visible to inspectors. Remember, in the design for your electrical board, that you review the Inspector’s checklist for electrical components so your design will satisfy the checklist. &lt;br>&lt;br>&lt;br>
+
+
+Shopping?&lt;br>&lt;br>
+	With the robot’s design finalized, you must now address what needs to be purchased. If you are lacking any part, you will need to purchase it now. If piston calculations have been finalized, you can purchase them now (we recommend Bimba as their selection and customization is very desirable for most FRC teams). However, if CAD still has to answer some questions regarding piston geometry, you may again have to wait. </item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_week3_comp">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical Week 3 Through Competition</item>
+        <item>The primary focus from here on out for the electrical department is to create the electrical board and mount the necessary components. You must do any maintenance as well&lt;br>&lt;br>&lt;br>
+
+STAY ORGANIZED&lt;br>&lt;br>
+	Figuring out what goes to where on an electrical system is extremely difficult when nothing is labeled, or simply when wires are strewn around the robot haphazardly. As such, you NEED to be organized.&lt;br>&lt;br>
+You need to label everything. Each motor controller needs to be clearly labeled, saying what motor it is powering. For pneumatic systems, your release valve needs to be clearly labeled. The more labels you can understand, the better. &lt;br>&lt;br>
+Keep wires from going everywhere. Wires should be cleanly zip tied to wires that run with each other, and mounted to structural components. This keeps them out of the way, as well as making them easier to follow.&lt;br>&lt;br>&lt;br>
+
+Make it maintainable&lt;br>&lt;br>
+Electrical components can break. You can burn out motor controllers. You can kill a Voltage Regulator. As such, you need to make it so these components can easily be removed at competition. You want electrical components to be a quick fix, and spending ten minutes to try to get to it will not benefit you at all. This is also where we stress having as many extras as your budget will allow you. Electrical components are expensive, but if you do not have any back ups and one breaks, you are going to be forced to ask to have or borrow another team’s at competition, which may be hard. Teams may not want to risk giving your team their extra, especially considering how expensive they are. &lt;br>&lt;br>&lt;br>
+
+Bag and Tag&lt;br>&lt;br>
+	Simply put, you are not required to bag your electrical components on the last day of build season. You may want to do this if your team decided to make a practice bot but cannot afford to get extra electrical components. And since electrical components are COTS, they will not count against your withholding weight. Any mounts, however, will count against your weight, so be mindful of how much material besides your actual components are a part of your system. If you do not bag your electrical board, you may have to rewire your whole electrical system at competition, which will be time consuming. Having a modular board will alleviate most of this. If you do not want to bag one or two components, like a power distro and the Rio (two of the more expensive parts) because you have extras of the rest, that is okay as well. It’s all up to your team on how you want to go about doing Bag and Tag.&lt;br>&lt;br>
+	In general, unless you have a practice bot that needs the electrical board, you should just bag it as it will be less of a hassle to deal with at competition, and you will not risk ruining anything. &lt;br>&lt;br>
+Read the bag and tag dedicated article for more information. &lt;br>&lt;br>&lt;br>
+
+Between Bag and Tag and Competition&lt;br>&lt;br>
+	Depending on what electrical components you have, the electrical department may do very little or a lot.&lt;br>&lt;br>
+If you have electrical components with you, you are free to participate in designing whatever mechanism you may want to implement at competition. Without electrical components, you can’t really participate. As long as you have the wiring and the controllers or the pneumatics, you will be able to implement them at competition. However, without a Rio or Power distro, it could be very difficult for the electrical department to be heavily involved. You could try mimicking the components with a raspberry pi or an arduino, though. &lt;br>&lt;br>
+You will want to, however, make sure you have everything for competition. Make sure you pack connectors and other components you may need to replace, and the tools necessary to do so. Being prepared is vitally important.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="elect_comp">
+        <item>fragment_pager_item_no_image</item>
+        <item>Electrical at Competition</item>
+        <item>Your team will want at least one electrically inclined person in your team’s pit. If anything is to happen to the electronics or pneumatics, the person in the pits will need to be ready to provide a solution efficiently.&lt;br>&lt;br>&lt;br>
+
+Inspection&lt;br>&lt;br>
+	During inspection, there should be one electrically inclined person there to speak with the inspector and show him or her their electrical board, all the components, and demonstrate that they work correctly and safely. Review the Inspection Checklist on firstinspires.org to make sure you know what you will need to show and deomstrate to the inspector&lt;br>&lt;br>&lt;br>
+
+Maintenance&lt;br>&lt;br>
+Make sure you will be ready at all times to change something on the electrical board and rewire. You will need to be able to diagnose the problem, then fix it. Make sure to check connectors. Sometimes they break and are hard to notice, causing time to be wasted when the solution is simple. &lt;br>&lt;br>&lt;br>
+
+Talking to Judges&lt;br>&lt;br>
+	Judges may be curious about electrical components, especially sensors. If implemented well and unique, a sensor could help you win an award, such as Innovation in Control or Creativity. Be ready to explain these sensors and how they function. You may want to team up with a programmer for these as they can describe the programming aspect of using that sensor.
+</item>
+        <item></item>
+    </string-array>
+</resources>

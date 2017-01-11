@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="comp_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to the Competition</item>
+        <item>This is it. Six weeks (and possibly more) have prepared you and your robot, and it all comes down to the Competition.
+            However, in order to arrive to the tournament feeling more ready than ever, there are a few things you may have to prepare
+            for first. Now depending on which competition system your region follows (Regional or District Events), some rules for the
+            rankings and qualifying spots are different, but for the most part, ideas stay the same no matter what system your region runs.
+            This guide will give you everything you need to know for those, provided you also give the game manual for that year an in-depth
+            read. Generally speaking, competitions can be divided into three “main parts,” that are very distinct from one another:\n\n
+            Preparation\n\nQualifying Matches\n\nElimination Matches\n\nDuring your 2-3 day competition, each of these stages are equally
+            important to your team’s success, and it is critical that you know what to expect going in. Each of these parts have a
+            special section devoted to them, with sub-sections highlighting the differences between Regional and District events
+            to give an in-depth explanation of everything a team needs to know. Finally, an explanation of competition structure
+            and the different levels of competition procession all the way to the World Championships is provided.
+</item>
+        <item></item>
+    </string-array>
+
+</resources>

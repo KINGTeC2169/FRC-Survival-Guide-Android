@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="prog_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to Programming</item>
+        <item>
+
+So, you’re responsible for making that big metal box with wheels move around the field.  Where do you start?  First, you’re going to want to install the necessary software.&lt;br>&lt;br>&lt;br>
+
+Programming: Eclipse and its Plugins&lt;br>&lt;br>
+The programming department for our team uses the JAVA programming language to program their robot. JAVA can be written in  Eclipse. Eclipse is a java based open source software program that allows you to read and write in java or C++. The FRC Roborio uses plugins that make programming languages like JAVA and C++ compatible with the Roborio.&lt;br>&lt;br>
+
+After installing Eclipse, you need to install the FRC plugins that make JAVA and C++ compatible with the roborio. In the image to the right, it shows the standard setup with a standard java project when Eclipse and FRC plugins are installed. It shows a robot, OI, commands and subsystems package for storing all of your folders. Down below are definitions on what each package should store.&lt;br>&lt;br>
+
+OI - input output and constants&lt;br>&lt;br>
+Robot - centerpiece for all robot commands and subsystems&lt;br>&lt;br>
+Commands - what you want the robot to do with motors, compressors etc.&lt;br>&lt;br>
+Subsystems - creating the motors, compressors etc. that is on your robot and any functions you want them to perform&lt;br>&lt;br>&lt;br>
+
+Writing the Code&lt;br>&lt;br>
+
+Setting Up&lt;br>&lt;br>
+
+ Now that everything is installed, you need to write the code.  When it comes to programming, it’s a bit like language or extremely complex math, nobody does it exactly the same.  If everything is installed correctly, there should be a button on the taskbar (File, Edit, Source, ect.), there should be a button that reads “WPILib”.  If this is there, everything is good to go.&lt;br>&lt;br>
+
+Creating the Project - A project is what holds all the code and metinfo for the robot’s instructions.  Click File > New > Project.  A dialog box will pop up.  In the search box, enter “Robot” and select “Robot Java Project, as the picture below shows.&lt;br>&lt;br>
+
+Setting up Sub-Systems- As you learned earlier, Sub-Systems are the elements of programming that connect the electrical system and the code.  For this element, you need to use the RoboRio connection port numbers to program the RoboRio to communicate between motors, solenoids, servos, encoders, ect.  There will be one subsystem for every mechanism.  For example, if you had a flywheel system, and intake, and a drive train, you would have 3 sub-system classes.  Below is an example of a sub-system class for a drive train with two talons.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prog_week1">
+        <item>fragment_pager_item_no_image</item>
+        <item>Programming Week 1</item>
+        <item>Week 1 for Programming involves working with the other technical departments (CAD, mechanical, and electrical) and Strategy to help design what the robot will do. You should also familiarize yourself with the things you will be programming, such as the Rio or any third party device you will be using.&lt;br>&lt;br>&lt;br>
+
+Design Process&lt;br>&lt;br>
+Along with the strategy, electrical, mechanical, and CAD (if you have one) departments, the programming department should contribute in deciding what you want to the robot your team will make to do.&lt;br>&lt;br>
+Do you want the robot to focus on pure offense?&lt;br>&lt;br>
+Is there an endgame task you want your robot to accomplish?&lt;br>&lt;br>
+How important is this endgame task? How many points does it award you?&lt;br>&lt;br>
+Do you want to focus on defense? Is there even defense?&lt;br>&lt;br>
+Do you want to try to do everything?&lt;br>&lt;br>
+We recommend having a skilled programming base with professional mentors when trying to accomplish this. “A jack of all trades; master of none” applies very well to FRC. If unprepared, trying to go for every task in the game can end with underwhelming results. The teams that can do everything consistently every year have a large, devoted, and highly skilled programming department.&lt;br>&lt;br>
+What kind of drivetrain will work well in this game and help our strategy.&lt;br>&lt;br>
+Most importantly, can the team do the tasks?  Do  have the resources?  Is the group capable of doing this in 6 weeks?  For example, if the programmers have never touched image processing, a team may want to make a vision beta in the off season before attempting to use it during the season.&lt;br>&lt;br>
+	Each department has a special skill that is vital to the design process. The programming department’s role in the designing process is to have an idea of what the department can accomplish. If someone proposes a design that would require an amount of programming skill that is not present or not reachable on your team during one build season, the department should work to try to change the design for it to be a more accomplishable goal for the programmers. This is true for other departments as they should also be acting as a check on the designs, adding their input regarding the abilities of the department, determining whether a design or goal is feasible.&lt;br>&lt;br>&lt;br>
+
+
+Start Basic Programming&lt;br>&lt;br>
+If you are using a new Rio, you will need to start by installing the necessary software on the Rio. https://wpilib.screenstepslive.com/s/4485/m/13809 has the necessary information regarding installing the necessary software, regardless of the language you are using (this Survival Guide will mainly go through using Java). Next, you will want to familiarize yourself with JAVA the language as an object oriented language and get use to basic projects, classes, objects, variables, etc. Then, you want to implement your knowledge of JAVA with the FIRST provided Plugins they use so your code can compile onto the Rio. Finally, you have an open source platform to program your robot and test your code on a real FIRST robot. Now the programming begins...&lt;br>&lt;br>&lt;br>
+
+Help with Prototypes?&lt;br>&lt;br>
+The picture to the right is a programmed prototype for our 2010 drivetrain. It used the VEX control system. As such, if you have access to these tools, prototyping may involve knowing different languages. If the team wants to test a flywheel at various speeds, you will most likely have to make a program to change the speed. This is the basic idea of programming. Your department is given a set number of sensors, motors, and other components and has to recreate and add function to those components. Like for this drive train, you need to create four motors and add functionality so a driver can easily manipulate this robot to do as they want with it like drive it.&lt;br>&lt;br>
+
+In most cases, the programming department will not be needed during the prototyping phase. However, if needed, you may be contracted to program a few things.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prog_week2_4">
+        <item>fragment_pager_item_no_image</item>
+        <item>Programming Weeks 2-4</item>
+        <item>Week 2-4 for Programming involves working on implementation of the robot code and how you want to organize all of your files, programming the actual robot functions and testing your code during the final mechanical weeks working on the robot.&lt;br>&lt;br>&lt;br>
+
+Design Process&lt;br>&lt;br>
+The programming department’s role in the designing process is to have an idea of what the department can accomplish. If someone proposes a design that would require an amount of programming skill that is not present or not reachable on your team during one build season, the department should work to try to change the design for it to be a more accomplishable goal for the programmers. This is true for other departments as they should also be acting as a check on the designs, adding their input regarding the abilities of the department, determining whether a design or goal is feasible.&lt;br>&lt;br>
+Keep this idea relevant when you are programming your robot. If a function or requested action done by the robot can not be solved by the programming department and needs the assistance of other departments in order to solve this problem. These two weeks are for that. Also, the two weeks are for the physical programming of the robot and making sure your code can compile. It is important to have all the functions of the robot created AND do not crash the robot.&lt;br>&lt;br>&lt;br>
+
+
+Sensors&lt;br>&lt;br>
+The programming department is to the point where they have a general idea of how the robot will run whether that be a basic tank drive, intake mechanism, or some other simple part of the robot. If the programming department is requested to go into more complicated tasks such as using encoders to acquire motor speed or a gyro to detect the robot\'s angle, this is when the department does research and communicates with the electrical department on what they can do. It is important that if you program a type of motor (ex. A talon or a jaguar) it is up to the department to confirm with electrical or mechanical to make sure which they are using. The same concept goes for sensors as well. These two images are two different ways a team can use encoders. One is a physical encoder wired to the rio and the other is a wire that plugs into the motor encoder. This is one example of when the programming department needs to communicate with electrical and mechanical on the components that they use.&lt;br>&lt;br>&lt;br>
+
+
+Help Testing Code?&lt;br>&lt;br>
+This is the point in the season when the programming department can say they have the final product for their code. The one last thing they need to do is make sure their code can work on the robot. There can be multiple scenarios where the robot does not function to its abilities. It could be a mechanical fault, it could be an electrical fault, or it could be a programming fault. As the final department that can get their hands on the robot, it is the departments job to make sure all of the components of the robot do their job. This part comes later in the season but the mechanical department could have a robot for the programming department in the first half of build season.&lt;br>&lt;br>
+
+	At this phase in the programming department, the department needs to be ready and on standby to test and run its code on the robot in order to start seeing a competition ready robot.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prog_week5_6">
+        <item>fragment_pager_item_no_image</item>
+        <item>Programming Weeks 5-6</item>
+        <item>Week 1 for Programming involves working with the other technical departments (CAD, mechanical, and electrical) and Strategy to help design what the robot will do. &lt;br>&lt;br>&lt;br>
+
+Design Process&lt;br>&lt;br>
+The programming department’s role in the designing process is to have an idea of what the department can accomplish. If someone proposes a design that would require an amount of programming skill that is not present or not reachable on your team during one build season, the department should work to try to change the design for it to be a more accomplishable goal for the programmers. This is true for other departments as they should also be acting as a check on the designs, adding their input regarding the abilities of the department, determining whether a design or goal is feasible. &lt;br>&lt;br>
+At this phase in the build season, this information will be very irrelevant unless some major event happened where all the departments need to change a huge function on the robot. Now, after the crunch the mechanical and electrical departments made to get your robot built, it is time for your moment to shine.&lt;br>&lt;br>&lt;br>
+
+
+Late Programming and Testing&lt;br>&lt;br>
+By now, the programming department will have programmed all the necessary functions for the robot and are ready to test it on the robot. It is import to be calm, focused, and remember to be safe when enabling a live robot with your code on it. Hey, it can happen when you program a function on the robot where it accidentally starts driving forward full speed towards another member, so be very safe and careful about how you program your robot. Make sure to be safe and ready  for anything to happen.&lt;br>&lt;br>
+This is the testing phase and when all the hard work of robotics members come together and it is a very happy moment for the team when a component on the robot works to thee best of its ability because of you. But it is best you prepare for the case where a problem occurs. If a motor stopped moving on your robot, double check electrical and double check you call the motor in your code when you want it to. It is very important to the programming department to trace back where things went from right to wrong.&lt;br>&lt;br>
+
+Here is a list of things to check for when a programming problem occurs…&lt;br>&lt;br>
+Robot is on, connected, robot code is on, and everything is plugged in and has power&lt;br>&lt;br>
+The sensor or motor that is called is used and can be identified in the Web Interface that can communicate with the rio&lt;br>&lt;br>
+The code does not throw errors or reroute the function so it may never or always be called&lt;br>&lt;br>
+Check Chief Delphi or FIRST Forums for anyone else having the same issue&lt;br>&lt;br>&lt;br>
+
+Resources&lt;br>&lt;br>
+	Here are some good links to resources that have helped us over the years&lt;br>&lt;br>
+https://www.chiefdelphi.com/forums/forumdisplay.php?f=51&lt;br>&lt;br>
+https://wpilib.screenstepslive.com/s/4485/m/13809&lt;br>&lt;br>
+http://first.wpi.edu/FRC/roborio/release/docs/java/&lt;br>&lt;br>&lt;br>
+
+Tips&lt;br>&lt;br>
+	Some tips from the programing department here on 2169 KING TeC are…&lt;br>&lt;br>
+Use a public repository to store your code and go back when you have problems&lt;br>&lt;br>
+Update your software and any updates to the RoboRio/cRio before you arrive at competition&lt;br>&lt;br>
+Always trace back through electrical because sometimes it might just accidentally be unplugged
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="prog_appdev">
+        <item>fragment_pager_item_no_image</item>
+        <item>Application Development</item>
+        <item>Application development is a great supplementary resource to teams that have the manpower to support a few people being dedicated to it. It is requires work in both the offseason and the build season.&lt;br>&lt;br>
+
+In the build season anyone involved with this should be focused on coordinating with the strategy department to create a scouting app that is able to accurately record data for the team to use during strategy meetings in competitions. This can be made for pit scouting, as well as stands scouting.&lt;br>&lt;br>
+
+In the offseason programmers should talk to the non-stem departments to determine if there are options to help promote the team or help others through the use of applications. This app is an example of that. This is also a good time to code any other FIRST related apps that you may have had an idea for.
+</item>
+        <item></item>
+    </string-array>
+
+
+</resources>

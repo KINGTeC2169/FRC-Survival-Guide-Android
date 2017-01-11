@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="cad_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction</item>
+        <item>Computer Aided Design, or CAD for short, is a branch of computer software used to aid the design, manufacturing, modification, analysis, and optimization of a tangible item. CAD has been developed for decades and is an industry standard across the world. The invention of CAD has drastically cut down on development time, manufacturing costs, and overhead in general. The ability to track parts and assemblies on the computer with attached documentation has created a streamlined engineering world where it is now easier than ever to create complex ideas and designs. Here in FRC, CAD software is available teams worldwide and you can be apart of having a streamlined robot that is done faster, costs less, and makes your build season more enjoyable.</item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="cad_software">
+        <item>fragment_pager_item_no_image</item>
+        <item>Deciding on a CAD software</item>
+        <item>CAD software is offered to all FRC teams world wide. In FRC, you can choose
+            from three different software programs to model your robot: PTC Creo Parametric,
+            Autodesk Inventor, and Solidworks. All of these softwares will perform the same task.
+            The one you select will largely be up to preference. PTC runs a yearly grant for struggling
+            teams in need of resources, and one of their eligibility requirements is that your
+            team uses their software. If you are an American or Canadian student, your school
+            likely already has Autodesk Inventor installed on your computers. Autodesk is a
+            sponsor for Project Lead the Way, an industrial technology curriculum with some
+            classes offering college credit at the end of the school year, similar to an AP
+            class. Your final option is Solidworks. Solidworks is very popular with industries
+            such as design and machining, and is very common throughout universities in the United
+            States. Depending on who you ask, Solidworks owns either the largest majority of the CAD
+            market share, or a large majority of the CAD market share worldwide, so if you’re looking
+            to use the same software on your FRC team that you’ll use in and after college, Solidworks
+            is a great choice.</item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="cad_sync">
+        <item>fragment_pager_item_no_image</item>
+        <item>Keeping All of Your Parts Synced with PDM</item>
+        <item>PDM stands for “project data management,” and is used as an industry standard worldwide to keep CAD assemblies up to date and accessible. To keep your CAD models up to date, some solutions are built into your CAD software. Applications such as PTC Windchill and Autodesk 360 are clients that can be applied directly into your CAD software of choice and work on startup while you CAD. However we recommend a 3rd party solution to PDM: GRABCAD Workbench. GRABCAD Workbench allows you to receive online data syncs with a 3D viewer in browser and on any mobile device you choose, and you also utilize the easy installation and local storage while using CAD. Most PDM solutions have a steep learning curve. GRABCAD Workbench is plug and play. It has an intuitive design that allows for ease of access for anyone involved in the project. Having the app installed will even prompt you to download parts edited by others and upload parts edited by you.</item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="cad_week1">
+        <item>fragment_pager_item_no_image</item>
+        <item>Week 1: The Field, Your Drivetrain, And Mechanism Designs</item>
+        <item>The first week of the build season is the most important week of the build season. It is the week that you decide which tasks your robot will complete, and hopefully how the robot will complete them. There are many things to consider when you’re designing your robot but one constant element is the drivetrain. It is important to design your drivetrain as soon as you can so that you have something to start designing specific mechanisms off of. That is not to say that you should push out a hastily made drivetrain that will hardly last you beyond a single competition. The AndyMark KOP drivetrain CAD model is always available, so if you plan on using that exact model, then you’re already halfway there! Some slight modifications may be needed, but your drivetrain can be modified as needed to play the game.&lt;br>&lt;br>
+
+Another project in the first week of the build season is to make preliminary mockups of different ideas for the main mechanism of your robot, for CAD this means that you need to make basic outlines of the mechanisms as a proof of concept. With most CAD programs you can constrain parts so that they are able to move, the ability to do that will greatly aid in the process when you are deciding what mechanism to go with for the full build season. You can also use sketches to size your robot in two dimensions. For example, in FIRST Stronghold we used sketches to size up how long our hook deployment mechanism needed to be in order to make it to the hanging bar.</item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="cad_week2">
+        <item>fragment_pager_item_no_image</item>
+        <item>Weeks 2 and 3: Final Mechanisms, Electrical, and Engineering Drawings</item>
+        <item>By the end of the first week you should have your drivetrain and ideas of the mechanisms you want to have on your robot. The prototypes for these designs will be tested in early week 2. Once they have tested and changed prototypes and found ideal mechanisms during the prototyping phase, the CAD department should reconvene with the other technical departments. The departments will push for the prototypes that worked and how they constructed them. For the designs that are ultimately decided upon, your role of making the robot in CAD will begin. Use as much information from your prototypes as possible! They are real world examples of how the game piece will behave on field, and they offer specific information such as how long your arm should be or how fast your intake should spin and with which wheels you tested. By the middle of the second week you should be in full swing of designing specific mechanisms for your robot. At this point you should split up into sub teams that are in charge of a different part of the robot, whether it be finishing touches on your drivetrain, starting your main mechanisms, or laying out your electrical board to avoid future packaging issues. Extra stuff that your robot can go without comes later. It is best to get started on your main mechanism first so you are consistently scoring in at least one way on the field. Delegate your CAD team appropriately and meaningfully.&lt;br>&lt;br>
+
+        It is just as important to fabricate the parts for the mechanisms as it is to design them. The easiest way to illustrate how a part needs to be made is to make an engineering drawing of it. In an engineering drawing you take a part or assembly and annotate important dimensions so that the fabrication team can make it and put it together. As you complete parts, you should be making these drawings and giving them to the machinists to fabricate. This will allow the designers and the fabricators to work simultaneously. Hold off on parts that are subject to change. They can be fabricated later. Nail down what you have to reduce overhead later. If a part changes mid season, you lose the one thing you’ll never get back during build season: time.&lt;br>&lt;br>
+
+            Keep in mind where you\'re going to put the control system. It can be very easy to put off however it is never a good idea to throw the electrical on in the last week of the build season wherever you have space. The best way to go about solving this problem is by planning with the electrical department how many of each module you will need and if there is anywhere that something will need to be.&lt;br>&lt;br>
+
+By the middle to end of week 3, the robot should be fully modeled in CAD. Since the Mechanical department is working alongside you, they should be wrapping up fabrication within a few days after you finish CAD. The robot is in great shape to be completely assembled and ready for testing if you can get everything done by week 3.</item>
+        <item> </item>
+    </string-array>
+
+    <string-array name="cad_week4">
+        <item>fragment_pager_item_no_image</item>
+        <item>Weeks 4 5, and 6+: Catch Up and Post Build Season Mechanisms</item>
+        <item>During the end of the build season, use the CAD model as much as possible to troubleshoot any fabrication errors that may have occurred so they can be fixed in an orderly manner. There’s nothing wrong with having an issue, as long as it gets fixed. Keep the model up to date with any last second changes. Keep printing engineering drawings for the sake of documentation. Engineering judges at the competition love seeing students interact with CAD software from start to finish, so don’t stop at just the computer.&lt;br>&lt;br>
+        Some games demand a lot. Recycle Rush and Stronghold offered many ways to manipulate game pieces and score points. You may not have time to finish all of your mechanisms in 45 days. That’s fine. Use CAD to your advantage as your model should be a carbon copy of what’s in the sealed bag. You will have time at the competition to swap parts and add features thanks to the rules on spare parts and withholding allowance.</item>
+        <item> </item>
+    </string-array>
+
+
+</resources>

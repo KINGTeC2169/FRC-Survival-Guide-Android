@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="bagandtag_stop_build">
+        <item>fragment_pager_item_no_image</item>
+        <item>Stop Build Day</item>
+        <item>Stop Build Day is the last day of the official build season. All of your work builds up to this day wheb you meet together and bag your robot. Here are a few things your team should accomplish on the last day of build season:&lt;br>&lt;br>
+Address aspects of your robot and create plans to fix them if they break at competition. This may involve forming a plan to make spare parts before competition. &lt;br>&lt;br>
+Go over that year’s Inspection Checklist to make sure your robot will pass inspection. &lt;br>&lt;br>
+Practice, practice, practice! &lt;br>&lt;br>
+Address any last minute problems.&lt;br>&lt;br>
+
+	At the conclusion of last day of the sixth week of build season, you must bag up your competition robot. In your kit of parts you get at kickoff, you receive the necessary materials to do bag and tag your robot.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bagandtag_howto">
+        <item>fragment_pager_item_no_image</item>
+        <item>How to Bag And Other Procedures</item>
+        <item>Make sure there aren’t any sharp edges/objects that could puncture the bag&lt;br>&lt;br>
+Inspectors will look for any potentially dangerous, sharp edges. If they deem them too sharp, you may be requested to fix it at competition. Save yourself time by doing this beforehand. &lt;br>&lt;br>
+Open the bag up wide, then put whatever you wanted to bag in the bag.&lt;br>&lt;br>
+Seal the bag with one of the zipties provided at kickoff.&lt;br>&lt;br>
+Complete the Robot Lock-Up Form provided on firstinspires.org with an adult mentor&lt;br>&lt;br>
+http://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/game-and-season-info/competition-manual/2016/2016robotlockupform-v0.pdf&lt;br>&lt;br>
+You will need to update this log every time you open up the bag.&lt;br>&lt;br>
+Some teams make the mistake of putting their Lock-Up log in their bagged robot. You likely will not be punished at competition for doing so, but you are not supposed to put your log in the sealed bag.&lt;br>&lt;br>
+If the bag is torn at any time, you will need to explain it on the log and likely to the inspector at competition.&lt;br>&lt;br>
+At regular competitions, your team is responsible for transporting your robot.&lt;br>&lt;br>
+If you qualify for the Championship event, you will receive a voucher for FedEx and must ship your robot by the Thursday following your last competition.&lt;br>&lt;br>
+You will need to construct a crate that the robot can be shipped in. Keep the total weight under 400lbs (with a sub-150lb robot it should not be too difficult)&lt;br>&lt;br>
+If you are flying to Championships you need to box your batteries because they are not allowed on planes
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bagandtag_what_to_bag">
+        <item>fragment_pager_item_no_image</item>
+        <item>What to Bag</item>
+        <item>Your robot:&lt;br>&lt;br>
+You are not required to bag your electrical components. Teams under a strict budget could build two robots, one competition and one practice, with one set of electrical components. However, this strategy will cost you time, forcing you to rewire your robot at competition. Some teams have designed “modular” electrical boards that can easily be removed without undoing wiring.&lt;br>&lt;br>
+Any non-COTS (Commercial off-the-shelf) products brought to competition, usually in the form of spare parts or mechanisms you worked on after Stop Build Day, outside of the bag will be included in a weight limited “withheld” products. Historically, the withholding limit has been around 30 to 40lbs. Any altered or modified COTs products (i.e. cut metal, which would include spare parts for robots, wheels with holes drilled in them, etc.) are counted in the withholding allowance.&lt;br>&lt;br>
+Bumpers: They can be in a different bag, but they have to be bagged in something. If they are in a bag, they too must be labeled.
+</item>
+        <item></item>
+    </string-array>
+</resources>

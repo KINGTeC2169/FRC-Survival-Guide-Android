@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="mentors">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mentors</item>
+        <item>Mentors are a key ingredient in the FIRST program. Mentors generally preside over a department they are well versed in. People with a history of Mechanical Engineering usually flock to the Mechanical department while Software Engineers and Computer Scientists move towards Programming Departments, and Accountants or Financial Advisors to Business.</item>
+        <item></item>
+    </string-array>
+    <string-array name="mentors_purpose">
+        <item>fragment_pager_item_no_image</item>
+        <item>What do Mentors do?</item>
+        <item>Mentors guide the team. They provide the knowledge they have learned in their fields to help the kids on the team. You can give advice to them, or even propose ideas. However, let a lot of the action fall on the kids. It is their program and their robot. Find a good balance between guidance and strict, overbearing rule. You do not want to be the one building the robot as it takes away potential learning for the students. You are to provide them a way to succeed, not to drag them there.&lt;br>&lt;br>&lt;br>
+
+Examples for good mentorship:&lt;br>&lt;br>
+You know of a possible fundraising opportunity for the team. You can propose the idea, and let the students decide whether it would work for them. If they agree that this opportunity would be beneficial and fun, then they can go through with it. If they deny it, you can try to convince them, if they remain unconvinced, let them drop it. If dropping it ends up being the wrong decision, let it be a learning opportunity. If possible, let the kids be the one that reach out to this program and set up the details with your guidance&lt;br>&lt;br>
+The mechanical team wants to go through the optimal gear box, gear ratios, and number of CIMs for their drivetrain in a particular game. Help them through the process of calculating ratios, speeds, wattage draw from the motors, etc. Let them do the calculations once you have taught them, and let them decide what the best gearbox setup is. Ask them why. If you disagree, propose your idea, and explain your reasoning. In the end, let the student decide which option is best.&lt;br>&lt;br>
+Guiding the programmers on how to write a PID loop, but letting the kids write the code for the robot. If their code does not work, guide them through the debugging process. In the process, they should be able to find the problems. Direct them to how they could fix it, and explain how you came to that conclusion.&lt;br>&lt;br>
+
+In dealing with students, you have to be able to talk to them. If they propose something that you personally disagree with, like a mechanism or a purchase request, explain to them your concerns. Help them see your point of view. Refusing to explain or not letting students speak will only frustrate the team.&lt;br>&lt;br>
+
+You are also to make sure the environment on the team is a positive one. If there are conduct issues, address them directly and swiftly. Serious issues should be strictly dealt with.
+</item>
+        <item></item>
+    </string-array>
+    <string-array name="mentors_meetings">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mentor Meetings</item>
+        <item>Many areas with a strong FIRST support have meetings where team coaches and
+            mentors can meet and discuss. You can bring up concerns, like help needed. Veteran
+            teams are often more than willing to help. Use those teams to help inspire your
+            team to become a stronger, more developed team. (KING TeC is always available to help)
+        </item>
+
+        <item></item>
+    </string-array>
+
+    <string-array name="mentors_who_can_be">
+        <item>fragment_pager_item_no_image</item>
+        <item>Who Can Be a Mentor?</item>
+        <item>Pretty much anyone! The earliest mentors on 2169 was made up of the father of the
+            kids who started the team and a High School Chemistry teacher. The team later struck
+            the interest of professional engineers who joined our team. Some parents of students
+            on the team are willing to help, which is always appreciated. The kids will appreciate
+            any kind of mentor, from someone just there to supervise them while they work on the
+            machinery to professionals who keep an eye on and guide the students on the department
+            they have attached themselves to.
+        </item>
+
+        <item></item>
+    </string-array>
+
+    <string-array name="mentors_find">
+        <item>fragment_pager_item_no_image</item>
+        <item>Mentor Meetings</item>
+        <item>A problem some teams have is finding mentors. &lt;br>&lt;br>
+Large teams in your area may be willing to donate or share mentors.&lt;br>&lt;br>
+Parents are often a big contributor to mentor force. Many 2169 mentors in our history have been parents. The only problem with parent mentors is that they often leave when their child(ren) graduate, but whatever help they give for however long should be respected and appreciated.&lt;br>&lt;br>
+Industry professionals you may meet at any outreach or fundraising events may be willing to help. Remember to get their contact information, and be kind when contacting them. Do not push them into becoming a mentor.&lt;br>&lt;br>
+School teachers can also be good mentors. Oftentimes, FRC teams are affiliated with high schools. Use this to your advantage. Contact teachers that may have an interest: IT teachers, science teachers, even business teachers.&lt;br>&lt;br>
+Employees of sponsor companies may become interested if you foster a good relationship with a sponsor (which you should strive to do anyway).
+        </item>
+
+        <item></item>
+    </string-array>
+
+</resources>

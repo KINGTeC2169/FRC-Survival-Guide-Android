@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Survival-Guide-master.iml" filepath="$PROJECT_DIR$/Survival-Guide-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestApp/TestApp.iml" filepath="$PROJECT_DIR$/TestApp/TestApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/survival_guide.iml" filepath="$PROJECT_DIR$/survival_guide.iml" />
     </modules>
   </component>
 </project>

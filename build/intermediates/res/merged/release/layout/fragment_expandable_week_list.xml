@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/expandableListView"
+            android:transcriptMode="normal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+</FrameLayout><!-- From: file:/C:/Users/KING%20TeC/Desktop/Survival-Guide-master/src/main/res/layout/fragment_expandable_week_list.xml -->

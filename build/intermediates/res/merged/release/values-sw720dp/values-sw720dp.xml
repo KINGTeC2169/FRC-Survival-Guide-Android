@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/KING%20TeC/Desktop/Survival-Guide-master/src/main/res/values-sw720dp/refs.xml -->
+    <eat-comment/>
+    <bool name="combine_content">true</bool>
+    <bool name="has_two_panes">true</bool>
+</resources>

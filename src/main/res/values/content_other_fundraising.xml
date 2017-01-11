@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TAGS SHOULD BE SEPARATED BY SPACES-->
+
+<!-- LINKS IN THE BODY TEXT SHOULD BE FORMATTED AS
+    &lt;a href="ADDRESS">NAME&lt;/a> -->
+<!-- LINE BREAKS SHOULD BE FORMATTED AS
+    &lt;br> -->
+
+<resources>
+    <string-array name="fundraising_intro">
+        <item>fragment_pager_item_no_image</item>
+        <item>Introduction to Fundraising</item>
+        <item>In maintaining a long term and successful team, it is essential to make sure there’s enough funding. For many teams, the main source of incoming funds will be provided by corporate level sponsors and activity fees. Grant applications and requests also serve as a way for rookie teams to get a jump start on funding their robotic ventures. Additional funding can also be sourced from the community during team fundraising events. While Grants and Sponsors will serve as a rookie team’s best resources in securing a financially stable team, there are always a variety of additional options available to veteran and rookie teams alike.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_fees">
+        <item>fragment_pager_item_no_image</item>
+        <item>Activity Fees</item>
+        <item>Many teams choose to charge a fee for members to join their robotics program. This helps to take the pressure off finding sponsors, and helps to cover some of the cost of running a robotics team. KING TeC uses this method, and also provides scholarships for those unable to pay the activity fee. For teams with few members, this may not be the most lucrative solution, but for those with a large member base, charging an activity fee can generate substantial income.
+</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_sponsors">
+        <item>fragment_pager_item_no_image</item>
+        <item>Where to find sponsors</item>
+        <item>Sponsors can be found in a variety of ways while raising money to operate an FRC Team. If your team is located within a school district or operates within a school itself, checking with your office’s administration and submitting a grant request for a robotics team is one of the quickest ways to find a long term sponsor. By starting a robotics team in your school district, you’re helping to spread STEM, something many schools set aside district money to fund. Other sponsors can be requested from corporate grant and scholarship providers who will typically open applications in the fall, along with local organizations. Getting in contact with local businesses is as simple as giving them a call, sending an email, or visiting them in-person</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_grants">
+        <item>fragment_pager_item_no_image</item>
+        <item>Grant Applications</item>
+        <item>Grant applications are a great way for teams to obtain funding, usually on a year-by-year basis. Corporations will typically open up their applications in the beginning fall, before build season starts. Teams will usually be asked a series of essay questions pertaining to specifics about how the team operates, organizes itself, and why they would like to receive a grant. When drafting a proposal to the providers of the grant, along with their responses to the prompts, a dedicated group should work together to efficiently explain how their team operates. It is important to consistently search for grants online to explore all of a team’s options. And while the length of a grant’s acceptance period may differ, many will typically provide a hard date where they will provide results.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fundraising_events">
+        <item>fragment_pager_item_no_image</item>
+        <item>Fundraising Events</item>
+        <item>In addition to raising funds from corporations and grant applications, teams can engage the community for support in a variety of ways. Many teams will organize themselves to participate in both small and large fundraising events during the off season. Events such as grocery bagging serve as both a team bonding experience and as a method to bring in funds for the team. While not all of your funding will come from these community involvement events, they do serve as a good way to help bring in additional resources to the team. These events are also a great time to show off your team, engage the community, and find potential sponsors and mentors! Be sure to bring a display explaining your team to the community along with an interactive demo, most likely a robot, and some handouts and contact information. Keeping information such as sponsorship level information and benefits (KING TeC’s is pictured below) on hand during an event could prove useful in the event of a potential sponsor being interested in a team’s endeavors.</item>
+        <item></item>
+    </string-array>
+
+</resources>
